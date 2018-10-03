@@ -1,0 +1,19 @@
+site_name: My Docs
+nav:
+    - Home: index.md
+    - About: about.md
+    - 1 - Vector Analysis: ch1.md
+    - 2 - Electrostatics: ch2.md
+
+# Cool material theme: https://squidfunk.github.io/mkdocs-material/
+theme:
+  name: 'material'
+  font:
+    text: 'Neuton'
+
+# This lets us render MathJax, the coolest thing since sliced bread!
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML
+  - extra.js
+markdown_extensions:
+  - mdx_math
