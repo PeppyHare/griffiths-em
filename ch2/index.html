@@ -42,6 +42,12 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
       
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
       
     
     
@@ -50,8 +56,8 @@
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton:300,400,400i,700|">
-        <style>body,input{font-family:"Neuton","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Noto Serif","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
@@ -59,7 +65,9 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="light-blue">
   
     <svg class="md-svg">
       <defs>
@@ -238,8 +246,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mecum-quondam-corinthiaci-moras-reservant-maior-et" title="Mecum quondam Corinthiaci moras reservant maior et" class="md-nav__link">
-    Mecum quondam Corinthiaci moras reservant maior et
+  <a href="#212-coulombs-law" title="2.1.2: Coulomb's Law" class="md-nav__link">
+    2.1.2: Coulomb's Law
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#213-the-electric-field" title="2.1.3: The Electric Field" class="md-nav__link">
+    2.1.3: The Electric Field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#214-continuous-charge-distributions" title="2.1.4: Continuous Charge Distributions" class="md-nav__link">
+    2.1.4: Continuous Charge Distributions
   </a>
   
 </li>
@@ -283,8 +305,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mecum-quondam-corinthiaci-moras-reservant-maior-et" title="Mecum quondam Corinthiaci moras reservant maior et" class="md-nav__link">
-    Mecum quondam Corinthiaci moras reservant maior et
+  <a href="#212-coulombs-law" title="2.1.2: Coulomb's Law" class="md-nav__link">
+    2.1.2: Coulomb's Law
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#213-the-electric-field" title="2.1.3: The Electric Field" class="md-nav__link">
+    2.1.3: The Electric Field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#214-continuous-charge-distributions" title="2.1.4: Continuous Charge Distributions" class="md-nav__link">
+    2.1.4: Continuous Charge Distributions
   </a>
   
 </li>
@@ -314,10 +350,76 @@
 <blockquote>
 <p>The principle of superposition may seem "obvious" to you, but it did not have to be so simple: if the electromagnetic force were proportional to the <em>square</em> of the total source charge, for instance, the principle of superposition would not hold, since <script type="math/tex"> (q_1 + q_2)^2 \neq q_1 ^2 + q_2 ^2 </script> (there would be "cross terms" to consider). Superposition is not a logical necessity, but an experimental fact.</p>
 </blockquote>
-<p>Well, at first this looks very easy</p>
-<p>This is an equation <script type="math/tex; mode=display">a = b \, \text{ and } \, b = c \rightarrow b = c \label{ref1}</script> and this is a reference to that equation <script type="math/tex">\eqref{ref1}</script>
+<p>Well, at first sight this looks very easy: Why don't I just write down the formula for the force on Q due to q, and be done with it? I <em>could</em>, and in Chapter 10 I shall, but you would be shocked to see it at this stage, for not only does the force on Q depend on the separation distance <script type="math/tex"> \gr </script> between the charges (Fig 2.2), it also depends on both their velocities and on the acceleration of <script type="math/tex"> q </script>. Moreover, it is not the position, velocity, and acceleration of <script type="math/tex"> q </script>
+<em>right now</em> that matter: electromagnetic "news" travels at the speed of light, so what concerns Q is the position, velocity, and acceleration q had at some earlier time, when the message left.</p>
+<p>Therefore, in spite of the fact that the basic question ("What is the force on Q due to q?") is easy to state, it does not pay to confront it head on; rather, we shall go at it by stages. In the meantime, the theory we develop will allow for the solution of more subtle electromagnetic problems that do not present themselves in quite this simple format. To begin with, we shall consider the special case of <em>electrostatics</em> in which all the source charges are stationary (though the test charge may be moving).</p>
+<h2 id="212-coulombs-law">2.1.2: Coulomb's Law</h2>
+<p>What is the force on a test charge Q due to a single point charge q, that is at <em>rest</em> a distance <script type="math/tex"> \gr </script> away? The answer (based on experiments) is given by <em>Coulomb's Law</em>:</p>
+<p>
+<script type="math/tex; mode=display">
+\vec{F} = \frac{1}{4 \pi \epsilon_0}\frac{q Q}{\gr^2} \hat{\vec{\gr}}   \label{coulomblaw}
+</script>
 </p>
-<h2 id="mecum-quondam-corinthiaci-moras-reservant-maior-et">Mecum quondam Corinthiaci moras reservant maior et</h2>
+<p>The constant <script type="math/tex"> \epsilon_0 </script>  is called (ludicrously) the <em>permittivity of free space</em>. In SI units, where force is in newtons (N), distance in meters (m), and charge in coulombs (C), 
+<script type="math/tex; mode=display">
+\epsilon_0 = 8.85 \times 10^{-12} \frac{C^2}{N \cdot m ^2} 
+</script>
+</p>
+<p>In words, the force is proportional to the product of the charges and inversely proportional to the square of the separation distance. As always (Sect 1.1.4), <script type="math/tex"> \vec{\gr} </script> is the separation vector from <script type="math/tex"> \vec{r'} </script> (the location of q) to <script type="math/tex"> \vec{r} </script> (the location of Q): <script type="math/tex; mode=display">
+\vec{\gr} = \vec{r} - \vec{r}'
+</script>
+</p>
+<p>
+<script type="math/tex"> \gr </script> is its magnitude, and <script type="math/tex"> \hat{\gr} </script> is its direction. The force points along the line from q to Q; it is repulsive if <em>q</em> and <em>Q</em> have the same sign, and attractive if their signs are opposite.</p>
+<p>Coulomb's law and the principle of superposition constitute the physical input for electrostatics - the rest, except for some special properties of matter, is mathematical elaboration of these fundamental rules.</p>
+<h2 id="213-the-electric-field">2.1.3: The Electric Field</h2>
+<p>If we have <em>several</em> point charges <script type="math/tex"> q_1, q_2, \ldots , q_n </script>  at distances <script type="math/tex"> \gr_1 \gr_2 \ldots, \gr_n </script> from <em>Q</em>, the total force on <em>Q</em> is evidently
+<script type="math/tex; mode=display">
+\vec{F} = \vec{F_1} + \vec{F_2} + \ldots = \frac{1}{4 \pi \epsilon_0} \left( \frac{q_1 Q}{\gr_1 ^2} \hat{\gr}_1 + \frac{q_2 Q}{\gr_2 ^2} \hat{\gr}_2 + \ldots \right) \\ = \frac{Q}{4 \pi \epsilon _0} \left( \frac{q_1}{\gr ^2 _1} \hat{\gr_1} + \frac{q_2}{\gr _2 ^2}\hat{\gr_2} + \ldots \right) 
+</script>
+</p>
+<p>or
+<script type="math/tex; mode=display">
+\vec{F} = Q \vec{E} \label{emforce}
+</script>
+</p>
+<p>where 
+<script type="math/tex; mode=display">
+\vec{E}(\vec{r}) \equiv \frac{1}{4 \pi \epsilon_0} \sum_{i = 1}^n \frac{q_i}{\gr_{i}^2} \hat{\gr_i} \label{efield}
+</script>
+</p>
+<p><strong>E</strong> is called the <strong>electric field</strong> of the source charges. Notice that it is a function of position (<strong>r</strong>), because the separation vectors <script type="math/tex"> \gr_i </script> depend on the location of the field point P (Fig 2.3). But it makes no reference to the test charge Q. The electric field is a vector quantity that varies from point to point and is determined by the configuration of source charges; physically, <script type="math/tex"> \vec{E}(\vec{r}) </script> is the force per unit charge that would be exerted on a test charge, if you were to place one at P.</p>
+<p><img alt="Figure 2.3" src="../img/2.3.png" /></p>
+<p>What exactly <em>is</em> an electric field? I have deliberately begun with what you might call the "minimal" interpretation of <strong>E</strong>, as an intermediate step in the calculation of electric forces. But I encourage you to think of the field as a "real" physical entity, filling the space around electric charges. Maxwell himself came to believe that electric and magnetic fields are stresses and strains in an invisible primordial jellylike "ether." Special relativity has forced us to abandon the notion of either, and with it Maxwell's mechanical interpretation of electromagnetic fields. (It is even possible, although cumbersome, to formulate classical electrodynamics as an "action-at-a-distance" theory, and dispense with the field concept altogether.) I can't tell you, then, what a field <em>is</em> -- only how to calculate it and what it can do for you once you've got it.</p>
+<h2 id="214-continuous-charge-distributions">2.1.4: Continuous Charge Distributions</h2>
+<p>Our definition of the electric field (Eq. <script type="math/tex"> \eqref{efield} </script> ) assumes that the source of the field is a collection of discrete point charges <script type="math/tex"> q_i </script>. If, instead, the charge is distributed continuously over some region, the sum becomes an integral (Fig 2.5a):
+<script type="math/tex; mode=display">
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{1}{\gr ^2} \hat{\gr} \dd{q}
+</script>
+</p>
+<p>If the charge is spread out along a <em>line</em> (Fig. 2.5b), with charge-per-unit-length <script type="math/tex"> \lambda </script> then <script type="math/tex"> \dd{q} = \lambda \dd{l}' </script> (where <script type="math/tex"> \dd{l}' </script> ) is an element of length along the line); if the charge is smeared out over a surface (Fig. 2.5c) with charge-per-unit-area <script type="math/tex"> \sigma </script>, then <script type="math/tex"> \dd{q} = \sigma \dd{a}' </script>  (where <script type="math/tex"> \dd{a'} </script> ) is an element of area on the surface); and if the charge fills a <em>volume</em> (Fig 2.5d), with charge-per-unit-volume <script type="math/tex"> \rho </script>, then <script type="math/tex"> \dd{q} = \rho\dd{\tau'} </script> (where <script type="math/tex"> \dd{\tau'} </script> is an element of volume):
+<script type="math/tex; mode=display">
+dq \rightarrow \lambda \dd{l'} \sim \sigma \dd{a'} \sim \rho \dd{\tau'}
+</script>
+</p>
+<p><img alt="Figure 2.5" src="../img/2.5.png" /></p>
+<p>Thus the electric field of a line charge is
+<script type="math/tex; mode=display">
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\lambda(\vec{r'})}{\gr ^2} \hat{\gr} \dd{l'}
+</script>
+for a surface charge,
+<script type="math/tex; mode=display">
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\sigma(\vec{r'})}{\gr ^2} \hat{\gr} \dd{a'}
+</script>
+and for a volume charge,
+<script type="math/tex; mode=display">
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec{r'})}{\gr ^2} \hat{\gr} \dd{\tau'} \label{efieldcontinuous}
+</script>
+</p>
+<p>Equation <script type="math/tex"> \eqref{efieldcontinuous} </script> itself is often referred to as "Coulomb's law," because it is such a short step from the original, and because a volume charge is in a sense the most general and realistic case. Please note carefully the meaning of <script type="math/tex"> \gr </script> in these formulas. Originally, in <script type="math/tex"> \eqref{efield} </script>, <script type="math/tex"> \gr_i </script> stood for the vector from the source charge <script type="math/tex"> q_i </script> to the field point <strong>r</strong>. Correspondingly, in Eq.s 9-11, <script type="math/tex"> \gr </script> is the vector from <script type="math/tex"> \dd{q} </script> to the field point <script type="math/tex"> \vec{r} </script>.</p>
+<blockquote>
+<p>Warning: the unit vector <script type="math/tex"> \hat{\gr} </script> is not constant: its direction depends on the source point <script type="math/tex"> \vec{r'} </script>, and hence it cannot be taken outside the integrals (9-11). In practice, you must work with Cartesian components (<script type="math/tex"> \hat{x}, \hat{y}, \hat{z} </script> are constant, and do come out) , even if you use curvilinear coordinates to perform the integration.</p>
+</blockquote>
                 
                   
                 
