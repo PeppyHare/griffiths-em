@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# Griffiths - Introduction to Electrodynamics
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+## https://peppyhare.github.io/griffiths-em/
 
-## Commands
+This is a web-friendly version of David Griffiths' [Introduction to Electrodynamics, 4th Ed.](https://www.pearson.com/us/higher-education/program/Griffiths-Introduction-to-Electrodynamics-4th-Edition/PGM249908.html). I render source MarkDown using Mkdocs and python-markdown-math, so that all LaTeX is rendered in the browser in a mobile-friendly format.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This is mostly an exercise for myself in learning about Mkdocs, MathJax, and physics! As such, I will probably not work through all the examples and homework problems here.

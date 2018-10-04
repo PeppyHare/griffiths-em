@@ -1,7 +1,6 @@
 site_name: My Docs
 nav:
     - Home: index.md
-    - About: about.md
     - 1 - Vector Analysis: ch1.md
     - 2 - Electrostatics: ch2.md
 
@@ -30,6 +29,9 @@ theme:
 extra:
   search:
     language: 'en'
+
+repo_name: 'PeppyHare/griffiths-em'
+repo_url: 'https://github.com/PeppyHare/griffiths-em'
 
 
 # This lets us render MathJax, the coolest thing since sliced bread!
