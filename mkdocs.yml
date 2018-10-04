@@ -8,8 +8,29 @@ nav:
 # Cool material theme: https://squidfunk.github.io/mkdocs-material/
 theme:
   name: 'material'
+  # custom_dir: 'mkdocs-material/material'
   font:
-    text: 'Neuton'
+    text: 'Noto Serif'
+    code: 'Roboto Mono'
+  language: 'en'
+  feature:
+    tabs: false
+  palette:
+    primary: 'indigo'
+    accent: 'light blue'
+  direction:
+  favicon: assets/images/favicon.png
+  logo:
+    icon: "\uE80C"
+  include_search_page: false
+  search_index_only: true
+  static_templates:
+    - 404.html
+
+extra:
+  search:
+    language: 'en'
+
 
 # This lets us render MathJax, the coolest thing since sliced bread!
 extra_javascript:
