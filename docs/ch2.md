@@ -115,12 +115,66 @@ You might think that I have thereby thrown away information about the _strength_
 
 In truth, the field-line diagram is deceptive, when I draw it on a two-dimensional surface, for the density of lines passing through a circle of radius _r_ is the total number divided by the circumference (\( n / 2 \pi r \)), which goes like \( (1/r) \), not \( (1/r^2) \). But if you imagine the model in three dimensions (a pincushion with needles sticking out in all directions), then the density of lines is the total number divided by the area of the sphere \( (n/4 \pi r^2) \), which _does_ go like \( (1/r^2) \).
 
-Such diagrams are also convenient for representing more complicated fields. Of course, the number of lines you draw depends on how lazy you are (and how sharp your pencil is), though you ought to include enough to get an accurate sense of the field, and you must be consistent: if _q_ gets 8 lines, then 2_q_ deserves 16. And you must space them fairly - they emanate from a point charge symmetrically in all directions. Field lines begin on positive charges and end on negative ones; they cannot simply terminate in midair, though they may extend out to infinity. Moreover, field lines can never cross - at the intersection the field would have two different directions at once! With all this in mind, it is easy to sketch the field of any simple configuration of point charges: Begin by drawing the lines in the neighborhood of each charge, and then connect them up or extend them to infinity (Figs. 2.13 and 2.14)
+Such diagrams are also convenient for representing more complicated fields. Of course, the number of lines you draw depends on how lazy you are (and how sharp your pencil is), though you ought to include enough to get an accurate sense of the field, and you must be consistent: if \( q \)  gets 8 lines, then \( 2q \)  deserves 16. And you must space them fairly - they emanate from a point charge symmetrically in all directions. Field lines begin on positive charges and end on negative ones; they cannot simply terminate in midair, though they may extend out to infinity. Moreover, field lines can never cross - at the intersection the field would have two different directions at once! With all this in mind, it is easy to sketch the field of any simple configuration of point charges: Begin by drawing the lines in the neighborhood of each charge, and then connect them up or extend them to infinity (Figs. 2.13 and 2.14)
+
+![Figure 2.13](img/2.13.png)
+![Figure 2.14](img/2.14.png)
+
 
 In this model, the _flux_ of __E__ through a surface S,
 $$
-\Phi_E \equiv \int _S \vec{E} \cdot \dd{\vec{a}}
+\Phi_E \equiv \int _S \vec{E} \cdot \dd{\vec{a}} \label{2.11}
 $$
+
+is a measure of the "number of lines" passing through S. I put this in quotes because of course we can only draw a representative _sample_ of field lines - the total number would be infinite. But for a given sampling rate the flux is _proportional_ to the number of lines drawn, because the field strength, remember, is proportional to the density of field lines (the number per unit area), and hence \( \vec{E} \cdot \dd{\vec{a}} \) is proportional to the number of lines passing through the infinitesimal area \( \dd{\vec{a}} \). (The dot product picks out the component of \( \dd{\vec{a}} \) along the direction of __E__, as indicated in Fig 2.15. It is the area in the plane perpendicular to __E__ that we have in mind when we say that the density of field lines is the number per unit area).
+
+![Figure 2.15](img/2.15.png)
+![Figure 2.16](img/2.16.png)
+
+This suggests that the flux through any _closed_ surface is a measure of the total charge inside. For the field lines that originate on a positive charge must either pass out through the surface or else terminate on a negative charge inside (Fig 2.16a). On the other hand, a charge _outside_ the surface will contribute nothing to the total flux, since its field lines pass in one side and out the other (Fig 2.16b). This is the _essence_ of Gauss's law. Now let's make it quantitative.
+
+In the case of a point charge _q_ at the origin, the flux of __E__ through a spherical surface or radius _r_ is
+$$
+\oint \vec{E} \cdot \dd{\vec{a}} = \int \frac{1}{4 \pi \epsilon_0} \left( \frac{q}{r^2} \hat{r} \right) \cdot \left( r^2 \sin \theta \dd{\theta} \dd{\phi} \hat{r} \right) = \frac{1}{\epsilon_0} q \label{2.12}
+$$
+
+Notice that the radius of the sphere cancels out, for while the surface area goes _up_ as \( r^2 \), the field goes _down_ as \( 1/r^2 \), so the product is constant. In terms of the field-line picture, this makes good sense, since the same number of field lines pass through any sphere centered at the origin, regardless of its size. In fact, it didn't have to be a sphere - any closed surface, whatever its shape, would be pierced by the same number of field lines. Evidently, the flux through any surface enclosing the charge is \( q / \epsilon_0 \).
+
+Now suppose that instead of a single charge at the origin, we have a bunch of charges scattered about. According to the principle of superposition, the total field is the (vector) sum of all the individual fields:
+$$
+\vec{E} = \sum _{i = 1} ^\nu \vec{E}_i
+$$
+
+The flux through a surface that encloses them all is
+$$
+\oint \vec{E} \cdot \dd{\vec{l}} = \sum _{i = 1}^n \left( \oint \vec{E_i} \cdot \dd{\vec{a}} \right) = \sum_{i = 1}^n \left( \frac{1}{\epsilon_0} q_i  \right)
+$$
+
+For any closed surface, then
+$$
+\oint \vec{E} \cdot \dd{\vec{a}} = \frac{1}{\epsilon_0} Q_{enc} \label{2.13}
+$$
+
+where \( Q_{enc} \) is the total charge enclosed within the surface. This is the quantitative statement of Gauss's law. Although it contains no information that was not already present in Coulomb's law plus the principle of superposition, it is of almost magical power, as you will see in Sect. 2.2.3. Notice that it all hinges on the \( 1/r^2 \) character of Coulomb's law; without that, the crucial cancellation of the _r_'s in \( \eqref{2.12} \) would not take place, and the total flux of __E__ would depend on the surface chosen, not merely on the total charge enclosed. Other \( 1/r^2 \) forces (I am thinking particularly of Newton's law of universal gravitation) will obey "Gauss's laws" of their own, and the applications we develop here carry over directly.
+
+As it stands, Gauss's law is an _integral_ equation, but we can easily turn it into a differential one by applying the divergence theorem:
+$$
+\oint_{S} \vec{E} \cdot \dd{\vec{a}} = \int_{\mathscr{V}} (\div{\vec{E}}) \dd{\tau}
+$$
+Rewriting \( Q_{enc} \) in terms of the charge density \( \rho \) we have
+$$
+Q_{enc} = \int_{\mathscr{V}} \rho \dd{\tau}
+$$
+So Gauss's law becomes
+$$
+\int_{\mathscr{V}} (\div{\vec{E}}) \dd{\tau} = \int_{\mathscr{V}} \left( \frac{\rho}{\epsilon_0} \dd{\tau} \right)
+$$
+And since this holds for _any_ volume, the integrands must be equal:
+$$
+\nabla \cdot \vec{E} = \frac{1}{\epsilon_0} \rho \label{2.14}
+$$
+
+Equation \( \eqref{2.14} \) carries the same message as \( \eqref{2.13} \); it is __Gauss's law in differential form__. The differential version is tidier, but the integral form has the advantage that it accommodates point, line, and surface charges more naturally.
 
 TODO: Finish Section 2.2!
 
