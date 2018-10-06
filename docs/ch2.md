@@ -176,6 +176,116 @@ $$
 
 Equation \( \eqref{2.14} \) carries the same message as \( \eqref{2.13} \); it is __Gauss's law in differential form__. The differential version is tidier, but the integral form has the advantage that it accommodates point, line, and surface charges more naturally.
 
+### 2.2.2: The Divergence of E
+
+Let's go back now, and calculate the divergence of \( \vec{E} \) directly from \( \eqref{2.8} \):
+$$
+\vec{E}(\vec{r}) = \frac{1}{4\pi\epsilon_0} \int_{\text{all space}} \frac{\hat{\gr}}{\gr ^2} \rho(\vec{r}') \dd{\tau'} \label{2.15}
+$$
+
+(Originally the integration was over the volume occupied by the charge, but I may as well extend it to all space, since \( \rho = 0 \) in the exterior region anyway.) Noting that the r-dependence is contained in \( \gr = r - r' \), we have
+$$
+\div{\vec{E}} = \frac{1}{4\pi\epsilon_0} \int \vec{\nabla} \cdot \left( \frac{\hat{\gr}}{\gr^2}  \right) \rho(\vec{r'}) \dd{\tau'} 
+$$
+We calculated this divergence in Section 1.5:
+$$
+\div{\left( \frac{\hat{\gr}}{\gr^2}  \right)} = 4 \pi \delta ^3(\gr)
+$$
+Thus
+$$
+\div{\vec{E}} = \frac{1}{4\pi\epsilon_0} \int 4 \pi \delta^3(\vec{r} - \vec{r'}) \rho(\vec{r'}) \dd{\tau'} = \frac{1}{\epsilon_0} \rho(\vec{r}) \label{2.16}
+$$
+which is Gauss's law in differential form \( \eqref{2.14} \). To recover the integral form \( \eqref{2.13} \) we run the previous argument in reverse - integrate over a volume and apply the divergence theorem:
+$$
+\int_{\mathscr{V}} \div{\vec{E}} \dd{\tau} = \oint_{\mathscr{S}} \vec{E} \cdot \dd{\vec{a}} = \frac{1}{\epsilon_0} \int_{\mathscr{V}} \rho \dd{\tau} = \frac{1}{\epsilon_0} Q_{enc}
+$$
+
+### 2.2.3: Applications of Gauss's Law
+
+I must interrupt the theoretical development at this point to show you the extraordinary power of Gauss's law, in integral form. When symmetry permits, it affords _by far_ the quickest and easiest way of computing electric fields. I'll illustrate the method with a series of examples.
+
+---
+
+#### Ex 2.3
+
+ > Find the field outside a uniformly charged solid sphere of radius R and total charge q
+
+__Solution__
+Imagine a spherical surface at radius \( r > R \) (Fig. 2.18). This is called a __Gaussian surface__ in the trade. Gauss's law says that
+$$
+\oint_{\mathscr{S}} \vec{E} \cdot \dd{\vec{a}} = \frac{1}{\epsilon_0} Q_{enc}
+$$
+and in this case \( Q_{enc} = q \). At first glance this doesn't seem to get us very far, because the quantity we want (E) is buried inside the surface integral. Luckily, symmetry allows us to extract E from under the integral sign: __E__ certainly points radially outward, as does \( \dd{\vec{a}} \), so we can drop the dot product
+$$
+\int_{\mathscr{S}} \vec{E} \cdot \dd{\vec{a}} = \int_{\mathscr{S}} | \vec{E} | da
+$$
+
+![Figure 2.18](img/2.18.png)
+
+and the magnitude of E is constant over the Gaussian surface, so it comes outside the integral:
+$$
+\int_{S} | E | da = |E| \int_{S} da = E 4 \pi r^2
+$$
+Thus
+$$
+|\vec{E}|4\pi r^2 = \frac{1}{\epsilon_0} q
+$$
+or
+$$
+\vec{E} = \frac{1}{4\pi \epsilon_0} \frac{q}{r^2} \hat{r}
+$$
+
+Notice a remarkable feature of this result: the field outside the sphere is exactly the same as it would have been if all the charge had been concentrated at the center.
+
+---
+
+Gauss's law is always _true_, but not always _useful_. If \( \rho \) had not been uniform (or at any rate, not spherically symmetrical), or if I had chosen some other shape for my Gaussian surface, it would have still been true that the flux of \( \vec{E} \) is \( q / \epsilon_0 \), but \( \vec{E} \) would not have pointed in the same direction as \( \dd{\vec{a}} \), and its magnitude would not have been constant over the surface, and without that I cannot get \( |\vec{E}| \) outside the integral. Symmetry is crucial to this application of Gauss's law. As far as I know, there are only three kinds of symmetry that work:
+
+1. Spherical symmetry. Make your Gaussian survace a concentric sphere.
+2. Cylindrical symmetry. Make your Gaussian surface a coaxial cylinder.
+3. Plane symmetry. Use a Gaussian "pillbox" that straddles the surface.
+
+Although 2 and 3 technically require infinitely long cylinders, and planes extending to infinity, we shall often use them to get approximate answers for "long" cylinders or "large" planes, at points far from the edges.
+
+---
+
+#### Ex 2.4
+
+ > A long cylinder (Fig 2.21) carries a charge density that is proportional to the distance from the axis: \( \rho = ks \) for some constant \( k \). Find the electric field inside this cylinder.
+
+![Figure 2.21](img/2.21.png)
+
+__Solution__: Draw a Gaussian cylinder of length l and radius s. For this surface, Gauss's law states
+$$
+\oint_{\mathscr{S}} \vec{E} \cdot \dd{\vec{a}} = \frac{1}{\epsilon_0} Q_{enc}
+$$
+
+The enclosed charge is
+$$
+\begin{align}
+Q_{enc} & = & \int \rho \dd{\tau} \\
+& = & \int(ks')(s' \dd{s'} \dd{\phi} \dd{z}) \\
+& = & 2 \pi k l \int_{0}^{s} s'^2 \dd{s'} \\
+& = & \frac{2}{3} \pi k l s^3
+\end{align}
+$$
+
+(I used the volume element appropriate to cylindrical coordinates, and integrated \( \phi \) from \( 0 \) to \( 2\pi \), \( \dd{z} \) from \( 0 \) to \( l \). I put a prime on the integration variable \( s' \) to distinguish it from the radius \( s \) of the Gaussian surface.)
+
+Now, symmetry dictates that \( \vec{E} \) must point radially outward, so for the curved portion of the Gaussian cylinder we have:
+$$
+\int \vec{E} \cdot \dd{\vec{a}} = \int | \vec{E}| da = | \vec{E}| \int da = |\vec{E} 2 \pi s l
+$$
+while the two ends contribute nothing (here \( \vec{E} \) is perpendicular to \( \dd{\vec{a}} \)). Thus,
+$$
+|\vec{E} | 2 \pi s l = \frac{1}{\epsilon_0} \frac{2}{3} \pi k l s^3
+$$
+or, finally,
+$$
+\vec{E} = \frac{1}{3\epsilon_0} k s^2 \hat{s}
+$$
+
+
 TODO: Finish Section 2.2!
 
 ## 2.3: Electric Potential
