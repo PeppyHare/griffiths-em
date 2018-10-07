@@ -401,15 +401,15 @@ $$
 
 Now, the fundamental theorem for gradients states that
 $$
-V(\vec{b}) - V(\vec{a}) = \int_{\vec{a}} ^{\vec{b}} (\gr{V}) \cdot \dd{\vec{l}}
+V(\vec{b}) - V(\vec{a}) = \int_{\vec{a}} ^{\vec{b}} (\grad{V}) \cdot \dd{\vec{l}}
 $$
 so
 $$
-\int_{\vec{a}}^{\vec{b}} (\gr{V})\cdot \dd{\vec{l}} = - \int_{\vec{a}}^{\vec{b}} \vec{E}\cdot \dd{\vec{l}}
+\int_{\vec{a}}^{\vec{b}} (\grad{V})\cdot \dd{\vec{l}} = - \int_{\vec{a}}^{\vec{b}} \vec{E}\cdot \dd{\vec{l}}
 $$
 Since, finally, this is true for _any_ points __a__ and __b__, the integrands must be equal:
 $$
-\vec{E} = - \gr{V} \label{e-equals-grad-v}
+\vec{E} = - \grad{V} \label{e-equals-grad-v}
 $$
 
 Equation \( \eqref{e-equals-grad-v} \) is the differential version of \( \eqref{2.21} \); it says that the electric field is the gradient of a scalar potential, which is what we set out to prove.
@@ -420,7 +420,7 @@ Notice the subtle but crucial role played by path independence (or, equivalently
 
 __The name__. The word "potential" is a hideous misnomer because it inevitably reminds you of potential _energy_. This is particularly insidious, because there _is_ a connection between "potential" and "potential energy," as you will see in Sect 2.4. I'm sorry that it is impossible to escape this word. The best I can do is to insist once and for all that "potential" and "potential energy" are completely different terms and should, by all rights, have different names. Incidentially, a surface over which the potential is constant is called an __equipotential__.
 
-__Advantage of the potential formulation__. If you know V, you can easily get __E__ - just take the gradient: \( \vec{E} =- \gr{V} \). This is quite extraordinary when you stop to think about it, for __E__ is a _vector_ quantity (three components), but V is a __scalar__ (one component). How can one function possibly contain all the information that three independent functions carry? The answer is that the three components of __E__ are not really as independent as they look; in fact, they are explicitly interrelated by the very condition we started with,\( \nabla \times \vec{E} = 0 \). In terms of components,
+__Advantage of the potential formulation__. If you know V, you can easily get __E__ - just take the gradient: \( \vec{E} =- \grad{V} \). This is quite extraordinary when you stop to think about it, for __E__ is a _vector_ quantity (three components), but V is a __scalar__ (one component). How can one function possibly contain all the information that three independent functions carry? The answer is that the three components of __E__ are not really as independent as they look; in fact, they are explicitly interrelated by the very condition we started with,\( \nabla \times \vec{E} = 0 \). In terms of components,
 $$
 \pdv{E_x}{y} = \pdv{E_y}{x}, \qquad \pdv{E_z}{y} = \pdv{E_y}{z}, \qquad \pdv{E_x}{z} = \pdv{E_z}{x}
 $$
@@ -436,7 +436,7 @@ $$
 
 where K is the line integral of __E__ from the old reference point \( \mathscr{O} \) to the new one \( \mathscr{O}' \). Of course, adding a constant to V will not affect the potential _difference_ between two points, since the K's cancel out. Nor does the ambiguity affect the gradient of V:
 $$
-\gr{V'} = \gr{V} 
+\grad{V'} = \grad{V} 
 $$
 since the derivative of a constant is zero. That's why all such V's, differing only in their choice of reference point, correspond to the same field __E__
 
@@ -468,13 +468,13 @@ __Units of Potential__. In our units, force is measured in newtons and charge in
 
 We found in Sect 2.3.1 that the electric field can be written as the gradient of a scalar potential
 $$
-\vec{E} = - \gr{V}
+\vec{E} = - \grad{V}
 $$
 The question arises, what do the divergence and curl of __E__,
 $$
 \div{\vec{E}} = \frac{\rho}{\epsilon_0} \qquad \text{ and } \qquad \curl{\vec{E}} = 0
 $$
-look like, in terms of V? Well, \( \div{\vec{E}} = \div(-\gr{V}) = -\laplacian{V} \), so, apart from that persistent minus sign, the divergence of __E__ is the Laplacian of V. Gauss's law, then, says
+look like, in terms of V? Well, \( \div{\vec{E}} = \div(-\grad{V}) = -\laplacian{V} \), so, apart from that persistent minus sign, the divergence of __E__ is the Laplacian of V. Gauss's law, then, says
 <!-- Eq: 2.24 -->
 $$
 \laplacian{V} = -\frac{\rho}{\epsilon_0} 
@@ -490,10 +490,10 @@ We'll explore this equation more fully in Chapter 3.
 
 So much for Gauss's law. What about the curl law? This says that
 $$
-\curl{\vec{E}} = \curl(-\gr{V}) = 0
+\curl{\vec{E}} = \curl(-\grad{V}) = 0
 $$
 
-But that's no condition on V - curl of gradient is _always_ zero. Of course, we used the curl law to show that __E__ could be expressed as the gradient of a scalar, so it's not really surprising that this works out: \( \curl{\vec{E}} = 0 \) permits our definition of V; in return, \( \vec{E} = - \gr{V} \) guarantees \( \curl{\vec{E}} = 0 \). It only takes one differential equation (Poisson's) to determine V, because V is a scalar. For \( \vec{E} \) we needed two, the divergence and the curl.
+But that's no condition on V - curl of gradient is _always_ zero. Of course, we used the curl law to show that __E__ could be expressed as the gradient of a scalar, so it's not really surprising that this works out: \( \curl{\vec{E}} = 0 \) permits our definition of V; in return, \( \vec{E} = - \grad{V} \) guarantees \( \curl{\vec{E}} = 0 \). It only takes one differential equation (Poisson's) to determine V, because V is a scalar. For \( \vec{E} \) we needed two, the divergence and the curl.
 
 ### 2.3.4: The potential of a Localized Charge Distribution
 
