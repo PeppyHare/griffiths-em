@@ -475,15 +475,13 @@ $$
 \div{\vec{E}} = \frac{\rho}{\epsilon_0} \qquad \text{ and } \qquad \curl{\vec{E}} = 0
 $$
 look like, in terms of V? Well, \( \div{\vec{E}} = \div(-\grad{V}) = -\laplacian{V} \), so, apart from that persistent minus sign, the divergence of __E__ is the Laplacian of V. Gauss's law, then, says
-<!-- Eq: 2.24 -->
 $$
-\laplacian{V} = -\frac{\rho}{\epsilon_0} 
+\laplacian{V} = -\frac{\rho}{\epsilon_0} \label{2.24}
 $$
 
 This is known as __Poisson's equation__. In regions where there is no charge, so \( \rho = 0 \), Poisson's equation reduces to Laplace's equation,
-<!-- Eq: 2.25 -->
 $$
-\laplacian{V} = 0
+\laplacian{V} = 0 \label{2.25}
 $$
 
 We'll explore this equation more fully in Chapter 3.
@@ -518,3 +516,23 @@ V(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{q}{\gr}
 $$
 
 where \( \gr \), as always, is the distance from \( q \) to \( \vec{r} \) (Fig 2.32). Invoking the superposition principle, then, the potential of a collection of charges is
+
+
+## 2.4: Work and Energy in Electrostatics
+
+### 2.4.1: The Work it Takes to Move a Charge
+
+Suppose you have a stationary configuration of source charges, and you want to move a test charge Q from point a to point b (Fig. 2.39). _Question_: how much work will you have to do? At any point along the path, the electric force on Q is \( \vec{F} = Q \vec{E} \); the force you must exert, in opposition to the electric force, is \( -Q\vec{E} \). The work you do is therefore
+$$
+W = \int_{a}^{b} \vec{F} \cdot \dd{\vec{l}} =  \\
+ - Q \int_{a}^{b} \vec{E} \cdot \dd{\vec{l}} = \\
+ - Q[V(b) - V(a)]
+$$
+
+Notice that the answer is independent of the path you take from a to b; in mechanics, then, we would call the electrostatic force "conservative." Dividing through by Q, we have
+$$
+V(b) - V(a) = \frac{W}{Q} 
+$$
+
+In words, the potential difference between points 
+
