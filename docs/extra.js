@@ -3,9 +3,10 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function(){MathJax.InputJax.TeX
 MathJax.Hub.Config({
   TeX: {
     equationNumbers: { autoNumber: "all" },
+    // extensions: ["AMSsymbols.js", "AMScd.js", "AMSmath.js"],
     Macros: {
-        vec: ['{\\mathbf #1}', 1],
-        gr: '{\\mathscr r}'
+        gr: '{\\gamma}',
+        vec: ['{\\mathbf #1}', 1]
     }
   }
 });

@@ -206,7 +206,7 @@ I must interrupt the theoretical development at this point to show you the extra
 
 ---
 
-#### Ex 2.3
+#### Example 2.3
 
  > Find the field outside a uniformly charged solid sphere of radius R and total charge q
 
@@ -249,7 +249,7 @@ Although 2 and 3 technically require infinitely long cylinders, and planes exten
 
 ---
 
-#### Ex 2.4
+#### Example 2.4
 
  > A long cylinder (Fig 2.21) carries a charge density that is proportional to the distance from the axis: \( \rho = ks \) for some constant \( k \). Find the electric field inside this cylinder.
 
@@ -285,8 +285,95 @@ $$
 \vec{E} = \frac{1}{3\epsilon_0} k s^2 \hat{s}
 $$
 
+---
 
-TODO: Finish Section 2.2!
+#### Example 2.5
+
+ > An infinite plane carries a uniform surface charge \( \sigma \). Find its electric field.
+
+__Solution__
+Draw a Gaussian pillbox, extending equal distances above and below the plane (Fig. 2.22). Apply Gauss's law to this surface:
+$$
+\oint \vec{E} \cdot \dd{\vec{a}} = \frac{1}{\epsilon_0} Q_{enc}
+$$
+
+![Figure 2.22](img/2.22.png)
+
+In this case, \( Q = \sigma A \), where A is the area of the lid of the pillbox. By symmetry, \( \vec{E} \) points away from the plane (upward for points above, downward for points below). So the top and bottom surfaces yield
+$$
+\int \vec{E} \cdot \dd{\vec{a}} = 2 A |\vec{E}|,
+$$
+whereas the sides contribute nothing. Thus
+$$
+2 A | \vec{E} | = \frac{1}{\epsilon_0} \sigma A 
+$$
+
+or
+$$
+\vec{E} = \frac{\sigma}{2 \epsilon_0} \hat{n}
+$$
+
+where \( \hat{n} \) is a unit vector pointing away from the surface. In Prob 2.6, you obtained this same result by a much more laborious method.
+
+It seems surprising, at first, that the field of an infinite plane is _independent of how fara away you are_. What about the \( 1/r^2 \) in Coulomb's law? The point is that as you move farther and farther away from the plane, more and more charge comes into your "field of view," and this compensates for the diminishing influence of any particular piece. The electric field of a sphere falls off like \( 1/r^2 \); the electric field of an infinite line falls off like \( 1/r \); and the electric field of an infinite plane does not fall off at all (you cannot escape from an infinite plane).
+
+Although the direct use of Gauss's law to compute fields is limited to cases of spherical, cylindrical, and planar symmetry, we can put together combinations of objects posessing such symmetry, even though the arrangement as a whole is not symmetrical. For example, invoking the principle of superposition, we could find the field in the vicinity of two uniformly charged parallel cylinders, or a sphere near an infinite charged plane.
+
+---
+
+#### Example 2.6
+
+ > Two infinite parallel planes carry equal but opposite uniform charge densities \( \pm \sigma \) (Fig 2.23). Find the field in each of the three regions: (i) to the left of both, (ii) between them, (iii) to the right of both.
+
+![Figure 2.23](img/2.23.png)
+
+__Solution__
+
+The left plate produces a field \( (1/2 \epsilon_0)\sigma \), which points away from it (Fig. 2.24) to the left in region in (i) and to the right in regions (ii) and (iii). The right plate, being negatively charged, produces a field \( (1/2 \epsilon_0)\sigma \) which points _toward_ it - to the right in regions (i) and (ii) and to the left in region (iii). The two fields cancel in regions (i) and (iii); they conspire in region (ii). Conclusion: The field between the plates is \( \sigma / \epsilon_0 \), and points to the right; elsewhere it is zero.
+
+### 2.2.4: The Curl of E
+
+I'll calculate the curl of \( \vec{E} \) as I did the divergence in Sect 2.2.1, by studying first the simplest possible configuration: a point charge at the origin. In this case
+$$
+  \vec{E} = \frac{1}{4\pi \epsilon_0} \frac{q}{r^2} \hat{r}	
+  $$  
+Now, a glance at Fig 2.12 should convince you that the curl of this field has to be zero, but I suppose we ought to come up with something a little more rigorous than that. What if we calculate the line integral of this field from some point \( \vec{a} \) to some other point \( \vec{b} \) (Fig 2.29):
+$$
+\int_{\vec{a}}^{\vec{b}} \vec{E} \cdot \dd{\vec{l}}
+$$
+
+In spherical coordinates, \( \dd{\vec{l}} = \dd{r} \hat{r} + r \dd{\theta} \hat{\theta} + r \sin \theta \dd{\phi} \hat{\phi} \), so 
+$$
+\vec{E} \cdot \dd{\vec{l}} = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^2} \dd{r}
+$$
+
+![Figure 2.29](img/2.29.png)
+
+Therefore,
+$$
+\int_{\vec{a}}^{\vec{b}} \vec{E} \cdot \dd{\vec{l}} = \frac{1}{4 \pi \epsilon_0} \int_{a}^{b} \frac{q}{r^2} \dd{r} \\ 
+= \left.\frac{-1}{4 \pi \epsilon_0} \frac{q}{r} \right|_{r_a} ^{r_b} \\
+= \frac{1}{4 \pi \epsilon_0} \left( \frac{q}{r_a} - \frac{q}{r_b}  \right)
+$$
+The integral around a _closed_ path is evidently zero (for then \( r_a = r_b \) ):
+$$
+\oint \vec{E} \cdot \dd\vec{l} = 0 \label{2.19}
+$$
+and hence, applying Stokes' theorem
+$$
+\curl{\vec{E}} = 0 \label{2.20}
+$$
+
+Now, I proved eqs. \( \eqref{2.19} \) and \( \eqref{2.20} \) only for the field of a single point charge at the origin, but these results make no reference to what is, after all, a perfectly arbitrary choice of coordinates; they hold no matter where the charge is located. Moreover, if we have many charges, the principle of superposition states that the total field is a vector sum of their individual fields:
+$$
+ \vec{E} = \vec{E_1} + \vec{E_2} + \ldots
+ $$ 
+so
+$$
+\curl{\vec{E}} = \curl{(\vec{E_1} + \vec{E_2} + \ldots)} = (\curl{\vec{E_1}}) + (\curl{\vec{E_2}}) + \ldots = 0
+$$
+
+Thus, Eqs.  \( \eqref{2.19} \) and \( \eqref{2.20} \) hold for any _static_ charge distribution whatever.
 
 ## 2.3: Electric Potential
 
@@ -314,15 +401,15 @@ $$
 
 Now, the fundamental theorem for gradients states that
 $$
-V(\vec{b}) - V(\vec{a}) = \int_{\vec{a}} ^{\vec{b}} (\grad{V}) \cdot \dd{\vec{l}}
+V(\vec{b}) - V(\vec{a}) = \int_{\vec{a}} ^{\vec{b}} (\gr{V}) \cdot \dd{\vec{l}}
 $$
 so
 $$
-\int_{\vec{a}}^{\vec{b}} (\grad{V})\cdot \dd{\vec{l}} = - \int_{\vec{a}}^{\vec{b}} \vec{E}\cdot \dd{\vec{l}}
+\int_{\vec{a}}^{\vec{b}} (\gr{V})\cdot \dd{\vec{l}} = - \int_{\vec{a}}^{\vec{b}} \vec{E}\cdot \dd{\vec{l}}
 $$
 Since, finally, this is true for _any_ points __a__ and __b__, the integrands must be equal:
 $$
-\vec{E} = - \grad{V} \label{e-equals-grad-v}
+\vec{E} = - \gr{V} \label{e-equals-grad-v}
 $$
 
 Equation \( \eqref{e-equals-grad-v} \) is the differential version of \( \eqref{2.21} \); it says that the electric field is the gradient of a scalar potential, which is what we set out to prove.
@@ -333,7 +420,7 @@ Notice the subtle but crucial role played by path independence (or, equivalently
 
 __The name__. The word "potential" is a hideous misnomer because it inevitably reminds you of potential _energy_. This is particularly insidious, because there _is_ a connection between "potential" and "potential energy," as you will see in Sect 2.4. I'm sorry that it is impossible to escape this word. The best I can do is to insist once and for all that "potential" and "potential energy" are completely different terms and should, by all rights, have different names. Incidentially, a surface over which the potential is constant is called an __equipotential__.
 
-__Advantage of the potential formulation__. If you know V, you can easily get __E__ - just take the gradient: \( \vec{E} =- \grad{V} \). This is quite extraordinary when you stop to think about it, for __E__ is a _vector_ quantity (three components), but V is a __scalar__ (one component). How can one function possibly contain all the information that three independent functions carry? The answer is that the three components of __E__ are not really as independent as they look; in fact, they are explicitly interrelated by the very condition we started with,\( \nabla \times \vec{E} = 0 \). In terms of components,
+__Advantage of the potential formulation__. If you know V, you can easily get __E__ - just take the gradient: \( \vec{E} =- \gr{V} \). This is quite extraordinary when you stop to think about it, for __E__ is a _vector_ quantity (three components), but V is a __scalar__ (one component). How can one function possibly contain all the information that three independent functions carry? The answer is that the three components of __E__ are not really as independent as they look; in fact, they are explicitly interrelated by the very condition we started with,\( \nabla \times \vec{E} = 0 \). In terms of components,
 $$
 \pdv{E_x}{y} = \pdv{E_y}{x}, \qquad \pdv{E_z}{y} = \pdv{E_y}{z}, \qquad \pdv{E_x}{z} = \pdv{E_z}{x}
 $$
@@ -349,7 +436,7 @@ $$
 
 where K is the line integral of __E__ from the old reference point \( \mathscr{O} \) to the new one \( \mathscr{O}' \). Of course, adding a constant to V will not affect the potential _difference_ between two points, since the K's cancel out. Nor does the ambiguity affect the gradient of V:
 $$
-\grad{V'} = \grad{V} 
+\gr{V'} = \gr{V} 
 $$
 since the derivative of a constant is zero. That's why all such V's, differing only in their choice of reference point, correspond to the same field __E__
 
@@ -381,13 +468,13 @@ __Units of Potential__. In our units, force is measured in newtons and charge in
 
 We found in Sect 2.3.1 that the electric field can be written as the gradient of a scalar potential
 $$
-\vec{E} = - \grad{V}
+\vec{E} = - \gr{V}
 $$
 The question arises, what do the divergence and curl of __E__,
 $$
 \div{\vec{E}} = \frac{\rho}{\epsilon_0} \qquad \text{ and } \qquad \curl{\vec{E}} = 0
 $$
-look like, in terms of V? Well, \( \div{\vec{E}} = \div(-\grad{V}) = -\laplacian{V} \), so, apart from that persistent minus sign, the divergence of __E__ is the Laplacian of V. Gauss's law, then, says
+look like, in terms of V? Well, \( \div{\vec{E}} = \div(-\gr{V}) = -\laplacian{V} \), so, apart from that persistent minus sign, the divergence of __E__ is the Laplacian of V. Gauss's law, then, says
 <!-- Eq: 2.24 -->
 $$
 \laplacian{V} = -\frac{\rho}{\epsilon_0} 
@@ -403,10 +490,10 @@ We'll explore this equation more fully in Chapter 3.
 
 So much for Gauss's law. What about the curl law? This says that
 $$
-\curl{\vec{E}} = \curl(-\grad{V}) = 0
+\curl{\vec{E}} = \curl(-\gr{V}) = 0
 $$
 
-But that's no condition on V - curl of gradient is _always_ zero. Of course, we used the curl law to show that __E__ could be expressed as the gradient of a scalar, so it's not really surprising that this works out: \( \curl{\vec{E}} = 0 \) permits our definition of V; in return, \( \vec{E} = - \grad{V} \) guarantees \( \curl{\vec{E}} = 0 \). It only takes one differential equation (Poisson's) to determine V, because V is a scalar. For \( \vec{E} \) we needed two, the divergence and the curl.
+But that's no condition on V - curl of gradient is _always_ zero. Of course, we used the curl law to show that __E__ could be expressed as the gradient of a scalar, so it's not really surprising that this works out: \( \curl{\vec{E}} = 0 \) permits our definition of V; in return, \( \vec{E} = - \gr{V} \) guarantees \( \curl{\vec{E}} = 0 \). It only takes one differential equation (Poisson's) to determine V, because V is a scalar. For \( \vec{E} \) we needed two, the divergence and the curl.
 
 ### 2.3.4: The potential of a Localized Charge Distribution
 
@@ -423,4 +510,11 @@ V(r) = - \int_{\mathscr{O}} ^r \vec{E} \cdot \dd{\vec{l}} \\
  = \left.\frac{1}{4 \pi \epsilon_0} \frac{q}{r'} \right| ^r _{\infty} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r} 
 $$
 
-(You see here the advantage of using infinity for the reference point: it kills the lower limit on the integral.) Notice the sign of V; presumably the conventional minus sign in the definition was chosen in order to make the potential of a positive charge come out positive. It is useful to remember that regions of positive charge are potential 
+(You see here the advantage of using infinity for the reference point: it kills the lower limit on the integral.) Notice the sign of V; presumably the conventional minus sign in the definition was chosen in order to make the potential of a positive charge come out positive. It is useful to remember that regions of positive charge are potential "hills," and electric field points "downhill" from plus toward minus.
+
+In general, the potential of a point charge q is
+$$
+V(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{q}{\gr} 
+$$
+
+where \( \gr \), as always, is the distance from \( q \) to \( \vec{r} \) (Fig 2.32). Invoking the superposition principle, then, the potential of a collection of charges is

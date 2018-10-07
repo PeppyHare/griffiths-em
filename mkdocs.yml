@@ -7,7 +7,6 @@ nav:
 # Cool material theme: https://squidfunk.github.io/mkdocs-material/
 theme:
   name: 'material'
-  # custom_dir: 'mkdocs-material/material'
   font:
     text: 'Noto Serif'
     code: 'Roboto Mono'
@@ -21,7 +20,7 @@ theme:
   favicon: assets/images/favicon.png
   logo:
     icon: "\uE80C"
-  include_search_page: false
+  include_search_page: true
   search_index_only: true
   static_templates:
     - 404.html
@@ -36,7 +35,7 @@ repo_url: 'https://github.com/PeppyHare/griffiths-em'
 
 # This lets us render MathJax, the coolest thing since sliced bread!
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
   - extra.js
 markdown_extensions:
   - mdx_math

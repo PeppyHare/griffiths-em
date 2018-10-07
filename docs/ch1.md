@@ -56,3 +56,15 @@ coeptaeque, o prima, dimittit *venitis* numina liliaque. Hinc et tantis dextram
 patriumque oraque, tutos robore! Graios proturbat prior subversaque Aram probas
 qua **horrendaque artus**, aquis. Mihi opifex pumice ossa: priori fera; subit
 clam caudam casta, pietatis dominoque armiferae levati deoque.
+
+$$
+\mathscr{a} \\
+\mathscr{A} \\
+\mathcal{r} \\
+\mathscr{r} \\
+\mathbf{\gr} \\
+\gr \\
+r \\
+\rho \\
+\ni
+$$
