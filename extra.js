@@ -5,7 +5,7 @@ MathJax.Hub.Config({
     equationNumbers: { autoNumber: "all" },
     Macros: {
         vec: ['{\\mathbf #1}', 1],
-        gr: '{\\mathscr r}'
+        gr: '{\\gamma}'
     }
   }
 });
