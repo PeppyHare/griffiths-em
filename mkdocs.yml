@@ -3,6 +3,7 @@ nav:
     - Home: index.md
     - 1 - Vector Analysis: ch1.md
     - 2 - Electrostatics: ch2.md
+    - 3 - Potentials: ch3.md
     - Work in Progress: wip.md
 
 # Cool material theme: https://squidfunk.github.io/mkdocs-material/
