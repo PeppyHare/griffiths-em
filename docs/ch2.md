@@ -510,13 +510,97 @@ $$
 
 (You see here the advantage of using infinity for the reference point: it kills the lower limit on the integral.) Notice the sign of V; presumably the conventional minus sign in the definition was chosen in order to make the potential of a positive charge come out positive. It is useful to remember that regions of positive charge are potential "hills," and electric field points "downhill" from plus toward minus.
 
+![Figure 2.32](img/2.32.png)
+
 In general, the potential of a point charge q is
 $$
 V(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{q}{\gr} 
 $$
 
-where \( \gr \), as always, is the distance from \( q \) to \( \vec{r} \) (Fig 2.32). Invoking the superposition principle, then, the potential of a collection of charges is
+where \( \gr \), as always, is the distance from \( q \) to \( \vec{r} \) (Fig 2.32). Invoking the superposition principle, then, the potential of a collection of charges is 
+$$
+V(r) = \frac{1}{4\pi \epsilon_0} \sum_{i=1} ^n \frac{q_i}{\gr _i} 
+$$
+or, for a continuous distribution,
+$$
+V(r) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec{r}')}{\gr} \dd{\tau'} \label{2.29} 
+$$
 
+This is the equation we were looking for, telling us how to compute V when we know \( \rho \); it is, if you like, the "solution" to Poisson's equation, for a localized charge distribution. Compare \( \eqref{2.29} \) with the corresponding formula for the electric field in terms of \( \rho \):
+$$
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec{r'})}{\gr ^2} \hat{\gr} \dd{\tau'}
+$$
+
+The main point is that the pesky unit vector \( \hat{\gr} \) is gone, so there is no need to fuss with components. The potentials of line and surface charges are
+$$
+V = \frac{1}{4 \pi \epsilon_0} \int \frac{\lambda(\vec{r'})}{\gr} \dd{l'} \qquad \text{ and } \qquad V = \frac{1}{4 \pi \epsilon_0} \int \frac{\sigma(\vec{r'})}{\gr} \dd{a'}
+$$
+
+I should warn you that everything in this section is predicated on the assumption that the reference point is at infinity. This is hardly apparent in \( \eqref{2.29} \), but remember that we _got_ the equation from the potential of a point charge at the origin, \( (1/4 \pi \epsilon_0) (q / r) \), which is valid only when \( \mathscr{O} = \infty \). If you try to apply these formulas to one of those artificial problems in which the charge itself extends to infinity, the integral will diverge.
+
+### 2.3.5: Boundary Conditions
+
+In the typical electrostatic problem you are given a source charge distribution \( \rho \), and you want to find the electric field \( \vec{E} \) it produces. Unless the symmetry of the problem allows a solution by Gauss's law, it is generally to your advantage to calculate the potential first, as an intermediate step. These are the three fundamental quantities of electrostatics: \( \rho \), \( \vec{E} \), and \( V \). We have, in the course of our discussion, derived all six formulas interrelating them. These equations are neatly summarized in Fig. 2.35. We began with just two experimental observations: (1) the principle of superposition - a broad general rule applying to all electromagnetic forces, and (2) Coulomb's law - the fundamental law of electrostatics. From these, all else followed.
+
+![Figure 2.35](img/2.35.png)
+
+You may have noticed, in studying the exercises in this chapter, that the electric field always undergoes a discontinuity when you cross a surface charge \( \sigma \). In fact, it is a simple matter to find the _amount_ by which E changes at such a boundary. Suppose we draw a wafer-thin Gaussian pillbox, extending just barely over the edge in each direction (Fig. 2.36). Gauss's law says that
+$$
+\oint _{S} \vec{E} \cdot \dd{\vec{a}} = \frac{1}{\epsilon_0} Q_{enc} = \frac{1}{\epsilon_0} \sigma A
+$$
+
+![Figure 2.36](img/2.36.png)
+where A is the area of the pillbox lid. If \( \sigma \)  varies from point to point or the surface is curved, we can simply pick A to be extremely small. Now, the sides of the pillbox contribute nothing to the flux, in the limit as the thickness \( \epsilon \)  goes to zero, so we are left with 
+$$
+E_{above}^{\perp} - E_{below} ^{\perp} = \frac{1}{\epsilon_0} \sigma \label{2.31}
+$$
+where \( E_{above}^{\perp} \) denotes the component of \( \vec{E} \) that is perpendicular to the surface immediately above, and \(  E_{below} ^{\perp} \) is the same, only just below the surface. For consistency, let "upward" be the positive direction for both. _Conclusion: the normal component of \( \vec{E} \) is discontinuous by an amount \( \sigma / \epsilon_0 \) at any boundary._ In particular, where there is _no_ surface charge, \( \vec{E}^{\perp} \) is continuous, as for instance at the surface of a uniformly charged solid sphere.
+
+The _tangential_ component of \( \vec{E} \), by contrast, is always continuous. For if we apply \( \eqref{2.19} \),
+$$
+\oint \vec{E} \cdot \dd{\vec{l}} = 0
+$$
+to the thin rectangular loop of Fig 2.37, the ends give nothing (as \( \epsilon \rightarrow 0 \)), and the sides give \( (E_{above} ^{\parallel} l - E_{below} ^{\parallel} l) \), so
+$$
+\vec{E}_{above} ^{\parallel} = \vec{E}_{below} ^{\parallel} \label{2.32}
+$$
+where \( \vec{E}^{\parallel} \) stands for the components of \( \vec{E} \) parallel to the surface.
+
+![Figure 2.36](img/2.36.png)
+
+The boundary conditions on \( \vec{E} \) (Eqs. \( \eqref{2.31} \) and \( \eqref{2.32} \)) can be combined into a single formula:
+$$
+\vec{E}_{above} - \vec{E}_{below} = \frac{\sigma}{\epsilon_0} \hat{n}
+$$
+where \( \hat{n} \) is a unit vector perpendicular to the surface, pointing from "below" to "above."
+
+![Figure 2.37](img/2.37.png)
+![Figure 2.38](img/2.38.png)
+
+The potential, meanwhile, is continuous across any boundary (Fig 2.38), since
+$$
+V_{above} - V_{below} = -\int_{a}^{b} \vec{E} \cdot \dd{\vec{l}}
+$$
+as the path length shrinks to zero, so too does the integral
+$$
+V_{above} = V_{below} \label{2.34}
+$$
+
+However, the _gradient_ of V inherits the discontinuity in \( \vec{E} \), since \( \vec{E} - \grad{V} \), so
+$$
+\grad{V}_{above} - \grad{V}_{below} = - \frac{\sigma}{\epsilon_0} \hat{n}
+$$
+or more conveniently
+$$
+\pdv{V_{above}}{n} - \pdv{V_{below}}{n} = - \frac{1}{\epsilon_0} \sigma \label{2.36}
+$$
+where
+$$
+\pdv{V}{n} = \grad{V} \cdot \hat{n}
+$$
+denotes the normal derivative of V (that is, the rate of change in the direction perpendicular to the surface).
+
+Please note that these boundary conditions relate the fields and potentials _just_ above and _just_ below the surface. For example, the derivatives in \( \eqref{2.36} \) are the limiting values as we approach the surface from either side. 
 
 ## 2.4: Work and Energy in Electrostatics
 
@@ -524,15 +608,65 @@ where \( \gr \), as always, is the distance from \( q \) to \( \vec{r} \) (Fig 2
 
 Suppose you have a stationary configuration of source charges, and you want to move a test charge Q from point a to point b (Fig. 2.39). _Question_: how much work will you have to do? At any point along the path, the electric force on Q is \( \vec{F} = Q \vec{E} \); the force you must exert, in opposition to the electric force, is \( -Q\vec{E} \). The work you do is therefore
 $$
-W = \int_{a}^{b} \vec{F} \cdot \dd{\vec{l}} =  \\
- - Q \int_{a}^{b} \vec{E} \cdot \dd{\vec{l}} = \\
- - Q[V(b) - V(a)]
+W = \int_{a}^{b} \vec{F} \cdot \dd{\vec{l}} \\
+= - Q \int_{a}^{b} \vec{E} \cdot \dd{\vec{l}}  \\
+= - Q[V(b) - V(a)]
 $$
+
+![Figure 2.39](img/2.39.png)
 
 Notice that the answer is independent of the path you take from a to b; in mechanics, then, we would call the electrostatic force "conservative." Dividing through by Q, we have
 $$
 V(b) - V(a) = \frac{W}{Q} 
 $$
 
-In words, the potential difference between points 
+In words, the potential difference between points a and b is equal to the work per unit charge required to carry a particle from a to b. In particular, if you want to bring Q in from far away and stick it at point r, the work you must do is
+$$
+W = Q[V(\vec{r}) - V(\infty)],
+$$
+so if you have set the reference point at infinity,
+$$
+W = Q V(\vec{r}) \label{2.39}
+$$
+In this sense, potential is potential _energy_ (the work it takes to create a system) _per unit charge_ (just as the field is force per unit charge).
+
+### 2.4.2: The Energy of a Point Charge Distribution
+
+How much work would it take to assemble an entire collection of point charges? Imagine bringing in the charges, one by one, from far away (Fig 2.40). The first charge \( q_1 \) takes _no_ work, since there is no field to fight against. Now bring in \( q_2 \). According to \( \eqref{2.39} \) this will cost you \( q_2 V_1(\vec{r}_2) \), where \( V_1 \) is the potential due to \( q_1 \) , and \( \vec{r}_2 \) is the place we're putting \( q_2 \):
+$$
+W_2 = \frac{1}{4 \pi \epsilon_0} q_2 \left( \frac{q_1}{\gr_{12}}  \right)
+$$
+(\( \gr_{12} \) is the distance between \( q_1 \) and \( q_2 \), once they are in position). As you bring in each charge, nail it down in its final location, so it doesn't move when you bring in the next charge. Now bring in \( q_3 \). This requires work \( q_3 V_{1,2}(\vec{r}_3) \), where \( V_{1,2} \) is the potential due to charges \( q_1 \) and \( q_2 \), namely \( (1 / 4 \pi \epsilon_0) (q_1 / \gr_{13} + q_2 / \gr_{23} ) \). Thus
+$$
+W_3 = \frac{1}{4 \pi \epsilon_0} q_3 \left( \frac{q_1}{\gr_{13}} + \frac{q_2}{\gr_{23}}   \right)
+$$
+Similarly, the extra work to bring in \( q_4 \)  will be
+$$
+W_4 = \frac{1}{4 \pi \epsilon_0} q_4 \left( \frac{q_1}{\gr_{14}} + \frac{q_2}{\gr_{24}} + \frac{q_3}{\gr_{34}} \right)
+$$
+The _total_ work necessary to assemble the first four charges, then, is
+$$
+W = \frac{1}{4 \pi \epsilon_0} \left( \frac{q_1 q_2}{\gr_{12}} + \frac{q_1 q_3}{\gr_{13}} + \frac{q_1 q_4}{\gr_{14}} + \frac{q_2 q_3}{\gr_{23}} + \frac{q_2 q_4}{\gr_{24}} + \frac{q_3 q_4}{\gr_{34}} \right)
+$$
+
+You see the general rule: Take the product of each pair of charges, divide by their separation distance, and add it all up:
+$$
+W = \frac{1}{4 \pi \epsilon_0} \sum_{i = 1} ^{n} \sum_{j > i} ^n \frac{q_i q_j}{\gr_{ij}} 
+$$
+The stipulation \( j > i \) is to remind you not to count the same pair twice. A nicer way to accomplish this is _intentionally_ to count each pair twice, and then divide by 2:
+$$
+W = \frac{1}{8 \pi \epsilon_0} \sum_{i = 1} ^n \sum_{j \neq i} \frac{q_i q_j}{\gr_{ij}}  
+$$
+(we must still avoid \( i = j \), of course). Notice that in this form the answer plainly does not depend on the _order_ in which you assemble the charges, since every pair occurs in the sum.
+
+Finally, let's pull out the factor \( q_i \):
+$$
+W = \frac{1}{2} \sum_{i = 1}^n q_i \left( \sum_{j \neq i} ^n \frac{1}{4 \pi \epsilon_0} \frac{q_j}{\gr_{ij}}  \right)
+$$
+
+The term in parentheses is the potential at point \( \vec{r_i} \) (the position of \( q_i \) ) due to all the _other_ charges - all of them, now, not just the ones that were present at some stage during the assembly. Thus,
+$$
+W = \frac{1}{2} \sum_{i = 1} ^n q_i V(\vec{r_i}) \label{2.42}
+$$
+That's how much work it takes to assemble a configuration of point charges; it's also the amount of work you'd get back if you dismantled the system. In the meantime, it represents energy stored in the configuration ("potential" energy, if you insist, though for obvious reasons I prefer to avoid that word in this context).
 
