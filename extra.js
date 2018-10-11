@@ -10,7 +10,9 @@ MathJax.Hub.Config({
     }
   }
 });
+
 // Use this to scroll to the end of the page after MathJax has finished rendering all equations
-MathJax.Hub.Register.StartupHook("End", function() {
-    window.scrollTo(0,document.body.scrollHeight);
-});
+
+// MathJax.Hub.Register.StartupHook("End", function() {
+//     window.scrollTo(0,document.body.scrollHeight);
+// });

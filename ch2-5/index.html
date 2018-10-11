@@ -1,0 +1,823 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>2.5 - Conductors - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Noto Serif","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#25-conductors" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                My Docs
+              </span>
+              <span class="md-header-nav__topic">
+                2.5 - Conductors
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      1 - Vector Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        1 - Vector Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-1/" title="1.1 - Vector Algebra" class="md-nav__link">
+      1.1 - Vector Algebra
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      2 - Electrostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        2 - Electrostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-1/" title="2.1 - The Electric Field" class="md-nav__link">
+      2.1 - The Electric Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-2/" title="2.2 - Divergence and Curl of Electrostatic Fields" class="md-nav__link">
+      2.2 - Divergence and Curl of Electrostatic Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-3/" title="2.3 - Electric Potential" class="md-nav__link">
+      2.3 - Electric Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-4/" title="2.4 - Work and Energy in Electrostatics" class="md-nav__link">
+      2.4 - Work and Energy in Electrostatics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        2.5 - Conductors
+      </label>
+    
+    <a href="./" title="2.5 - Conductors" class="md-nav__link md-nav__link--active">
+      2.5 - Conductors
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#251-basic-properties" title="2.5.1: Basic Properties" class="md-nav__link">
+    2.5.1: Basic Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#252-induced-charges" title="2.5.2: Induced Charges" class="md-nav__link">
+    2.5.2: Induced Charges
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-210" title="Example 2.10" class="md-nav__link">
+    Example 2.10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#253-surface-charge-and-the-force-on-a-conductor" title="2.5.3: Surface Charge and the Force on a Conductor" class="md-nav__link">
+    2.5.3: Surface Charge and the Force on a Conductor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#254-capacitors" title="2.5.4: Capacitors" class="md-nav__link">
+    2.5.4: Capacitors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-211" title="Example 2.11" class="md-nav__link">
+    Example 2.11
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-212" title="Example 2.12" class="md-nav__link">
+    Example 2.12
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      3 - Potentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        3 - Potentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-1/" title="3.1 - Laplace's Equation" class="md-nav__link">
+      3.1 - Laplace's Equation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#251-basic-properties" title="2.5.1: Basic Properties" class="md-nav__link">
+    2.5.1: Basic Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#252-induced-charges" title="2.5.2: Induced Charges" class="md-nav__link">
+    2.5.2: Induced Charges
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-210" title="Example 2.10" class="md-nav__link">
+    Example 2.10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#253-surface-charge-and-the-force-on-a-conductor" title="2.5.3: Surface Charge and the Force on a Conductor" class="md-nav__link">
+    2.5.3: Surface Charge and the Force on a Conductor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#254-capacitors" title="2.5.4: Capacitors" class="md-nav__link">
+    2.5.4: Capacitors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-211" title="Example 2.11" class="md-nav__link">
+    Example 2.11
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-212" title="Example 2.12" class="md-nav__link">
+    Example 2.12
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/PeppyHare/griffiths-em/edit/master/docs/ch2-5.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="25-conductors">2.5: Conductors</h1>
+<h2 id="251-basic-properties">2.5.1: Basic Properties</h2>
+<p>In an <em>insulator</em>, such as glass or rubber, each electron is on a short leash, attached to a particular atom. In a metallic <em>conductor</em>, by contrast, one or more electrons per atom are free to roam. (In liquid conductors such as salt water, it is ions that do the moving). A <em>perfect</em> conductor would contain an unlimited supply of free charges. In real life there are no perfect conductors, but metals come pretty close, for most purposes.</p>
+<p>From this definition, the basic electrostatic properties of ideal conductors immediately follow:</p>
+<p><strong>(i) E = 0 inside a conductor</strong>. Why? Because if there were any field, those free charges would move, and it wouldn't be <em>electrostatics</em> any more. Hmm... that's hardly a satisfactory explanation; maybe all it proves is that you can't have electrostatics when conductors are present. We had better examine what happens when you put a conductor into an external electric field <script type="math/tex"> \vec{E_0} </script> (Fig. 2.42). Initially, the field will drive any free positive charges to the right, and negative ones to the left. (In practice, it's the negative charges - electrons - that do the moving, but when they depart, the right side is left with a net positive charge - the stationary nuclei - so it doesn't really matter which charges move; the effect is the same). When they come to the edge of the material, the charges pile up: plus on the right side, minus on the left. Now, these <strong>induced charges</strong> produce a field of their own, <script type="math/tex"> \vec{E_1} </script>, which, as you can see from the figure, is in the opposite direction to <script type="math/tex"> \vec{E_0} </script>. That's the crucial point, for it means that the field of the induced charges tends to cancel the original field. Charge will continue to flow until this cancellation is complete, and the resultant field inside the conductor is precisely zero. The whole process is practically instantaneous.</p>
+<p><img alt="Figure 2.42" src="../img/2.42.png" /></p>
+<p><strong>(ii) <script type="math/tex"> \rho = 0 </script> inside a conductor.</strong> This follows from Gauss's law: if E is zero, so also is <script type="math/tex"> \rho </script>. There is still charge around, but exactly as much plus as minus, so the net charge density in the interior is zero.</p>
+<p><strong>(iii) Any net charge resides on the surface</strong>. That's the only place left.</p>
+<p><strong>(iv) A conductor is an equipotential</strong>. For if a and b are any two points within (or at the surface of) a given conductor, <script type="math/tex"> V(b) - V(a) = - \int _{a} ^{b} \vec{E} \cdot \dd{\vec{l}} = 0 </script>, and hence <script type="math/tex"> V(a) = V(b) </script>.</p>
+<p><strong>(v) E is perpendicular to the surface, just outside a conductor.</strong> Otherwise, as in (i), charge will immediately flow around the surface until it kills off the tangential component (Fig. 2.43). (Perpendicular to the surface, charge cannot flow, of course, since it is confined to the conducting object.)</p>
+<p><img alt="Figure 2.43" src="../img/2.43.png" /></p>
+<p>I think it is astonishing that the charge on a conductor flows to the surface. Because of their mutual repulsion, the charges naturally spread out as much as possible, but for <em>all</em> of them to go to the surface seems like a waste of the interior space. Surely we could do better, from the point of view of making each charge as possible from its neighbors, to sprinkle <em>some</em> of them throughout the volume. Well, it simply is not so. You do best to put all the charge on the surface, and this is true regardless of the size or shape of the conductor.</p>
+<p>The problem can also be phrased in terms of energy. Like any other free dynamical system, the charge on a conductor will seek the configuration that minimizes its potential energy. What property (iii) asserts is that the electrostatic energy of a solid object (with specified shape and total charge) is a minimum when that charge is spread over the surface. For instance, the energy of a sphere is <script type="math/tex"> (1 / 8 \pi \epsilon_0)(q^2 / R) </script> if the charge is uniformly distributed over the surface, as we found in Ex 2.9, but it is greater <script type="math/tex"> (3/20 \pi \epsilon_0)(q^2 / R) </script> if the charge is uniformly distributed throughout the volume (Prob. 2.34). </p>
+<h2 id="252-induced-charges">2.5.2: Induced Charges</h2>
+<p>If you hold a charge +q near an uncharged conductor (Fig 2.44), the two will attract one another. The reason for this is that q will pull minus charges over to the near side and repel plus charges to the far side (Another way to think of it is that the charge moves around in such a way as to kill off the field of q for points inside the conductor, where the total field must be zero.) Since the negative induced charge is closer to q, there is a net force of attraction. (In chapter 3 we will calculate this force explicitly, for the case of a spherical conductor.)</p>
+<p>When I speak of the field, charge, or potential "inside" a conductor, I mean in the "meat" of the conductor. If there is some hollow cavity in the conductor, and within that cavity you put some charge, then the field in the cavity will not be zero. But in a remarkable way the cavity and its contents are electrically isolated from the outside world by the surrounding conductor (Fig. 2.45). No external fields penetrate the conductor; they are canceled at the outer surface by the induced charge there. Similarly, the field due to charges within the cavity is canceled, for all exterior points, by the induced charge on the inner surface. However, the compensating charge left over on the <em>outer</em> surface of the conductor effectively "communicates" the presence of q to the outside world. The total charge induced on the cavity wall is equal and opposite to the charge inside, for if we surround the cavity with a Gaussian surface, all points of which are in the conductor (Fig 2.45), <script type="math/tex"> \oint \vec{E} \cdot \dd{\vec{a}} = 0 </script>, and hence (by Gauss's law) the net enclosed charge must be zero. But <script type="math/tex"> Q_{enc} = q + q_{induced} </script>, so <script type="math/tex"> q_{induced} = - q </script>. Then if the conductor as a whole is electrically neutral, there must be a charge +q on its outer surface.</p>
+<p><img alt="Figure 2.44" src="../img/2.44.png" /></p>
+<hr />
+<h4 id="example-210">Example 2.10</h4>
+<blockquote>
+<p>An uncharged spherical conductor centered at the origin has a cavity of some weird shape carved out of it (Fig. 2.46). Somewhere within the cavity is a charge q. Question: What is the field outside the sphere?</p>
+</blockquote>
+<p><img alt="Figure 2.46" src="../img/2.46.png" /></p>
+<p><strong>Solution</strong> 
+At first glance, it would appear that the answer depends on the shape of the cavity and the location of the charge. But that's wrong: the answer is
+<script type="math/tex; mode=display">
+\vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r}
+</script>
+</p>
+<p>regardless. The conductor conceals from us all information concerning the nature of the cavity, revealing only the total charge it contains. How can this be? Well, the charge +q induces an opposite charge -q on the wall of the cavity, which distributes itself in such a way that its field cancels that of q, for all points exterior to the cavity. Since the conductor carries no net charge, this leaves +q to distribute itself uniformly over the surface of the sphere. (It's <em>uniform</em> because the asymmetrical influence of the point charge +q is negated by that of the induced charge -q on the inner surface.) For points outside the sphere, then, the only thing that survives is the field of the leftover +q, uniformly distributed over the outer surface.</p>
+<p>It may occur to you that in one respect this argument is open to challenge: There are actually <em>three</em> fields at work here: <script type="math/tex"> \vec{E_q}, \vec{E_{induced}} </script>, and <script type="math/tex"> \vec{E_{leftover}} </script>. All we know for certain is that the sum of the three is zero inside the conductor, yet I claimed that the first two alone cancel, while the third is separately zero there. Moreover, even if the first two cancel within the conductor, who is to say they still cancel for points outside? They do not, after all, cancel for points inside the cavity. I cannot give you a completely satisfactory answer at the moment, but this much at least is true: there <em>exists</em> a way of distributing -q over the inner surface so as to cancel the field of q at all exterior points. For that same cavity could have been carved out of a <em>huge</em> spherical conductor with a radius of 27 miles or light years or whatever. In that case, the leftover +q on the outer surface is simply too far away to produce a significant field, and the other two fields would have to accomplish the cancellation by themselves. So we know they can do it... but are we sure they <em>choose</em> to? Perhaps for small spheres nature prefers some complicated three-way cancellation? Nope: As we'll see in the uniqueness theorems of Chapter 3, electrostatics is very stingy with its options; there is always precisely one way - no more - of distributing the charge on a conductor so as to make the field inside zero. Having found a possible way, we are guaranteed that no alternative exists, even in principle.  </p>
+<hr />
+<p>If a cavity surrounded by conducting material is itself empty of charge, then the field within the cavity is zero. For any field line would have to begin and end on the cavity wall, going from a plus charge to a minus charge (Fig 2.47). Letting that field line be part of a closed loop, the rest of which is entirely inside the conductor (where E = 0), the integral <script type="math/tex"> \oint \vec{E} \cdot \dd{\vec{l}} </script> is distinctly <em>positive</em>, in violation of Eq. 2.19. It follows that <script type="math/tex"> E = 0 </script> within an empty cavity, and there is in vact no charge on the surface of the cavity. (This is why you are relatively safe inside a metal car during a thunderstorm - you may get cooked, if lightning strikes, but you will not be electrocuted. The same principle applies to the placement of sensitive apparatus inside a grounded <strong>Faraday cage</strong>, to shield out stray electric fields. In practice, the enclosure doesn't even have to be solid conductor - chicken wire will often suffice.)</p>
+<p><img alt="Figure 2.47" src="../img/2.47.png" /></p>
+<h2 id="253-surface-charge-and-the-force-on-a-conductor">2.5.3: Surface Charge and the Force on a Conductor</h2>
+<p>Because the field inside a conductor is zero, boundary condition Eq. 2.33 requires that the field immediately outside is
+<script type="math/tex; mode=display">
+ \vec{E} = \frac{\sigma}{\epsilon_0} \hat{n} \label{2.48} \tag{2.48}
+ </script>
+</p>
+<p>consistent with our earlier conclusion that the field is normal to the surface. In terms of potential, Eq. 2.36 yields
+<script type="math/tex; mode=display">
+\sigma = - \epsilon_0 \pdv{V}{n} \label{2.49} \tag{2.49}
+</script>
+These equations enable you to calculate the surface charge on a conductor, if you can determine <script type="math/tex"> \vec{E} </script> or <script type="math/tex"> V </script>; we shall use them frequently in the next chapter.</p>
+<p>In the presence of an electric field, a surface charge will experience a force; the force per unit area, <script type="math/tex"> \vec{f} </script>, is <script type="math/tex"> \sigma \vec{E} </script>. But there's a problem here, for the electric field is discontinuous at a surface charge, so what are we supposed to use: <script type="math/tex"> \vec{E}_{above}, \vec{E}_{below} </script>, or something in between? The answer is that we should use the <em>average</em> of the two
+<script type="math/tex; mode=display">
+ \vec{f} = \sigma \vec{E}_{average} = \frac{1}{2} \sigma (\vec{E}_{above} + \vec{E}_{below}) \label{2.50} \tag{2.50}
+</script>
+Why the average? The reason is very simple, thought the telling makes it sound complicated: Let's focus our attention on a tiny patch of surface surrounding the point in question (Fig. 2.50). Make it small enough so it is essentially flat and the surface in question is essentially constant. The total field consists of two parts - that attributable to the patch itself, and that due to everything else (other regions of the surface, as well as any external sources that may be present)
+<script type="math/tex; mode=display">
+\vec{E} = \vec{E}_{patch} + \vec{E}_{other}
+</script>
+Now, the patch cannot exert a force on itself, any more than you can lift yourself by standing in a basket and pulling up on the handles. The force on the patch, then, is exclusively due to <script type="math/tex"> \vec{E}_{other} </script>, and this suffers no discontinuity (if we removed the patch, the field in the "hole" would be perfectly smooth). The discontinuity is due entirely to the charge on the patch, which puts out a field <script type="math/tex"> (\sigma / 2 \epsilon_0) </script> on either side, pointing away from the surface. Thus,
+<script type="math/tex; mode=display">
+ \vec{E}_{above} = \vec{E}_{other} + \frac{\sigma}{2 \epsilon_0} \hat{n} \\
+ \vec{E}_{below} = \vec{E}_{other} - \frac{\sigma}{2 \epsilon_0} \hat{n} \\
+ </script> 
+and hence
+<script type="math/tex; mode=display">
+\vec{E}_{other} = \frac{1}{2} (\vec{E}_{above} + \vec{E}_{below}) = \vec{E}_{average}
+</script>
+Averaging is really just a device for removing the contribution of the patch itself.</p>
+<p>That argument applies to any surface charge; in the particular case of a conductor, the field is zero inside and <script type="math/tex"> (\sigma / \epsilon_0)\hat{n} </script> outside (<script type="math/tex"> \eqref{2.48} </script>, so the average is <script type="math/tex"> (\sigma / 2 \epsilon_0) \hat{n} </script>, and the force per unit area is
+<script type="math/tex; mode=display">
+ f = \frac{1}{2 \epsilon_0} \sigma ^2 \hat{n} \label{2.51} \tag{2.51}
+ </script> 
+This amounts to an outward <strong>electrostatic pressure</strong> on the surface, tending to draw the conductor into the field, regardless of the sign of <script type="math/tex"> \sigma </script>. Expressing the pressure in terms of the field just outside the surface
+<script type="math/tex; mode=display">
+ P = \frac{\epsilon_0}{2} E^2
+ </script>
+</p>
+<h2 id="254-capacitors">2.5.4: Capacitors</h2>
+<p><img alt="Figure 2.51" src="../img/2.51.png" /></p>
+<p>Suppose we have two conductors, and we put charge +Q on one and -Q on the other (Fig 2.51). Since V is constant over a conductor, we can speak unambiguously of the potential difference between them:
+<script type="math/tex; mode=display">
+V = V_{+} - V_{-} = - \int_{(-)}^{(+)} \vec{E} \cdot \dd{\vec{l}}
+</script>
+We don't know how the charge distributes itself over the two conductors, and calculating the field would be a nightmare, if their shapes are complicated, but this much we do know: <script type="math/tex"> \vec{E} </script> is proportional to <script type="math/tex"> Q </script>. For <script type="math/tex"> \vec{E} </script> is given by Coulomb's law:
+<script type="math/tex; mode=display">
+\vec{E} = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho}{\gr^2} \hat{\gr} \dd{\tau}
+</script>
+so if you double <script type="math/tex"> \rho </script>, you double <script type="math/tex"> \vec{E} </script>. Wait a minute! How do we know that doubling Q (and also -Q) simply doubles <script type="math/tex"> \rho </script>? Maybe the charge moves around into a completely different configuration, quadrupling <script type="math/tex"> \rho </script> in some places and halving it in others, just so the total charge on the conductor is doubled. The fact is that this concern is unwarranted - doubling Q <em>does</em> double <script type="math/tex"> \rho </script>  everywhere; it doesn't shift charge around. The proof will come in Chapter 3; for now you'll have to trust me.</p>
+<p>Since <script type="math/tex"> \vec{E} </script> is proportional to Q, so also is V. The constant of proportionality is called the <strong>capacitance</strong> of the arrangement
+<script type="math/tex; mode=display">
+C \equiv \frac{Q}{V}  \label{2.53} \tag{2.53}
+</script>
+Capacitance is a purely geometrical quantity, determined by the sizes, shapes, and separation of the two conductors. In SI units, C is measured in <em>farads</em> (F); a farad is a coulomb-per-volt. Actually this turns out to be inconveniently large; more practical units are the microfarad (<script type="math/tex"> 10^{-6} F </script>) and the picofarad (<script type="math/tex"> 10^{-12} F </script>)</p>
+<p>Notice that V is, by definition, the potential of the positive conductor less that of the negative one; likewise, Q is the charge of the positive conductor. Accordingly, capacitance is an intrinsically positive quantity. By the way, you will occasionally hear someone speak of the capacitance of a single conductor. In this case the "second conductor" is an imaginary spherical shell of infinite radius surrounding the one conductor. It contributes nothing to the field, so the capacitance is given by <script type="math/tex"> \eqref{2.53} </script>, where V is the potential with infinity as the reference point.</p>
+<hr />
+<h4 id="example-211">Example 2.11</h4>
+<div class="admonition question">
+<p class="admonition-title">Find the capacitance of a parallel-plate capacitor consisting of two metal surfaces of area A held a distance d apart (Fig. 2.52)</p>
+<p><img alt="Figure 2.52" src="../img/2.52.png" /></p>
+<p><strong>Solution</strong>
+If we put +Q on the top and -Q on the bottom, they will spread out uniformly over the two surfaces, provided the area is reasonably large and the separation small. The surface charge density, then, is <script type="math/tex"> \sigma = Q / A </script> on the top plate, and so the field, according to Ex. 2.6, is <script type="math/tex"> (1 / \epsilon_0) Q / A </script>. The potential difference between the plates is therefore
+<script type="math/tex; mode=display">
+V = \frac{Q}{A \epsilon_0} d
+</script>
+and hence
+<script type="math/tex; mode=display">
+C = \frac{A \epsilon_0}{d} \label{2.54} \tag{2.54}
+</script>
+If, for instance, the plates are square with sides 1 cm long, and they are held 1 mm apart, then the capacitance is <script type="math/tex"> 9 \times 10^{-13} F </script>
+</p>
+</div>
+<hr />
+<h4 id="example-212">Example 2.12</h4>
+<div class="admonition question">
+<p class="admonition-title">Find the capacitance of two concentric spherical metal shells, with radii a and b.</p>
+<p><strong>Solution</strong>
+Place charge +Q on the inner sphere, and -Q on the outer one. The field between the spheres is
+<script type="math/tex; mode=display">
+\vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{Q}{r^2} \vec{r}
+</script>
+so the potential difference between them is
+<script type="math/tex; mode=display">
+V = - \int_{b}^{a} \vec{E} \cdot \dd{\vec{l}} = - \frac{Q}{4 \pi \epsilon_0} \int_{b}^a \frac{1}{r^2} \dd{r} = \frac{Q}{4 \pi \epsilon_0} \left( \frac{1}{a} - \frac{1}{b}   \right)
+</script>
+As promised, V is proportional to Q; the capacitance is
+<script type="math/tex; mode=display">
+C = \frac{Q}{V} = 4 \pi \epsilon_0 \frac{ab}{(b - a)} 
+</script>
+</p>
+</div>
+<hr />
+<p>To "charge up" a capacitor, you have to remove electrons from the positive plate and carry them to the negative plate. In doing so, you fight against the electric field, which is pulling them back toward the positive conductor and pushing them away from the negative one. How much work does it take, then, to charge the capacitor up to a final amount <script type="math/tex"> Q </script>? Suppose that at some intermediate stage in the process the charge on the positive plate is <script type="math/tex"> q </script>, so that the potential difference is <script type="math/tex"> q / C </script>. According to Eq. 2.38, the work you must do to transport the next piece of charge <script type="math/tex"> dq </script> is
+<script type="math/tex; mode=display">
+\dd{W} = \left( \frac{q}{C} \right) \dd{q}
+</script>
+The total work necessary, then, to go from <script type="math/tex"> q = 0 </script> to <script type="math/tex"> q = Q </script>, is
+<script type="math/tex; mode=display">
+W = \int_{0} ^Q \left( \frac{q}{C} \dd{q} \right) = \frac{1}{2} \frac{Q^2}{C} 
+</script>
+or, since <script type="math/tex"> Q = CV </script>,
+<script type="math/tex; mode=display">
+ W = \frac{1}{2} C V^2 \label{2.55} \tag{2.55}
+ </script> 
+where <script type="math/tex"> V </script> is the final potential of the capacitor.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ch2-4/" title="2.4 - Work and Energy in Electrostatics" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                2.4 - Work and Energy in Electrostatics
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../ch3-1/" title="3.1 - Laplace's Equation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                3.1 - Laplace's Equation
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../extra.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

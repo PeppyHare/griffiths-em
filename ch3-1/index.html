@@ -252,10 +252,34 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../ch1/" title="1 - Vector Analysis" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
       1 - Vector Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        1 - Vector Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-1/" title="1.1 - Vector Algebra" class="md-nav__link">
+      1.1 - Vector Algebra
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -264,10 +288,82 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../ch2/" title="2 - Electrostatics" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
       2 - Electrostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        2 - Electrostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-1/" title="2.1 - The Electric Field" class="md-nav__link">
+      2.1 - The Electric Field
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-2/" title="2.2 - Divergence and Curl of Electrostatic Fields" class="md-nav__link">
+      2.2 - Divergence and Curl of Electrostatic Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-3/" title="2.3 - Electric Potential" class="md-nav__link">
+      2.3 - Electric Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-4/" title="2.4 - Work and Energy in Electrostatics" class="md-nav__link">
+      2.4 - Work and Energy in Electrostatics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-5/" title="2.5 - Conductors" class="md-nav__link">
+      2.5 - Conductors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -359,6 +455,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#316-conductors-and-the-second-uniqueness-theorem" title="3.1.6: Conductors and the Second Uniqueness Theorem" class="md-nav__link">
+    3.1.6: Conductors and the Second Uniqueness Theorem
+  </a>
+  
+</li>
+      
       
       
       
@@ -372,18 +475,6 @@
         
       </ul>
     </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../wip/" title="Work in Progress" class="md-nav__link">
-      Work in Progress
-    </a>
   </li>
 
     
@@ -438,6 +529,13 @@
         <li class="md-nav__item">
   <a href="#315-boundary-conditions-and-uniqueness-theorems" title="3.1.5: Boundary Conditions and Uniqueness Theorems" class="md-nav__link">
     3.1.5: Boundary Conditions and Uniqueness Theorems
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#316-conductors-and-the-second-uniqueness-theorem" title="3.1.6: Conductors and the Second Uniqueness Theorem" class="md-nav__link">
+    3.1.6: Conductors and the Second Uniqueness Theorem
   </a>
   
 </li>
@@ -608,6 +706,22 @@ V_1 = V_2
 The potential on the cavity wall is some constant <script type="math/tex"> V_0 </script> (that's item (iv) in Sect. 2.5.1), so the potential inside is a function that satisfies Laplace's equation and has the constant value <script type="math/tex"> V_0 </script> at the boundary. It doesn't take a genius to think of <em>one</em> solution to this problem: <script type="math/tex"> V = V_0 </script> everywhere. The uniqueness theorem guarantees that this is the <em>only</em> solution. (It follows that the field inside an empty cavity is zero - the same result we found in Sect. 2.5.2 on rather different grounds.)</p>
 </div>
 <p>The uniqueness theorem is a license to your imagination. It doesn't matter how you come by your solution; if (a) it satisfies Laplace's equation and (b) it has the correct value on the boundaries, then it's <em>right</em>. You'll see the power of this argument when we come to the method of images.</p>
+<p>Incidentally, it is easy to improve on the first uniqueness theorem: I assumed there was no charge inside the region in question, so the potential obeyed Laplace's equation, but we may as well throw in some charge (in which case V obeys Poisson's equation). </p>
+<div class="admonition info">
+<p class="admonition-title"><strong>Corollary:</strong> The potential in a volume <script type="math/tex"> \mathscr{V}  </script> is uniquely determined if (a) the charge density throughout the region, and (b) the value of V on all boundaries, are specified</p>
+<p>The argument is the same, only this time
+<script type="math/tex; mode=display">
+\laplacian{V_1} = -\frac{1}{\epsilon_0} \rho, \qquad \laplacian{V_2} = - \frac{1}{\epsilon_0} \rho 
+</script>
+so
+<script type="math/tex; mode=display">
+\laplacian{V_3} = \laplacian{V_1} - \laplacian{V_2} = - \frac{1}{\epsilon_0} \rho + \frac{1}{\epsilon_0} \rho = 0
+</script>
+Once again the <em>difference</em> <script type="math/tex"> (V_3 \equiv V_1 - V_2) </script> satisfies Laplace's equation and has the value zero on all boundaries, so <script type="math/tex"> V_3 = 0 </script> and hence <script type="math/tex"> V_1 = V_2 </script>
+</p>
+</div>
+<h2 id="316-conductors-and-the-second-uniqueness-theorem">3.1.6: Conductors and the Second Uniqueness Theorem</h2>
+<p>The <em>simplest</em> way to set the boundary conditions for an electrostatic problem is to specify the value of V on all surfaces surrounding the region of interest. And this situation often occurs in practice: In the laboratory, we have conductors connected to batteries, which maintain a given potential, or to <strong>ground</strong>, which is the experimentalist's word for <script type="math/tex"> V = 0 </script>. However, there are other circumstances in which we do not know the <em>potential</em> at the boundary, but rather the <em>charges</em> on various conducting surfaces. Suppose I put <script type="math/tex"> Q_a </script> on the first conductor, <script type="math/tex"> Q_b </script> on the second conductor, and so on - I'm not telling you how the charge distributes itself over each conducting surface, because as soon as I put it on, it moves around in a way I do not control. And for good measure, let's say there is some specified charge density <script type="math/tex"> \rho </script> in the region between the conductors. Is the electric field now uniquely determined? Or are there perhaps a number of different ways the charges could arrange themselves on their respective conductors, each leading to a different field? </p>
                 
                   
                 
@@ -628,7 +742,7 @@ The potential on the cavity wall is some constant <script type="math/tex"> V_0 <
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../ch2/" title="2 - Electrostatics" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../ch2-5/" title="2.5 - Conductors" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -637,25 +751,11 @@ The potential on the cavity wall is some constant <script type="math/tex"> V_0 <
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                2 - Electrostatics
+                2.5 - Conductors
               </span>
             </div>
           </a>
         
-        
-          <a href="../wip/" title="Work in Progress" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Work in Progress
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
