@@ -1,0 +1,695 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>3.1 - Laplace's Equation - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Noto Serif","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#31-laplaces-equation" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                My Docs
+              </span>
+              <span class="md-header-nav__topic">
+                3.1 - Laplace's Equation
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ch1/" title="1 - Vector Analysis" class="md-nav__link">
+      1 - Vector Analysis
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ch2/" title="2 - Electrostatics" class="md-nav__link">
+      2 - Electrostatics
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      3 - Potentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        3 - Potentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        3.1 - Laplace's Equation
+      </label>
+    
+    <a href="./" title="3.1 - Laplace's Equation" class="md-nav__link md-nav__link--active">
+      3.1 - Laplace's Equation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#311-introduction" title="3.1.1: Introduction" class="md-nav__link">
+    3.1.1: Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#312-laplaces-equation-in-one-dimension" title="3.1.2: Laplace's Equation in One Dimension" class="md-nav__link">
+    3.1.2: Laplace's Equation in One Dimension
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#313-laplaces-equation-in-two-dimensions" title="3.1.3: Laplace's Equation in Two Dimensions" class="md-nav__link">
+    3.1.3: Laplace's Equation in Two Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#314-laplaces-equation-in-three-dimensions" title="3.1.4: Laplace's Equation in Three Dimensions" class="md-nav__link">
+    3.1.4: Laplace's Equation in Three Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#315-boundary-conditions-and-uniqueness-theorems" title="3.1.5: Boundary Conditions and Uniqueness Theorems" class="md-nav__link">
+    3.1.5: Boundary Conditions and Uniqueness Theorems
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../wip/" title="Work in Progress" class="md-nav__link">
+      Work in Progress
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#311-introduction" title="3.1.1: Introduction" class="md-nav__link">
+    3.1.1: Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#312-laplaces-equation-in-one-dimension" title="3.1.2: Laplace's Equation in One Dimension" class="md-nav__link">
+    3.1.2: Laplace's Equation in One Dimension
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#313-laplaces-equation-in-two-dimensions" title="3.1.3: Laplace's Equation in Two Dimensions" class="md-nav__link">
+    3.1.3: Laplace's Equation in Two Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#314-laplaces-equation-in-three-dimensions" title="3.1.4: Laplace's Equation in Three Dimensions" class="md-nav__link">
+    3.1.4: Laplace's Equation in Three Dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#315-boundary-conditions-and-uniqueness-theorems" title="3.1.5: Boundary Conditions and Uniqueness Theorems" class="md-nav__link">
+    3.1.5: Boundary Conditions and Uniqueness Theorems
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/PeppyHare/griffiths-em/edit/master/docs/ch3-1.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="31-laplaces-equation">3.1: Laplace's Equation</h1>
+<h2 id="311-introduction">3.1.1: Introduction</h2>
+<p>The primary task of electrostatics is to find the electric field of a given stationary charge distribution. In principle, this purpose is accomplished by Coulomb's law, in the form of
+<script type="math/tex; mode=display">
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec{r'})}{\gr ^2} \hat{\gr} \dd{\tau'} \label{3.1}
+</script>
+</p>
+<p>Unfortunately, integrals of this type can be difficult to calculate for any but the simplest charge configurations. Occasionally we can get around this by exploiting symmetry and using Gauss's law, but ordinarily the best strategy is first to calculate the <em>potential</em>, V, which is given by the somewhat more tractable
+<script type="math/tex; mode=display">
+V(r) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec{r}')}{\gr} \dd{\tau'} \label{3.2}
+</script>
+</p>
+<p>Still, even <em>this</em> integral is often too tough to handle analytically. Moreover, in problems involving conductors <script type="math/tex"> \rho </script> itself may not be known in advance; since charge is free to move around, the only thing we control directly is the total charge (or perhaps the potential) of each conductor.</p>
+<p>In such cases, it is fruitful to recast the problem in differential form, using Poisson's equation
+<script type="math/tex; mode=display">
+\laplacian{V} = - \frac{1}{\epsilon_0} \rho \label{3.3}
+</script>
+which, together with appropriate boundary conditions, is equivalent to <script type="math/tex"> \eqref{3.2} </script>. Very often, in fact, we are interested in finding the potential in a region where <script type="math/tex"> \rho = 0 </script>. (If <script type="math/tex"> \rho = 0 </script> everywhere, of course, then <script type="math/tex"> V = 0  </script>, and there is nothing further to say - that's not what I mean. There may be plenty of charge elsewhere, but we're confining our attention to places where there is no charge.) In this case, Poisson's equation reduces to Laplace's equation
+<script type="math/tex; mode=display">
+\laplacian{V} = 0 \label{3.4}
+</script>
+or, written out in Cartesian coordinates,
+<script type="math/tex; mode=display">
+\frac{\partial^2{V}}{\partial{x^2}} + \frac{\partial^2 V}{\partial{y^2}} + \frac{\partial^2{V}}{\partial{z^2}}  = 0 \label{3.5}
+</script>
+</p>
+<p>This formula is so fundamental to the subject that one might almost say electrostatics is the study of Laplace's equation. At the same time, it is a ubiquitous equation, appearing in such diverse branches of physics as gravitation and magnetism, the theory of heat, and the study of soap bubbles. In mathematics, it plays a major role in analytic function theory. To get a feel for Laplace's equation and its solutions (which are called <strong>harmonic functions</strong>), we shall begin with the one- and two-dimensional versions, which are easier to picture, and illustrate all the essential properties of the three-dimensional case.</p>
+<h2 id="312-laplaces-equation-in-one-dimension">3.1.2: Laplace's Equation in One Dimension</h2>
+<p>Suppose V depends on only one variable, x. Then Laplace's equation becomes
+<script type="math/tex; mode=display">
+\frac{d^2 V}{dx^2} = 0
+</script>
+</p>
+<p>The general solution is
+<script type="math/tex; mode=display">
+V(x) = mx + b \label{3.6} \tag{3.6}
+</script>
+</p>
+<p>the equation for a straight line. It contains two undetermined constants (m and b), as is appropriate for a second-order (ordinary) differential equation. They are fixed, in any particular case, by the boundary conditions of that problem. For instance, it might be specified that <script type="math/tex"> V = 4 </script>  at <script type="math/tex"> x = 1 </script> and <script type="math/tex"> V = 0 </script> at <script type="math/tex"> x = 5 </script>. In that case, <script type="math/tex"> m = -1 </script> and <script type="math/tex"> b = 5 </script>, so <script type="math/tex"> V = - x + 5 </script>  (See Fig. 3.1)</p>
+<p><img alt="Figure 3.1" src="../img/3.1.png" /></p>
+<p>I want to call your attention to two features of this result; they may seem silly and obvious in one dimension, where I can write down the general solution explicitly, but the analogs in two and three dimensions are powerful and by no means obvious:</p>
+<ol>
+<li>
+<p>V(x) is the <em>average</em> of <script type="math/tex"> V(x + a) </script> and <script type="math/tex"> V(x - a) </script> for any a:
+<script type="math/tex; mode=display">
+V(x) = \frac{1}{2} [V(x + a) + V(x-a)]
+</script>
+<br />
+Laplace's equation is a kind of averaging instruction; it tells you to assign to the point x the average of the values to the left and to the right of x. Solutions to Laplace's equation are, in this sense, as boring as they could possibly be, and yet fit the end points properly.</p>
+</li>
+<li>
+<p>Laplace's equation tolerates <em>no local maxima or minima</em>; extreme values of V must occur at the end points. Actually, this is a consequence of (1), for if there were a local maximum, V would be greater at that point than on either side, and therefore could not be the average. (Ordinarily, you expect the second derivative to be negative at a maximum and positive at a minimum. Since Laplace's equation requires, on the contrary, that the second derivative is zero, it seems reasonable that solutions should exhibit no extrema. However, this is not a proof, since there exist functions that have maxima and minima at points where the second derivative vanishes: <script type="math/tex"> x^4 </script> for example, has such a minimum point at <script type="math/tex"> x=0 </script>).</p>
+</li>
+</ol>
+<h2 id="313-laplaces-equation-in-two-dimensions">3.1.3: Laplace's Equation in Two Dimensions</h2>
+<p>If V depends on two variables, Laplace's equation becomes
+<script type="math/tex; mode=display">
+\frac{\partial^2{V}}{\partial{x^2}} + \frac{\partial^2{V}}{\partial{y^2}} = 0 
+</script>
+</p>
+<p>This is no longer an <em>ordinary</em> differential equation (that is, one involving ordinary derivatives only); it is a partial differential equation. As a consequence, some of the simple rules you may be familiar with do not apply. For instance, the general solution to this equation doesn't contain just two arbitrary constants - or, for that matter, any finite number - despite the fact that it's a second order equation. Indeed, one cannot write down a "general solution" (at least, not in a closed form like <script type="math/tex"> \eqref{3.6} </script>). Nevertheless, it is possible to deduce certain properties common to all solutions.</p>
+<p><img alt="Figure 3.2" src="../img/3.2.png" /></p>
+<p>It may help to have a physical example in mind. Picture a thin rubber sheet (or a soap film) stretched over some support. For definiteness, suppose you take a cardboard box, cut a wavy line all the way around, and remove the top part (Fig. 3.2). Now glue a tightly stretched rubber membrane over the box, so that it fits like a drum head (it won't be a flat drumhead, of course, unless you choose to cut the edges off straight). Now, if you lay out the coordinates (x, y) on the bottom of the box, the height V(x, y) of the sheet above the point (x, y) will satisfy Laplace's equation. (The one-dimensional analog would be a rubber band stretched between two points. Of course, it would form a straight line.)</p>
+<blockquote>
+<p>Actually, the equation satisfied by a rubber sheet is
+<script type="math/tex; mode=display">
+\frac{\partial}{\partial{x}} \left( g \pdv{V}{y}  \right) + \frac{\partial}{\partial{y}}  \left( g \pdv{V}{y} \right) = 0, \\ \qquad \text{ where } g = \left[ 1 + \left( \pdv{V}{x} \right)^2 + \left( \pdv{V}{y} \right)^2 \right]^{-1/2}
+</script>
+</p>
+</blockquote>
+<p>Harmonic functions in two dimensions have the same properties we noted in one dimension:</p>
+<ol>
+<li>
+<p>The value of V at a point (x, y) is the average of those around the point. More precisely, if you draw a circle of any radius R about the point (x, y), the average value of V on the circle is equal to the value at the center:
+<script type="math/tex; mode=display">
+V(x, y) = \frac{1}{2 \pi R} \oint_{\text{circle}} = V \dd{l} 
+</script>
+(This, incidentally, suggests the method of relaxation, on which computer solutions to Laplace's equation are based: Starting with specified values for V at the boundary, and reasonable guesses for V on a grid of interior points, the first pass reassigns to each point the average of its nearest neighbors. The second pass repeats this process, using the corrected values, and so on. After a few iterations, the numbers begin to settle down, so that subsequent passes produce negligible changes, and a numerical solution to Laplace's equation, with the given boundary values, has been achieved.)</p>
+</li>
+<li>
+<p>V has no local maxima or minima; all extrema occur at the boundaries. (As before, this follows from (1)). Again, Laplace's equation picks the most featureless function possible, consistent with the boundary conditions: no hills, no valleys, just the smoothest conceivable surface. For instance, if you put a ping-pong ball on the stretched rubber sheet of Fig 3.2, it will roll over to one side and fall off - it will not find a "pocket" somewhere to settle into, for Laplace's equation allows no such dents in the surface. From a geometrical point of view, just as a straight line is the shortest distance between two points, so a harmonic function in two dimensions minimizes the surface area spanning the given boundary line.</p>
+</li>
+</ol>
+<h2 id="314-laplaces-equation-in-three-dimensions">3.1.4: Laplace's Equation in Three Dimensions</h2>
+<p>In three dimensions I can neither provide you with an explicit solution (as in one dimension) nor offer a suggestive physical example to guide your intuition (as I did in two dimensions). Nevertheless, the same two properties remain true, and this time I will sketch a proof.</p>
+<blockquote>
+<p>For a proof that does not rely on Coulomb's law (only on Laplace's equation), see Prob. 3.37</p>
+</blockquote>
+<ol>
+<li>The value of V at point <strong>r</strong> is the average value of V over a spherical surface of radius R centered at <strong>r</strong>:
+<script type="math/tex; mode=display">
+V(\vec{r}) = \frac{1}{4 \pi R^2} \oint_{\text{sphere}} V \dd{a}
+</script>
+</li>
+<li>As a consequence, V can have no local maxima or minima; the extreme values of V must occur at the boundaries (For if V had a local maximum at <strong>r</strong>, then by the very nature of the maximum I could draw a sphere around <strong>r</strong> over which all the values of V - and a fortiori the average - would be less than at <strong>r</strong>.)</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Proof: V is a solution to the three-dimensional Laplace's equation. Then the value of V at point <strong>r</strong> is the average value of V over a spherical surface of radius R centered at <strong>r</strong></p>
+<p>Let's begin by calculating the average potential over a spherical surface of radius R due to a <em>single</em> point charge q located outside the sphere. We may as well center the sphere at the origin and choose coordinates so that q lies on the z-axis (Fig 3.3). </p>
+<p><img alt="Figure 3.3" src="../img/3.3.png" /></p>
+<p>The potential at a point on the surface is
+<script type="math/tex; mode=display">
+V = \frac{1}{4 \pi \epsilon_0} \frac{q}{\gr} 
+</script>
+where
+<script type="math/tex; mode=display">
+\gr ^2 = z^2 + R^2 - 2z R \cos \theta
+</script>
+so
+<script type="math/tex; mode=display">
+V_{\text{ave}} = \frac{1}{4\pi R^2} \frac{1}{4 \pi \epsilon_0} \int [z^2 + R^2 - 2 z R \cos \theta]^{-1/2} R^2 \sin \theta \dd{\theta} \dd{\phi} \\
+ = \left. \frac{q}{4 \pi \epsilon_0} \frac{1}{2 z R} \sqrt{z^2 + R^2 - 2 z R \cos\theta} \right|_{0} ^{\pi} \\
+ = \frac{q}{4 \pi \epsilon_0} \frac{1}{2zR} [(z + R) - (z-R)] = \frac{1}{4 \pi \epsilon_0} \frac{q}{z}  
+</script>
+But this is precisely the potential due to q at the <em>center</em> of the sphere! By the superposition principle, the same goes for any collection of charges outside the sphere: their average potential over the sphere is equal to the net potential they produce at the center</p>
+</div>
+<h2 id="315-boundary-conditions-and-uniqueness-theorems">3.1.5: Boundary Conditions and Uniqueness Theorems</h2>
+<p>Laplace's equation does not by itself determine V; in addition, suitable boundary conditions must be supplied. This raises a delicate question: What are appropriate boundary conditions, sufficient to determine the answer and yet not so strong as to generate inconsistencies? The one-dimensional case is easy, for here the general solution <script type="math/tex"> V = mx + b </script> contains two arbitrary constants, and we therefore require two boundary conditions. We might, for instance, specify the value of the function at each end, or we might give the value of the function and its derivative at one end, or the value at one end and the derivative at the other, and so on. But we cannot get away with <em>just</em> the value or <em>just</em> the derivative at <em>one</em> end - this is insufficient information. Nor would it do to specify the derivatives at both ends - this would be either redundant (if the two are equal) or inconsistent (if they are not).</p>
+<p>In two or three dimensions we are confronted by a <em>partial</em> differential equation, and it is not so obvious what would constitute acceptable boundary conditions. Is the shape of a taut rubber membrane, for instance, uniquely determined by the frame over which it is stretched, or, like a canning jar lid, can it snap from one stable configuration to another? The answer, as I think your intuition would suggest, that V is uniquely determined by its value at the boundary (canning jars evidently do not obey Laplace's equation). However, other boundary conditions can also be used (see Prob. 3.5). The <em>proof</em> that a proposed set of boundary conditions will suffice is usually presented in the form of a uniqueness theorem. There are many such theorems for electrostatics, all sharing the same basic format - I'll show you the two most useful ones:</p>
+<div class="admonition info">
+<p class="admonition-title">First Uniqueness Theorem: The solution to Laplace's equation in some volume <script type="math/tex"> \mathscr{V} </script> is uniquely determined if V is specified on the boundary surface <script type="math/tex"> \mathscr{S} </script>.</p>
+<p>In Fig. 3.5 I have drawn such a region and its boundary. (There could also be "islands" inside, so long as V is given on all their surfaces; also, the outer boundary could be at infinity, where V is ordinarily taken to be zero.)</p>
+<p><img alt="Figure 3.5" src="../img/3.5.png" /></p>
+<p><em>Proof</em>: Suppose there were <em>two</em> solutions to Laplace's equation:
+<script type="math/tex; mode=display">
+\laplacian{V_1} = 0 \quad \text{and} \quad \laplacian{V_2} = 0
+</script>
+both of which assume the specified value on the surface. I want to prove that they must be equal. The trick is to look at their <em>difference</em>:
+<script type="math/tex; mode=display">
+V_3 \equiv V_1 - V_2
+</script>
+This obeys Laplace's equation (obviously)
+<script type="math/tex; mode=display">
+\laplacian{V_3} = \laplacian{V_1} - \laplacian{V_2} = 0
+</script>
+and it takes the value <em>zero</em> on all boundaries (since <script type="math/tex"> V_1 </script> and <script type="math/tex"> V_2 </script> are equal there). But Laplace's equation allows no local maxima or minima - all extrema occur on the boundaries. So the maximum and minimum of <script type="math/tex"> V_3 </script> are both zero. Therefore <script type="math/tex"> V_3 </script> must be zero everywhere, and hence
+<script type="math/tex; mode=display">
+V_1 = V_2
+</script>
+</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title"><strong>Example 3.1:</strong> Show that the potential is <em>constant</em> inside an enclosure completely surrounded by conducting material, provided there is no charge within the enclosure. Can I have an equation in here? </p>
+<p><strong>Solution</strong>
+The potential on the cavity wall is some constant <script type="math/tex"> V_0 </script> (that's item (iv) in Sect. 2.5.1), so the potential inside is a function that satisfies Laplace's equation and has the constant value <script type="math/tex"> V_0 </script> at the boundary. It doesn't take a genius to think of <em>one</em> solution to this problem: <script type="math/tex"> V = V_0 </script> everywhere. The uniqueness theorem guarantees that this is the <em>only</em> solution. (It follows that the field inside an empty cavity is zero - the same result we found in Sect. 2.5.2 on rather different grounds.)</p>
+</div>
+<p>The uniqueness theorem is a license to your imagination. It doesn't matter how you come by your solution; if (a) it satisfies Laplace's equation and (b) it has the correct value on the boundaries, then it's <em>right</em>. You'll see the power of this argument when we come to the method of images.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ch2/" title="2 - Electrostatics" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                2 - Electrostatics
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../wip/" title="Work in Progress" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Work in Progress
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../extra.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
