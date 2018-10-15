@@ -6,7 +6,8 @@ MathJax.Hub.Config({
     // extensions: ["AMSsymbols.js", "AMScd.js", "AMSmath.js"],
     Macros: {
         gr: '{\\gamma}',
-        vec: ['{\\mathbf #1}', 1]
+        vec: ['{\\mathbf #1}', 1],
+        tagl: ['{\\label{#1}  \\tag{#1} }', 1]
     }
   }
 });

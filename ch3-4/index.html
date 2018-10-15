@@ -1,0 +1,817 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>3.4 - Multipole Expansion - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Noto Serif","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#34-multipole-expansion" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                My Docs
+              </span>
+              <span class="md-header-nav__topic">
+                3.4 - Multipole Expansion
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      1 - Vector Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        1 - Vector Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-1/" title="1.1 - Vector Algebra" class="md-nav__link">
+      1.1 - Vector Algebra
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      2 - Electrostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        2 - Electrostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-1/" title="2.1 - The Electric Field" class="md-nav__link">
+      2.1 - The Electric Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-2/" title="2.2 - Divergence and Curl of Electrostatic Fields" class="md-nav__link">
+      2.2 - Divergence and Curl of Electrostatic Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-3/" title="2.3 - Electric Potential" class="md-nav__link">
+      2.3 - Electric Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-4/" title="2.4 - Work and Energy in Electrostatics" class="md-nav__link">
+      2.4 - Work and Energy in Electrostatics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-5/" title="2.5 - Conductors" class="md-nav__link">
+      2.5 - Conductors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      3 - Potentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        3 - Potentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-1/" title="3.1 - Laplace's Equation" class="md-nav__link">
+      3.1 - Laplace's Equation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-2/" title="3.2 - The Method of Images" class="md-nav__link">
+      3.2 - The Method of Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-3/" title="3.3 - Separation of Variables" class="md-nav__link">
+      3.3 - Separation of Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        3.4 - Multipole Expansion
+      </label>
+    
+    <a href="./" title="3.4 - Multipole Expansion" class="md-nav__link md-nav__link--active">
+      3.4 - Multipole Expansion
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#341-approximate-potentials-at-large-distances" title="3.4.1: Approximate Potentials at Large Distances" class="md-nav__link">
+    3.4.1: Approximate Potentials at Large Distances
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-310" title="Example 3.10" class="md-nav__link">
+    Example 3.10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#342-the-monopole-and-dipole-terms" title="3.4.2: The Monopole and Dipole Terms" class="md-nav__link">
+    3.4.2: The Monopole and Dipole Terms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#343-origin-of-coordinates-in-multipole-expansions" title="3.4.3: Origin of Coordinates in Multipole Expansions" class="md-nav__link">
+    3.4.3: Origin of Coordinates in Multipole Expansions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#344-the-electric-field-of-a-dipole" title="3.4.4: The Electric Field of a Dipole" class="md-nav__link">
+    3.4.4: The Electric Field of a Dipole
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#341-approximate-potentials-at-large-distances" title="3.4.1: Approximate Potentials at Large Distances" class="md-nav__link">
+    3.4.1: Approximate Potentials at Large Distances
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-310" title="Example 3.10" class="md-nav__link">
+    Example 3.10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#342-the-monopole-and-dipole-terms" title="3.4.2: The Monopole and Dipole Terms" class="md-nav__link">
+    3.4.2: The Monopole and Dipole Terms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#343-origin-of-coordinates-in-multipole-expansions" title="3.4.3: Origin of Coordinates in Multipole Expansions" class="md-nav__link">
+    3.4.3: Origin of Coordinates in Multipole Expansions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#344-the-electric-field-of-a-dipole" title="3.4.4: The Electric Field of a Dipole" class="md-nav__link">
+    3.4.4: The Electric Field of a Dipole
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/PeppyHare/griffiths-em/edit/master/docs/ch3-4.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="34-multipole-expansion">3.4: Multipole Expansion</h1>
+<h2 id="341-approximate-potentials-at-large-distances">3.4.1: Approximate Potentials at Large Distances</h2>
+<p>If you are very far away from a localized charge distribution, it "looks" like a point charge, and the potential is - to good approximation - <script type="math/tex"> (1/4 \pi \epsilon_0) Q/r </script>, where <script type="math/tex"> Q </script> is the total charge. We have often used this as a check on formulas for <em>V</em>. But what if <script type="math/tex"> Q </script> is zero? You might reply that the potential is then approximately zero, and of course, you're right in a sense (indeed, the potential at large <em>r</em> is pretty small even if <em>Q</em> is not zero). But we're looking for something a bit more informative than that.</p>
+<h4 id="example-310">Example 3.10</h4>
+<div class="admonition question">
+<p class="admonition-title">A (physical) <strong>electric dipole</strong> consists of two equal and opposite charges <script type="math/tex"> (\pm q) </script> separated by a distance <em>d</em>. Find the approximate potential at points far from the dipole</p>
+<p><strong>Solution</strong>
+Let <script type="math/tex"> \gr_- </script> be the distance from <script type="math/tex"> -q </script> and <script type="math/tex"> \gr_{+} </script> be the distance from <script type="math/tex"> +q </script> (Fig. 3.26). 
+<img alt="Figure 3.26" src="../img/3.26.png" />
+Then
+<script type="math/tex; mode=display">
+V(r) = \frac{1}{4 \pi \epsilon_0} \left( \frac{q}{\gr_{+}} - \frac{1}{\gr_{-}} \right)
+</script>
+and (from the law of cosines),
+<script type="math/tex; mode=display">
+\gr_{\pm} ^2 = r^2 + (d/2)^2 \mp r d \cos \theta = r^2 \left( 1 \mp \frac{d}{r} \cos \theta + \frac{d^2}{4r^2}  \right)
+</script>
+We're interested in the regime <script type="math/tex"> r \gg d </script>, so the third term is negligible, and the binomial expansion yields
+<script type="math/tex; mode=display">
+\frac{1}{\gr_{\pm}} \approx \frac{1}{r} \left( 1 \mp \frac{d}{r} \cos \theta \right) ^{-1/2} \approx \frac{1}{r} \left( 1 \pm \frac{d}{2r} \cos \theta \right) 
+</script>
+Thus
+<script type="math/tex; mode=display">
+\frac{1}{\gr_+} - \frac{1}{\gr_{-}} \approx \frac{d}{r^2} \cos \theta  
+</script>
+and hence
+<script type="math/tex; mode=display">
+V(r) \approx \frac{1}{4 \pi \epsilon_0} \frac{qd \cos \theta}{r^2} \tagl{3.90} 
+</script>
+The potential of a dipole goes like <script type="math/tex"> 1/r^2 </script> at large <em>r</em>; as we might have anticipated, it falls off more rapidly than the potential of a point charge. If we put together a pair of equal and opposite dipoles to make a <strong>quadrupole</strong>, the potential goes like <script type="math/tex"> 1/r^3 </script>; for back-to-back quadrupoles (an <strong>octopole</strong>), it goes like <script type="math/tex"> 1/r^4 </script>, and so on. Figure 3.27 summarizes the hierarchy; for completeness I have included the electric <strong>monopole</strong> (point charge), whose potential, of course, goes like <script type="math/tex"> 1/r </script>
+<img alt="Figure 3.27" src="../img/3.27.png" /></p>
+</div>
+<p>Example 3.10 pertains to a very special charge configuration. I propose now to develop a systematic expansion for the potential of <em>any</em> localized charge distribution, in powers of <script type="math/tex"> 1/r </script>. Figure 3.28 defines the relevant variables; the potential at <strong>r</strong> is given by
+<script type="math/tex; mode=display">
+V(r) = \frac{1}{4 \pi \epsilon_0} \int \frac{1}{\gr} \rho(\vec{r'}) \dd{\tau'} \tagl{3.91}
+</script>
+<img alt="Figure 3.28" src="../img/3.28.png" />
+Using the law of cosines,
+<script type="math/tex; mode=display">
+\gr ^2 = r^2 + (r')^2 - 2r r' \cos \alpha = r^2 \left[ 1 + \left( \frac{r'}{r}  \right)^2 - 2 \left( \frac{r'}{r}  \right)\cos \alpha \right]
+</script>
+where <script type="math/tex"> \alpha </script> is the angle between <script type="math/tex"> \vec{r} </script> and <script type="math/tex"> \vec{r'} </script>. Thus,
+<script type="math/tex; mode=display">
+ \gr = r \sqrt{1 + \epsilon} \tagl{3.92}
+ </script> 
+with
+<script type="math/tex; mode=display">
+\epsilon \equiv \left( \frac{r'}{r} \right)\left( \frac{r'}{r} - 2 \cos \alpha \right)
+</script>
+For points well outside the charge distribution, <script type="math/tex"> \epsilon </script> is much less than 1, and this invites a binomial expansion:
+<script type="math/tex; mode=display">
+\frac{1}{\gr}  = \frac{1}{r} (1 + \epsilon)^{-1/2} = \frac{1}{r} \left( 1 - \frac{1}{2} \epsilon + \frac{3}{8} \epsilon^2 - \frac{5}{16} \epsilon^3 + \ldots \right) \tagl{3.93}
+</script>
+or, in terms of <script type="math/tex"> r, r' </script>, and <script type="math/tex"> \alpha </script>,
+<script type="math/tex; mode=display">
+\begin{align*}
+\frac{1}{\gr} & =  \frac{1}{r} \left[ 1 - \frac{1}{2} \left( \frac{r'}{r}  \right) \left( \frac{r'}{r} - 2 \cos \alpha \right) + \frac{3}{8} \left( \frac{r'}{r}  \right)^2 \left( \frac{r'}{r} - 2 \cos \alpha \right)^2 \right. \\ 
+& \qquad \left. - \frac{5}{16} \left( \frac{r'}{r}  \right)^3 \left( \frac{r'}{r} - 2 \cos \alpha \right)^3 + \ldots \right] \\
+& = \frac{1}{r} \left[ 1 + \left( \frac{r'}{r} \right)(\cos \alpha) + \left( \frac{r'}{r} \right) \left( \frac{3 \cos ^2 \alpha - 1}{2}  \right) \right. \\
+& \qquad \left. \left( \frac{r'}{r} \right)^3 \left( \frac{5\cos ^3 \alpha - 3 \cos \alpha}{2}  \right) + \ldots \right]
+\end{align*}
+</script>
+In the last step, I have collected together like powers of <script type="math/tex"> (r'/r) </script>; surprisingly, their coefficients (the terms in parentheses) are Legendre polynomials! The remarkable result is that
+<script type="math/tex; mode=display">
+\frac{1}{\gr} = \frac{1}{r} \sum_{n=0}^\infty \left( \frac{r'}{r}  \right)^n P_n (\cos \alpha) \tagl{3.94}
+</script>
+Substituting this back into <script type="math/tex"> \eqref{3.91} </script>, and noting that <script type="math/tex"> r </script> is constant, as far as the integration is concerned, I conclude that
+<script type="math/tex; mode=display">
+V(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \sum_{n=0} ^\infty \frac{1}{r^{(n+1)}} \int (r') P_n(\cos \alpha) \rho(\vec{r'}) \dd{\tau'} \tagl{3.95} 
+</script>
+or, more explicitly,
+<script type="math/tex; mode=display">
+V(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \left[ \frac{1}{r} \int \rho(\vec{r'}) \dd{\tau'} + \frac{1}{r^2} \int r' \cos \alpha \rho(\vec{r'})\dd{\tau'} \right. \\
+ + \left. \frac{1}{r^3} \int (r')^2 \left( \frac{3}{2} \cos^2 \alpha - \frac{1}{2}  \right) \rho(\vec{r'}) \dd{\tau'} + \ldots \right] \tagl{3.96}
+</script>
+This is the desired result - the <strong>multipole expansion</strong> of <script type="math/tex"> V </script> in powers of <script type="math/tex"> 1/r </script>. The first term <script type="math/tex"> (n=0) </script> is the monopole contribution (it goes like <script type="math/tex"> 1/r </script>); the second <script type="math/tex"> (n=1) </script> is the dipole (it goes like <script type="math/tex"> 1/r^2 </script> ); the third is quadrupole; the fourth octopole, and so on. Remember that <script type="math/tex"> \alpha </script> is the angle between <script type="math/tex"> \vec{r} </script> and <script type="math/tex"> \vec{r'} </script>, so the integrals depend on the direction to the field point. If you are interested in the potential along the <script type="math/tex"> z' </script> axis (or - putting it the other way round - if you orient your <script type="math/tex"> \vec{r'} </script> coordinates so the <script type="math/tex"> z' </script> axis lies along <script type="math/tex"> \vec{r} </script>), then <script type="math/tex"> \alpha </script> is the usual polar angle <script type="math/tex"> \theta' </script>.
+As it stands, <script type="math/tex"> \eqref{3.95} </script> is <em>exact</em>, but it is useful primarily as an approximation scheme: the lowest nonzero term in the expansion provides the approximate potential at large <em>r</em>, and the successive terms tell us how to improve the approximation if greater precision is required.</p>
+<h2 id="342-the-monopole-and-dipole-terms">3.4.2: The Monopole and Dipole Terms</h2>
+<p>Ordinarily, the multipole expansion is dominated (at large r) by the monopole term:
+<script type="math/tex; mode=display">
+V_{mon} (\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{Q}{r} 
+</script>
+where <script type="math/tex"> Q =\int \rho \dd{\tau} </script> is the total charge of the configuration. This is just what we expect for the approximate potential at large distances from the charge. For a point charge at the origin, <script type="math/tex"> V_{mon} </script> is the exact potential, not merely a first approximation at large r; in this case, all the higher multipoles vanish.
+If the total charge is zero, the dominant term in the potential will be the dipole (unless, of course, it also vanishes):
+<script type="math/tex; mode=display">
+V_{dip}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^2} \int r' \cos \alpha \rho(\vec{r'}) \dd{\tau'} 
+</script>
+Since <script type="math/tex"> \alpha </script> is the angle between <script type="math/tex"> r' </script> and <script type="math/tex"> r </script> (Fig 2.38),
+<script type="math/tex; mode=display">
+r' \cos \alpha = \hat{r} \cdot \vec{r'}
+</script>
+and the dipole potential can be written more succinctly:
+<script type="math/tex; mode=display">
+V_{dip}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^2} \hat{r} \cdot \int \vec{r'} \rho(\vec{r'}) \dd{\tau'}
+</script>
+This integral (which does not depend on <script type="math/tex"> \vec{r} </script> ) is called the <strong>dipole moment</strong> of the distribution:
+<script type="math/tex; mode=display">
+\vec{p} \equiv \int \vec{r'} \rho(\vec{r'}) \dd{\tau'} \tagl{3.98}
+</script>
+and the dipole contribution to the potential simplifies to
+<script type="math/tex; mode=display">
+V_{dip}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{\vec{p} \cdot \hat{r}}{r^2} \tagl{3.99} 
+</script>
+The dipole moment is determined by the geometry (size, shape, and density) of the charge distribution. <script type="math/tex"> \eqref{3.98} </script> translates in the usual way (Sect 2.1.4) for point, line, and surface charges. Thus, the dipole moment for a collection of point charges is
+<script type="math/tex; mode=display">
+\vec{p} = \sum_{i=1} ^n q_i \vec{r'}_i \tagl{3.100}
+</script>
+For a <strong>physical dipole</strong> (equal and opposite charges <script type="math/tex"> \pm q </script>),
+<script type="math/tex; mode=display">
+\vec{p} = q\vec{r'_+} - q \vec{r_- ' } = q(\vec{r' _+} - \vec{r'_-}) = q \vec{d} \tagl{3.101}
+</script>
+where <script type="math/tex"> \vec{d} </script> is the vector from the negative charge to the positive one (Fig. 3.29).
+<img alt="Figure 3.29" src="../img/3.29.png" />
+Is this consistent with what we got in Example 3.10? Yes: If you put <script type="math/tex"> \eqref{3.101} </script> into <script type="math/tex"> \eqref{3.99} </script>, you recover <script type="math/tex"> \eqref{3.90} </script>. Notice, however, that this is only the <em>approximate</em> potential of the physical dipole - evidently there are higher multipole contributions. Of course, as you go farther and farther away, <script type="math/tex"> V_{dip} </script> becomes a better and better approximation, since the higher terms die off more rapidly with increasing <script type="math/tex"> r </script>. By the same token, at a fixed <script type="math/tex"> r </script> the dipole approximation improves as you shrink the separation distance <script type="math/tex"> d </script>. To construct a <strong>perfect dipole</strong> whose potential is given exactly by <script type="math/tex"> \eqref{3.99} </script>, you'd have to let <script type="math/tex"> d </script> approach zero. Unfortunately you then lose the dipole term too, unless you simultaneously arrange for q to go to infinity! A <em>physical</em> dipole becomes a <em>pure</em> dipole, then, in the rather artificial limit <script type="math/tex"> d \rightarrow 0. q \rightarrow \infty </script>, with the product <script type="math/tex"> qd = p </script> held fixed. When someone uses the word "dipole," you can't always tell whether they mean a <em>physical</em> dipole (with finite separation between the charges) or an <em>ideal</em> dipole. If in doubt, assume that <em>d</em> is small enough that you can safely apply <script type="math/tex"> \eqref{3.99} </script>.</p>
+<p>Dipole moments are <em>vectors</em>, and they add accordingly: if you have two dipoles <script type="math/tex"> \vec{p_1} </script> and <script type="math/tex"> \vec{p_2} </script>, the total dipole moment is <script type="math/tex"> \vec{p_1} + \vec{p_2} </script>. For instance, with four charges at the corners of a square, as shown in Fig. 3.30, the net dipole moment is zero. You can see this by combining the charges in pairs or by adding up the four contributions individually using <script type="math/tex"> \eqref{3.100} </script>. This is a <em>quadrupole</em>, as I indicated earlier, and its potential is dominated by the quadrupole term in the multipole expansion.
+<img alt="Figure 3.30" src="../img/3.30.png" /></p>
+<h2 id="343-origin-of-coordinates-in-multipole-expansions">3.4.3: Origin of Coordinates in Multipole Expansions</h2>
+<p>I mentioned earlier that a point charge at the origin constitutes a "pure" monopole. If it is not at the origin, it's no longer a pure monopole. For instance, the charge in Fig. 3.32 has a dipole moment <script type="math/tex"> \vec{p} = q d \hat{y} </script>, and a corresponding dipole term in its potential. The monopole potential <script type="math/tex"> (1/4 \pi \epsilon_0) q/r </script>  is not quite correct for this configuration; rather, the exact potential is <script type="math/tex"> (1/4 \pi \epsilon_0) q/\gr </script>. The multipole expansion is, remember, a series in inverse powers of r (the distance to the origin), and when we expand <script type="math/tex"> 1/\gr </script>, we get all powers, not just the first.</p>
+<p>So moving the origin (or, what amounts to the same thing, moving the charge) can radically alter a multipole expansion. The <strong>monopole moment</strong> <script type="math/tex"> Q </script>  does not change, since the total charge is obviously independent of the coordinate system. (In Fig. 3.32, the monopole term was unaffected when we moved q away from the origin - it's just that it was no longer the whole story: a dipole term - and for that matter all higher poles - appeared as well.) Ordinarily, the dipole moment does change when you shift the origin, but there is an important exception: If the total charge is zero, then the dipole moment is independent of the choice of origin. For suppose we displace the origin by an amount <script type="math/tex"> \vec{a} </script>  (Fig. 3.33). The new dipole moment is then
+<script type="math/tex; mode=display">
+\begin{align*}
+\vec{p_2} & = \int \vec{r'} \rho(\vec{r'}) \dd{\tau'} = \int (\vec{r'} - \vec{a} ) \rho (\vec{r'}) \dd{\tau'} \\
+& = \int \vec{r'} \rho(\vec{r'}) \dd{\tau'} - \vec{a} \int \rho(\vec{r'}) \dd{\tau'} = \vec{p} - Q \vec{a}
+\end{align*}
+</script>
+<img alt="Figure 3.32" src="../img/3.32.png" />
+In particular, if <script type="math/tex"> Q = 0 </script>, the <script type="math/tex"> \vec{p_2} = \vec{p} </script>. So if someone asks for the dipole moment in Fig 3.34(a), you can answer with confidence "<script type="math/tex"> q \vec{d} </script>," but if you're asked for the dipole moment in Fig 3.34(b), the appropriate response would be "With respect to what origin?"
+<img alt="Figure 3.34" src="../img/3.34.png" /></p>
+<h2 id="344-the-electric-field-of-a-dipole">3.4.4: The Electric Field of a Dipole</h2>
+<p>So far we have only worked with <em>potentials</em>. Now I would like to calculate the electric field of a (perfect) dipole. If we choose coordinates so that <script type="math/tex"> \vec{p} </script> is at the origin and points in the z direction (Fig. 3.36), then the potential at <script type="math/tex"> r, \theta </script> is <script type="math/tex"> \eqref{3.99} </script>:
+<script type="math/tex; mode=display">
+V_{dip} (r, \theta) = \frac{\hat{r} \cdot \vec{p}}{4 \pi \epsilon_0 r^2} = \frac{p \cos \theta}{4 \pi \epsilon_0 r^2} \tagl{3.102} 
+</script>
+</p>
+<p><img alt="Figure 3.36" src="../img/3.36.png" /></p>
+<p>To get the field, we take the negative gradient of <script type="math/tex"> V </script>:
+<script type="math/tex; mode=display">
+\begin{align*}
+E_r & = - \pdv{V}{r} = \frac{2 p \cos \theta}{4 \pi \epsilon_0 r^3} \\
+E_\theta & = - \frac{1}{r} \pdv{V}{\theta} = \frac{p \sin \theta}{4 \pi \epsilon_0 r^3} \\
+E_\phi & = - \frac{1}{r \sin \theta} \pdv{V}{\phi} = 0 
+\end{align*}
+</script>
+Thus,
+<script type="math/tex; mode=display">
+\vec{E_{dip}} (r, \theta) = \frac{p}{4 \pi \epsilon_0 r^3}(2 \cos \theta \hat{r} + \sin \theta \hat{\theta}) \tagl{3.103} 
+</script>
+This formula makes explicit reference to a particular coordinate system (spherical) and assumes a particular orientation for <script type="math/tex"> \vec{p} </script> (along z). It can be recast in a coordinate-free form, analogous to the potential in <script type="math/tex"> \eqref{3.99} </script>  - See problem 3.36.</p>
+<p>Notice that the dipole falls off as the inverse cube of r; the monopole field <script type="math/tex"> (Q / 4 \pi \epsilon_0 r^2) \hat{r} </script> goes as the inverse square, of course. Quadrupole fields go like <script type="math/tex"> 1/r^4 </script>, octopole like <script type="math/tex"> 1/r^5 </script>, and so on. (This merely reflects how the respective potentials fall off - the gradient introduces another factor of <script type="math/tex"> 1/r </script> ).</p>
+<p>Figure 3.37(a) shows the field lines of a "pure" dipole <script type="math/tex"> \eqref{3.103} </script>. For comparison, I have also sketched the field lines for a "physical" dipole, in Fig 3.37(b). Notice how similar the two pictures become if you blot out the central region; up close, however, they are entirely different. Only for points <script type="math/tex"> r \gg d </script> does <script type="math/tex"> \eqref{3.103} </script> represent a valid approximation to the field of a physical dipole. As I mentioned earlier, this regime can be reached either by going to large <script type="math/tex"> r </script> or by squeezing the charges very close together.
+<img alt="Figure 3.37" src="../img/3.37.png" /></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ch3-3/" title="3.3 - Separation of Variables" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                3.3 - Separation of Variables
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../extra.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

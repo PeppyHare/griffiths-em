@@ -1,0 +1,1261 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>3.3 - Separation of Variables - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Noto Serif","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#33-separation-of-variables" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                My Docs
+              </span>
+              <span class="md-header-nav__topic">
+                3.3 - Separation of Variables
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      1 - Vector Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        1 - Vector Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-1/" title="1.1 - Vector Algebra" class="md-nav__link">
+      1.1 - Vector Algebra
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      2 - Electrostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        2 - Electrostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-1/" title="2.1 - The Electric Field" class="md-nav__link">
+      2.1 - The Electric Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-2/" title="2.2 - Divergence and Curl of Electrostatic Fields" class="md-nav__link">
+      2.2 - Divergence and Curl of Electrostatic Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-3/" title="2.3 - Electric Potential" class="md-nav__link">
+      2.3 - Electric Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-4/" title="2.4 - Work and Energy in Electrostatics" class="md-nav__link">
+      2.4 - Work and Energy in Electrostatics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-5/" title="2.5 - Conductors" class="md-nav__link">
+      2.5 - Conductors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      3 - Potentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        3 - Potentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-1/" title="3.1 - Laplace's Equation" class="md-nav__link">
+      3.1 - Laplace's Equation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-2/" title="3.2 - The Method of Images" class="md-nav__link">
+      3.2 - The Method of Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        3.3 - Separation of Variables
+      </label>
+    
+    <a href="./" title="3.3 - Separation of Variables" class="md-nav__link md-nav__link--active">
+      3.3 - Separation of Variables
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#331-cartesian-coordinates" title="3.3.1: Cartesian Coordinates" class="md-nav__link">
+    3.3.1: Cartesian Coordinates
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-33" title="Example 3.3" class="md-nav__link">
+    Example 3.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-34" title="Example 3.4" class="md-nav__link">
+    Example 3.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-35" title="Example 3.5" class="md-nav__link">
+    Example 3.5
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#332-spherical-coordinates" title="3.3.2: Spherical Coordinates" class="md-nav__link">
+    3.3.2: Spherical Coordinates
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-36" title="Example 3.6" class="md-nav__link">
+    Example 3.6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-37" title="Example 3.7" class="md-nav__link">
+    Example 3.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-38" title="Example 3.8" class="md-nav__link">
+    Example 3.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-39" title="Example 3.9" class="md-nav__link">
+    Example 3.9
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-4/" title="3.4 - Multipole Expansion" class="md-nav__link">
+      3.4 - Multipole Expansion
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#331-cartesian-coordinates" title="3.3.1: Cartesian Coordinates" class="md-nav__link">
+    3.3.1: Cartesian Coordinates
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-33" title="Example 3.3" class="md-nav__link">
+    Example 3.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-34" title="Example 3.4" class="md-nav__link">
+    Example 3.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-35" title="Example 3.5" class="md-nav__link">
+    Example 3.5
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#332-spherical-coordinates" title="3.3.2: Spherical Coordinates" class="md-nav__link">
+    3.3.2: Spherical Coordinates
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-36" title="Example 3.6" class="md-nav__link">
+    Example 3.6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-37" title="Example 3.7" class="md-nav__link">
+    Example 3.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-38" title="Example 3.8" class="md-nav__link">
+    Example 3.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-39" title="Example 3.9" class="md-nav__link">
+    Example 3.9
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/PeppyHare/griffiths-em/edit/master/docs/ch3-3.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="33-separation-of-variables">3.3: Separation of Variables</h1>
+<p>In this section we shall attack Laplace's equation directly, using the method of <strong>separation of variables</strong>, which is the physicist's favorite tool for solving partial differential equations. The method is applicable in circumstances where the potential <script type="math/tex"> (V) </script> or the charge density <script type="math/tex"> (\sigma) </script> is specified on the boundaries of some region, and we are asked to find the potential in the interior. The basic strategy is very simple: We look for solutions that are products of functions, each of which depends on only one of the coordinates. The algebraic details, however, can be formidable, so I'm going to develop the method through a sequence of examples. We'll start with Cartesian coordinates and then do spherical coordinates (I'll leave the cylindrical case for you to tackle on your own, in Prob 3.24).</p>
+<h2 id="331-cartesian-coordinates">3.3.1: Cartesian Coordinates</h2>
+<h4 id="example-33">Example 3.3</h4>
+<div class="admonition question">
+<p class="admonition-title">Two infinite grounded metal plates lie parallel to the xz plane, one at <script type="math/tex"> y = 0 </script>, the other at <script type="math/tex"> y = a </script> (Fig. 3.17). The left end, at <script type="math/tex"> x = 0 </script>, is closed off with an infinite strip insulated from the two plates, and maintained at a specific potential <script type="math/tex"> V_0(y) </script>. Find the potential inside this 'slot.'</p>
+<p><img alt="Figure 3.17" src="../img/3.17.png" />
+<strong>Solution</strong>
+The configuration is independent of z, so this is really a two-dimensional problem. In mathematical terms, we must solve Laplace's equation,
+<script type="math/tex; mode=display">
+\frac{\partial ^2 V}{\partial{x^2}} + \frac{\partial ^2 V}{\partial{y^2}} = 0 \label{3.20} \tag{3.20}
+</script>
+subject to the boundary conditions</p>
+<ul>
+<li>(i) <script type="math/tex"> V = 0 </script> when <script type="math/tex"> y = 0 </script>
+</li>
+<li>(ii) <script type="math/tex"> V = 0 </script> when <script type="math/tex"> y = a </script>
+</li>
+<li>(iii) <script type="math/tex"> V = V_0(y) </script> when <script type="math/tex"> x = 0 </script>
+</li>
+<li>(iv) <script type="math/tex"> V \rightarrow 0 </script> as <script type="math/tex"> x \rightarrow \infty </script>
+</li>
+</ul>
+<p>(The latter, although not explicitly stated in the problem, is necessary on physical grounds: as you get farther and farther away from the "hot" strip at <script type="math/tex"> x = 0 </script>, the potential should drop to zero.) Since the potential is specified on all boundaries, the answer is uniquely determined.</p>
+<p>The first step is to look for solutions in the form of products:
+<script type="math/tex; mode=display">
+V(x, y) = X(x)Y(y) \tagl{3.22}
+</script>
+On the face of it, this is an absurd restriction - the overwhelming majority of solutions to Laplace's equation do <em>not</em> have such a form. For example, <script type="math/tex"> V(x, y) = (5x + 6y) </script> satisfies the equation, but you can't express it as the product of a function of x times a function of y. Obviously, we're only going to get a tiny subset of all possible solutions by this means, and it would be a <em>miracle</em> if one of them happened to fit the boundary conditions of our problem... But hang on, because the solutions we <em>do</em> get are very special, and it turns out that by pasting them together we can construct the general solution.</p>
+<p>Anyway, putting <script type="math/tex"> \eqref{3.22} </script> into <script type="math/tex"> \eqref{3.20} </script> we obtain
+<script type="math/tex; mode=display">
+Y \frac{d^2X}{dx^2} + X \frac{d^2 Y}{dy^2} = 0 
+</script>
+The next step is to "separate the variables" (that is, collect all the x-dependence into one term and all the y-dependence into another). Typically, this is accomplished by dividing through by V:
+<script type="math/tex; mode=display">
+\frac{1}{X} \frac{d^2 X}{dx^2} + \frac{1}{Y} \frac{d^2 Y}{dy^2} = 0 \tagl{3.23}
+</script>
+Here the first term depends only on x and the second term only on y; in other words, we have an equation of the form
+<script type="math/tex; mode=display">
+f(x) + g(y) = 0 \label{3.24} \tag{3.24}
+</script>
+Now, there's only one way this could possibly be true: <em>f and g must both be constant</em>. For what if <script type="math/tex"> f(x) </script> changed, as you vary x - then if we held y fixed and fiddled with x, the sum <script type="math/tex"> f(x) + g(y) </script> would change, in violation of <script type="math/tex"> \eqref{3.24} </script>, which says it's always zero. (That's a simple but somehow rather elusive argument; don't accept it without due thought, because the whole method rides on it.)</p>
+<p>It follows from <script type="math/tex"> \eqref{3.23} </script>, then, that
+<script type="math/tex; mode=display">
+\frac{1}{X} \frac{d^2 X}{dx^2} = C_1 \quad \text{ and } \quad \frac{1}{Y} \frac{d^2 Y}{dy^2} = C_2, \quad \text{ with } C_1 + C_2 = 0 \tagl{3.25}
+</script>
+One of these constants is positive, the other negative (or perhaps both are zero). In general, one must investigate all possibilities; however in our particular problem we need <script type="math/tex"> C_1 </script> positive and <script type="math/tex"> C_2 </script> negative, for reasons that will appear in a moment. Thus
+<script type="math/tex; mode=display">
+\frac{d^2X}{dx^2} = k^2 X, \qquad \frac{d^2 Y}{dy^2} = - k^2 Y \tagl{3.26} 
+</script>
+Notice what has happened: A partial differential equation has been converted into two ordinary differential equations. The advantage of this is obvious - ordinary differential equations are a lot easier to solve. Indeed:
+<script type="math/tex; mode=display">
+X(x) = A e^{kt} + B e^{-kt}, \qquad Y(y) = C \sin ky + D \cos ky
+</script>
+so
+<script type="math/tex; mode=display">
+V(x, y) = (A e^{kt} + B e^{-kt})(C \sin ky + D \cos ky) \tagl{3.27}
+</script>
+This is the appropriate separable solution to Laplace's equation; it remains to impose the boundary conditions, and see what they tell us about the constants. To begin at the end, condition (iv) requires tha A equal zero. Absorbing B into C and D, we are left with
+<script type="math/tex; mode=display">
+V(x, y) = e^{-kx} (C\sin ky + D \cos ky)
+</script>
+Condition (i) now demands that D equal zero
+<script type="math/tex; mode=display">
+V(x, y) = C ^{-kx} \sin ky \tagl{3.28}
+</script>
+Meanwhile (ii) yields <script type="math/tex"> \sin ka = 0 </script>, from which it follows that
+<script type="math/tex; mode=display">
+k = \frac{n \pi}{a} \quad (n = 1, 2, 3, \ldots) \tagl{3.29}
+</script>
+(At this point you can see why I chose <script type="math/tex"> C_1 </script> positive and <script type="math/tex"> C_2 </script> negative: If X were sinusoidal, we could never manage for it to go to zero at infinity, and if Y were exponential we could not make it vanish at both 0 and <em>a</em>. Incidentally, <script type="math/tex"> n = 0 </script> is no good, for in that case the potential vanishes everywhere. And we have already excluded negative n's)
+That's as far as we can go, using separable solutions, and unless <script type="math/tex"> V_0(y) </script> just happens to have the form <script type="math/tex"> \sin(n \pi / a) </script> for some integer <em>n</em>, we simply <em>can't fit</em> the final boundary condition at <script type="math/tex"> x = 0 </script>. But now comes the crucial step that redeems the method: Separation of variables has given us an infinite family of solutions (one for each n), and whereas none of them by itself satisfies the final boundary condition, it is possible to combine them in a way that <em>does</em>. Laplace's equation is linear, in the sense that if <script type="math/tex"> V_1, V_2, V_3, \ldots </script> satisfy it, so does any linear combination, for
+<script type="math/tex; mode=display">
+\laplacian{V} = \alpha_1 \laplacian{V_1} + \alpha_2 \laplacian{V_2} + \ldots = 0 \alpha_1 + 0 \alpha_2 + \ldots = 0
+</script>
+Exploiting this fact, we can patch together the separable solutions <script type="math/tex"> \eqref{3.28} </script> to construct a much more general solution:
+<script type="math/tex; mode=display">
+V(x, y) = \sum_{n=1} ^{\infty} C_n e^{-n \pi x / a} \sin (n \pi y / a) \tagl{3.30}
+</script>
+This still satisfies three of the boundary conditions; the question is, can we (by astute choice of the coefficients <script type="math/tex"> C_n </script>) fit the final boundary condition (iii)?
+<script type="math/tex; mode=display">
+V(0, y) = \sum_{n=1} ^{\infty} C_n \sin (n \pi y / a) = V_0(y) \tagl{3.31}
+</script>
+Well, you may recognize this sum - it's a Fourier sine series. And Dirichlet's theorem guarantees that virtually <em>any</em> function <script type="math/tex"> V_0(y) </script> - it can even have a finite number of discontinuities - can be expanded in such a series.
+But how do we actually determine the coefficients <script type="math/tex"> C_n </script>, buried as they are in that infinite sum? The device for accomplishing this is so lovely it deserves a name - I call it <em>Fourier's trick</em>, though it seems Euler had used essentially the same idea somewhat earlier. Here's how it goes: Multiply <script type="math/tex"> \eqref{3.31} </script> by <script type="math/tex"> \sin(n' \pi y /a) </script> (where <script type="math/tex"> n' </script>  is a positive integer), and integrate from 0 to a:
+<script type="math/tex; mode=display">
+\sum_{n=1} ^{\infty} C_n \int_{0} ^{a} \sin(n \pi y / a) \sin(n' \pi y/a) \dd{y} = \int_{0} ^a V_0(y) \sin (n' \pi /a) \dd{y} \tagl{3.32}
+</script>
+You can work out the integral on the left yourself; the answer is
+<script type="math/tex; mode=display">
+\int_{0} ^a \sin (n \pi y /a) \sin (n' \pi y / a) \dd{y} = \begin{cases} 0 & \quad \text{if } n' \neq n \\ 
+\frac{a}{2} & \quad \text{if } n' = n \end{cases} \tagl{3.33}
+</script>
+Thus all the terms in the series drop out, save only the one where <script type="math/tex"> n = n' </script>, and the left side of <script type="math/tex"> \eqref{3.32} </script> reduces to <script type="math/tex"> (a/2)C_{n'} </script>. <em>Conclusion</em>:
+<script type="math/tex; mode=display">
+C_n = \frac{2}{a} \int_{0}^a V_0(y) \sin (n \pi y /a) \dd{y} \tagl{3.34}
+</script>
+That <em>does</em> it: <script type="math/tex"> \eqref{3.30} </script> is the solution, with coefficients given by <script type="math/tex"> eqref{3.34} </script>. As a concrete example, suppose the strip at <script type="math/tex"> x = 0 </script> is a metal plate with constant potential <script type="math/tex"> V_0 </script> (remember, it's insulated from the grounded plates at <script type="math/tex"> y = 0 </script> and <script type="math/tex"> y = a </script>. Then
+<script type="math/tex; mode=display">
+C_n = \frac{2V_0}{a} \int_0 ^a \sin (n \pi y / a) \dd y \\ = \frac{2 V_0}{n \pi} (1 - \cos n \pi) = \begin{cases} 
+0 & \quad \text{if n is even } \\
+\frac{4 V_0}{n \pi} & \quad \text{if n is odd}
+\end{cases} \tagl{3.35}
+</script>
+Thus
+<script type="math/tex; mode=display">
+V(x, y) = \frac{4 V_0}{\pi} \sum_{n = 1, 3, 5, \ldots} \frac{1}{n} e^{- n \pi x / a} \sin (n \pi y / a) \tagl{3.36}
+</script>
+Figure 3.18 is a plot of this potential; Fig. 3.10 shows how the first few terms in the Fourier series combine to make a better and better approximation to the constant <script type="math/tex"> V_0 </script>: (a) is the <script type="math/tex"> n=1 </script> term only, (b) includes n up to 5, (c) is the sum of the first 10 terms, and (d) is the sum of the first 100 terms.
+<img alt="Figure 3.18" src="../img/3.18.png" />
+Incidentally, the infinite series in Eq. 3.36 can be summed explicitly (try your hand at it if you like); the result is
+<script type="math/tex; mode=display">
+V(x, y) = \frac{2V_0}{\pi} \tan^{-1} \left( \frac{\sin(\pi y / a)}{\sinh(\pi x /a )}  \right) \tagl{3.37}
+</script>
+In this form, it is easy to check that Laplace's equation is obeyed and the four boundary conditions are satisfied</p>
+</div>
+<p>The success of this method hinged on two extraordinary properties of the separable solutions <script type="math/tex"> \eqref{3.28} </script> and <script type="math/tex"> \eqref{3.29} </script>: <strong>completeness</strong> and <strong>orthogonality</strong>. A set of functions <script type="math/tex"> f_n(y) </script> is said to be <strong>complete</strong> if any other function <script type="math/tex"> f(y) </script> can be expressed as a linear combination of them:
+<script type="math/tex; mode=display">
+f(y) = \sum_{n=1} ^{\infty} C_n f_n(y) \tagl{3.38}
+</script>
+The functions <script type="math/tex"> \sin (n \pi y/a) </script> are complete on the interval <script type="math/tex"> 0 \leq y \leq a </script>. It was this fact, guaranteed by Dirichlet's theorem, that assured us <script type="math/tex"> \eqref{3.31} </script> could be satisfied, given the proper choice of the coefficients <script type="math/tex"> C_n </script>. (The <em>proof</em> of completeness, for a particular set of functions, is an extremely difficult business, and I'm afraid physicists tend to <em>assume</em> it's true and leave the checking to others.) A set of functions is <strong>orthogonal</strong> if the integral of the product of any two different members of the set is zero:
+<script type="math/tex; mode=display">
+\int_0 ^a f_n(y) f_{n'} (y) \dd{y} = 0 \quad \text{for } n' \neq n
+</script>
+The sine functions are orthogonal <script type="math/tex"> \eqref{3.33} </script>; that is the property on which Fourier's trick is based, allowing us to kill off all terms but one in the infinite series and thereby solve for the coefficients <script type="math/tex"> C_n </script> (Proof of orthogonality is generally quite simple, either by direct integration or by analysis of the differential equation from which the functions came.)</p>
+<h4 id="example-34">Example 3.4</h4>
+<div class="admonition question">
+<p class="admonition-title">Two infinitely-long grounded metal plates, again at <script type="math/tex"> y=0 </script> and <script type="math/tex"> y=a </script> are connected at <script type="math/tex"> x= \pm b </script> by metal strips maintained at a constant potential <script type="math/tex"> V_0 </script>, as shown in Fig. 3.20 (a thin layer of insulation at each corner prevents them from shorting out). Find the potential inside the resulting rectangular pipe.</p>
+<p><img alt="Figure 3.20" src="../img/3.20.png" />
+<strong>Solution</strong>
+Once again, the configuration is independent of z. Our problem is to solve Laplace's equation
+<script type="math/tex; mode=display">
+\frac{\partial ^2 V}{\partial{x^2}} + \frac{\partial ^2 V}{\partial{y^2}} = 0
+</script>
+subject to the boundary conditions</p>
+<ul>
+<li>(i) <script type="math/tex"> V = 0 </script> when <script type="math/tex"> y = 0 </script>
+</li>
+<li>(ii) <script type="math/tex"> V = 0 </script> when <script type="math/tex"> y = a </script>
+</li>
+<li>(iii) <script type="math/tex"> V = V_0 </script> when <script type="math/tex"> x = b </script>
+</li>
+<li>(iv) <script type="math/tex"> V = V_0 </script> when <script type="math/tex"> x = -b </script>
+</li>
+</ul>
+<p>The argument runs as before, up to <script type="math/tex"> \eqref{3.27} </script>:
+<script type="math/tex; mode=display">
+V(x, y) = (A e^{kt} + B e^{-kt})(C \sin ky + D \cos ky)
+</script>
+This time, however, we cannot set <script type="math/tex"> A = 0 </script>; the region in question does not extend to <script type="math/tex"> x = \infty </script>, so <script type="math/tex"> e^{kx} </script> is perfectly acceptable. On the other hand, the situation is symmetric with respect to x, so <script type="math/tex"> V(-x, y) = V(x, y) </script>, and it follows that <script type="math/tex"> A = B </script>. Using
+<script type="math/tex; mode=display">
+e^{kx} + e^{-kx} = 2 \cosh kx
+</script>
+and absorbing <script type="math/tex"> 2A </script> into <script type="math/tex"> C </script> and <script type="math/tex"> D </script>, we have
+<script type="math/tex; mode=display">
+V(x, y) = \cosh kx (C \sin ky + D\cos ky)
+</script>
+Boundary conditions (i) and (ii) require, as before, that <script type="math/tex"> D = 0 </script> and <script type="math/tex"> k = n\pi /a </script>, so
+<script type="math/tex; mode=display">
+V(x, y) = C \cosh (n \pi x /a )\sin(n \pi y/a) \tagl{3.41}
+</script>
+Because <script type="math/tex"> V(x, y) </script> is even in x, it will automatically meet conditions (iv) if it fits (iii). It remains, therefore, to construct the general linear combination
+<script type="math/tex; mode=display">
+V(x, y) = \sum _{n=1}^{\infty} C_n \cosh (n \pi x / a) \sin(n \pi y /a)
+</script>
+and pick the coefficients <script type="math/tex"> C_n </script> in such a way as to satisfy condition (iii):
+<script type="math/tex; mode=display">
+V(b, y) = \sum_{n=1}^{\infty} C_n \cosh (n \pi b /a) \sin(n \pi y/a) = V_0
+</script>
+This is the same problem in Fourier analysis that we faced before; I quote the result from <script type="math/tex"> \eqref{3.35} </script>;
+<script type="math/tex; mode=display">
+C_n \cosh (n \pi b/a) = \begin{cases} 
+0 & \quad \text {if n is even} \\
+\frac{4 V_0}{n \pi} & \quad \text{if n is odd}
+\end{cases}
+</script>
+<em>Conclusion</em>: The potential in this case is given by
+<script type="math/tex; mode=display">
+V(x, y) = \frac{4 V_0}{\pi} \sum_{n=1, 3, 5\ldots} \frac{1}{n} \frac{\cosh(n \pi x/a)}{\cosh(n \pi b/a)} \sin(n \pi y/a) \tagl{3.42}
+</script>
+This function is shown in Fig. 3.21
+<img alt="Figure 3.21" src="../img/3.21.png" /></p>
+</div>
+<h4 id="example-35">Example 3.5</h4>
+<div class="admonition question">
+<p class="admonition-title">An infinitely long rectangular metal pipe (sides a and b) is grounded, but one end, at <script type="math/tex"> x = 0 </script>, is maintained at a specified potential <script type="math/tex"> V_0(y, z) </script>, as indicated in Fig. 3.22. Find the potential inside the pipe.</p>
+<p><img alt="Figure 3.22" src="../img/3.22.png" />
+<strong>Solution</strong>
+This is genuinely a three-dimensional problem,
+<script type="math/tex; mode=display">
+\frac{\partial ^2 V}{\partial{x^2}} + \frac{\partial ^2 V}{\partial{y^2}} + \frac{\partial ^2 V}{\partial{z^2}} = 0 \tagl{3.43}
+</script>
+subject to the boundary conditions
+  - (i) <script type="math/tex"> V = 0 </script> when <script type="math/tex"> y = 0 </script>
+  - (ii) <script type="math/tex"> V = 0 </script> when <script type="math/tex"> y = a </script>
+  - (iii) <script type="math/tex"> V = 0 </script> when <script type="math/tex"> z = 0 </script> 
+  - (iv) <script type="math/tex"> V = 0 </script> when <script type="math/tex"> z = b </script> 
+  - (v) <script type="math/tex"> V \rightarrow 0 </script> as <script type="math/tex"> x \rightarrow \infty </script>
+  - (vi) <script type="math/tex"> V = V_0(y, z) </script> whem <script type="math/tex"> x = 0 </script>
+As always, we look for solutions that are products:
+<script type="math/tex; mode=display">
+V(x, y, z) = X(x)Y(y)Z(z) \tagl{3.45}
+</script>
+Putting this into <script type="math/tex"> \eqref{3.43} </script> and dividing by V, we find
+<script type="math/tex; mode=display">
+\frac{1}{X} \frac{d^2 X}{dx^2} + \frac{1}{Y} \frac{d^2 Y}{dy^2} + \frac{1}{Z} \frac{d^2 Z}{dz^2} = 0
+</script>
+It follows that 
+<script type="math/tex; mode=display">
+\frac{1}{X} \frac{d^2 X}{dx^2} = C_1 , \quad \frac{1}{Y} \frac{d^2 Y}{dy^2} = C_2 , \quad \frac{1}{Z} \frac{d^2 Z}{dz^2} = C_3 , \text{ with } C_1 + C_2 + C_3 = 0
+</script>
+Our previous experience in Ex. 3.3 suggests that <script type="math/tex"> C_1 </script> must be positive, <script type="math/tex"> C_2 </script> and <script type="math/tex"> C_3 </script> negative. Setting <script type="math/tex"> C_2 = -k^2 </script>  and <script type="math/tex"> C_3 = -l^2 </script>, we have <script type="math/tex"> C_1 = k^2 + l^2 </script>, and hence
+<script type="math/tex; mode=display">
+\frac{d^2 X}{dx^2} = (k^2 + l^2)X, \quad  \frac{d^2 Y}{dy^2} = -k^2 Y, \quad \frac{d^2 Z}{dz^2} = -l^2 Z \tagl{3.46}
+</script>
+Once again, separation of variables has turned a partial differential equation into ordinary differential equations. The solutions are
+<script type="math/tex; mode=display">
+\begin{align*}
+X(x) & = A e^{\sqrt{k^2 + l^2} x} + B e^{- \sqrt{k^2 + l^2} x} \\
+Y(y) & = C \sin ky + D \cos ky \\
+Z(z) & = E \sin lz + F \cos lz
+\end{align*}
+</script>
+Boundary condition (v) implies <script type="math/tex"> A =0 </script>, (i) gives <script type="math/tex"> D = 0 </script>, and (iii) yields <script type="math/tex"> F = 0 </script> whereas (ii) and (iv) require that <script type="math/tex"> k = n\pi /a </script> and <script type="math/tex"> l =m \pi /b </script>, where <em>n</em> and <em>m</em> are positive integers. Combining the remaining constants, we are left with
+<script type="math/tex; mode=display">
+V(x, y, z) = C e^{-\pi \sqrt{(n/a)^2 + (m/b)^2}x} \sin (n \pi y / a) \sin(m \pi z /b) \tagl{3.47}
+</script>
+This solution meets all the boundary conditions except (vi). It contains two unspecified integers (n and m), and the most general linear combination is a <em>double</em> sum
+<script type="math/tex; mode=display">
+V(x, y, z) = \sum_{n=1} ^{\infty} \sum_{m = 1} ^{\infty} C e^{-\pi \sqrt{(n/a)^2 + (m/b)^2}x} \sin (n \pi y / a) \sin(m \pi z /b) = V_0(y, z) \tagl{3.48}
+</script>
+We hope to fit the remaining boundary condition,
+<script type="math/tex; mode=display">
+V(0, y, z) = \sum_{n=1} ^{\infty} \sum_{m = 1} ^{\infty} C \sin (n \pi y / a) \sin(m \pi z /b) = V_0(y, z) \tagl{3.49}
+</script>
+by appropriate choice of the coefficients <script type="math/tex"> C_{n, m} </script>. To determine these constants, we multiply by <script type="math/tex">\sin(n' n \pi y/a) \sin(m' \pi z / b)</script>, where <script type="math/tex"> n' </script> and <script type="math/tex"> m' </script> are arbitrary positive integers, and integrate
+<script type="math/tex; mode=display">
+\sum_{n=1} ^{\infty} \sum_{m = 1} ^{\infty} C_{n, m} \int_0 ^a \sin (n \pi y/a) \sin(n' \pi y/a) \dd{y} \int_0 ^b \sin(m \pi z/b) \sin (m' \pi z/b) \dd{z} \\
+= \int_0 ^a \int_0 ^b V_0(y, z) \sin(n' \pi y/a) \sin(m' \pi z/b) \dd{y} \dd{z}
+</script>
+Quoting <script type="math/tex"> \eqref{3.33} </script>, the left side is <script type="math/tex"> (ab/4) C_{n', m'} </script>, so
+<script type="math/tex; mode=display">
+C_{n, m} = \frac{4}{ab} \int_0 ^a \int_0 ^b V_0(y, z) \sin (n \pi y/a) \sin(m\pi z/b) \dd{y} \dd{z} \tagl{3.50}
+</script>
+Equation <script type="math/tex"> \eqref{3.48} </script>, with the coefficients given by <script type="math/tex"> \eqref{3.50} </script>, is the solution to our problem.</p>
+<p>For instance, if the end of the tube is a conductor at constant potential <script type="math/tex"> V_0 </script>, 
+<script type="math/tex; mode=display">
+C_{n, m} = \frac{4}{ab} \int_0 ^a \sin(n \pi y/a) \dd{y} \int_0 ^b \sin(m \pi z/b) \dd{z} \\
+ = \begin{cases}
+ 0 & \qquad \text{if n or m is even} \\
+ \frac{16 V_0}{\pi^2 nm} & \qquad \text{if n and m are odd}
+ \end{cases} \tagl{3.51} 
+</script>
+In this case,
+<script type="math/tex; mode=display">
+V(x, y, z) = \frac{16V_0}{\pi^2} \sum_{n,m=1,3,5,\ldots} ^{\infty} \frac{1}{nm} e^{-\pi \sqrt{(n/a)^2 + (m/b)^2}x} \sin(n \pi y/a) \sin(m \pi z/b) \tagl{3.52}
+</script>
+Notice that successive terms decrease rapidly; a reasonable approximation would be obtained by keeping only the first few.</p>
+</div>
+<h2 id="332-spherical-coordinates">3.3.2: Spherical Coordinates</h2>
+<p>In the examples considered so far, Cartesian coordinates were clearly appropriate, since the boundaries were planes. For round objects, spherical coordinates are more natural. In the spherical system, Laplace's equation reads:
+<script type="math/tex; mode=display">
+\frac{1}{r^2} \pdv{}{r} \left( r^2 \pdv{V}{r} \right) + \frac{1}{r^2 \sin \theta} \pdv{}{\theta} \left( \sin \theta \pdv{V}{\theta} \right) + \frac{1}{r^2\sin ^2 \theta} \frac{\partial ^2 V}{\partial \phi ^2} = 0 \tagl{3.53} 
+</script>
+</p>
+<p>I shall assume the problem has <strong>azimuthal symmetry</strong>, so that V is independent of <script type="math/tex"> \phi </script>; In that case, <script type="math/tex"> \eqref{3.53} </script> reduces to
+<script type="math/tex; mode=display">
+\pdv{}{r} \left( r^2 \pdv{V}{r} \right) + \frac{1}{\sin \theta} \pdv{}{\theta} \left( \sin \theta \pdv{V}{\theta} \right) = 0 \tagl{3.54}
+</script>
+As before, we look for solutions that are products:
+<script type="math/tex; mode=display">
+V(r, \theta) = R(r) \Theta (\theta) \tagl{3.55}
+</script>
+Putting this into <script type="math/tex"> \eqref{3.54} </script>, and dividing by <em>V</em>, 
+<script type="math/tex; mode=display">
+\frac{1}{R} \dv{}{r} \left( r^2 \dv{R}{r} \right) + \frac{1}{\Theta \sin \theta} \dv{}{\theta} \left( \sin \theta \dv{\Theta}{\theta} \right) = 0 \tagl{3.56}
+</script>
+Since the first term depends only on <em>r</em>, and the second only on <script type="math/tex"> \theta </script>, it follows that each must be a constant:
+<script type="math/tex; mode=display">
+ \frac{1}{R} \dv{}{r} \left( r^2 \dv{R}{r} \right) = l(l+1), \quad \frac{1}{\Theta \sin \theta} \dv{}{\theta} \left( \sin \theta \dv{\Theta}{\theta} \right) = -l(l+1) \tagl{3.57}
+</script>
+Here <script type="math/tex"> l(l+1) </script> is just a fancy way of writing the separation constant, whose convenience will appear shortly.
+As always, separation of variables has converted a <em>partial</em> differential equation into ordinary differential equations. The radial equation,
+<script type="math/tex; mode=display">
+\dv{}{r} \left( r^2 \dv{R}{r} \right) = l(l+1)R \tagl{3.58}
+</script>
+has the general solution
+<script type="math/tex; mode=display">
+R(r) = A r^l + \frac{B}{r^{l+1}} \tagl{3.59} 
+</script>
+as you can easily check; A and B are the two arbitrary constants to be expected in the solution of a second-order differential equation. But the angular equation,
+<script type="math/tex; mode=display">
+\dv{}{\theta} \left( \sin \theta \dv{\Theta}{\theta} \right) = -l(l+1) \sin \theta \Theta \tagl{3.60}
+</script>
+is not so simple. The solutions are <strong>Legendre polynomials</strong> in the variable <script type="math/tex"> \cos \theta </script>:
+<script type="math/tex; mode=display">
+\Theta (\theta ) = P_l (\cos \theta )  \tagl{3.61}
+</script>
+</p>
+<p>
+<script type="math/tex"> P_l (x) </script> is most conveniently defined by the <strong>Rodrigues formula</strong>:</p>
+<p>
+<script type="math/tex; mode=display">
+P_l(x) \equiv \frac{1}{2^l l!}\left( \dv{}{x} \right)^l (x^2 - 1)^l \tagl{3.62}
+</script>
+The first few Legendre polynomials are listed:</p>
+<div class="admonition info">
+<p class="admonition-title">Legendre Polynomials <script type="math/tex"> P_0 </script> -  <script type="math/tex">P_5 </script>
+</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{align*}
+P_0(x) & = 1 \\
+P_1(x) & = x \\
+P_2(x) & = (3x^2 - 1)/2 \\
+P_3(x) & = (5x^3 - 3x)/2 \\
+P_4(x) & = (35x^4 - 30x^2 + 3)/8 \\
+P_5(x) & = (63x^5 - 70x^3 + 15x)/8
+\end{align*}
+</script>
+</p>
+</div>
+<p>Notice that <script type="math/tex"> P_l(x) </script> is (as the name suggests) an _l_th-order polynomial in x; it contains only even powers if l is even, and only odd powers if l is odd. The factor in front <script type="math/tex"> (1/2^l l! </script> was chosen in order that
+<script type="math/tex; mode=display">
+P_l(1) = 1 \tagl{3.63}
+</script>
+</p>
+<p>The Rodrigues formula obviously only works for nonnegative integer values of l. Moreover, it provides us with only <em>one</em> solution. But <script type="math/tex"> \eqref{3.60} </script> is second-order, and it should possess two independent solutions for every value of <em>l</em>. It turns out that these "other solutions" blow up at <script type="math/tex"> \theta = 0 </script> and/or <script type="math/tex"> \theta = \pi </script>, and are therefore unacceptable on physical grounds. For instance, the second solution for <script type="math/tex"> l=0 </script> is
+<script type="math/tex; mode=display">
+\Theta(\theta) = \ln \left( \tan \frac{\theta}{2}  \right) \tagl{3.64}
+</script>
+You might want to check for yourself that this satisfies <script type="math/tex"> \eqref{3.60} </script>.</p>
+<p>In the case of azimuthal symmetry, then, the most general separable solution to Laplace's equation, consistent with minimal physical requirements, is
+<script type="math/tex; mode=display">
+V(r, \theta) = \left( A r^l + \frac{B}{r^{l+1}} \right) P_l(\cos \theta)
+</script>
+(There was no need to include an overall constant in <script type="math/tex"> \eqref{3.61} </script> because it can be absorbed into A and B at this stage.) As before, separation of variables yields an infinite set of solutions, one for each <em>l</em>. The general solution is the linear combination of separable solutions:
+<script type="math/tex; mode=display">
+V(r, \theta) = \sum_{l=0} ^{\infty} \left( A r^l + \frac{B}{r^{l+1}} \right) P_l(\cos \theta) \tagl{3.65}
+</script>
+The following examples illustrate the power of this important result.</p>
+<h4 id="example-36">Example 3.6</h4>
+<div class="admonition question">
+<p class="admonition-title">The potential <script type="math/tex"> V_0(\theta) </script> is specified on the surface of a hollow sphere, of radius <em>R</em>. Find the potential inside the sphere.</p>
+<p><strong>Solution</strong>
+In this case, <script type="math/tex"> B_l = 0 </script> for all <em>l</em>, otherwise the potential would blow up at the origin. Thus,
+<script type="math/tex; mode=display">
+V(r, \theta) = \sum_{l = 0} ^{\infty} A_l r^l P_l(\cos \theta) \tagl{3.66}
+</script>
+At <script type="math/tex"> r = R </script> this must match the specified function <script type="math/tex"> V_0(\theta) </script>:
+<script type="math/tex; mode=display">
+V(R, \theta) = \sum_{l=0}^\infty A_l R^l P_l(\cos \theta) = V_0(\theta) \tagl{3.67}
+</script>
+Can this equation be satisfied, for an appropriate choice of coefficients <script type="math/tex"> A_l </script>? Yes: The Legendre polynomials (like the sines) constitute a complete set of functions, on the interval <script type="math/tex"> -1 \leq x \leq 1 (0 \leq \theta \leq \pi) </script>. How do we determine the constants? Again, by Fourier's trick, for the Legendre polynomials (like the sines) are orthogonal functions:
+<script type="math/tex; mode=display">
+\begin{align*}
+\int_{-1}^1 P_l(x) P_{l'}(x) \dd{x} & = \int_0 ^\pi P_l(\cos \theta) P_{l'}(\cos \theta) \sin \theta \dd{\theta} \\
+ & = \begin{cases}
+ 0, & \quad \text{if } l' \neq l \\
+ \frac{2}{2l +1} , & \quad \text{if } l' = l
+ \end{cases}
+\end{align*} \tagl{3.68}
+</script>
+Thus, multiplying <script type="math/tex"> \eqref{3.67} </script> by <script type="math/tex"> P_{l'}(\cos \theta) \sin \theta </script> and integrating, we have
+<script type="math/tex; mode=display">
+A_{l'} R^{l'} \frac{2}{2l' + 1} = \int_{0} ^\pi V_0(\theta) P_{l'}(\cos \theta) \sin \theta \dd{\theta}
+</script>
+or
+<script type="math/tex; mode=display">
+A_l = \frac{2l+1}{2R^l} \int_0 ^\pi V_0(\theta) P_l(\cos \theta) \sin \theta \dd{\theta} \tagl{3.69}
+</script>
+<script type="math/tex"> \eqref{3.66} </script> is the solution to our problem, with the coefficients given by <script type="math/tex"> \eqref{3.69} </script>.
+It can be difficult to evaluate integrals of the form <script type="math/tex"> \eqref{3.69} </script> analytically, and in practice it is often easier to solve <script type="math/tex"> \eqref{3.67} </script> "by eyeball." For instance, suppose we are told that the potential on the sphere is
+<script type="math/tex; mode=display">
+V_0(\theta) = k \sin^2 (\theta/2) \tagl{3.70}
+</script>
+where <em>k</em> is constant. Using the half-angle formula, we rewrite this as
+<script type="math/tex; mode=display">
+V_0(\theta) = \frac{k}{2}(1 - \cos \theta) = \frac{k}{2} [P_0(\cos \theta) - P_1 (\cos \theta)] 
+</script>
+Putting this into <script type="math/tex"> \eqref{3.67} </script>, we read off immediately that <script type="math/tex"> A_0 = k/2 </script>, <script type="math/tex"> A_1 = -k/(2R) </script>, and all other <script type="math/tex"> A_l </script>'s vanish. Therefore
+<script type="math/tex; mode=display">
+V(r, \theta) = \frac{k}{2} \left[ r^0 P_{0}(\cos \theta) - \frac{r^1}{R} P_1 (\cos \theta) \right] = \frac{k}{2} \left( 1 - \frac{r}{R} \cos \theta \right) \tagl{3.71}
+</script>
+</p>
+</div>
+<h4 id="example-37">Example 3.7</h4>
+<div class="admonition question">
+<p class="admonition-title">The potential <script type="math/tex"> V_0(\theta) </script> is again specified on the surface of a sphere of radius <em>R</em>, but this time we are asked to find the potential <em>outside</em>, assuming there is no charge there.</p>
+<p><strong>Solution</strong>
+In this case it's the <script type="math/tex"> A_l </script>'s that must be zero (or else <em>V</em> would not go to zero at <script type="math/tex"> \infty </script>), so 
+<script type="math/tex; mode=display">
+V(r, \theta) = \sum_{l=0} ^\infty \frac{B_l}{r^{l+1}} P_l(\cos \theta) = V_0(\theta) \tagl{3.72}
+</script>
+Multiplying by <script type="math/tex"> P_{l'}(\cos \theta) \sin \theta </script> and integrating - exploiting, again, the orthogonality relation 3.68 - we have
+<script type="math/tex; mode=display">
+\frac{B_{l'}}{R^{l'+1}} \frac{2}{2l' + 1} = \int_0 ^\pi V_0(\theta) P_{l'}(\cos \theta) \sin \theta \dd{\theta} 
+</script>
+or 
+<script type="math/tex; mode=display">
+B_l = \frac{2l + 1}{2} R^{l+1} \int_0 ^\pi V_0(\theta) P_l(\cos \theta) \sin \theta \dd{\theta} \tagl{3.73}
+</script>
+<script type="math/tex"> \eqref{3.72} </script>, with the coefficients given by <script type="math/tex"> \eqref{3.73} </script>, is the solution to our problem.</p>
+</div>
+<h4 id="example-38">Example 3.8</h4>
+<div class="admonition question">
+<p class="admonition-title">An uncharged metal sphere of radius <em>R</em> is placed in an otherwise uniform electric field <script type="math/tex"> \vec{E} = E_0 \hat{z} </script>. The field will push positive charge to the 'northern' surface of the sphere, and - symmetrically - negative charge to the 'southern' surface (Fig. 3.24). This induced charge, in turn, distorts the field in the neighborhood of the sphere. Find the potential in the region outside the sphere.</p>
+<p><strong>Solution</strong>
+The sphere is an equipotential - we may as well set it to zero. Then by symmetry the entire xy plane is at potential zero. This time, however, <em>V</em> does <em>not</em> go to zero at large <em>z</em>. In fact, far from the sphere the field is <script type="math/tex"> E_0 \hat{z} </script> and hence
+<script type="math/tex; mode=display">
+ V \rightarrow - E_0 z + C
+ </script>
+<img alt="Figure 3.24" src="../img/3.24.png" />
+Since <script type="math/tex"> V = 0 </script> in the equatorial plane, the constant <em>C</em> must be zero. Accordingly, the boundary conditions for this problem are
+  - (i) <script type="math/tex"> V = 0 </script> when <script type="math/tex"> r = R </script>
+  - (ii) <script type="math/tex"> V \rightarrow - E_0 r \cos \theta </script> for <script type="math/tex"> r \gg R </script>
+We must fit these boundary conditions with a function of the form <script type="math/tex"> \eqref{3.65} </script>. The first condition yields
+<script type="math/tex; mode=display">
+ A_l R^l + \frac{B_l}{R^{l+1}} = 0
+ </script> 
+or
+<script type="math/tex; mode=display">
+B_l = -A_l R^{2l+1} \tagl{3.75}
+</script>
+so
+<script type="math/tex; mode=display">
+V(r, \theta) = \sum_{l = 0} ^{\infty} A_l \left( r^l - \frac{R^{2l+1}}{r^{l+1}}  \right) P_l(\cos \theta)
+</script>
+For <script type="math/tex"> r \gg R </script>, the second term in parentheses is negligible, and therefore the condition (ii) requires that
+<script type="math/tex; mode=display">
+\sum_{l=0}^\infty A_l R^{l} P_l (\cos \theta) = - E_0 r \cos \theta
+</script>
+Evidently only one term is present: <script type="math/tex"> l = 1 </script>. In fact, since <script type="math/tex"> P_1(\cos \theta) = \cos \theta </script> we can read off immediately
+<script type="math/tex; mode=display">
+A_1 = - E_0, \qquad \text{ all other }A_l's \text{ zero}
+</script>
+<em>Conclusion</em>:
+<script type="math/tex; mode=display">
+V(r, \theta) = - E_0 \left( r - \frac{R^3}{r^2}  \right) \cos \theta \tagl{3.76}
+</script>
+The first term <script type="math/tex"> (-E_0 r \cos \theta) </script> is due to the external field; the contribution attributable to the induced charge is
+<script type="math/tex; mode=display">
+E_0 \frac{R^3}{r^2} \cos \theta
+</script>
+If you want to know the induced charge density, it can be calculated in the usual way:
+<script type="math/tex; mode=display">
+\sigma(\theta) = - \epsilon_0 \left. \pdv{V}{r} \right|_{r = R} = \epsilon_0 E_0 \left. \left( 1 + 2 \frac{R^3}{r^3}  \right) \cos \theta \right|_{r = R} = 3 \epsilon_0 E_0 \cos \theta \tagl{3.77}
+</script>
+As expected, it is positive in the 'northern' hemisphere <script type="math/tex"> 0 \leq \theta \leq \pi /2 </script> and negative in the 'southern' <script type="math/tex"> \pi/2 \leq \theta \leq \pi </script>.</p>
+</div>
+<h4 id="example-39">Example 3.9</h4>
+<div class="admonition question">
+<p class="admonition-title">A specified charge density <script type="math/tex"> \sigma_0(\theta) </script> is glued over the surface of a spherical shell of radius <em>R</em>. Find the resulting potential inside and outside the sphere.</p>
+<p><strong>Solution</strong>
+You could, of course, do this by direct integration:
+<script type="math/tex; mode=display">
+V = \frac{1}{4 \pi \epsilon_0} \int \frac{\sigma_0}{\gr} \dd{a}
+</script>
+but separation of variables is often easier. For the interior region, we have
+<script type="math/tex; mode=display">
+V(r, \theta) = \sum_{l = 0}^\infty A_l r^l P_l (\cos \theta) \quad (r \leq R) \tagl{3.78}
+</script>
+(no <script type="math/tex"> B_l </script> terms - they blow up at the origin); in the exterior region
+<script type="math/tex; mode=display">
+V(r, \theta) = \sum_{l=0}^\infty \frac{B_l}{r^{l+1}} P_l(\cos \theta) \quad (r \geq R) \tagl{3.79}
+</script>
+(no <script type="math/tex"> A_l </script> terms - they don't go to zero at infinity). These two functions must be joined together by the appropriate boundary conditions at the surface itself. First, the potential is <em>continuous</em> at <script type="math/tex"> r = R </script> (Eq. 2.34):
+<script type="math/tex; mode=display">
+\sum_{l=0}^\infty A_l R^l P_l(\cos \theta) = \sum_{l=0} ^\infty \frac{B_l}{R^{l+1}} P_l(\cos \theta) \tagl{3.80} 
+</script>
+It follows that the coefficients of like Legendre polynomial are equal:
+<script type="math/tex; mode=display">
+B_l = A_l R^{2l+1} \tagl{3.81}
+</script>
+(To prove that formally, multiply both sides of <script type="math/tex"> \eqref{3.80} </script> by <script type="math/tex"> P_{l'} (\cos \theta)\sin \theta </script> and integrate from <script type="math/tex"> 0 </script> to <script type="math/tex"> \pi </script>, using the orthogonality relation <script type="math/tex"> \eqref{3.68} </script> .) Second, the radial derivative of <em>V</em> suffers a discontinuity at the surface (Eq. 2.36):
+<script type="math/tex; mode=display">
+\left. \left( \pdv{V_{out}}{r} - \pdv{V_{in}}{r} \right) \right|_{r = R} = - \frac{1}{\epsilon_0} \sigma_0(\theta) \tagl{3.82}
+</script>
+Thus,
+<script type="math/tex; mode=display">
+- \sum_{l=0}^\infty (l+1) \frac{B_l}{R^{l+2}} P_l(\cos \theta) - \sum_{l=0}^\infty l A_l R^{l-1} P_l(\cos \theta) = - \frac{1}{\epsilon_0} \sigma_0 (\theta)
+</script>
+or, using <script type="math/tex"> \eqref{3.81} </script>,
+<script type="math/tex; mode=display">
+\sum_{l=0}^\infty (2l+1) A_l R^{l-1} P_l(\cos \theta) = \frac{1}{\epsilon_0} \sigma_0(\theta) \tagl{3.83}
+</script>
+From here, the coefficients can be determined using Fourier's trick
+<script type="math/tex; mode=display">
+A_l = \frac{1}{2 \epsilon_0 R^{l-1}} \int_0 ^\pi \sigma_0 (\theta) P_l(\cos \theta) \sin \theta \dd{\theta} \tagl{3.84}
+</script>
+Equations 3.78 and 3.79 constitute the solution to our problem, with the coefficients given by <script type="math/tex"> \eqref{3.81} </script> and <script type="math/tex"> \eqref{3.84} </script>.
+For instance, if
+<script type="math/tex; mode=display">
+\sigma_0(\theta) = k \cos \theta = k P_1 (\cos \theta) \tagl{3.85}
+</script>
+for some constant <em>k</em>, then all the <script type="math/tex"> A_l </script>'s are zero except for <script type="math/tex"> l = 1 </script>, and
+<script type="math/tex; mode=display">
+ A_1 = \frac{k}{2 \epsilon_0} \int_0 ^\pi [P_1(\cos \theta)]^2 \sin \theta \dd{\theta} = \frac{k}{3\epsilon_0} 
+ </script> 
+The potential inside the sphere is therefore
+<script type="math/tex; mode=display">
+V(r, \theta) = \frac{k}{3 \epsilon_0} r \cos \theta \quad (r \leq R) \tagl{3.86}
+</script>
+whereas outside the sphere
+<script type="math/tex; mode=display">
+V(r, \theta) = \frac{kR^3}{3 \epsilon_0} \frac{1}{r^2} \cos \theta \quad (r \geq R) \tagl{3.87}
+</script>
+In particular, if <script type="math/tex"> \sigma_0(\theta) </script> is the induced charge on a metal sphere in an external field <script type="math/tex"> E_0(\hat{z}) </script>, so that <script type="math/tex"> k = 3 \epsilon_0 E_0 \eqref{3.77} </script>, then the potential inside is <script type="math/tex"> E_0 r \cos \theta = E_0 z </script>, and the field is <script type="math/tex"> -E_0 \hat{z} </script> - exactly right to cancel off the external field, as of course it <em>should</em> be. Outside the sphere the potential due to this surface charge is
+<script type="math/tex; mode=display">
+E_0 \frac{R^3}{r^2} \cos \theta
+</script>
+consistent with our conclusion in Example 3.8.</p>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ch3-2/" title="3.2 - The Method of Images" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                3.2 - The Method of Images
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../ch3-4/" title="3.4 - Multipole Expansion" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                3.4 - Multipole Expansion
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../extra.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
