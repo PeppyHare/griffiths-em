@@ -1,0 +1,1083 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>1.2 - Differential Calculus - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Noto Serif","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#12-differential-calculus" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                My Docs
+              </span>
+              <span class="md-header-nav__topic">
+                1.2 - Differential Calculus
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      1 - Vector Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        1 - Vector Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-1/" title="1.1 - Vector Algebra" class="md-nav__link">
+      1.1 - Vector Algebra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        1.2 - Differential Calculus
+      </label>
+    
+    <a href="./" title="1.2 - Differential Calculus" class="md-nav__link md-nav__link--active">
+      1.2 - Differential Calculus
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#121-ordinary-derivatives" title="1.2.1: "Ordinary" Derivatives" class="md-nav__link">
+    1.2.1: "Ordinary" Derivatives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#122-gradient" title="1.2.2: Gradient" class="md-nav__link">
+    1.2.2: Gradient
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-13" title="Example 1.3" class="md-nav__link">
+    Example 1.3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123-the-del-operator" title="1.2.3: The Del Operator" class="md-nav__link">
+    1.2.3: The Del Operator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#124-the-divergence" title="1.2.4: The Divergence" class="md-nav__link">
+    1.2.4: The Divergence
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-14" title="Example 1.4" class="md-nav__link">
+    Example 1.4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-the-curl" title="1.2.5: The Curl" class="md-nav__link">
+    1.2.5: The Curl
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-15" title="Example 1.5" class="md-nav__link">
+    Example 1.5
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#126-product-rules" title="1.2.6: Product Rules" class="md-nav__link">
+    1.2.6: Product Rules
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#127-second-derivatives" title="1.2.7: Second Derivatives" class="md-nav__link">
+    1.2.7: Second Derivatives
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      2 - Electrostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        2 - Electrostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-1/" title="2.1 - The Electric Field" class="md-nav__link">
+      2.1 - The Electric Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-2/" title="2.2 - Divergence and Curl of Electrostatic Fields" class="md-nav__link">
+      2.2 - Divergence and Curl of Electrostatic Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-3/" title="2.3 - Electric Potential" class="md-nav__link">
+      2.3 - Electric Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-4/" title="2.4 - Work and Energy in Electrostatics" class="md-nav__link">
+      2.4 - Work and Energy in Electrostatics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-5/" title="2.5 - Conductors" class="md-nav__link">
+      2.5 - Conductors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      3 - Potentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        3 - Potentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-1/" title="3.1 - Laplace's Equation" class="md-nav__link">
+      3.1 - Laplace's Equation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-2/" title="3.2 - The Method of Images" class="md-nav__link">
+      3.2 - The Method of Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-3/" title="3.3 - Separation of Variables" class="md-nav__link">
+      3.3 - Separation of Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-4/" title="3.4 - Multipole Expansion" class="md-nav__link">
+      3.4 - Multipole Expansion
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#121-ordinary-derivatives" title="1.2.1: "Ordinary" Derivatives" class="md-nav__link">
+    1.2.1: "Ordinary" Derivatives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#122-gradient" title="1.2.2: Gradient" class="md-nav__link">
+    1.2.2: Gradient
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-13" title="Example 1.3" class="md-nav__link">
+    Example 1.3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123-the-del-operator" title="1.2.3: The Del Operator" class="md-nav__link">
+    1.2.3: The Del Operator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#124-the-divergence" title="1.2.4: The Divergence" class="md-nav__link">
+    1.2.4: The Divergence
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-14" title="Example 1.4" class="md-nav__link">
+    Example 1.4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#125-the-curl" title="1.2.5: The Curl" class="md-nav__link">
+    1.2.5: The Curl
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-15" title="Example 1.5" class="md-nav__link">
+    Example 1.5
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#126-product-rules" title="1.2.6: Product Rules" class="md-nav__link">
+    1.2.6: Product Rules
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#127-second-derivatives" title="1.2.7: Second Derivatives" class="md-nav__link">
+    1.2.7: Second Derivatives
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/PeppyHare/griffiths-em/edit/master/docs/ch1-2.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="12-differential-calculus">1.2: Differential Calculus</h1>
+<h2 id="121-ordinary-derivatives">1.2.1: "Ordinary" Derivatives</h2>
+<p>Suppose we have a function of one variable, <script type="math/tex"> f(x) </script>. <em>Question</em>: what does the derivative <script type="math/tex"> \dv{f}{x} </script> do for us? <em>Answer</em>: It tells us how rapidly the function <script type="math/tex"> f(x) </script> varies when we change the argument x by a tiny amount, <script type="math/tex"> \dd{x} </script>
+<script type="math/tex; mode=display">
+\dd{f} = \left( \dv{f}{x} \right) \dd{x} \tagl{1.33}
+</script>
+In words: If we increment <em>x</em> by an infinitesimal amount <script type="math/tex"> \dd{x} </script>, then <script type="math/tex"> f </script> changes by an amount <script type="math/tex"> \dd{f} </script>; the derivative is the proportionality factor. Foe example, in Fig. 1.17(a), the function varies slowly with <em>x</em>, and the derivative is correspondingly small. In Fig 1.17(b), <em>f</em> increases rapidly with <em>x</em>, and the derivative is large as you move away from <script type="math/tex"> x = 0 </script>.
+<em>Geometrical interpretation</em>: The derivative <script type="math/tex"> \dv{f}{x} </script> is the slope of the graph of <em>f</em> versus <em>x</em>.</p>
+<h2 id="122-gradient">1.2.2: Gradient</h2>
+<p>Suppose, now, that we have a function of three variables-say, the temperature T (x, y, z) in this room. (Start out in one comer, and set up a system of axes; then for each point (x, y, z) in the room, T gives the temperature at that spot.) We want to generalize the notion of "derivative" to functions like T, which depend not on one but on three variables.</p>
+<p>A derivative is supposed to tell us how fast the function varies, if we move a little distance. But this time the situation is more complicated, because it depends on what direction we move: If we go straight up, then the temperature will prob- ably increase fairly rapidly, but if we move horizontally, it may not change much at all. In fact, the question "How fast does T vary?" has an infinite number of answers, one for each direction we might choose to explore.</p>
+<p>Fortunately, the problem is not as bad as it looks. A theorem on partial derivatives states that
+<script type="math/tex; mode=display">
+\dd{T} = \left( \pdv{T}{x} \right)\dd{x} + \left( \pdv{T}{y} \right) \dd{y} + \left( \pdv{T}{z} \right) \dd{z} \tagl{1.34}
+</script>
+<img alt="Figure 1.17" src="../img/1.17.png" /></p>
+<p>This tells us how T changes when we alter all three variables by the infinitesimal amounts dx, dy, dz. Notice that we do <em>not</em> require an infinite number of derivatives - three will suffice: the partial derivatives along each of the three coordinate directions.
+<script type="math/tex"> \eqref{1.34} </script> is reminiscent of a dot product:
+<script type="math/tex; mode=display">
+\dd{T} = \left( \pdv{T}{x} \hat{x} + \pdv{T}{y} \hat{y} + \pdv{T}{z} \hat{z} \right)\cdot ( \dd{x} \hat{x} + \dd{y} \hat{y} + \dd{z} \hat{z} \\
+= (\grad{T}) \cdot (\dd{\vec{l}}) \tagl{1.35}
+</script>
+where
+<script type="math/tex; mode=display">
+\grad{T} \equiv \pdv{T}{x} \hat{x} + \pdv{T}{y} \hat{y} + \pdv{T}{z} \hat{z} \tagl{1.36}
+</script>
+is the <strong>gradient</strong> of T. Note that <script type="math/tex"> \grad{T} </script> is a vector quantity, with three components; it is the generalized derivative we have been looking for. <script type="math/tex"> \eqref{1.35} </script> is the three-dimensional version of <script type="math/tex"> \eqref{1.33} </script>.
+<em>Geometrical interpretation of the Gradient</em>: Like any vector, the gradient has <em>magnitude</em> and <em>direction</em>. To determine its geometrical meaning, let's rewrite the dot product using Eq. 1.1
+<script type="math/tex; mode=display">
+\dd{T} = \grad{T} \cdot \dd{\vec{l}} = |\grad{T}| |\dd{\vec{l}}| \cos \theta \tagl{1.37}
+</script>
+where <script type="math/tex"> \theta </script> is the angle between <script type="math/tex"> \grad{T} </script> and <script type="math/tex"> \dd{\vec{l}} </script>. Now if we fix the magnitude <script type="math/tex"> |\dd{\vec{l}}| </script> and search around in various directions, the maximum change in T evidently occurs when <script type="math/tex"> \theta = 0 </script> (for then <script type="math/tex"> \cos \theta = 1 </script>). That is, for a fixed distance, dT is greatest when I move in the same direction as <script type="math/tex"> \grad{T} </script> . Thus:</p>
+<div class="admonition info">
+<p class="admonition-title">The gradient <script type="math/tex"> \grad{T} </script> points in the direction of maximum increase of the function T.</p>
+</div>
+<p>Moreover:</p>
+<div class="admonition info">
+<p class="admonition-title">The magnitude <script type="math/tex"> | \grad{T} | </script> gives the slope (rate of increase) along this maximal direction</p>
+</div>
+<p>Imagine you are standing on a hillside. Look all around you, and find the direction of steepest ascent. That is the direction of the gradient. Now measure the slope in that direction (rise over run). That is the magnitude of the gradient. (Here the function we're talking about is the height of the hill, and the coordinates it depends on are positions-latitude and longitude, say. This function depends on only two variables, not three, but the geometrical meaning of the gradient is easier to grasp in two dimensions.) Notice from Eq. 1.37 that the direction of maximum descent is opposite to the direction of maximum ascent, while at right angles <script type="math/tex"> (\theta = 90^{\circ}) </script> the slope is zero (the gradient is perpendicular to the contour lines). You can conceive of surfaces that do not have these properties, but they always have "kinks" in them, and correspond to non-differentiable functions.</p>
+<p>What would it mean for the gradient to vanish? If <script type="math/tex"> \grad{T} = 0 </script>  at (x, y, z), then <script type="math/tex"> \dd{T} = 0 </script>  for small displacements about the point (x, y, z). This is, then, a stationary point of the function T(x, y, z). It could be a maximum (a summit), a minimum (a valley), a saddle point (a pass), or a "shoulder." This is analogous to the situation for functions of one variable, where a vanishing derivative signals a maximum, a minimum, or an inflection. In particular, if you want to locate the extrema of a function of three variables, set its gradient equal to zero.</p>
+<h4 id="example-13">Example 1.3</h4>
+<div class="admonition question">
+<p class="admonition-title">Find the gradient of <script type="math/tex"> r = \sqrt{x^2 + y^2 + z^2} </script> (the magnitude of the position vector)</p>
+<p><strong>Solution</strong>
+<script type="math/tex; mode=display">
+\begin{align*}
+\grad{r} & = \pdv{r}{x} \hat{x} + \pdv{r}{y} \hat{y} + \pdv{r}{z} \hat{z} \\
+& = \frac{1}{2} \frac{2x}{\sqrt{x^2 + y^2 + z^2}}\hat{x} + \frac{1}{2} \frac{2y}{\sqrt{x^2 + y^2 + z^2}}\hat{y} + \frac{1}{2} \frac{2z}{\sqrt{x^2 + y^2 + z^2}}\hat{z} \\
+& = \frac{x \hat{x} + y \hat{y} + z \hat{z}}{\sqrt{x^2 + y^2 + z^2}} = \frac{\vec{r}}{r} = \hat{r}
+\end{align*}
+</script>
+Does this makes sense? Well, it says that the distance from the origin increases most rapidly in the radial direction, and that its rate of increase in that direction is 1... just what you'd expect.</p>
+</div>
+<h2 id="123-the-del-operator">1.2.3: The Del Operator</h2>
+<p>The gradient has the formal appearance of a vector, <script type="math/tex"> \nabla </script>, "multiplying" a scalar T:
+<script type="math/tex; mode=display">
+\grad{T} = \left( \hat{x} \pdv{}{x} + \hat{y} \pdv{}{y} + \hat{z} \pdv{}{z} \right) T \tagl{1.38}
+</script>
+(For once, I write the unit vectors to the left, just so no one will think that this means <script type="math/tex"> \pdv{\hat{x}}{x} </script> and so on, which would be zero since the coordinate directions are constant.) The term in parentheses is called <strong>del</strong>:
+<script type="math/tex; mode=display">
+\grad{} = \hat{x} \pdv{}{x} + \hat{y} \pdv{}{y} + \hat{z} \pdv{}{z}  \tagl{1.39}
+</script>
+</p>
+<p>Of course, del is not a vector, in the usual sense. Indeed, it doesn't mean much until we provide it with a function to act upon. Furthermore, it does not "multiply" T; rather, it is an instruction to differentiate what follows. To be precise, then, we say that <script type="math/tex"> \grad{} </script> is a vector operator that acts upon T, not a vector that multiplies T.</p>
+<p>With this qualification, though, <script type="math/tex"> \grad{} </script> mimics the behavior of an ordinary vector in virtually every way; almost anything that can be done with other vectors can also be done with <script type="math/tex"> \grad{} </script>, if we merely translate "multiply" by "act upon." So by all means take the vector appearance of <script type="math/tex"> \grad{} </script> seriously: it is a marvelous piece of notational simplification, as you will appreciate if you ever consult Maxwell's original work on electromagnetism, written without the benefit of <script type="math/tex"> \grad{} </script>.</p>
+<p>Now, an ordinary vector <script type="math/tex"> \vec{A} </script> can multiply in three ways:</p>
+<ol>
+<li>By a scalar <em>a</em>:  <script type="math/tex"> \vec{A}a </script>
+</li>
+<li>By a vector <script type="math/tex"> \vec{B} </script>, via the dot product: <script type="math/tex"> \vec{A} \cdot \vec{B} </script>
+</li>
+<li>By a vector <script type="math/tex"> \vec{B} </script>, via the cross product: <script type="math/tex"> \vec{A} \cross \vec{B} </script>
+</li>
+</ol>
+<p>Correspondingly, there are three ways the operator <script type="math/tex"> \grad{} </script> can act:</p>
+<ol>
+<li>On a scalar function T: <script type="math/tex"> \grad{T} </script> (the gradient)</li>
+<li>On a vector function <script type="math/tex"> \vec{v} </script>, via the dot product: <script type="math/tex"> \div{\vec{v}} </script> (the <strong>divergence</strong>)</li>
+<li>On a vector function <script type="math/tex"> \vec{v} </script>, via the cross product: <script type="math/tex"> \curl{\vec{v}} </script> (the <strong>curl</strong>)</li>
+</ol>
+<p>We have already discussed the gradient. In the following sections we examine the other two vector derivatives: divergence and curl.</p>
+<h2 id="124-the-divergence">1.2.4: The Divergence</h2>
+<p>From the definition of <script type="math/tex"> \grad{} </script> we construct the divergence:
+<script type="math/tex; mode=display">
+\begin{align*}
+\div{\vec{v}} & = \left(  \hat{x} \pdv{}{x} + \hat{y} \pdv{}{y} + \hat{z} \pdv{}{z}  \right) \cdot (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \\
+& = \pdv{v_x}{x} + \pdv{v_y}{y} + \pdv{v_z}{z} \tagl{1.40}
+\end{align*}
+</script>
+Observe that the divergence of a vector function is itself a scalar.</p>
+<p><em>Geometrical interpretation</em>: The name <strong>divergence</strong> is well chosen, for <script type="math/tex"> \div{\vec{v}} </script> is a measure of how much the vector <script type="math/tex"> \vec{v} </script> spreads out (diverges) from the point in question. For example, the vector function in Fig. 1.18a has a large (positive) divergence (if the arrows pointed in, it would be a negative divergence), the function in Fig. 1.18b has zero divergence, and the function in Fig. 1.18c again has a positive divergence. (Please understand that <script type="math/tex"> \vec{v} </script>  here is a function - there's a different vector associated with every point in space. In the diagrams, of course, I can
+only draw the arrows at a few representative locations.)</p>
+<p>Imagine standing at the edge of a pond. Sprinkle some sawdust or pine needles
+on the surface. If the material spreads out, then you dropped it at a point of positive divergence; if it collects together, you dropped it at a point of negative divergence. (The vector function <script type="math/tex"> \vec{v} </script>  in this model is the velocity of the water at the surface - this is a two-dimensional example, but it helps give one a "feel" for what the divergence means. A point of positive divergence is a source, or "faucet"; a point of negative divergence is a sink, or "drain.")</p>
+<p><img alt="Figure 1.18" src="../img/1.18.png" /></p>
+<h4 id="example-14">Example 1.4</h4>
+<div class="admonition question">
+<p class="admonition-title">Suppose the functions in Fig 1.18 are <script type="math/tex"> \vec{v_a} = \vec{r} = x \hat{x} + y \hat{y} + z \hat{z} </script>, <script type="math/tex"> \vec{v_b} = \hat{z} </script>, and <script type="math/tex"> \vec{v_c} = z\hat{z} </script>. Calculate their divergences.</p>
+<p><strong>Solution</strong>
+<script type="math/tex; mode=display">
+\div{\vec{v_a}} = \pdv{}{x} (x) + \pdv{}{y} (x) + \pdv{}{z} (z) = 1 + 1 + 1 = 3
+</script>
+As anticipated, this function has a positive divergence.
+<script type="math/tex; mode=display">
+\div{\vec{v_b}} = \pdv{}{x} (0) + \pdv{}{0} (x) + \pdv{}{z} (1) = 0 + 0 + 0 = 0
+</script>
+as expected.
+<script type="math/tex; mode=display">
+\div{\vec{v_b}} = \pdv{}{x} (0) + \pdv{}{0} (x) + \pdv{}{z} (z) = 0 + 0 + 1 = 1
+</script>
+</p>
+</div>
+<h2 id="125-the-curl">1.2.5: The Curl</h2>
+<p>From the definition of <script type="math/tex"> \grad{} </script> we construct the curl:
+<script type="math/tex; mode=display">
+\begin{align*}
+\curl{\vec{v}} & = \begin{vmatrix}
+\hat{x} & \hat{y} & \hat{z} \\
+\pdv{}{x} & \pdv{}{y} & \pdv{}{z} \\
+v_x & v_y & v_z
+\end{vmatrix} \\
+& + \hat{x} \left( \pdv{v_z}{y} - \pdv{v_y}{z} \right) + \hat{y} \left( \pdv{v_x}{z} - \pdv{v_z}{x} \right) + \hat{z} \left( \pdv{v_y}{x} - \pdv{v_x}{y} \right) \tagl{1.41}
+\end{align*}
+</script>
+<img alt="Figure 1.19" src="../img/1.19.png" /></p>
+<p>Notice that the curl of a vector function is, like any cross product, a vector.</p>
+<p><em>Geometrical Interpretation</em>:  The name curl is also well chosen, for <script type="math/tex"> \curl{\vec{v}} </script> is a measure of how much the vector <script type="math/tex"> \vec{v} </script>  swirls around the point in question. Thus the three functions in Fig. 1.18 all have zero curl (as you can easily check for yourself), whereas the functions in Fig. 1.19 have a substantial curl, pointing in the z direction, as the natural right-hand rule would suggest. Imagine (again) you are standing at the edge of a pond. Float a small paddlewheel (a cork with toothpicks pointing out radially would do); if it starts to rotate, then you placed it at a point
+of nonzero curl. A whirlpool would be a region of large curl.</p>
+<h4 id="example-15">Example 1.5</h4>
+<div class="admonition question">
+<p class="admonition-title">Suppose the function sketched in Fig 1.19a is <script type="math/tex"> \vec{v_a} = -y \hat{x} + x \hat{y} </script>, and that in Fig 1.19b is <script type="math/tex"> \vec{v_b} = x \hat{y} </script>. Calculate their curls.</p>
+<p><strong>Solution</strong>
+<script type="math/tex; mode=display">
+\curl{\vec{v_a}} = \begin{vmatrix}
+\hat{x} & \hat{y} & \hat{z} \\
+\pdv{}{x} & \pdv{}{y} & \pdv{}{z} \\
+-y & x & 0
+\end{vmatrix} = 2 \hat{z}
+</script>
+and
+<script type="math/tex; mode=display">
+\curl{\vec{v_b}} = \begin{vmatrix}
+\hat{x} & \hat{y} & \hat{z} \\
+\pdv{}{x} & \pdv{}{y} & \pdv{}{z} \\
+0 & x & 0
+\end{vmatrix} = \hat{z}
+</script>
+As expected, these curls point in the +z direction. (Incidentally, they both have zero divergence, as you might guess from the pictures: nothing is "spreading out"... it just "swirls around.")</p>
+</div>
+<h2 id="126-product-rules">1.2.6: Product Rules</h2>
+<p>The calculation of ordinary derivatives is facilitated by a number of rules, such as the sum rule
+<script type="math/tex; mode=display">
+\dv{}{x} (f + g) = \dv{f}{x} + \dv{g}{x}
+</script>
+the rule for multiplying a constant:
+<script type="math/tex; mode=display">
+\dv{}{x} (kf) = k \dv{f}{x}
+</script>
+the product rule:
+<script type="math/tex; mode=display">
+\dv{}{x}(fg) = f \dv{g}{x} + g \dv{f}{x}
+</script>
+and the quotient rule
+<script type="math/tex; mode=display">
+\dv{}{x} \left( \frac{f}{g} \right) = \frac{g \dv{f}{x} - f \dv{g}{x}}{g^2} 
+</script>
+Similar relations hold for the vector derivatives. Thus,
+<script type="math/tex; mode=display">
+\grad{(f + g)} = \grad{f} + \grad{g}, \qquad \div{(\vec{A} + \vec{B})} = (\div{\vec{A}}) + (\div{\vec{B}})
+</script>
+<script type="math/tex; mode=display">
+\curl{(\vec{A} + \vec{B})} = (\curl{\vec{A}}) + (\curl{\vec{B}})
+</script>
+and
+<script type="math/tex; mode=display">
+\grad{(kf)} = k \grad f, \quad \div{(k\vec{A})} = k (\div{\vec{A}}), \quad \curl{(k\vec{A})} = k(\curl{\vec{A}})
+</script>
+as you can check for yourself. The product rules are not quite so simple. There are two ways to construct a scalar as the product of two functions:
+<script type="math/tex; mode=display">
+fg \quad \text{(product of two scalar functions),} \\
+\vec{A} \cdot \vec{B} \quad \text{(dot product of two vector functions),}
+</script>
+and two ways to make a vector:
+<script type="math/tex; mode=display">
+f \vec{A} \quad \text{(scalar times vector),} \\
+\vec{A} \cross \vec{B} \quad \text{(cross product of two vectors).}
+</script>
+</p>
+<p>Accordingly, there are six product rules, two for gradients:
+<script type="math/tex; mode=display">
+\grad{(fg)} = f \grad{g} + g \grad{f} \tag{i}
+</script>
+<script type="math/tex; mode=display">
+\grad( \vec{A} \cdot \vec{B}) = \vec{A} \cross (\curl{\vec{B}}) + \vec{B} \cross (\curl{\vec{A}}) + (\vec{A} \cdot \grad{})\vec{B} + (\vec{B} \cdot \grad{}) \vec{A} \tag{ii}
+</script>
+two for divergences:
+<script type="math/tex; mode=display">
+\div{(f\vec{A})} = f(\div{\vec{A}}) + \vec{A} \cdot (\grad{f}) \tag{iii}
+</script>
+<script type="math/tex; mode=display">
+\div{(\vec{A} \cross \vec{B})} = \vec{B} \cdot (\curl{\vec{A}}) - \vec{A} \cdot (\curl{\vec{B}}) \tag{iv}
+</script>
+and two for curls:
+<script type="math/tex; mode=display">
+\curl{(f\vec{A})} = f(\curl{\vec{A}}) - \vec{A} \cross (\grad{f}) \tag{v}
+</script>
+<script type="math/tex; mode=display">
+\curl{(\vec{A} \cross \vec{B})} = (\vec{B} \cdot \grad{})\vec{A} - (\vec{A} \cdot \grad{}) \vec{B} + \vec{A}(\div{\vec{B}}) - \vec{B}(\div{\vec{A}}) \tag{vi}
+</script>
+If there's anything in this chapter that's worth memorizing, it is this set of identities. The proofs come straight from the product rule for ordinary derivatives. For instance,
+<script type="math/tex; mode=display">
+\begin{align*}
+\div{(f\vec{A})} & = \pdv{}{x} (f A_x) + \pdv{}{y} (fA_y) + \pdv{}{z}(f A_z) \\
+& = \left( \pdv{f}{x} A_x + f \pdv{A_x}{x} \right) + \left( \pdv{f}{y} A_y + f \pdv{A_y}{y} \right) + \left( \pdv{f}{z}A_z + f \pdv{A_z}{z} \right) \\
+& = (\grad{f}) \cdot \vec{A} + f(\div{\vec{A}})
+\end{align*}
+</script>
+It is also possible to formulate three quotient rules:
+<script type="math/tex; mode=display">
+\grad \left( \frac{f}{g} \right) = \frac{g \grad{f} - f \grad{g}}{g^2} 
+</script>
+<script type="math/tex; mode=display">
+\div{\left( \frac{\vec{A}}{g} \right)} = \frac{g(\div{\vec{A}}) - \vec{A} \cdot (\grad{g})}{g^2} 
+</script>
+<script type="math/tex; mode=display">
+\curl \left( \frac{\vec{A}}{g} \right) = \frac{g(\curl{\vec{A}}) + \vec{A} \cross (\grad{g})}{g^2} 
+</script>
+However, since these can be obtained quickly from the corresponding product rules, there is no point in listing them separately.</p>
+<h3 id="127-second-derivatives">1.2.7: Second Derivatives</h3>
+<p>The gradient, the divergence, and the curl are the only first derivatives we can make with <script type="math/tex"> \grad </script>; by applying <script type="math/tex"> \grad </script> twice, we can construct five species of second derivatives. The gradient <script type="math/tex"> \grad{T} </script> is a vector, so we can take the divergence and curl of it:</p>
+<ol>
+<li>Divergence of gradient: <script type="math/tex"> \div (\grad{T}) </script>
+</li>
+<li>Curl of gradient: <script type="math/tex"> \curl (\grad{T}) </script>
+</li>
+</ol>
+<p>The divergence <script type="math/tex"> \div{\vec{v}} </script> is a scalar - all we can do is take its gradient:</p>
+<ol>
+<li>Gradient of divergence: <script type="math/tex"> \grad (\div{\vec{v}}) </script>
+</li>
+</ol>
+<p>The curl <script type="math/tex"> \curl \vec{v} </script> is a vector, so we can take its divergence and curl:</p>
+<ol>
+<li>Divergence of curl: <script type="math/tex"> \div (\curl \vec{v}) </script>
+</li>
+<li>Curl of curl: <script type="math/tex"> \curl (\curl \vec{v}) </script>
+</li>
+</ol>
+<p>This exhausts the possibilities, and in fact not all of them give anything new. Let's consider them one at a time:</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{align*}
+\div (\grad{T}) & = \left( \hat{x} \pdv{}{x} + \hat{y} \pdv{}{y} + \hat{z} \pdv{}{z} \right) \cdot \left( \pdv{T}{x} \hat{x} + \pdv{T}{y} \hat{y} + \pdv{T}{z} \hat{z} \right) \\
+& = \frac{\partial ^2 T}{\partial x^2} + \frac{\partial ^2 T}{\partial y^2} + \frac{\partial ^2 T}{\partial z^2}
+\end{align*} \tagl{1.42}
+</script>
+This object, which we write as <script type="math/tex"> \laplacian T </script> for short, is called the <strong>Laplacian</strong> of T; we shall be studying it in great detail later on. Notice that the Laplacian of a scalar T is a scalar. Occasionally we shall speak of the laplacian of a vector, <script type="math/tex"> \laplacian \vec{v} </script>. By this we mean a vector quantity whose x-component is the Laplacian of <script type="math/tex"> v_x </script>, and so in:
+<script type="math/tex; mode=display">
+\laplacian \vec{v} \equiv (\laplacian v_x) \hat{x} + (\laplacian v_y) \hat{y}  + (\laplacian v_z) \hat{z}  \tagl{1.43}
+</script>
+This is nothing more than a convenient extension of the meaning of <script type="math/tex"> \laplacian </script>.</p>
+<p><strong>The curl of a gradient is always zero</strong>:
+<script type="math/tex; mode=display">
+\curl (\grad{T}) = 0 \tagl{1.44}
+</script>
+This is an important fact, which we shall use repeatedly; you can easily prove it from the definition of <script type="math/tex"> \grad </script>, hinging on the equality of cross-derivatives:
+<script type="math/tex; mode=display">
+\pdv{}{x} \left( \pdv{T}{y} \right) = \pdv{}{y} \left( \pdv{T}{x} \right) \tagl{1.45}
+</script>
+</p>
+<p>
+<script type="math/tex"> \grad(\div{\vec{v}}) </script> seldom occurs in physical applications, and it has not been given any special name of its own - it's just <strong>the gradient of the divergence</strong>. Notice that <script type="math/tex"> \grad (\div \vec{v}) </script> is not the same as the Laplacian of a vector: <script type="math/tex"> \laplacian \vec{v} = (\div \grad) \vec{v} \neq \grad( \div \vec{v}) </script>.</p>
+<p>The divergence of a curl, like the curl of a gradient, is always zero:
+<script type="math/tex; mode=display">
+\div (\curl \vec{v}) = 0 \tagl{1.46}
+</script>
+You can prove this for yourself.</p>
+<p>As you can check from the definition of <script type="math/tex"> \grad </script>:
+<script type="math/tex; mode=display">
+\curl (\curl \vec{v}) = \grad(\div \vec{v}) - \laplacian \vec{v} \tagl{1.47}
+</script>
+So curl-of-curl gives nothing new; the first term is just gradient of divergence, and the second is the Laplacian (of a vector). (In fact, this is often used to <em>define</em> the Laplacian of a vector, in preference to <script type="math/tex"> \eqref{1.43} </script> which makes explicit reference to Cartesian coordinates.)</p>
+<p>Really, then, there are just two kinds of second derivatives: the Laplacian (which is of fundamental importance) and the gradient-of-divergence (which we seldom encounter). We could go through a similar ritual to work out third derivatives, but fortunately second derivatives suffice for practically all physical applications.</p>
+<p>A final word on vector differential calculus: It all flows from the operator <script type="math/tex"> \grad </script>, and from taking seriously its vectorial character. Even if you remembered only the definition of <script type="math/tex"> \grad </script>, you could easily reconstruct all the rest.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ch1-1/" title="1.1 - Vector Algebra" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                1.1 - Vector Algebra
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../ch2-1/" title="2.1 - The Electric Field" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                2.1 - The Electric Field
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../extra.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
