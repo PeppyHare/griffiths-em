@@ -1,10 +1,25 @@
 # Griffiths - Introduction to Electrodynamics
 
-## [https://peppyhare.github.io/griffiths-em/](https://peppyhare.github.io/griffiths-em/)
-
 This is basically just a web-friendly version of David Griffiths' [Introduction to Electrodynamics, 4th Ed.](https://www.pearson.com/us/higher-education/program/Griffiths-Introduction-to-Electrodynamics-4th-Edition/PGM249908.html). These are my class notes for the University of Washington's PHYS 543. This is mostly an exercise for myself in learning about Mkdocs, MathJax, and physics!
 
 Click around in the sidebar to find a chapter to read, or follow the links at the bottom of the page to read in order! Don't forget to try out the interface on mobile, it's very slick ;)
+
+## Table of Contents
+
+- 1 - Vector Analysis
+    - [1.1 - Vector Algebra](ch1-1.md)
+    - [1.2 - Differential Calculus](ch1-2.md)
+- 2 - Electrostatics
+    - [2.1 - The Electric Field](ch2-1.md)
+    - [2.2 - Divergence and Curl of Electrostatic Fields](ch2-2.md)
+    - [2.3 - Electric Potential](ch2-3.md)
+    - [2.4 - Work and Energy in Electrostatics](ch2-4.md)
+    - [2.5 - Conductors](ch2-5.md)
+- 3 - Potentials
+    - [3.1 - Laplace's Equation](ch3-1.md)
+    - [3.2 - The Method of Images](ch3-2.md)
+    - [3.3 - Separation of Variables](ch3-3.md)
+    - [3.4 - Multipole Expansion](ch3-4.md)
 
 
 ### Internals
