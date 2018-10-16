@@ -3,6 +3,7 @@ nav:
     - Home: index.md
     - 1 - Vector Analysis:
       - 1.1 - Vector Algebra: ch1-1.md
+      - 1.2 - Differential Calculus: ch1-2.md
     - 2 - Electrostatics:
       - 2.1 - The Electric Field: ch2-1.md
       - 2.2 - Divergence and Curl of Electrostatic Fields: ch2-2.md
