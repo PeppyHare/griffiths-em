@@ -6,7 +6,7 @@ MathJax.Hub.Config({
     // extensions: ["AMSsymbols.js", "AMScd.js", "AMSmath.js"],
     Macros: {
         gr: '{\\gamma}',
-        vec: ['{\\mathbf #1}', 1],
+        vec: ['{\\boldsymbol #1}', 1],
         tagl: ['{\\label{#1}  \\tag{#1} }', 1]
     }
   }
@@ -14,6 +14,6 @@ MathJax.Hub.Config({
 
 // Use this to scroll to the end of the page after MathJax has finished rendering all equations
 
-MathJax.Hub.Register.StartupHook("End", function() {
-    window.scrollTo(0,document.body.scrollHeight);
-});
+// MathJax.Hub.Register.StartupHook("End", function() {
+//     window.scrollTo(0,document.body.scrollHeight);
+// });
