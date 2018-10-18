@@ -290,6 +290,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-3/" title="1.3 - Integral Calculus" class="md-nav__link">
+      1.3 - Integral Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-4/" title="1.4 - Curvilinear Coordinates" class="md-nav__link">
+      1.4 - Curvilinear Coordinates
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -694,11 +718,11 @@ V_{dip}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^2} \int r' \cos \alpha 
 </script>
 Since <script type="math/tex"> \alpha </script> is the angle between <script type="math/tex"> r' </script> and <script type="math/tex"> r </script> (Fig 2.38),
 <script type="math/tex; mode=display">
-r' \cos \alpha = \hat{r} \cdot \vec{r'}
+r' \cos \alpha = \vu{r} \cdot \vec{r'}
 </script>
 and the dipole potential can be written more succinctly:
 <script type="math/tex; mode=display">
-V_{dip}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^2} \hat{r} \cdot \int \vec{r'} \rho(\vec{r'}) \dd{\tau'}
+V_{dip}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^2} \vu{r} \cdot \int \vec{r'} \rho(\vec{r'}) \dd{\tau'}
 </script>
 This integral (which does not depend on <script type="math/tex"> \vec{r} </script> ) is called the <strong>dipole moment</strong> of the distribution:
 <script type="math/tex; mode=display">
@@ -706,7 +730,7 @@ This integral (which does not depend on <script type="math/tex"> \vec{r} </scrip
 </script>
 and the dipole contribution to the potential simplifies to
 <script type="math/tex; mode=display">
-V_{dip}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{\vec{p} \cdot \hat{r}}{r^2} \tagl{3.99} 
+V_{dip}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{\vec{p} \cdot \vu{r}}{r^2} \tagl{3.99} 
 </script>
 The dipole moment is determined by the geometry (size, shape, and density) of the charge distribution. <script type="math/tex"> \eqref{3.98} </script> translates in the usual way (Sect 2.1.4) for point, line, and surface charges. Thus, the dipole moment for a collection of point charges is
 <script type="math/tex; mode=display">
@@ -722,7 +746,7 @@ Is this consistent with what we got in Example 3.10? Yes: If you put <script typ
 <p>Dipole moments are <em>vectors</em>, and they add accordingly: if you have two dipoles <script type="math/tex"> \vec{p_1} </script> and <script type="math/tex"> \vec{p_2} </script>, the total dipole moment is <script type="math/tex"> \vec{p_1} + \vec{p_2} </script>. For instance, with four charges at the corners of a square, as shown in Fig. 3.30, the net dipole moment is zero. You can see this by combining the charges in pairs or by adding up the four contributions individually using <script type="math/tex"> \eqref{3.100} </script>. This is a <em>quadrupole</em>, as I indicated earlier, and its potential is dominated by the quadrupole term in the multipole expansion.
 <img alt="Figure 3.30" src="../img/3.30.png" /></p>
 <h2 id="343-origin-of-coordinates-in-multipole-expansions">3.4.3: Origin of Coordinates in Multipole Expansions</h2>
-<p>I mentioned earlier that a point charge at the origin constitutes a "pure" monopole. If it is not at the origin, it's no longer a pure monopole. For instance, the charge in Fig. 3.32 has a dipole moment <script type="math/tex"> \vec{p} = q d \hat{y} </script>, and a corresponding dipole term in its potential. The monopole potential <script type="math/tex"> (1/4 \pi \epsilon_0) q/r </script>  is not quite correct for this configuration; rather, the exact potential is <script type="math/tex"> (1/4 \pi \epsilon_0) q/\gr </script>. The multipole expansion is, remember, a series in inverse powers of r (the distance to the origin), and when we expand <script type="math/tex"> 1/\gr </script>, we get all powers, not just the first.</p>
+<p>I mentioned earlier that a point charge at the origin constitutes a "pure" monopole. If it is not at the origin, it's no longer a pure monopole. For instance, the charge in Fig. 3.32 has a dipole moment <script type="math/tex"> \vec{p} = q d \vu{y} </script>, and a corresponding dipole term in its potential. The monopole potential <script type="math/tex"> (1/4 \pi \epsilon_0) q/r </script>  is not quite correct for this configuration; rather, the exact potential is <script type="math/tex"> (1/4 \pi \epsilon_0) q/\gr </script>. The multipole expansion is, remember, a series in inverse powers of r (the distance to the origin), and when we expand <script type="math/tex"> 1/\gr </script>, we get all powers, not just the first.</p>
 <p>So moving the origin (or, what amounts to the same thing, moving the charge) can radically alter a multipole expansion. The <strong>monopole moment</strong> <script type="math/tex"> Q </script>  does not change, since the total charge is obviously independent of the coordinate system. (In Fig. 3.32, the monopole term was unaffected when we moved q away from the origin - it's just that it was no longer the whole story: a dipole term - and for that matter all higher poles - appeared as well.) Ordinarily, the dipole moment does change when you shift the origin, but there is an important exception: If the total charge is zero, then the dipole moment is independent of the choice of origin. For suppose we displace the origin by an amount <script type="math/tex"> \vec{a} </script>  (Fig. 3.33). The new dipole moment is then
 <script type="math/tex; mode=display">
 \begin{align*}
@@ -736,7 +760,7 @@ In particular, if <script type="math/tex"> Q = 0 </script>, the <script type="ma
 <h2 id="344-the-electric-field-of-a-dipole">3.4.4: The Electric Field of a Dipole</h2>
 <p>So far we have only worked with <em>potentials</em>. Now I would like to calculate the electric field of a (perfect) dipole. If we choose coordinates so that <script type="math/tex"> \vec{p} </script> is at the origin and points in the z direction (Fig. 3.36), then the potential at <script type="math/tex"> r, \theta </script> is <script type="math/tex"> \eqref{3.99} </script>:
 <script type="math/tex; mode=display">
-V_{dip} (r, \theta) = \frac{\hat{r} \cdot \vec{p}}{4 \pi \epsilon_0 r^2} = \frac{p \cos \theta}{4 \pi \epsilon_0 r^2} \tagl{3.102} 
+V_{dip} (r, \theta) = \frac{\vu{r} \cdot \vec{p}}{4 \pi \epsilon_0 r^2} = \frac{p \cos \theta}{4 \pi \epsilon_0 r^2} \tagl{3.102} 
 </script>
 </p>
 <p><img alt="Figure 3.36" src="../img/3.36.png" /></p>
@@ -750,10 +774,10 @@ E_\phi & = - \frac{1}{r \sin \theta} \pdv{V}{\phi} = 0
 </script>
 Thus,
 <script type="math/tex; mode=display">
-\vec{E_{dip}} (r, \theta) = \frac{p}{4 \pi \epsilon_0 r^3}(2 \cos \theta \hat{r} + \sin \theta \hat{\theta}) \tagl{3.103} 
+\vec{E_{dip}} (r, \theta) = \frac{p}{4 \pi \epsilon_0 r^3}(2 \cos \theta \vu{r} + \sin \theta \vu{\theta}) \tagl{3.103} 
 </script>
 This formula makes explicit reference to a particular coordinate system (spherical) and assumes a particular orientation for <script type="math/tex"> \vec{p} </script> (along z). It can be recast in a coordinate-free form, analogous to the potential in <script type="math/tex"> \eqref{3.99} </script>  - See problem 3.36.</p>
-<p>Notice that the dipole falls off as the inverse cube of r; the monopole field <script type="math/tex"> (Q / 4 \pi \epsilon_0 r^2) \hat{r} </script> goes as the inverse square, of course. Quadrupole fields go like <script type="math/tex"> 1/r^4 </script>, octopole like <script type="math/tex"> 1/r^5 </script>, and so on. (This merely reflects how the respective potentials fall off - the gradient introduces another factor of <script type="math/tex"> 1/r </script> ).</p>
+<p>Notice that the dipole falls off as the inverse cube of r; the monopole field <script type="math/tex"> (Q / 4 \pi \epsilon_0 r^2) \vu{r} </script> goes as the inverse square, of course. Quadrupole fields go like <script type="math/tex"> 1/r^4 </script>, octopole like <script type="math/tex"> 1/r^5 </script>, and so on. (This merely reflects how the respective potentials fall off - the gradient introduces another factor of <script type="math/tex"> 1/r </script> ).</p>
 <p>Figure 3.37(a) shows the field lines of a "pure" dipole <script type="math/tex"> \eqref{3.103} </script>. For comparison, I have also sketched the field lines for a "physical" dipole, in Fig 3.37(b). Notice how similar the two pictures become if you blot out the central region; up close, however, they are entirely different. Only for points <script type="math/tex"> r \gg d </script> does <script type="math/tex"> \eqref{3.103} </script> represent a valid approximation to the field of a physical dipole. As I mentioned earlier, this regime can be reached either by going to large <script type="math/tex"> r </script> or by squeezing the charges very close together.
 <img alt="Figure 3.37" src="../img/3.37.png" /></p>
                 

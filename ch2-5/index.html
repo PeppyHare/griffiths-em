@@ -290,6 +290,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-3/" title="1.3 - Integral Calculus" class="md-nav__link">
+      1.3 - Integral Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-4/" title="1.4 - Curvilinear Coordinates" class="md-nav__link">
+      1.4 - Curvilinear Coordinates
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -671,7 +695,7 @@
 <p><strong>Solution</strong> 
 At first glance, it would appear that the answer depends on the shape of the cavity and the location of the charge. But that's wrong: the answer is
 <script type="math/tex; mode=display">
-\vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r}
+\vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \vu{r}
 </script>
 </p>
 <p>regardless. The conductor conceals from us all information concerning the nature of the cavity, revealing only the total charge it contains. How can this be? Well, the charge +q induces an opposite charge -q on the wall of the cavity, which distributes itself in such a way that its field cancels that of q, for all points exterior to the cavity. Since the conductor carries no net charge, this leaves +q to distribute itself uniformly over the surface of the sphere. (It's <em>uniform</em> because the asymmetrical influence of the point charge +q is negated by that of the induced charge -q on the inner surface.) For points outside the sphere, then, the only thing that survives is the field of the leftover +q, uniformly distributed over the outer surface.</p>
@@ -682,7 +706,7 @@ At first glance, it would appear that the answer depends on the shape of the cav
 <h2 id="253-surface-charge-and-the-force-on-a-conductor">2.5.3: Surface Charge and the Force on a Conductor</h2>
 <p>Because the field inside a conductor is zero, boundary condition Eq. 2.33 requires that the field immediately outside is
 <script type="math/tex; mode=display">
- \vec{E} = \frac{\sigma}{\epsilon_0} \hat{n} \label{2.48} \tag{2.48}
+ \vec{E} = \frac{\sigma}{\epsilon_0} \vu{n} \label{2.48} \tag{2.48}
  </script>
 </p>
 <p>consistent with our earlier conclusion that the field is normal to the surface. In terms of potential, Eq. 2.36 yields
@@ -700,17 +724,17 @@ Why the average? The reason is very simple, thought the telling makes it sound c
 </script>
 Now, the patch cannot exert a force on itself, any more than you can lift yourself by standing in a basket and pulling up on the handles. The force on the patch, then, is exclusively due to <script type="math/tex"> \vec{E}_{other} </script>, and this suffers no discontinuity (if we removed the patch, the field in the "hole" would be perfectly smooth). The discontinuity is due entirely to the charge on the patch, which puts out a field <script type="math/tex"> (\sigma / 2 \epsilon_0) </script> on either side, pointing away from the surface. Thus,
 <script type="math/tex; mode=display">
- \vec{E}_{above} = \vec{E}_{other} + \frac{\sigma}{2 \epsilon_0} \hat{n} \\
- \vec{E}_{below} = \vec{E}_{other} - \frac{\sigma}{2 \epsilon_0} \hat{n} \\
+ \vec{E}_{above} = \vec{E}_{other} + \frac{\sigma}{2 \epsilon_0} \vu{n} \\
+ \vec{E}_{below} = \vec{E}_{other} - \frac{\sigma}{2 \epsilon_0} \vu{n} \\
  </script> 
 and hence
 <script type="math/tex; mode=display">
 \vec{E}_{other} = \frac{1}{2} (\vec{E}_{above} + \vec{E}_{below}) = \vec{E}_{average}
 </script>
 Averaging is really just a device for removing the contribution of the patch itself.</p>
-<p>That argument applies to any surface charge; in the particular case of a conductor, the field is zero inside and <script type="math/tex"> (\sigma / \epsilon_0)\hat{n} </script> outside (<script type="math/tex"> \eqref{2.48} </script>, so the average is <script type="math/tex"> (\sigma / 2 \epsilon_0) \hat{n} </script>, and the force per unit area is
+<p>That argument applies to any surface charge; in the particular case of a conductor, the field is zero inside and <script type="math/tex"> (\sigma / \epsilon_0)\vu{n} </script> outside (<script type="math/tex"> \eqref{2.48} </script>, so the average is <script type="math/tex"> (\sigma / 2 \epsilon_0) \vu{n} </script>, and the force per unit area is
 <script type="math/tex; mode=display">
- f = \frac{1}{2 \epsilon_0} \sigma ^2 \hat{n} \label{2.51} \tag{2.51}
+ f = \frac{1}{2 \epsilon_0} \sigma ^2 \vu{n} \label{2.51} \tag{2.51}
  </script> 
 This amounts to an outward <strong>electrostatic pressure</strong> on the surface, tending to draw the conductor into the field, regardless of the sign of <script type="math/tex"> \sigma </script>. Expressing the pressure in terms of the field just outside the surface
 <script type="math/tex; mode=display">
@@ -725,7 +749,7 @@ V = V_{+} - V_{-} = - \int_{(-)}^{(+)} \vec{E} \cdot \dd{\vec{l}}
 </script>
 We don't know how the charge distributes itself over the two conductors, and calculating the field would be a nightmare, if their shapes are complicated, but this much we do know: <script type="math/tex"> \vec{E} </script> is proportional to <script type="math/tex"> Q </script>. For <script type="math/tex"> \vec{E} </script> is given by Coulomb's law:
 <script type="math/tex; mode=display">
-\vec{E} = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho}{\gr^2} \hat{\gr} \dd{\tau}
+\vec{E} = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho}{\gr^2} \vu{\gr} \dd{\tau}
 </script>
 so if you double <script type="math/tex"> \rho </script>, you double <script type="math/tex"> \vec{E} </script>. Wait a minute! How do we know that doubling Q (and also -Q) simply doubles <script type="math/tex"> \rho </script>? Maybe the charge moves around into a completely different configuration, quadrupling <script type="math/tex"> \rho </script> in some places and halving it in others, just so the total charge on the conductor is doubled. The fact is that this concern is unwarranted - doubling Q <em>does</em> double <script type="math/tex"> \rho </script>  everywhere; it doesn't shift charge around. The proof will come in Chapter 3; for now you'll have to trust me.</p>
 <p>Since <script type="math/tex"> \vec{E} </script> is proportional to Q, so also is V. The constant of proportionality is called the <strong>capacitance</strong> of the arrangement

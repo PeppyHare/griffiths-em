@@ -290,6 +290,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-3/" title="1.3 - Integral Calculus" class="md-nav__link">
+      1.3 - Integral Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-4/" title="1.4 - Curvilinear Coordinates" class="md-nav__link">
+      1.4 - Curvilinear Coordinates
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -595,7 +619,7 @@
                 
                 <h1 id="23-electric-potential">2.3: Electric Potential</h1>
 <h2 id="231-introduction-to-potential">2.3.1: Introduction to Potential</h2>
-<p>The electric field <strong>E</strong> is not just <em>any</em> old vector function. It is a very special <em>kind</em> of vector function: one whose curl id zero. <script type="math/tex"> \vec{E} = y \hat{x} </script> , for example, could not possibly be an electrostatic field; <em>no</em> set of charges, regardless of their sizes and positions, could ever produce such a field. We're going to exploit this special property of electric fields to reduce a <em>vector</em> problem (finding <strong>E</strong>) to a much simpler <em>scalar</em> problem. The first theorem in Sect 1.6.2 asserts that any vector whose curl is zero is equal to the gradient of some scalar. What I'm going to do now amounts to a proof of that claim, in the context of electrostatics.</p>
+<p>The electric field <strong>E</strong> is not just <em>any</em> old vector function. It is a very special <em>kind</em> of vector function: one whose curl id zero. <script type="math/tex"> \vec{E} = y \vu{x} </script> , for example, could not possibly be an electrostatic field; <em>no</em> set of charges, regardless of their sizes and positions, could ever produce such a field. We're going to exploit this special property of electric fields to reduce a <em>vector</em> problem (finding <strong>E</strong>) to a much simpler <em>scalar</em> problem. The first theorem in Sect 1.6.2 asserts that any vector whose curl is zero is equal to the gradient of some scalar. What I'm going to do now amounts to a proof of that claim, in the context of electrostatics.</p>
 <p><img alt="Figure 2.30" src="../img/2.30.png" /></p>
 <p>Because <script type="math/tex"> \nabla \cross \vec{E} = 0</script> , the line integral of <strong>E</strong> around any closed loop is zero (that follows from Stokes' theorem). Because <script type="math/tex"> \oint \vec{E} \cdot \dd{\vec{l}} = 0 </script>, the line integral of <strong>E</strong> from point <strong>a</strong> to point <strong>b</strong> is the same for all paths (otherwise you could go <em>out</em> along path (i) and return along path (ii) - Fig 2.30 - and obtain <script type="math/tex"> \oint \vec{E} \cdot \dd{\vec{l}} \neq 0 </script> ). Because the line integral is independent of path, we can define a function
 <script type="math/tex; mode=display">
@@ -648,7 +672,7 @@ V'(r) =  -\int_{\mathscr{O}'}^{\vec{r}} \vec{E} \cdot \dd{\vec{l}} \\
 </script>
 since the derivative of a constant is zero. That's why all such V's, differing only in their choice of reference point, correspond to the same field <strong>E</strong></p>
 <p>Potential as such carries no real physical significance, for at any given point we can adjust its value at will by suitable relocation of <script type="math/tex"> \mathscr{O} </script>. In this sense, it is rather like altitude: if I ask you how high Denver is, you will probably tell me its height above sea level, because that is a convenient and traditional reference point. But we could as well agree to measure altitude above Washington, DC, or Greenwich, or wherever. That would add (or rather, subtract) a fixed amount from all our sea-level readings, but it wouldn't change anything about the real world. The only quantity of interest is the <em>difference</em> in altitude between two points, and that is the same whatever your reference level.</p>
-<p>Having said this, however, there is a "natural" spot to use for <script type="math/tex"> \mathscr{O} </script> in electrostatics - analogous to sea level for altitude - and that is a point infinitely far from the charge. Ordinarily, then, we s"set the zero of potential at infinity." (Since <script type="math/tex"> V(\mathscr{O}) = 0 </script>, choosing a reference point is equivalent to selecting a place where <script type="math/tex"> V </script> is to be zero.) But I must warn you that there is one special circumstance in which this convention fails: when the charge distribution itself extends to infinity. The symptom of trouble, in such cases, is that the potential blows up. For instance, the field of a uniformly charged plane is <script type="math/tex"> (\sigma / 2 \epsilon_0) \hat{n} </script>, as we found in Ex 2.5; if we naively put <script type="math/tex"> \mathscr{O} = \infty </script>, then the potential at height <em>z</em> above the plane becomes
+<p>Having said this, however, there is a "natural" spot to use for <script type="math/tex"> \mathscr{O} </script> in electrostatics - analogous to sea level for altitude - and that is a point infinitely far from the charge. Ordinarily, then, we s"set the zero of potential at infinity." (Since <script type="math/tex"> V(\mathscr{O}) = 0 </script>, choosing a reference point is equivalent to selecting a place where <script type="math/tex"> V </script> is to be zero.) But I must warn you that there is one special circumstance in which this convention fails: when the charge distribution itself extends to infinity. The symptom of trouble, in such cases, is that the potential blows up. For instance, the field of a uniformly charged plane is <script type="math/tex"> (\sigma / 2 \epsilon_0) \vu{n} </script>, as we found in Ex 2.5; if we naively put <script type="math/tex"> \mathscr{O} = \infty </script>, then the potential at height <em>z</em> above the plane becomes
 <script type="math/tex; mode=display">
 V(z) = - \int_{\infty}^{z}\frac{1}{2\epsilon_0} \sigma \dd{z} = - \frac{1}{2\epsilon_0} \sigma(z - \infty)
 </script> 
@@ -695,7 +719,7 @@ look like, in terms of V? Well, <script type="math/tex"> \div{\vec{E}} = \div(-\
 <p>But that's no condition on V - curl of gradient is <em>always</em> zero. Of course, we used the curl law to show that <strong>E</strong> could be expressed as the gradient of a scalar, so it's not really surprising that this works out: <script type="math/tex"> \curl{\vec{E}} = 0 </script> permits our definition of V; in return, <script type="math/tex"> \vec{E} = - \grad{V} </script> guarantees <script type="math/tex"> \curl{\vec{E}} = 0 </script>. It only takes one differential equation (Poisson's) to determine V, because V is a scalar. For <script type="math/tex"> \vec{E} </script> we needed two, the divergence and the curl.</p>
 <h2 id="234-the-potential-of-a-localized-charge-distribution">2.3.4: The potential of a Localized Charge Distribution</h2>
 <p>I defined V in terms of <script type="math/tex"> \vec{E} \eqref{2.21} </script>. Ordinarily, though, it's <strong>E</strong> that we're looking for (if we already knew <strong>E</strong>, there wouldn't be much point in calculating V). The idea is that it might be easier to get V first, and then calculate <strong>E</strong> by taking the gradient. Typically, then, we know where the charge is (that is, we know <script type="math/tex"> \rho </script>), and we want to find V. Now, Poisson's equation relates V and <script type="math/tex"> \rho </script>, but unfortunately it's "the wrong way round": it would give us <script type="math/tex"> \rho </script> if we knew V, whereas we want V, knowing <script type="math/tex"> \rho </script>. What we must do, then, is "invert" Poisson's equation. That's the program for this section, although I shall do it by roundabout means, beginning, as always, with a point charge at the origin.</p>
-<p>The electric field is <script type="math/tex"> \vec{E} = (1 / 4 \pi \epsilon_0)(1 / r^2) \hat{r} </script>, and <script type="math/tex"> \dd{\vec{l}} = \dd{r} \hat{r}  </script>, and <script type="math/tex"> \dd{\vec{l}} = \dd{r} \hat{r} + r \dd{\theta} \hat{\theta} + r \sin \theta \dd{\theta} \hat{\phi} </script>, so
+<p>The electric field is <script type="math/tex"> \vec{E} = (1 / 4 \pi \epsilon_0)(1 / r^2) \vu{r} </script>, and <script type="math/tex"> \dd{\vec{l}} = \dd{r} \vu{r}  </script>, and <script type="math/tex"> \dd{\vec{l}} = \dd{r} \vu{r} + r \dd{\theta} \vu{\theta} + r \sin \theta \dd{\theta} \vu{\phi} </script>, so
 <script type="math/tex; mode=display">
 \vec{E} \cdot \dd{\vec{l}} = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \dd{r} 
 </script>
@@ -724,10 +748,10 @@ V(r) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec{r}')}{\gr} \dd{\tau'} \la
 </p>
 <p>This is the equation we were looking for, telling us how to compute V when we know <script type="math/tex"> \rho </script>; it is, if you like, the "solution" to Poisson's equation, for a localized charge distribution. Compare <script type="math/tex"> \eqref{2.29} </script> with the corresponding formula for the electric field in terms of <script type="math/tex"> \rho </script>:
 <script type="math/tex; mode=display">
-\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec{r'})}{\gr ^2} \hat{\gr} \dd{\tau'}
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec{r'})}{\gr ^2} \vu{\gr} \dd{\tau'}
 </script>
 </p>
-<p>The main point is that the pesky unit vector <script type="math/tex"> \hat{\gr} </script> is gone, so there is no need to fuss with components. The potentials of line and surface charges are
+<p>The main point is that the pesky unit vector <script type="math/tex"> \vu{\gr} </script> is gone, so there is no need to fuss with components. The potentials of line and surface charges are
 <script type="math/tex; mode=display">
 V = \frac{1}{4 \pi \epsilon_0} \int \frac{\lambda(\vec{r'})}{\gr} \dd{l'} \qquad \text{ and } \qquad V = \frac{1}{4 \pi \epsilon_0} \int \frac{\sigma(\vec{r'})}{\gr} \dd{a'}
 </script>
@@ -759,9 +783,9 @@ where <script type="math/tex"> \vec{E}^{\parallel} </script> stands for the comp
 <p><img alt="Figure 2.36" src="../img/2.36.png" /></p>
 <p>The boundary conditions on <script type="math/tex"> \vec{E} </script> (Eqs. <script type="math/tex"> \eqref{2.31} </script> and <script type="math/tex"> \eqref{2.32} </script>) can be combined into a single formula:
 <script type="math/tex; mode=display">
-\vec{E}_{above} - \vec{E}_{below} = \frac{\sigma}{\epsilon_0} \hat{n} \label{2.33}
+\vec{E}_{above} - \vec{E}_{below} = \frac{\sigma}{\epsilon_0} \vu{n} \label{2.33}
 </script>
-where <script type="math/tex"> \hat{n} </script> is a unit vector perpendicular to the surface, pointing from "below" to "above."</p>
+where <script type="math/tex"> \vu{n} </script> is a unit vector perpendicular to the surface, pointing from "below" to "above."</p>
 <p><img alt="Figure 2.37" src="../img/2.37.png" />
 <img alt="Figure 2.38" src="../img/2.38.png" /></p>
 <p>The potential, meanwhile, is continuous across any boundary (Fig 2.38), since
@@ -775,7 +799,7 @@ V_{above} = V_{below} \label{2.34} \tag{2.34}
 </p>
 <p>However, the <em>gradient</em> of V inherits the discontinuity in <script type="math/tex"> \vec{E} </script>, since <script type="math/tex"> \vec{E} - \grad{V} </script>, so
 <script type="math/tex; mode=display">
-\grad{V}_{above} - \grad{V}_{below} = - \frac{\sigma}{\epsilon_0} \hat{n}
+\grad{V}_{above} - \grad{V}_{below} = - \frac{\sigma}{\epsilon_0} \vu{n}
 </script>
 or more conveniently
 <script type="math/tex; mode=display">
@@ -783,7 +807,7 @@ or more conveniently
 </script>
 where
 <script type="math/tex; mode=display">
-\pdv{V}{n} = \grad{V} \cdot \hat{n}
+\pdv{V}{n} = \grad{V} \cdot \vu{n}
 </script>
 denotes the normal derivative of V (that is, the rate of change in the direction perpendicular to the surface).</p>
 <p>Please note that these boundary conditions relate the fields and potentials <em>just</em> above and <em>just</em> below the surface. For example, the derivatives in <script type="math/tex"> \eqref{2.36} </script> are the limiting values as we approach the surface from either side. </p>

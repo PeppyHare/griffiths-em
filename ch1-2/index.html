@@ -417,6 +417,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-3/" title="1.3 - Integral Calculus" class="md-nav__link">
+      1.3 - Integral Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-4/" title="1.4 - Curvilinear Coordinates" class="md-nav__link">
+      1.4 - Curvilinear Coordinates
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -730,12 +754,12 @@ In words: If we increment <em>x</em> by an infinitesimal amount <script type="ma
 <p>This tells us how T changes when we alter all three variables by the infinitesimal amounts dx, dy, dz. Notice that we do <em>not</em> require an infinite number of derivatives - three will suffice: the partial derivatives along each of the three coordinate directions.
 <script type="math/tex"> \eqref{1.34} </script> is reminiscent of a dot product:
 <script type="math/tex; mode=display">
-\dd{T} = \left( \pdv{T}{x} \hat{x} + \pdv{T}{y} \hat{y} + \pdv{T}{z} \hat{z} \right)\cdot ( \dd{x} \hat{x} + \dd{y} \hat{y} + \dd{z} \hat{z} \\
+\dd{T} = \left( \pdv{T}{x} \vu{x} + \pdv{T}{y} \vu{y} + \pdv{T}{z} \vu{z} \right)\cdot ( \dd{x} \vu{x} + \dd{y} \vu{y} + \dd{z} \vu{z} \\
 = (\grad{T}) \cdot (\dd{\vec{l}}) \tagl{1.35}
 </script>
 where
 <script type="math/tex; mode=display">
-\grad{T} \equiv \pdv{T}{x} \hat{x} + \pdv{T}{y} \hat{y} + \pdv{T}{z} \hat{z} \tagl{1.36}
+\grad{T} \equiv \pdv{T}{x} \vu{x} + \pdv{T}{y} \vu{y} + \pdv{T}{z} \vu{z} \tagl{1.36}
 </script>
 is the <strong>gradient</strong> of T. Note that <script type="math/tex"> \grad{T} </script> is a vector quantity, with three components; it is the generalized derivative we have been looking for. <script type="math/tex"> \eqref{1.35} </script> is the three-dimensional version of <script type="math/tex"> \eqref{1.33} </script>.
 <em>Geometrical interpretation of the Gradient</em>: Like any vector, the gradient has <em>magnitude</em> and <em>direction</em>. To determine its geometrical meaning, let's rewrite the dot product using Eq. 1.1
@@ -758,9 +782,9 @@ where <script type="math/tex"> \theta </script> is the angle between <script typ
 <p><strong>Solution</strong>
 <script type="math/tex; mode=display">
 \begin{align*}
-\grad{r} & = \pdv{r}{x} \hat{x} + \pdv{r}{y} \hat{y} + \pdv{r}{z} \hat{z} \\
-& = \frac{1}{2} \frac{2x}{\sqrt{x^2 + y^2 + z^2}}\hat{x} + \frac{1}{2} \frac{2y}{\sqrt{x^2 + y^2 + z^2}}\hat{y} + \frac{1}{2} \frac{2z}{\sqrt{x^2 + y^2 + z^2}}\hat{z} \\
-& = \frac{x \hat{x} + y \hat{y} + z \hat{z}}{\sqrt{x^2 + y^2 + z^2}} = \frac{\vec{r}}{r} = \hat{r}
+\grad{r} & = \pdv{r}{x} \vu{x} + \pdv{r}{y} \vu{y} + \pdv{r}{z} \vu{z} \\
+& = \frac{1}{2} \frac{2x}{\sqrt{x^2 + y^2 + z^2}}\vu{x} + \frac{1}{2} \frac{2y}{\sqrt{x^2 + y^2 + z^2}}\vu{y} + \frac{1}{2} \frac{2z}{\sqrt{x^2 + y^2 + z^2}}\vu{z} \\
+& = \frac{x \vu{x} + y \vu{y} + z \vu{z}}{\sqrt{x^2 + y^2 + z^2}} = \frac{\vec{r}}{r} = \vu{r}
 \end{align*}
 </script>
 Does this makes sense? Well, it says that the distance from the origin increases most rapidly in the radial direction, and that its rate of increase in that direction is 1... just what you'd expect.</p>
@@ -768,11 +792,11 @@ Does this makes sense? Well, it says that the distance from the origin increases
 <h2 id="123-the-del-operator">1.2.3: The Del Operator</h2>
 <p>The gradient has the formal appearance of a vector, <script type="math/tex"> \nabla </script>, "multiplying" a scalar T:
 <script type="math/tex; mode=display">
-\grad{T} = \left( \hat{x} \pdv{}{x} + \hat{y} \pdv{}{y} + \hat{z} \pdv{}{z} \right) T \tagl{1.38}
+\grad{T} = \left( \vu{x} \pdv{}{x} + \vu{y} \pdv{}{y} + \vu{z} \pdv{}{z} \right) T \tagl{1.38}
 </script>
-(For once, I write the unit vectors to the left, just so no one will think that this means <script type="math/tex"> \pdv{\hat{x}}{x} </script> and so on, which would be zero since the coordinate directions are constant.) The term in parentheses is called <strong>del</strong>:
+(For once, I write the unit vectors to the left, just so no one will think that this means <script type="math/tex"> \pdv{\vu{x}}{x} </script> and so on, which would be zero since the coordinate directions are constant.) The term in parentheses is called <strong>del</strong>:
 <script type="math/tex; mode=display">
-\grad{} = \hat{x} \pdv{}{x} + \hat{y} \pdv{}{y} + \hat{z} \pdv{}{z}  \tagl{1.39}
+\grad{} = \vu{x} \pdv{}{x} + \vu{y} \pdv{}{y} + \vu{z} \pdv{}{z}  \tagl{1.39}
 </script>
 </p>
 <p>Of course, del is not a vector, in the usual sense. Indeed, it doesn't mean much until we provide it with a function to act upon. Furthermore, it does not "multiply" T; rather, it is an instruction to differentiate what follows. To be precise, then, we say that <script type="math/tex"> \grad{} </script> is a vector operator that acts upon T, not a vector that multiplies T.</p>
@@ -797,7 +821,7 @@ Does this makes sense? Well, it says that the distance from the origin increases
 <p>From the definition of <script type="math/tex"> \grad{} </script> we construct the divergence:
 <script type="math/tex; mode=display">
 \begin{align*}
-\div{\vec{v}} & = \left(  \hat{x} \pdv{}{x} + \hat{y} \pdv{}{y} + \hat{z} \pdv{}{z}  \right) \cdot (v_x \hat{x} + v_y \hat{y} + v_z \hat{z}) \\
+\div{\vec{v}} & = \left(  \vu{x} \pdv{}{x} + \vu{y} \pdv{}{y} + \vu{z} \pdv{}{z}  \right) \cdot (v_x \vu{x} + v_y \vu{y} + v_z \vu{z}) \\
 & = \pdv{v_x}{x} + \pdv{v_y}{y} + \pdv{v_z}{z} \tagl{1.40}
 \end{align*}
 </script>
@@ -809,7 +833,7 @@ on the surface. If the material spreads out, then you dropped it at a point of p
 <p><img alt="Figure 1.18" src="../img/1.18.png" /></p>
 <h4 id="example-14">Example 1.4</h4>
 <div class="admonition question">
-<p class="admonition-title">Suppose the functions in Fig 1.18 are <script type="math/tex"> \vec{v_a} = \vec{r} = x \hat{x} + y \hat{y} + z \hat{z} </script>, <script type="math/tex"> \vec{v_b} = \hat{z} </script>, and <script type="math/tex"> \vec{v_c} = z\hat{z} </script>. Calculate their divergences.</p>
+<p class="admonition-title">Suppose the functions in Fig 1.18 are <script type="math/tex"> \vec{v_a} = \vec{r} = x \vu{x} + y \vu{y} + z \vu{z} </script>, <script type="math/tex"> \vec{v_b} = \vu{z} </script>, and <script type="math/tex"> \vec{v_c} = z\vu{z} </script>. Calculate their divergences.</p>
 <p><strong>Solution</strong>
 <script type="math/tex; mode=display">
 \div{\vec{v_a}} = \pdv{}{x} (x) + \pdv{}{y} (x) + \pdv{}{z} (z) = 1 + 1 + 1 = 3
@@ -829,11 +853,11 @@ as expected.
 <script type="math/tex; mode=display">
 \begin{align*}
 \curl{\vec{v}} & = \begin{vmatrix}
-\hat{x} & \hat{y} & \hat{z} \\
+\vu{x} & \vu{y} & \vu{z} \\
 \pdv{}{x} & \pdv{}{y} & \pdv{}{z} \\
 v_x & v_y & v_z
 \end{vmatrix} \\
-& + \hat{x} \left( \pdv{v_z}{y} - \pdv{v_y}{z} \right) + \hat{y} \left( \pdv{v_x}{z} - \pdv{v_z}{x} \right) + \hat{z} \left( \pdv{v_y}{x} - \pdv{v_x}{y} \right) \tagl{1.41}
+& + \vu{x} \left( \pdv{v_z}{y} - \pdv{v_y}{z} \right) + \vu{y} \left( \pdv{v_x}{z} - \pdv{v_z}{x} \right) + \vu{z} \left( \pdv{v_y}{x} - \pdv{v_x}{y} \right) \tagl{1.41}
 \end{align*}
 </script>
 <img alt="Figure 1.19" src="../img/1.19.png" /></p>
@@ -842,22 +866,22 @@ v_x & v_y & v_z
 of nonzero curl. A whirlpool would be a region of large curl.</p>
 <h4 id="example-15">Example 1.5</h4>
 <div class="admonition question">
-<p class="admonition-title">Suppose the function sketched in Fig 1.19a is <script type="math/tex"> \vec{v_a} = -y \hat{x} + x \hat{y} </script>, and that in Fig 1.19b is <script type="math/tex"> \vec{v_b} = x \hat{y} </script>. Calculate their curls.</p>
+<p class="admonition-title">Suppose the function sketched in Fig 1.19a is <script type="math/tex"> \vec{v_a} = -y \vu{x} + x \vu{y} </script>, and that in Fig 1.19b is <script type="math/tex"> \vec{v_b} = x \vu{y} </script>. Calculate their curls.</p>
 <p><strong>Solution</strong>
 <script type="math/tex; mode=display">
 \curl{\vec{v_a}} = \begin{vmatrix}
-\hat{x} & \hat{y} & \hat{z} \\
+\vu{x} & \vu{y} & \vu{z} \\
 \pdv{}{x} & \pdv{}{y} & \pdv{}{z} \\
 -y & x & 0
-\end{vmatrix} = 2 \hat{z}
+\end{vmatrix} = 2 \vu{z}
 </script>
 and
 <script type="math/tex; mode=display">
 \curl{\vec{v_b}} = \begin{vmatrix}
-\hat{x} & \hat{y} & \hat{z} \\
+\vu{x} & \vu{y} & \vu{z} \\
 \pdv{}{x} & \pdv{}{y} & \pdv{}{z} \\
 0 & x & 0
-\end{vmatrix} = \hat{z}
+\end{vmatrix} = \vu{z}
 </script>
 As expected, these curls point in the +z direction. (Incidentally, they both have zero divergence, as you might guess from the pictures: nothing is "spreading out"... it just "swirls around.")</p>
 </div>
@@ -964,13 +988,13 @@ However, since these can be obtained quickly from the corresponding product rule
 <p>
 <script type="math/tex; mode=display">
 \begin{align*}
-\div (\grad{T}) & = \left( \hat{x} \pdv{}{x} + \hat{y} \pdv{}{y} + \hat{z} \pdv{}{z} \right) \cdot \left( \pdv{T}{x} \hat{x} + \pdv{T}{y} \hat{y} + \pdv{T}{z} \hat{z} \right) \\
+\div (\grad{T}) & = \left( \vu{x} \pdv{}{x} + \vu{y} \pdv{}{y} + \vu{z} \pdv{}{z} \right) \cdot \left( \pdv{T}{x} \vu{x} + \pdv{T}{y} \vu{y} + \pdv{T}{z} \vu{z} \right) \\
 & = \frac{\partial ^2 T}{\partial x^2} + \frac{\partial ^2 T}{\partial y^2} + \frac{\partial ^2 T}{\partial z^2}
 \end{align*} \tagl{1.42}
 </script>
 This object, which we write as <script type="math/tex"> \laplacian T </script> for short, is called the <strong>Laplacian</strong> of T; we shall be studying it in great detail later on. Notice that the Laplacian of a scalar T is a scalar. Occasionally we shall speak of the laplacian of a vector, <script type="math/tex"> \laplacian \vec{v} </script>. By this we mean a vector quantity whose x-component is the Laplacian of <script type="math/tex"> v_x </script>, and so in:
 <script type="math/tex; mode=display">
-\laplacian \vec{v} \equiv (\laplacian v_x) \hat{x} + (\laplacian v_y) \hat{y}  + (\laplacian v_z) \hat{z}  \tagl{1.43}
+\laplacian \vec{v} \equiv (\laplacian v_x) \vu{x} + (\laplacian v_y) \vu{y}  + (\laplacian v_z) \vu{z}  \tagl{1.43}
 </script>
 This is nothing more than a convenient extension of the meaning of <script type="math/tex"> \laplacian </script>.</p>
 <p><strong>The curl of a gradient is always zero</strong>:
@@ -1031,13 +1055,13 @@ So curl-of-curl gives nothing new; the first term is just gradient of divergence
           </a>
         
         
-          <a href="../ch2-1/" title="2.1 - The Electric Field" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../ch1-3/" title="1.3 - Integral Calculus" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                2.1 - The Electric Field
+                1.3 - Integral Calculus
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

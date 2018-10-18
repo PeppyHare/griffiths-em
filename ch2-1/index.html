@@ -290,6 +290,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-3/" title="1.3 - Integral Calculus" class="md-nav__link">
+      1.3 - Integral Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-4/" title="1.4 - Curvilinear Coordinates" class="md-nav__link">
+      1.4 - Curvilinear Coordinates
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -646,7 +670,7 @@
 <p>What is the force on a test charge Q due to a single point charge q, that is at <em>rest</em> a distance <script type="math/tex"> \gr </script> away? The answer (based on experiments) is given by <em>Coulomb's Law</em>:</p>
 <p>
 <script type="math/tex; mode=display">
-\vec{F} = \frac{1}{4 \pi \epsilon_0}\frac{q Q}{\gr^2} \hat{\vec{\gr}}   \label{2.1} \tag{2.1}
+\vec{F} = \frac{1}{4 \pi \epsilon_0}\frac{q Q}{\gr^2} \vu{\vec{\gr}}   \label{2.1} \tag{2.1}
 </script>
 </p>
 <p>The constant <script type="math/tex"> \epsilon_0 </script>  is called (ludicrously) the <em>permittivity of free space</em>. In SI units, where force is in newtons (N), distance in meters (m), and charge in coulombs (C), 
@@ -659,15 +683,15 @@
 </script>
 </p>
 <p>
-<script type="math/tex"> \gr </script> is its magnitude, and <script type="math/tex"> \hat{\gr} </script> is its direction. The force points along the line from q to Q; it is repulsive if <em>q</em> and <em>Q</em> have the same sign, and attractive if their signs are opposite.</p>
+<script type="math/tex"> \gr </script> is its magnitude, and <script type="math/tex"> \vu{\gr} </script> is its direction. The force points along the line from q to Q; it is repulsive if <em>q</em> and <em>Q</em> have the same sign, and attractive if their signs are opposite.</p>
 <p>Coulomb's law and the principle of superposition constitute the physical input for electrostatics - the rest, except for some special properties of matter, is mathematical elaboration of these fundamental rules.</p>
 <h2 id="213-the-electric-field">2.1.3: The Electric Field</h2>
 <p>If we have <em>several</em> point charges <script type="math/tex"> q_1, q_2, \ldots , q_n </script>  at distances <script type="math/tex"> \gr_1 \gr_2 \ldots, \gr_n </script> from <em>Q</em>, the total force on <em>Q</em> is evidently
 <script type="math/tex; mode=display">
 \begin{align}
 \vec{F} & = & \vec{F_1} + \vec{F_2} + \ldots \\
-& = & \frac{1}{4 \pi \epsilon_0} \left( \frac{q_1 Q}{\gr_1 ^2} \hat{\gr}_1 + \frac{q_2 Q}{\gr_2 ^2} \hat{\gr}_2 + \ldots \right) \\
-& = & \frac{Q}{4 \pi \epsilon _0} \left( \frac{q_1}{\gr ^2 _1} \hat{\gr_1} + \frac{q_2}{\gr _2 ^2}\hat{\gr_2} + \ldots \right) 
+& = & \frac{1}{4 \pi \epsilon_0} \left( \frac{q_1 Q}{\gr_1 ^2} \vu{\gr}_1 + \frac{q_2 Q}{\gr_2 ^2} \vu{\gr}_2 + \ldots \right) \\
+& = & \frac{Q}{4 \pi \epsilon _0} \left( \frac{q_1}{\gr ^2 _1} \vu{\gr_1} + \frac{q_2}{\gr _2 ^2}\vu{\gr_2} + \ldots \right) 
 \end{align}
 </script>
 </p>
@@ -678,7 +702,7 @@
 </p>
 <p>where 
 <script type="math/tex; mode=display">
-\vec{E}(\vec{r}) \equiv \frac{1}{4 \pi \epsilon_0} \sum_{i = 1}^n \frac{q_i}{\gr_{i}^2} \hat{\gr_i} \label{2.4} \tag{2.4}
+\vec{E}(\vec{r}) \equiv \frac{1}{4 \pi \epsilon_0} \sum_{i = 1}^n \frac{q_i}{\gr_{i}^2} \vu{\gr_i} \label{2.4} \tag{2.4}
 </script>
 </p>
 <p><strong>E</strong> is called the <strong>electric field</strong> of the source charges. Notice that it is a function of position (<strong>r</strong>), because the separation vectors <script type="math/tex"> \gr_i </script> depend on the location of the field point P (Fig 2.3). But it makes no reference to the test charge Q. The electric field is a vector quantity that varies from point to point and is determined by the configuration of source charges; physically, <script type="math/tex"> \vec{E}(\vec{r}) </script> is the force per unit charge that would be exerted on a test charge, if you were to place one at P.</p>
@@ -695,17 +719,17 @@ E_z = 2 \frac{1}{4 \pi \epsilon_0} \frac{1}{\gr ^2} \cos \theta
 </script>
 Here <script type="math/tex"> \gr = \sqrt{z^2 + (d/2)^2} </script> and <script type="math/tex"> \cos \theta = z / \gr </script>, so
 <script type="math/tex; mode=display">
- \vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{2qz}{\left[ z^2 + (d/2)^2 \right]^{3/2}} \hat{z} 
+ \vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{2qz}{\left[ z^2 + (d/2)^2 \right]^{3/2}} \vu{z} 
  </script>
 </p>
-<p><em>Check</em>: When <script type="math/tex"> z \gg d </script> you're so far away that it just looks like a single charge <script type="math/tex"> 2q </script>, so the field should reduce to <script type="math/tex"> \vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{2q}{z^2} \hat{z} </script>. And it does, just set <script type="math/tex"> d \rightarrow 0 </script> in the formula).</p>
+<p><em>Check</em>: When <script type="math/tex"> z \gg d </script> you're so far away that it just looks like a single charge <script type="math/tex"> 2q </script>, so the field should reduce to <script type="math/tex"> \vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{2q}{z^2} \vu{z} </script>. And it does, just set <script type="math/tex"> d \rightarrow 0 </script> in the formula).</p>
 <p><img alt="Figure 2.4" src="../img/2.4.png" /></p>
 </div>
 <hr />
 <h2 id="214-continuous-charge-distributions">2.1.4: Continuous Charge Distributions</h2>
 <p>Our definition of the electric field (Eq. <script type="math/tex"> \eqref{2.4} </script> ) assumes that the source of the field is a collection of discrete point charges <script type="math/tex"> q_i </script>. If, instead, the charge is distributed continuously over some region, the sum becomes an integral (Fig 2.5a):
 <script type="math/tex; mode=display">
-\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{1}{\gr ^2} \hat{\gr} \dd{q}
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{1}{\gr ^2} \vu{\gr} \dd{q}
 </script>
 </p>
 <p>If the charge is spread out along a <em>line</em> (Fig. 2.5b), with charge-per-unit-length <script type="math/tex"> \lambda </script> then <script type="math/tex"> \dd{q} = \lambda \dd{l}' </script> (where <script type="math/tex"> \dd{l}' </script> ) is an element of length along the line); if the charge is smeared out over a surface (Fig. 2.5c) with charge-per-unit-area <script type="math/tex"> \sigma </script>, then <script type="math/tex"> \dd{q} = \sigma \dd{a}' </script>  (where <script type="math/tex"> \dd{a'} </script> ) is an element of area on the surface); and if the charge fills a <em>volume</em> (Fig 2.5d), with charge-per-unit-volume <script type="math/tex"> \rho </script>, then <script type="math/tex"> \dd{q} = \rho\dd{\tau'} </script> (where <script type="math/tex"> \dd{\tau'} </script> is an element of volume):
@@ -716,20 +740,20 @@ dq \rightarrow \lambda \dd{l'} \sim \sigma \dd{a'} \sim \rho \dd{\tau'}
 <p><img alt="Figure 2.5" src="../img/2.5.png" /></p>
 <p>Thus the electric field of a line charge is
 <script type="math/tex; mode=display">
-\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\lambda(\vec{r'})}{\gr ^2} \hat{\gr} \dd{l'}
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\lambda(\vec{r'})}{\gr ^2} \vu{\gr} \dd{l'}
 </script>
 for a surface charge,
 <script type="math/tex; mode=display">
-\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\sigma(\vec{r'})}{\gr ^2} \hat{\gr} \dd{a'}
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\sigma(\vec{r'})}{\gr ^2} \vu{\gr} \dd{a'}
 </script>
 and for a volume charge,
 <script type="math/tex; mode=display">
-\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec{r'})}{\gr ^2} \hat{\gr} \dd{\tau'} \label{2.8} \tag{2.8}
+\vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec{r'})}{\gr ^2} \vu{\gr} \dd{\tau'} \label{2.8} \tag{2.8}
 </script>
 </p>
 <p>Equation <script type="math/tex"> \eqref{2.8} </script> itself is often referred to as "Coulomb's law," because it is such a short step from the original, and because a volume charge is in a sense the most general and realistic case. Please note carefully the meaning of <script type="math/tex"> \gr </script> in these formulas. Originally, in <script type="math/tex"> \eqref{2.4} </script>, <script type="math/tex"> \gr_i </script> stood for the vector from the source charge <script type="math/tex"> q_i </script> to the field point <strong>r</strong>. Correspondingly, in Eq.s 9-11, <script type="math/tex"> \gr </script> is the vector from <script type="math/tex"> \dd{q} </script> to the field point <script type="math/tex"> \vec{r} </script>.</p>
 <blockquote>
-<p>Warning: the unit vector <script type="math/tex"> \hat{\gr} </script> is not constant: its direction depends on the source point <script type="math/tex"> \vec{r'} </script>, and hence it cannot be taken outside the integrals (9-11). In practice, you must work with Cartesian components (<script type="math/tex"> \hat{x}, \hat{y}, \hat{z} </script> are constant, and do come out) , even if you use curvilinear coordinates to perform the integration.</p>
+<p>Warning: the unit vector <script type="math/tex"> \vu{\gr} </script> is not constant: its direction depends on the source point <script type="math/tex"> \vec{r'} </script>, and hence it cannot be taken outside the integrals (9-11). In practice, you must work with Cartesian components (<script type="math/tex"> \vu{x}, \vu{y}, \vu{z} </script> are constant, and do come out) , even if you use curvilinear coordinates to perform the integration.</p>
 </blockquote>
 <hr />
 <h4 id="example-22">Example 2.2</h4>
@@ -758,7 +782,7 @@ and for a volume charge,
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../ch1-2/" title="1.2 - Differential Calculus" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../ch1-4/" title="1.4 - Curvilinear Coordinates" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -767,7 +791,7 @@ and for a volume charge,
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                1.2 - Differential Calculus
+                1.4 - Curvilinear Coordinates
               </span>
             </div>
           </a>
