@@ -9,6 +9,10 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
 - 1 - Vector Analysis
     - [1.1 - Vector Algebra](ch1-1.md)
     - [1.2 - Differential Calculus](ch1-2.md)
+    - [1.3 - Integral Calculus](ch1-3.md)
+    - [1.4 - Curvilinear Coordinates](ch1-4.md)
+    - [1.5 - The Dirac Delta Function](ch1-5.md)
+    - [1.6 - The Theory of Vector Fields](ch1-6.md)
 - 2 - Electrostatics
     - [2.1 - The Electric Field](ch2-1.md)
     - [2.2 - Divergence and Curl of Electrostatic Fields](ch2-2.md)
