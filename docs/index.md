@@ -24,6 +24,8 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
     - [3.2 - The Method of Images](ch3-2.md)
     - [3.3 - Separation of Variables](ch3-3.md)
     - [3.4 - Multipole Expansion](ch3-4.md)
+- 4 - Electric Fields in Matter
+    - [4.1 - Polarization](ch4-1.md)
 
 
 ### Internals
