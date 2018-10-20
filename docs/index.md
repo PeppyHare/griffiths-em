@@ -26,6 +26,7 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
     - [3.4 - Multipole Expansion](ch3-4.md)
 - 4 - Electric Fields in Matter
     - [4.1 - Polarization](ch4-1.md)
+    - [4.2 - The Field of a Polarized Object](ch4-2.md)
 
 
 ### Internals
