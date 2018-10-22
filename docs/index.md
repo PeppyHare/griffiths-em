@@ -27,6 +27,8 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
 - 4 - Electric Fields in Matter
     - [4.1 - Polarization](ch4-1.md)
     - [4.2 - The Field of a Polarized Object](ch4-2.md)
+    - [4.3 - The Electric Displacement](ch4-3.md)
+    - [4.4 - Linear Dielectrics](ch4-4.md)
 
 
 ### Internals
