@@ -24,11 +24,14 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
     - [3.2 - The Method of Images](ch3-2.md)
     - [3.3 - Separation of Variables](ch3-3.md)
     - [3.4 - Multipole Expansion](ch3-4.md)
+    - [Chapter 3 Problems](problems-ch3.md)
 - 4 - Electric Fields in Matter
     - [4.1 - Polarization](ch4-1.md)
     - [4.2 - The Field of a Polarized Object](ch4-2.md)
     - [4.3 - The Electric Displacement](ch4-3.md)
     - [4.4 - Linear Dielectrics](ch4-4.md)
+- 5 - Magnetostatics
+    - [5.1 - The Lorentz Force Law](ch5-1.md)
 
 
 ### Internals

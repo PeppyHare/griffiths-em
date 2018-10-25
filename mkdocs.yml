@@ -25,6 +25,8 @@ nav:
       - 4.2 - The Field of a Polarized Object: ch4-2.md
       - 4.3 - The Electric Displacement: ch4-3.md
       - 4.4 - Linear Dielectrics: ch4-4.md
+    - 5 - Magnetostatics:
+      - 5.1 - The Lorentz Force Law: ch5-1.md
 
 # Cool material theme: https://squidfunk.github.io/mkdocs-material/
 theme:
