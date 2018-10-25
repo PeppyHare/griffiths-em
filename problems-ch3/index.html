@@ -531,6 +531,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problem-327" title="Problem 3.27" class="md-nav__link">
+    Problem 3.27
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-331" title="Problem 3.31" class="md-nav__link">
+    Problem 3.31
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-333" title="Problem 3.33" class="md-nav__link">
+    Problem 3.33
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-334" title="Problem 3.34" class="md-nav__link">
+    Problem 3.34
+  </a>
+  
+</li>
+      
       
       
       
@@ -619,6 +647,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      5 - Magnetostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        5 - Magnetostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-1/" title="5.1 - The Lorentz Force Law" class="md-nav__link">
+      5.1 - The Lorentz Force Law
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -640,6 +704,34 @@
         <li class="md-nav__item">
   <a href="#problem-324" title="Problem 3.24" class="md-nav__link">
     Problem 3.24
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-327" title="Problem 3.27" class="md-nav__link">
+    Problem 3.27
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-331" title="Problem 3.31" class="md-nav__link">
+    Problem 3.31
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-333" title="Problem 3.33" class="md-nav__link">
+    Problem 3.33
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-334" title="Problem 3.34" class="md-nav__link">
+    Problem 3.34
   </a>
   
 </li>
@@ -748,6 +840,131 @@ But this doesn't meet our periodicity requirement! This isn't a physically accep
 V(s, \phi) = a_0 + b_0 \ln s + \sum_{k=1} ^\infty \left[ s^k (a_k \cos k \phi + b_k \sin k \phi) + s^{-k} (a_k \cos k \phi + b_k \sin k \phi) \right]
 </script>
 We've only been asked for the general solution in cylindrical coordinates (from which we can tell that our solution is independent of <em>a</em>), and we must be given boundary conditions in order to solve for the constants <script type="math/tex"> a_k, b_k </script>.</p>
+</div>
+<h4 id="problem-327">Problem 3.27</h4>
+<div class="admonition question">
+<p class="admonition-title">A sphere of radius R, centered at the origin, carries charge density <script type="math/tex"> \rho(r, \theta) = k \frac{R}{r^2} (R - 2r) \sin \theta </script> where <em>k</em> is a constant, and <script type="math/tex"> r, \theta </script> are the usual spherical coordinates. Find the approximate potential for points on the <em>z</em> axis, far from the sphere.</p>
+<p>We are asked for the <em>approximate</em> potential for points on the z-axis far from the charge distribution, so we'll calculate the terms of our potential from Eq 3.95, and stop when we find the first non-zero term, replacing <script type="math/tex"> \theta </script> for <script type="math/tex"> \alpha </script> and <script type="math/tex"> z </script> for <script type="math/tex"> r </script> as we go.
+<script type="math/tex; mode=display">
+V(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \sum_{n=0} ^\infty \frac{1}{r^{(n+1)}} \int (r') P_n(\cos \alpha) \rho(\vec{r'}) \dd{\tau'}
+</script>
+Let's start with the monopole term. The integral we have to calculate is simply the charge density integrated over the charge distribution
+<script type="math/tex; mode=display">
+\int \rho(r) \dd \tau = k R \int_0 ^R \int _0 ^{\pi} \int_{0} ^{2 \pi}  \frac{1}{r^2} (R - 2r) \sin \theta (r^2 \sin \theta ) \dd r \dd \theta \dd \phi \\
+\int _{0} ^R (R - 2r) \dd r = \left.(R r - r^2)\right|_{0} ^R = 0
+</script>
+So the monopole term comes out to zero. Next, we try calculating the dipole term:
+<script type="math/tex; mode=display">
+\int r \cos \theta \rho(r) \dd \tau = k R \iiint r \cos \theta \frac{1}{r^2} (R - 2r) \sin \theta (r^2 \sin \theta) \dd r \dd \theta \dd \phi
+</script>
+The <script type="math/tex"> \theta </script> integral will come out to
+<script type="math/tex; mode=display">
+\int_0 ^{\pi} \sin ^2 \cos \theta \dd \theta = \int _0 ^\pi \sin ^2 \theta \dd (\sin \theta) = \left. \frac{1}{3} \sin ^3 \theta \right|_0 ^\pi = 0
+</script>
+Well dangit, we still don't have the first non-zero term! On to the quadrupole term:
+<script type="math/tex; mode=display">
+\begin{align*}
+& \int r^2 \left( \frac{3}{2} \cos ^2 \theta - \frac{1}{2} \right) \rho \dd \tau \\
+= &  \iiint r^2 \left( \frac{3}{2} \cos ^2 \theta - \frac{1}{2} \right) \frac{kR}{r^2} (R - 2r) \sin \theta r^2 \sin \theta \dd r \dd \theta \dd \phi \\
+= & \frac{1}{2} kR \iiint r^2 (3 \cos ^2 \theta - 1)(R - 2r) \sin ^2 \theta \dd r \dd \theta \dd \phi 
+\end{align*}
+</script>
+Thankfully we don't have any cross-terms, so we can do the integrals separately. The integral in <em>r</em> is
+<script type="math/tex; mode=display">
+\int_0 ^R r^2 (R - 2r) \dd r = - \frac{R^4}{6} 
+</script>
+The integral in <script type="math/tex"> \theta </script> is 
+<script type="math/tex; mode=display">
+\int_0 ^\pi (3 \cos ^2 \theta - 1) \sin ^2 \theta \dd \theta = \int _0 ^\pi \left[ 3 (1 - \sin ^2 \theta) - 1 \right] \sin ^2 \theta \dd \theta = - \frac{\pi}{8} 
+</script>
+And we just get a <script type="math/tex"> 2 \pi </script> from the <script type="math/tex"> \phi </script> integral, so converting our <em>r</em> to <em>z</em> in our coordinate system, the whole quadrupole potential is
+<script type="math/tex; mode=display">
+V(\vec{r}) \approx \frac{1}{4 \pi \epsilon_0} \frac{1}{z^3} \frac{1}{2} k R \left( - \frac{R^4}{6} \right) \left( - \frac{\pi}{8} \right) (2 \pi) \\
+= \frac{1}{4 \pi \epsilon_0} \frac{k \pi ^2 R ^5}{48 z^3} \quad \text{(Quadrupole)}
+</script>
+</p>
+<h4 id="problem-331">Problem 3.31</h4>
+<div class="admonition question">
+<p class="admonition-title">In Ex. 3.9, we derived the exact potential for a spherical shell of radius <em>R</em>, which carries a surface charge <script type="math/tex"> \sigma = k \cos \theta </script>. a) Calculate the dipole moment of this charge distribution. b) Find the approximate potential, at points far from the sphere, and compare the exact answer (Eq 3.87). What can you conclude about the higher multipoles?</p>
+<p>By the symmetry of the problem, <strong>p</strong> is going to be in the z-direction: <script type="math/tex"> \vec{p} = p \vu{z}; \, p = \int z \rho \dd \tau \rightarrow \int z \sigma \dd a </script>.
+<script type="math/tex; mode=display">
+\begin{align*}
+p & = \int (R \cos \theta)(k \cos \theta) R^3 \sin \theta \dd \theta \dd \phi \\
+ & = 2 \pi R^3 k \int _0 ^\pi \cos ^2 \theta \sin \theta \dd \theta \\
+ & = 2 \pi R^3 k \left. \left( - \frac{\cos ^3 \theta}{3} \right) \right|_0 ^\pi \\
+ & = \frac{2}{3} \pi R^3 k [ 1 - (-1) ] \\
+ & = \frac{4 \pi R^3 k}{3} 
+\end{align*}
+</script>
+<script type="math/tex; mode=display">
+\tag{a} \vec{p} = \frac{4 \pi R^3 k}{3} \vu{z}
+</script>
+The associated dipole potential is just
+<script type="math/tex; mode=display">
+V_{dip} \approx \frac{1}{4 \pi \epsilon_0} \frac{\vu{r} \cdot \vec{p}}{r^2} = \frac{k R^3}{3 \epsilon_0} \frac{\cos \theta}{r^2}  
+</script>
+</p>
+</div>
+</div>
+<h4 id="problem-333">Problem 3.33</h4>
+<div class="admonition question">
+<p class="admonition-title">Show that the electric field of a 'pure' dipole can be written in the coordinate-free form <script type="math/tex; mode=display"> \vec{E_{dip}} = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^3} [3 (\vec{p} \cdot \vu{r}) \vu{r} - \vec{p} ] </script>
+</p>
+<p>We still assume the dipole is pointing in the z-direction and start with spherical coordinates, and then move to a coordinate-free system
+<script type="math/tex; mode=display">
+\vec{p} = p \vu{z}
+</script>
+<script type="math/tex; mode=display">
+\vec{p} = p_r \vu{r} + p_\theta \vu{\theta} + p_{\phi} \vu{\phi}
+</script>
+Since <strong>p</strong> is in the z-direction, we can safely say <script type="math/tex"> p_\phi = 0 </script>
+<script type="math/tex; mode=display">
+p_r = \vec{p} \cdot \vu{r} = p \cos \theta \\
+p_\theta = \vec{p} \cdot \vu{\theta} = - p \sin \theta \\
+\vec{p} = p \cos \theta \vu{r} - p \sin \theta \vu{\theta}
+</script>
+So we can directly check this expression against the expression we got as Eqn 3.103 <script type="math/tex"> (\vec{E_{dip}}(r, \theta) = \frac{p}{4 \pi \epsilon_0 r^3} (2 \cos \theta \vu{r} + \sin \theta \vu{\theta} ) </script>:
+<script type="math/tex; mode=display">
+\begin{align*}
+3 ( \vec{p} \cdot \vu{r}) \vu{r} - \vec{p} = & 3 p \cos \theta \vu{r} - p \cos \theta \vu{r} + p \sin \theta \vu{\theta} \\
+& = 2 p \cos \theta \vu{r} + p \sin \theta \vu{\theta} \\
+\rightarrow \vec{E_{dip}} & = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^3} [3 (\vec{p} \cdot \vu{r}) \vu{r} - \vec{p} ]
+\end{align*}
+</script>
+So it all checks out.</p>
+</div>
+<h4 id="problem-334">Problem 3.34</h4>
+<div class="admonition question">
+<p class="admonition-title">Three point charges are located as shown in Fig 3.38, each a distance <em>a</em> from the origin. Find the approximate electric field at points far from the origin. Express your answer in spherical coordinates, and include the two lowest orders in the multipole expansion.</p>
+<p><img alt="Figure 3.38" src="../img/3.38.png" />
+We'll get to the electric field by writing down the multipole expansion of the potential, and then using the approximate potential to get the electric field. The total charge is -q, so the monopole term will be
+<script type="math/tex; mode=display">
+V_{mon} = \frac{1}{4 \pi \epsilon_0} \frac{1}{r} (-q)
+</script>
+The dipole moment is given by
+<script type="math/tex; mode=display">
+\begin{align*}
+\vec{p} & = \sum_{i=1} ^3 q_i \vec{r_i} \\
+&  = (-q) a \vu{y} + (-q) a (-\vu{y}) + q a \vu{z} \\
+& = qa \vu{z} 
+\end{align*}
+</script>
+The dipole term in the multipole expansion of <em>V</em> is then
+<script type="math/tex; mode=display">
+\begin{align*}
+V_{dip} & = \frac{1}{4 \pi \epsilon_0} \frac{\vec{p} \cdot \vu{r}}{r^2} \\
+& = \frac{1}{4 \pi \epsilon_0} \frac{q a \vu{z} \cdot \vu{r}}{r^2} \\
+& = \frac{1}{4 \pi \epsilon_0} \frac{q a \cos \theta}{r^2} 
+\end{align*}
+</script>
+<script type="math/tex; mode=display">
+V(r, \theta) \approx \frac{q}{4 \pi \epsilon_0 } \left( - \frac{1}{r} + \frac{a \cos \theta}{r^2}  \right)
+</script>
+The field is given by 
+<script type="math/tex; mode=display">
+\vec{E} = - \grad V  \approx \frac{q}{4 \pi \epsilon_0} \left( - \frac{1}{r^2} \vu{r} + \frac{2 a \cos \theta \vu{r}}{r^3} \vu{r} + \frac{a}{r^3} \sin \theta \vu{\theta}  \right)
+</script>
+</p>
 </div>
                 
                   
