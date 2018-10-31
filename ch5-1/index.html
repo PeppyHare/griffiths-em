@@ -643,6 +643,53 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#512-magnetic-forces" title="5.1.2: Magnetic Forces" class="md-nav__link">
+    5.1.2: Magnetic Forces
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-51-cyclotron-motion" title="Example 5.1: Cyclotron Motion" class="md-nav__link">
+    Example 5.1: Cyclotron Motion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-52-cycloid-motion" title="Example 5.2: Cycloid Motion" class="md-nav__link">
+    Example 5.2: Cycloid Motion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#513-currents" title="5.1.3: Currents" class="md-nav__link">
+    5.1.3: Currents
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-53" title="Example 5.3" class="md-nav__link">
+    Example 5.3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -686,6 +733,53 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#512-magnetic-forces" title="5.1.2: Magnetic Forces" class="md-nav__link">
+    5.1.2: Magnetic Forces
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-51-cyclotron-motion" title="Example 5.1: Cyclotron Motion" class="md-nav__link">
+    Example 5.1: Cyclotron Motion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-52-cycloid-motion" title="Example 5.2: Cycloid Motion" class="md-nav__link">
+    Example 5.2: Cycloid Motion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#513-currents" title="5.1.3: Currents" class="md-nav__link">
+    5.1.3: Currents
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-53" title="Example 5.3" class="md-nav__link">
+    Example 5.3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
       
       
       
@@ -713,6 +807,129 @@
 <p>Whatever force accounts for the attraction of parallel currents and the repulsion of anti-parallel ones is not electrostatic in nature. It is our first encounter with a magnetic force. Whereas a stationary charge produces only an electric field E in the space around it, a moving charge generates, in addition, a magnetic field <strong>B</strong>. In fact, magnetic fields are a lot easier to detect, in practice - all you need is a Boy Scout compass. How these devices work is irrelevant at the moment; it is enough to know that the needle points in the direction of the local magnetic field. Ordinarily, this means north, in response to the earth's magnetic field, but in the laboratory, where typical fields may be hundreds of times stronger than that, the compass indicates the direction of whatever magnetic field is present.</p>
 <p><img alt="Figure 5.3" src="../img/5.3.png" /></p>
 <p>Now, if you hold up a tiny compass in the vicinity of a current-carrying wire, you quickly discover a very peculiar thing: The field does not point toward the wire, nor away from it, but rather it circles around the wire. In fact, if you grab the wire with your right hand-thumb in the direction of the current-your fingers curl around in the direction of the magnetic field (Fig. 5.3). How can such a field lead to a force of attraction on a nearby parallel current? At the second wire, the magnetic field points into the page (Fig. 5.4), the current is upward, and yet the resulting force is to the left! It's going to take a strange law to account for these directions.</p>
+<h2 id="512-magnetic-forces">5.1.2: Magnetic Forces</h2>
+<p>In fact, this contribution of directions is just right for a cross product: the magnetic force on a charge <em>Q</em>, moving with velocity <strong>v</strong> in a magnetic field <strong>B</strong> is
+<script type="math/tex; mode=display">
+\vec{F}_{mag} = Q(\vec{v} \cross \vec{B}) \tagl{5.1}
+</script>
+This is known as the <strong>Lorentz force law</strong>. In the presence of both electric and magnetic fields, the net force on Q would be
+<script type="math/tex; mode=display">
+\vec{F} = q[ \vec{E} + ( \vec{V} \cross \vec{B} ) ] \tagl{5.2}
+</script>
+I do not pretend to have derived <script type="math/tex"> \eqref{5.1} </script>, of course; it is a fundamental axiom of the theory, whose justification is to be found in experiments such as those I described in the previous section.</p>
+<p>Our main job now is to calculate the magnetic field <strong>B</strong> (and for that matter the electric field <strong>E</strong> as well; the rules are more complicated when the source charges are in motion). But before we proceed, it is worthwhile to take a closer look at the Lorentz force law itself; it is a peculiar law, and it leads to some truly bizarre particle trajectories.</p>
+<h4 id="example-51-cyclotron-motion">Example 5.1: Cyclotron Motion</h4>
+<div class="admonition question">
+<p class="admonition-title">We have a charged particle moving in a constant magnetic field. What is the general form of the trajectory?</p>
+<p><img alt="Figure 5.5" src="../img/5.5.png" />
+The archetypical motion of a charged particle in a magnetic field is circular, with the magnetic force providing the centripetal acceleration. In Fig 5.5, a uniform magnetic field points into the page; if the charge Q moves counterclockwise, with speed <em>v</em>, around a circle of radius <em>R</em>, the magnetic force points inward, and has a fixed magnitude <em>QvB</em> - just right to sustain uniform circular motion:
+<script type="math/tex; mode=display">
+QvB = m \frac{v^2}{R} \quad \text{ or } \quad p = Q B R \tagl{5.3}
+</script>
+where <em>m</em> is the particle's mass, and <script type="math/tex"> p = mv </script> is its momentum. Equation 5.3 is known as the <strong>cyclotron formula</strong> because it describes the motion of a particle in a cyclotron - the first of the modern particle accelerators. It also suggests a simple experimental technique for finding the momentum of a charged particle: send it through a region of known magnetic field, and measure the radius of its trajectory. This is in fact the standard means for determining the momenta of elementary particles.</p>
+<p>I assumed that the charge moves in a plane perpendicular to <strong>B</strong>. If it starts out with some additional speed <script type="math/tex"> v_{\parallel} </script> parallel to <strong>B</strong>, this component of the motion is unaffected by the magnetic field, and the particle moves in a <em>helix</em> (Fig 5.6). The radius is given by Eq 5.3, but the velocity in question is now the component perpendicular to <strong>B</strong>, <script type="math/tex"> v_{\perp} </script>
+</p>
+</div>
+<h4 id="example-52-cycloid-motion">Example 5.2: Cycloid Motion</h4>
+<div class="admonition question">
+<p class="admonition-title">A more exotic trajectory occurs if we include a uniform electric field, at right angles to the magnetic one. Suppose, for instance, that <strong>B</strong> points in the x-direction, and E in the z-direction, as shown in Fig. 5.7. A positive charge is released from the origin; what path will it follow?</p>
+<p><strong>Solution</strong>
+Let's think it through qualitatively, first. Initially, the particle is at rest, so the magnetic force is zero, and the electric field accelerates the charge in the z-direction. As it picks up speed, a magnetic force develops which, according to Eq. 5.1, pulls the charge around to the right. The faster it goes, the stronger <script type="math/tex"> F_{B} </script> becomes; eventually, it curves the particle back around towards the y axis. At this point the charge is moving against the electrical force, so it begins to slow down - the magnetic force then decreases, and the electrical force takes over, bringing the particle to rest at point a, in Fig. 5.7. There the entire process commences anew, carrying the particle over to point b, and so on.
+Now let's do it quantitatively. There being no force in the x-direction, the position of the particle at any time <em>t</em> can be described by the vector <script type="math/tex"> (0, y(t), z(t) ) </script>; the velocity is therefore
+<script type="math/tex; mode=display">
+\vec{v} = (0, \dot{y}, \dot{z})
+</script>
+Thus,
+<script type="math/tex; mode=display">
+\vec{v} \cross \vec{B} = \begin{vmatrix} \vu{x} & \vu{y} & \vu{z} \\
+0 & \dot{y} & \dot{z} \\
+B & 0 & 0
+\end{vmatrix} = B \dot{z} \vu{y} - B \dot{y} \vu{z}
+</script>
+and hence, applying Newton's second law,
+<script type="math/tex; mode=display">
+\vec{F} = Q(\vec{E} + \vec{v} \cross \vec{B}) = Q (E \vu{z} + B \dot{z} \vu{y} - B \dot{y} \vu{z}) = m \vec{a} = m(\ddot{y} \vu{y} + \ddot{z} \vu{z})
+</script>
+Treating the y and z components separately,
+<script type="math/tex; mode=display">
+QB \dot{z} = m \ddot{y} \qquad Q E - Q B \dot{y} = m \ddot{z}
+</script>
+Let's define a frequency
+<script type="math/tex; mode=display">
+\omega = \frac{Q B}{m} \tagl{5.4}
+</script>
+(This is the <strong>cyclotron frequency</strong>, at which the particle would revolve in the absence of any electric field.) Then the equations of motion take the form
+<script type="math/tex; mode=display">
+\ddot{y} = \omega \dot{z} \qquad \ddot{z} = \omega \left( \frac{E}{B}  - \dot{y} \right) \tagl{5.5}
+</script>
+We're left with a straightforward ODE, with solution
+<script type="math/tex; mode=display">
+\begin{align*}
+y(t) & = C_1 \cos \omega t + C_2 \sin \omega t + (E / B) t + C_3 \\
+z(t) & = C_2 \cos \omega t - C_1 \sin \omega t + C_4
+\end{align*} \tagl{5.6}
+</script>
+But the particle started from rest (<script type="math/tex"> \dot{y}(0) = \dot{z}(0) = 0 ) </script> at the origin <script type="math/tex"> ( y(0) = z(0) = 0) </script>; these four conditions determine the constants <script type="math/tex"> C_1, C_2, C_3, C_4 </script>:
+<script type="math/tex; mode=display">
+y(t) = \frac{E}{\omega B} (\omega t - \sin \omega t) \qquad z(t) = \frac{E}{\omega B} (1 - \cos \omega t) \tagl{5.7}
+</script>
+In this form, the answer is not terribly enlightening, but if we let
+<script type="math/tex; mode=display">
+R \equiv \frac{E}{\omega B} \tagl{5.8}
+</script>
+and eliminate the sines and cosines by exploiting the trigonometric identity <script type="math/tex"> \sin ^2 \omega t + \cos ^2 \omega t = 1 </script>, we find that
+<script type="math/tex; mode=display">
+(y - R \omega t)^2 + (z - R)^2 = R^2 \tagl{5.9}
+</script>
+This is the formula for a circle, of radius R, whose center <script type="math/tex"> (0, R \omega t, R) </script> travels in the y-direction at constant speed
+<script type="math/tex; mode=display">
+u = \omega R = \frac{E}{B} \tagl{5.10} 
+</script>
+The particle moves as though it were a spot on the rim of a wheel rolling along the y-axis. The curve generated in this way is called a <strong>cycloid</strong>. Notice that the overall motion is not in the direction of <strong>E</strong>, as you might suppose, but perpendicular to it.</p>
+</div>
+<p>One implication of the Lorentz force law deserves special attention:</p>
+<p><strong>Magnetic forces do no work</strong></p>
+<p>For the magnetic force is, by definition, always perpendicular to the path of motion. Magnetic forces may alter the direction in which a particle moves, but they cannot speed it up or slow it down. The fact that magnetic forces do no work is an elementary and direct consequence of the Lorentz force law, but there are many situations where it appears so manifestly false that one's confidence is bound to waver. When a magnetic crane lifts the carcass of a junked car, for instance, <em>something</em> is obviously doing work, and it seems perverse to deny that the magnetic force is responsible. Well, perverse or not, deny it we must, and it can be a very subtle matter to figure out who does deserve the credit in such circumstances. We'll see a cute example in the next section, but the full story will have to wait until we hit the key conservation laws much later.</p>
+<h2 id="513-currents">5.1.3: Currents</h2>
+<p>The current in a wire is the charge per unit time passing a given point. By definition, negative charges moving to the left count the same as positive ones to the right. This conveniently reflects the physical fact that almost all phenomena involving moving charges depend on the product of charge and velocity - if you reverse the signs of <em>q</em> and <em>v</em>, you get the same answer, so it doesn't really matter which you have. (The Lorentz force law is a case in point; the Hall effect (Prob. 5.41) is a notorious exception.) In practice, it is ordinarily the negatively charged electrons that do the moving - in the direction opposite to the electric current. To avoid the petty complications this entails, I shall often pretend it's the positive charges that move, as in fact everyone assumed they did for a century or so after Benjamin Franklin established his unfortunate convention. Current is measured in coulombs-per-second, or amperes (A):
+<script type="math/tex; mode=display">
+1 \text{ A} = 1 \text{ C/s} \tagl{5.12}
+</script>
+<img alt="Figure 5.9" src="../img/5.9.png" />
+A line charge <script type="math/tex"> \lambda </script> traveling down a wire at speed <em>v</em> (Fig 5.9) constitutes a current
+<script type="math/tex; mode=display">
+I = \lambda v \tagl{5.13}
+</script>
+because a segment of length <script type="math/tex"> v \Delta t </script>, carrying charge <script type="math/tex"> \lambda v \Delta t </script>, passes point P in a time interval <script type="math/tex"> \Delta t </script>. Current is actually a vector
+<script type="math/tex; mode=display">
+\vec{I} = \lambda \vec{v} \tagl{5.14}
+</script>
+</p>
+<p>Because the path of the flow is dictated by the shape of the wire, one doesn't ordinarily bother to display the direction of I explicitly, but when it comes to surface and volume currents we cannot afford to be so casual, and for the sake of notational consistency it is a good idea to acknowledge the vectorial character of currents right from the start. A neutral wire, of course, contains as many stationary positive charges as mobile negative ones. The former do not contribute to the current-the charge density <script type="math/tex"> \lambda </script> in Eq. 5.13 refers only to the moving charges. In the unusual situation where both types move, I = <script type="math/tex"> \lambda_{+} \vec{v}_{+} + \lambda_{-}\vec{v}_{-}  </script> .
+The magnetic force on a segment of current-carrying wire is
+<script type="math/tex; mode=display">
+\vec{F}_B = \int (\vec{v} \cross \vec{B}) \dd q = \int (\vec{v} \cross \vec{B}) \lambda \dd l = \int (\vec{I} \cross \vec{B}) \dd l \tagl{5.15}
+</script>
+Inasmuch as <strong>I</strong> and dl both point in the same direction, we can just as well write this as
+<script type="math/tex; mode=display">
+\vec{F}_B = \int I ( \dd \vec{l} \cross \vec{B}) \tagl{5.16}
+</script>
+Typically, the current is constant (in magnitude) along the wire, and in that case, I comes outside the integral:
+<script type="math/tex; mode=display">
+\vec{F}_B = I \int ( \dd \vec{l} \cross \vec{B}) \tagl{5.17}
+</script>
+</p>
+<h4 id="example-53">Example 5.3</h4>
+<div class="admonition question">
+<p class="admonition-title">A rectangular loop of wire, supporting mass m, hangs vertically with one end in a uniform magnetic field <strong>B</strong>, which points into the page in the shaded region of Fig 5.10. For what current I, in the loop, would the magnetic force upward exactly balance the gravitational force downward?</p>
+<p><img alt="Figure 5.10" src="../img/5.10.png" />
+<strong>Solution</strong>
+First of all, the current must circulate clockwise, in order for <script type="math/tex"> (\vec{I} \cross \vec{b}) </script> in the horizontal segment to point upward. The force is
+<script type="math/tex; mode=display">
+F_B = I B a
+</script>
+where <em>a</em> is the width of the loop. The magnetic forces on the two vertical segments cancel.</p>
+</div>
                 
                   
                 
