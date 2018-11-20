@@ -32,6 +32,8 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
     - [4.4 - Linear Dielectrics](ch4-4.md)
 - 5 - Magnetostatics
     - [5.1 - The Lorentz Force Law](ch5-1.md)
+    - [5.2 - The Biot-Savart Law](ch5-2.md)
+    - [5.3 - The Divergence and Curl of B](ch5-3.md)
 
 
 ### Internals
