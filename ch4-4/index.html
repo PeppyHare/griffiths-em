@@ -728,6 +728,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -883,11 +919,12 @@ This new constant <script type="math/tex"> \epsilon </script> is called the <str
 </script>
 is called the <strong>relative permittivity</strong>, or <strong>dielectric constant</strong>, of the material. Dielectric constants for some common substances are listed in Table 4.2. (Notice that <script type="math/tex"> \epsilon_r </script> is greater than 1, for all ordinary materials.) Of course, the permittivity and the dielectric constant do not convey any information that was not already available in the susceptibility, nor is there anything essentially new in Eq 4.32: the physics of linear dielectrics is all contained in <script type="math/tex"> \eqref{4.30} </script>
 </p>
-<p><img alt="Figure 4.2" src="../img/4.2.png" /></p>
+<p align="center"> <img alt="Figure 4.2" src="../img/4.2.png" /> </p>
+
 <h4 id="example-45">Example 4.5</h4>
 <div class="admonition question">
 <p class="admonition-title">A metal sphere of radius <em>a</em> carries a charge <em>Q</em> (Fig 4.20). It is surrounded, out to radius <em>b</em>, by linear dielectric material of permittivity <script type="math/tex"> \epsilon </script>. Find the potential at the center (relative to infinity).</p>
-<p><img alt="Figure 4.20" src="../img/4.20.png" />
+<p><p align="center"> <img alt="Figure 4.20" src="../img/4.20.png" /> </p>
 <strong>Solution</strong>
 To compute V, we need to know E; to find E, we might first try to locate the bound charge; we could get the bound charge from <strong>P</strong>, but we can't calculate <strong>P</strong> unless we already know <strong>E</strong>. What we <em>do</em> know is the free charge, and our arrangement is spherically symmetric, so we can go straight for <strong>D</strong> using Eq 4.23:
 <script type="math/tex; mode=display">
@@ -924,7 +961,8 @@ and
 Notice that the surface bound charge at <em>a</em> is <em>negative</em> (<script type="math/tex"> \vu{n} </script> points outward with respect to the dielectric, which is <script type="math/tex"> + \vu{n} </script> at b, but <script type="math/tex"> -\vu{r} </script> at a). This is natural, since the charge on the metal sphere attracts its opposite in all the dielectric molecules. It is this layer of negative charge that reduces the field, within the dielectric, from <script type="math/tex"> 1 / 4 \pi \epsilon_0 (Q / r^2) \vu{r} </script> to <script type="math/tex"> 1 / 4 \pi \epsilon (Q / r^2) \vu{r} </script>. In this respect, a dielectric is rather like an imperfect conductor: on a conducting shell the induced surface charge would be such as to cancel out the field of Q entirely in the region <script type="math/tex"> a < r < b </script>; the dielectric does the best it can, but the cancellation is only partial.</p>
 </div>
 <p>Since linear dielectrics give us cases where <strong>P</strong> and <strong>D</strong> are proportional to <strong>E</strong>, you might suppose that linear dielectrics escape the defect in the parallel between <strong>E</strong> and <strong>D</strong>. Does it not follow that their curls, like <strong>E</strong>'s, must vanish? Unfortunately, it does not, for the line integral of <strong>P</strong> around a closed path that straddles the boundary between one type of material and another need not be zero, even though the integral of <strong>E</strong> around the same loop <em>must</em> be. The reason is that the proportionality factor <script type="math/tex"> \epsilon_0 \chi_e </script> is different on the two sides. For instance, at the interface between a polarized dielectric and the vacuum (Fig 4.21), <strong>P</strong> is zero on one side but not on the other. Around this loop, <script type="math/tex"> \oint \vec{P} \cdot \dd \vec{l} \neq 0 </script>, and hence, by Stokes' theorem, the curl of <strong>P</strong> cannot vanish everywhere within the loop (in fact, it is infinite at the boundary).</p>
-<p><img alt="Figure 4.21" src="../img/4.21.png" /></p>
+<p align="center"> <img alt="Figure 4.21" src="../img/4.21.png" /> </p>
+
 <p>Of course, if space is <em>entirely</em> filled with a homogeneous linear dielectric, then this objection is void; in this rather special circumstance
 <script type="math/tex; mode=display">
 \div \vec{D} = \rho_f \quad \text{and} \quad \curl \vec{D} = 0
@@ -943,11 +981,11 @@ Conclusion: when all space is filled with a homogeneous linear dielectric, the f
 \vec{E} = \frac{1}{4 \pi \epsilon} \frac{q}{r^2} \vu{r} \tagl{4.36}
 </script>
 (that's <script type="math/tex"> \epsilon </script>, not <script type="math/tex"> \epsilon_0 </script>), and the force it exerts on nearby charges is reduced accordingly. But it's not that there is anything wrong with Coulomb's law; rather, the polarization of the medium partially "shields" the charge, by surrounding it with bound charge of the opposite sign (Fig 4.22)
-<img alt="Figure 4.22" src="../img/4.22.png" /></p>
+<p align="center"> <img alt="Figure 4.22" src="../img/4.22.png" /> </p></p>
 <h4 id="example-46">Example 4.6</h4>
 <div class="admonition question">
 <p class="admonition-title">A parallel-plate capacitor (Fig 4.23) is filled with insulating material of dielectric constant <script type="math/tex"> \epsilon_r </script>. What effect does this have on its capacitance?</p>
-<p><img alt="Figure 4.23" src="../img/4.23.png" />
+<p><p align="center"> <img alt="Figure 4.23" src="../img/4.23.png" /> </p>
 <strong>Solution</strong>
 Since the field is confined to the space between the plates, the dielectric will reduce <strong>E</strong>, and hence also the potential difference V, by a factor <script type="math/tex"> 1 / \epsilon_r </script>. Accordingly, the capacitance <script type="math/tex"> C = Q / V </script> is increased by a factor of the dielectric constant
 <script type="math/tex; mode=display">
@@ -985,7 +1023,7 @@ V_{above} = V_{below} \tagl{4.42}
 <h4 id="example-47">Example 4.7</h4>
 <div class="admonition question">
 <p class="admonition-title">A sphere of homogeneous linear dielectric material is placed in an otherwise uniform electric field <script type="math/tex"> \vec{E_0} </script> (Fig 4.27). Find the electric field inside the sphere</p>
-<p><img alt="Figure 4.27" src="../img/4.27.png" />
+<p><p align="center"> <img alt="Figure 4.27" src="../img/4.27.png" /> </p>
 <strong>Solution</strong>
 This is very similar to Ex 3.8, in which an uncharged conducting sphere was introduced into a uniform field. In that case, the field of the induced charge canceled <script type="math/tex"> \vec{E_0} </script> within the sphere. In a dielectric, the cancellation from the bound charge is incomplete.</p>
 <p>Our problem is to solve Laplace's equation, for <script type="math/tex"> V_{in}(r, \theta) </script> when <script type="math/tex"> r \leq R </script> and <script type="math/tex"> V_{out}(r, \theta) </script> when <script type="math/tex"> r \geq R </script>, subject to the boundary conditions
@@ -1044,7 +1082,7 @@ We should be used to finding that the field within a polarized sphere is uniform
 <h4 id="example-48">Example 4.8</h4>
 <div class="admonition question">
 <p class="admonition-title">Suppose the entire region below the plane <script type="math/tex"> z = 0 </script> in Fig 4.28 is filled with uniform linear dielectric material of susceptibility <script type="math/tex"> \chi_e </script>. Calculate the force on a point charge <em>q</em> situated a distance <em>d</em> above the origin.</p>
-<p><img alt="Figure 4.28" src="../img/4.28.png" />
+<p><p align="center"> <img alt="Figure 4.28" src="../img/4.28.png" /> </p>
 <strong>Solution</strong>
 The surface bound charge on the xy plane is of opposite sign to <em>q</em>, so the force will be attractive. (In view of Eq 4.39, there is no volume bound charge.) Let us first calculate <script type="math/tex"> \sigma_b </script>, using <script type="math/tex"> \eqref{4.11} </script> and <script type="math/tex"> \eqref{4.30} </script>:
 <script type="math/tex; mode=display">
@@ -1240,8 +1278,10 @@ and it works out perfectly.</p>
 <p>It is sometimes alleged that Eq. 4.58 represents the energy even for nonlinear dielectrics, but this is false: To proceed beyond Eq. 4.57, one must assume linearity. In fact, for dissipative systems the whole notion of "stored energy" loses its meaning, because the work done depends not only on the final configuration but on how it got there. If the molecular "springs" are allowed to have some friction, for instance, then <script type="math/tex"> W_{spring} </script>  can be made as large as you like, by assembling the charges in such a way that the spring is obliged to expand and contract many times before reaching its final state. In particular, you get nonsensical results if you try to apply Eq. 4.58 to electrets, with frozen-in polarization (see Prob. 4.27).</p>
 <h2 id="444-forces-on-dielectrics">4.4.4: Forces on Dielectrics</h2>
 <p>Just as a conductor is attracted into an electric field (Eq. 2.51), so too is a dielectric - and for essentially the same reason: the bound charge tends to accumulate near the free charge of the opposite sign. But the calculation of forces on dielectrics can be surprisingly tricky. Consider, for example, the case of a slab of linear dielectric material, partially inserted between the plates of a parallel-plate capacitor (Fig. 4.30). We have always pretended that the field is uniform inside a parallel-plate capacitor, and zero outside. If this were literally true, there would be no net force on the dielectric at all, since the field everywhere would be perpendicular to the plates. However, there is in reality a <strong>fringing field</strong> around the edges, which for most purposes can be ignored but in this case is responsible for the whole effect. (Indeed, the field could not terminate abruptly at the edge of the capacitor, for if it did, the line integral of E around the closed loop shown in Fig. 4.31 would not be zero.) It is this nonuniform fringing field that pulls the dielectric into the capacitor.</p>
-<p><img alt="Figure 4.30" src="../img/4.30.png" /></p>
-<p><img alt="Figure 4.31" src="../img/4.31.png" /></p>
+<p align="center"> <img alt="Figure 4.30" src="../img/4.30.png" /> </p>
+
+<p align="center"> <img alt="Figure 4.31" src="../img/4.31.png" /> </p>
+
 <p>Fringing fields are notoriously difficult to calculate; luckily, we can avoid this altogether, by the following ingenious method. Let W be the energy of the system - it depends, of course, on the amount of overlap. If I pull the dielectric out an infinitesimal distance dx, the energy is changed by an amount equal to the work done:</p>
 <p>
 <script type="math/tex; mode=display">

@@ -741,6 +741,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -894,7 +930,7 @@ In words: If we increment <em>x</em> by an infinitesimal amount <script type="ma
 <script type="math/tex; mode=display">
 \dd{T} = \left( \pdv{T}{x} \right)\dd{x} + \left( \pdv{T}{y} \right) \dd{y} + \left( \pdv{T}{z} \right) \dd{z} \tagl{1.34}
 </script>
-<img alt="Figure 1.17" src="../img/1.17.png" /></p>
+<p align="center"> <img alt="Figure 1.17" src="../img/1.17.png" /> </p></p>
 <p>This tells us how T changes when we alter all three variables by the infinitesimal amounts dx, dy, dz. Notice that we do <em>not</em> require an infinite number of derivatives - three will suffice: the partial derivatives along each of the three coordinate directions.
 <script type="math/tex"> \eqref{1.34} </script> is reminiscent of a dot product:
 <script type="math/tex; mode=display">
@@ -974,7 +1010,8 @@ Observe that the divergence of a vector function is itself a scalar.</p>
 only draw the arrows at a few representative locations.)</p>
 <p>Imagine standing at the edge of a pond. Sprinkle some sawdust or pine needles
 on the surface. If the material spreads out, then you dropped it at a point of positive divergence; if it collects together, you dropped it at a point of negative divergence. (The vector function <script type="math/tex"> \vec{v} </script>  in this model is the velocity of the water at the surface - this is a two-dimensional example, but it helps give one a "feel" for what the divergence means. A point of positive divergence is a source, or "faucet"; a point of negative divergence is a sink, or "drain.")</p>
-<p><img alt="Figure 1.18" src="../img/1.18.png" /></p>
+<p align="center"> <img alt="Figure 1.18" src="../img/1.18.png" /> </p>
+
 <h4 id="example-14">Example 1.4</h4>
 <div class="admonition question">
 <p class="admonition-title">Suppose the functions in Fig 1.18 are <script type="math/tex"> \vec{v_a} = \vec{r} = x \vu{x} + y \vu{y} + z \vu{z} </script>, <script type="math/tex"> \vec{v_b} = \vu{z} </script>, and <script type="math/tex"> \vec{v_c} = z\vu{z} </script>. Calculate their divergences.</p>
@@ -1004,7 +1041,7 @@ v_x & v_y & v_z
 & + \vu{x} \left( \pdv{v_z}{y} - \pdv{v_y}{z} \right) + \vu{y} \left( \pdv{v_x}{z} - \pdv{v_z}{x} \right) + \vu{z} \left( \pdv{v_y}{x} - \pdv{v_x}{y} \right) \tagl{1.41}
 \end{align*}
 </script>
-<img alt="Figure 1.19" src="../img/1.19.png" /></p>
+<p align="center"> <img alt="Figure 1.19" src="../img/1.19.png" /> </p></p>
 <p>Notice that the curl of a vector function is, like any cross product, a vector.</p>
 <p><em>Geometrical Interpretation</em>:  The name curl is also well chosen, for <script type="math/tex"> \curl{\vec{v}} </script> is a measure of how much the vector <script type="math/tex"> \vec{v} </script>  swirls around the point in question. Thus the three functions in Fig. 1.18 all have zero curl (as you can easily check for yourself), whereas the functions in Fig. 1.19 have a substantial curl, pointing in the z direction, as the natural right-hand rule would suggest. Imagine (again) you are standing at the edge of a pond. Float a small paddlewheel (a cork with toothpicks pointing out radially would do); if it starts to rotate, then you placed it at a point
 of nonzero curl. A whirlpool would be a region of large curl.</p>

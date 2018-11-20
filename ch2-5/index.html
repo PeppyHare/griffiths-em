@@ -708,6 +708,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -818,24 +854,28 @@
 <p>In an <em>insulator</em>, such as glass or rubber, each electron is on a short leash, attached to a particular atom. In a metallic <em>conductor</em>, by contrast, one or more electrons per atom are free to roam. (In liquid conductors such as salt water, it is ions that do the moving). A <em>perfect</em> conductor would contain an unlimited supply of free charges. In real life there are no perfect conductors, but metals come pretty close, for most purposes.</p>
 <p>From this definition, the basic electrostatic properties of ideal conductors immediately follow:</p>
 <p><strong>(i) E = 0 inside a conductor</strong>. Why? Because if there were any field, those free charges would move, and it wouldn't be <em>electrostatics</em> any more. Hmm... that's hardly a satisfactory explanation; maybe all it proves is that you can't have electrostatics when conductors are present. We had better examine what happens when you put a conductor into an external electric field <script type="math/tex"> \vec{E_0} </script> (Fig. 2.42). Initially, the field will drive any free positive charges to the right, and negative ones to the left. (In practice, it's the negative charges - electrons - that do the moving, but when they depart, the right side is left with a net positive charge - the stationary nuclei - so it doesn't really matter which charges move; the effect is the same). When they come to the edge of the material, the charges pile up: plus on the right side, minus on the left. Now, these <strong>induced charges</strong> produce a field of their own, <script type="math/tex"> \vec{E_1} </script>, which, as you can see from the figure, is in the opposite direction to <script type="math/tex"> \vec{E_0} </script>. That's the crucial point, for it means that the field of the induced charges tends to cancel the original field. Charge will continue to flow until this cancellation is complete, and the resultant field inside the conductor is precisely zero. The whole process is practically instantaneous.</p>
-<p><img alt="Figure 2.42" src="../img/2.42.png" /></p>
+<p align="center"> <img alt="Figure 2.42" src="../img/2.42.png" /> </p>
+
 <p><strong>(ii) <script type="math/tex"> \rho = 0 </script> inside a conductor.</strong> This follows from Gauss's law: if E is zero, so also is <script type="math/tex"> \rho </script>. There is still charge around, but exactly as much plus as minus, so the net charge density in the interior is zero.</p>
 <p><strong>(iii) Any net charge resides on the surface</strong>. That's the only place left.</p>
 <p><strong>(iv) A conductor is an equipotential</strong>. For if a and b are any two points within (or at the surface of) a given conductor, <script type="math/tex"> V(b) - V(a) = - \int _{a} ^{b} \vec{E} \cdot \dd{\vec{l}} = 0 </script>, and hence <script type="math/tex"> V(a) = V(b) </script>.</p>
 <p><strong>(v) E is perpendicular to the surface, just outside a conductor.</strong> Otherwise, as in (i), charge will immediately flow around the surface until it kills off the tangential component (Fig. 2.43). (Perpendicular to the surface, charge cannot flow, of course, since it is confined to the conducting object.)</p>
-<p><img alt="Figure 2.43" src="../img/2.43.png" /></p>
+<p align="center"> <img alt="Figure 2.43" src="../img/2.43.png" /> </p>
+
 <p>I think it is astonishing that the charge on a conductor flows to the surface. Because of their mutual repulsion, the charges naturally spread out as much as possible, but for <em>all</em> of them to go to the surface seems like a waste of the interior space. Surely we could do better, from the point of view of making each charge as possible from its neighbors, to sprinkle <em>some</em> of them throughout the volume. Well, it simply is not so. You do best to put all the charge on the surface, and this is true regardless of the size or shape of the conductor.</p>
 <p>The problem can also be phrased in terms of energy. Like any other free dynamical system, the charge on a conductor will seek the configuration that minimizes its potential energy. What property (iii) asserts is that the electrostatic energy of a solid object (with specified shape and total charge) is a minimum when that charge is spread over the surface. For instance, the energy of a sphere is <script type="math/tex"> (1 / 8 \pi \epsilon_0)(q^2 / R) </script> if the charge is uniformly distributed over the surface, as we found in Ex 2.9, but it is greater <script type="math/tex"> (3/20 \pi \epsilon_0)(q^2 / R) </script> if the charge is uniformly distributed throughout the volume (Prob. 2.34). </p>
 <h2 id="252-induced-charges">2.5.2: Induced Charges</h2>
 <p>If you hold a charge +q near an uncharged conductor (Fig 2.44), the two will attract one another. The reason for this is that q will pull minus charges over to the near side and repel plus charges to the far side (Another way to think of it is that the charge moves around in such a way as to kill off the field of q for points inside the conductor, where the total field must be zero.) Since the negative induced charge is closer to q, there is a net force of attraction. (In chapter 3 we will calculate this force explicitly, for the case of a spherical conductor.)</p>
 <p>When I speak of the field, charge, or potential "inside" a conductor, I mean in the "meat" of the conductor. If there is some hollow cavity in the conductor, and within that cavity you put some charge, then the field in the cavity will not be zero. But in a remarkable way the cavity and its contents are electrically isolated from the outside world by the surrounding conductor (Fig. 2.45). No external fields penetrate the conductor; they are canceled at the outer surface by the induced charge there. Similarly, the field due to charges within the cavity is canceled, for all exterior points, by the induced charge on the inner surface. However, the compensating charge left over on the <em>outer</em> surface of the conductor effectively "communicates" the presence of q to the outside world. The total charge induced on the cavity wall is equal and opposite to the charge inside, for if we surround the cavity with a Gaussian surface, all points of which are in the conductor (Fig 2.45), <script type="math/tex"> \oint \vec{E} \cdot \dd{\vec{a}} = 0 </script>, and hence (by Gauss's law) the net enclosed charge must be zero. But <script type="math/tex"> Q_{enc} = q + q_{induced} </script>, so <script type="math/tex"> q_{induced} = - q </script>. Then if the conductor as a whole is electrically neutral, there must be a charge +q on its outer surface.</p>
-<p><img alt="Figure 2.44" src="../img/2.44.png" /></p>
+<p align="center"> <img alt="Figure 2.44" src="../img/2.44.png" /> </p>
+
 <hr />
 <h4 id="example-210">Example 2.10</h4>
 <blockquote>
 <p>An uncharged spherical conductor centered at the origin has a cavity of some weird shape carved out of it (Fig. 2.46). Somewhere within the cavity is a charge q. Question: What is the field outside the sphere?</p>
 </blockquote>
-<p><img alt="Figure 2.46" src="../img/2.46.png" /></p>
+<p align="center"> <img alt="Figure 2.46" src="../img/2.46.png" /> </p>
+
 <p><strong>Solution</strong> 
 At first glance, it would appear that the answer depends on the shape of the cavity and the location of the charge. But that's wrong: the answer is
 <script type="math/tex; mode=display">
@@ -846,7 +886,8 @@ At first glance, it would appear that the answer depends on the shape of the cav
 <p>It may occur to you that in one respect this argument is open to challenge: There are actually <em>three</em> fields at work here: <script type="math/tex"> \vec{E_q}, \vec{E_{induced}} </script>, and <script type="math/tex"> \vec{E_{leftover}} </script>. All we know for certain is that the sum of the three is zero inside the conductor, yet I claimed that the first two alone cancel, while the third is separately zero there. Moreover, even if the first two cancel within the conductor, who is to say they still cancel for points outside? They do not, after all, cancel for points inside the cavity. I cannot give you a completely satisfactory answer at the moment, but this much at least is true: there <em>exists</em> a way of distributing -q over the inner surface so as to cancel the field of q at all exterior points. For that same cavity could have been carved out of a <em>huge</em> spherical conductor with a radius of 27 miles or light years or whatever. In that case, the leftover +q on the outer surface is simply too far away to produce a significant field, and the other two fields would have to accomplish the cancellation by themselves. So we know they can do it... but are we sure they <em>choose</em> to? Perhaps for small spheres nature prefers some complicated three-way cancellation? Nope: As we'll see in the uniqueness theorems of Chapter 3, electrostatics is very stingy with its options; there is always precisely one way - no more - of distributing the charge on a conductor so as to make the field inside zero. Having found a possible way, we are guaranteed that no alternative exists, even in principle.  </p>
 <hr />
 <p>If a cavity surrounded by conducting material is itself empty of charge, then the field within the cavity is zero. For any field line would have to begin and end on the cavity wall, going from a plus charge to a minus charge (Fig 2.47). Letting that field line be part of a closed loop, the rest of which is entirely inside the conductor (where E = 0), the integral <script type="math/tex"> \oint \vec{E} \cdot \dd{\vec{l}} </script> is distinctly <em>positive</em>, in violation of Eq. 2.19. It follows that <script type="math/tex"> E = 0 </script> within an empty cavity, and there is in vact no charge on the surface of the cavity. (This is why you are relatively safe inside a metal car during a thunderstorm - you may get cooked, if lightning strikes, but you will not be electrocuted. The same principle applies to the placement of sensitive apparatus inside a grounded <strong>Faraday cage</strong>, to shield out stray electric fields. In practice, the enclosure doesn't even have to be solid conductor - chicken wire will often suffice.)</p>
-<p><img alt="Figure 2.47" src="../img/2.47.png" /></p>
+<p align="center"> <img alt="Figure 2.47" src="../img/2.47.png" /> </p>
+
 <h2 id="253-surface-charge-and-the-force-on-a-conductor">2.5.3: Surface Charge and the Force on a Conductor</h2>
 <p>Because the field inside a conductor is zero, boundary condition Eq. 2.33 requires that the field immediately outside is
 <script type="math/tex; mode=display">
@@ -886,7 +927,8 @@ This amounts to an outward <strong>electrostatic pressure</strong> on the surfac
  </script>
 </p>
 <h2 id="254-capacitors">2.5.4: Capacitors</h2>
-<p><img alt="Figure 2.51" src="../img/2.51.png" /></p>
+<p align="center"> <img alt="Figure 2.51" src="../img/2.51.png" /> </p>
+
 <p>Suppose we have two conductors, and we put charge +Q on one and -Q on the other (Fig 2.51). Since V is constant over a conductor, we can speak unambiguously of the potential difference between them:
 <script type="math/tex; mode=display">
 V = V_{+} - V_{-} = - \int_{(-)}^{(+)} \vec{E} \cdot \dd{\vec{l}}
@@ -906,7 +948,7 @@ Capacitance is a purely geometrical quantity, determined by the sizes, shapes, a
 <h4 id="example-211">Example 2.11</h4>
 <div class="admonition question">
 <p class="admonition-title">Find the capacitance of a parallel-plate capacitor consisting of two metal surfaces of area A held a distance d apart (Fig. 2.52)</p>
-<p><img alt="Figure 2.52" src="../img/2.52.png" /></p>
+<p><p align="center"> <img alt="Figure 2.52" src="../img/2.52.png" /> </p></p>
 <p><strong>Solution</strong>
 If we put +Q on the top and -Q on the bottom, they will spread out uniformly over the two surfaces, provided the area is reasonably large and the separation small. The surface charge density, then, is <script type="math/tex"> \sigma = Q / A </script> on the top plate, and so the field, according to Ex. 2.6, is <script type="math/tex"> (1 / \epsilon_0) Q / A </script>. The potential difference between the plates is therefore
 <script type="math/tex; mode=display">

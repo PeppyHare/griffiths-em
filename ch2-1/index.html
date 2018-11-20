@@ -701,6 +701,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -802,7 +838,7 @@
                 <h1 id="21-the-electric-field">2.1: The Electric Field</h1>
 <h2 id="211-introduction">2.1.1: Introduction</h2>
 <p>The fundamental problem electrodynamics hopes to solve is this (Fig 2.1): We have some electric charges <script type="math/tex"> q_1, q_2, q_3, \ldots </script> (call them <em>source charges</em>); what force do they exert on another charge, <script type="math/tex"> Q </script> (call it the <em>test charge</em>)? The positions of the source charges are given (as functions of time); the trajectory of the test particle is to be calculated. In general, both the source charges and the test charge are in motion.</p>
-<p><img alt="Fig 2.1" src="../img/2.1.png" /></p>
+<p>![Fig 2.1" src="../img/2.1.png" /&gt; </p></p>
 <p>The solution to this problem is facilitated by the principle of superposition, which states that the interaction between any two charges is completely unaffected by the presence of others. This means that to determine the force on Q, we can first compute the force <script type="math/tex"> \vec{F_1} </script>, due to <script type="math/tex"> q_1 </script> alone (ignoring all the others); then we compute the force <script type="math/tex"> \vec{F_2} </script>, due to <script type="math/tex"> q_2 </script> alone, and so in. Finally, we take the vector sum of all these individual forces: <script type="math/tex"> \vec{F} = \vec{F_1} + \vec{F_2} + \vec{F_3} + \ldots </script> Thus, if we can find the force on Q due to a <em>single</em> source charge <script type="math/tex"> q </script>, we are, in principle, done (the rest is just a question of repeating the same operation over and over, and adding it all up)</p>
 <blockquote>
 <p>The principle of superposition may seem "obvious" to you, but it did not have to be so simple: if the electromagnetic force were proportional to the <em>square</em> of the total source charge, for instance, the principle of superposition would not hold, since <script type="math/tex"> (q_1 + q_2)^2 \neq q_1 ^2 + q_2 ^2 </script> (there would be "cross terms" to consider). Superposition is not a logical necessity, but an experimental fact.</p>
@@ -850,7 +886,8 @@
 </script>
 </p>
 <p><strong>E</strong> is called the <strong>electric field</strong> of the source charges. Notice that it is a function of position (<strong>r</strong>), because the separation vectors <script type="math/tex"> \gr_i </script> depend on the location of the field point P (Fig 2.3). But it makes no reference to the test charge Q. The electric field is a vector quantity that varies from point to point and is determined by the configuration of source charges; physically, <script type="math/tex"> \vec{E}(\vec{r}) </script> is the force per unit charge that would be exerted on a test charge, if you were to place one at P.</p>
-<p><img alt="Figure 2.3" src="../img/2.3.png" /></p>
+<p align="center"> <img alt="Figure 2.3" src="../img/2.3.png" /> </p>
+
 <p>What exactly <em>is</em> an electric field? I have deliberately begun with what you might call the "minimal" interpretation of <strong>E</strong>, as an intermediate step in the calculation of electric forces. But I encourage you to think of the field as a "real" physical entity, filling the space around electric charges. Maxwell himself came to believe that electric and magnetic fields are stresses and strains in an invisible primordial jellylike "ether." Special relativity has forced us to abandon the notion of either, and with it Maxwell's mechanical interpretation of electromagnetic fields. (It is even possible, although cumbersome, to formulate classical electrodynamics as an "action-at-a-distance" theory, and dispense with the field concept altogether.) I can't tell you, then, what a field <em>is</em> -- only how to calculate it and what it can do for you once you've got it.</p>
 <hr />
 <h4 id="example-21">Example 2.1</h4>
@@ -867,7 +904,7 @@ Here <script type="math/tex"> \gr = \sqrt{z^2 + (d/2)^2} </script> and <script t
  </script>
 </p>
 <p><em>Check</em>: When <script type="math/tex"> z \gg d </script> you're so far away that it just looks like a single charge <script type="math/tex"> 2q </script>, so the field should reduce to <script type="math/tex"> \vec{E} = \frac{1}{4 \pi \epsilon_0} \frac{2q}{z^2} \vu{z} </script>. And it does, just set <script type="math/tex"> d \rightarrow 0 </script> in the formula).</p>
-<p><img alt="Figure 2.4" src="../img/2.4.png" /></p>
+<p><p align="center"> <img alt="Figure 2.4" src="../img/2.4.png" /> </p></p>
 </div>
 <hr />
 <h2 id="214-continuous-charge-distributions">2.1.4: Continuous Charge Distributions</h2>
@@ -881,7 +918,8 @@ Here <script type="math/tex"> \gr = \sqrt{z^2 + (d/2)^2} </script> and <script t
 dq \rightarrow \lambda \dd{l'} \sim \sigma \dd{a'} \sim \rho \dd{\tau'}
 </script>
 </p>
-<p><img alt="Figure 2.5" src="../img/2.5.png" /></p>
+<p align="center"> <img alt="Figure 2.5" src="../img/2.5.png" /> </p>
+
 <p>Thus the electric field of a line charge is
 <script type="math/tex; mode=display">
 \vec{E}(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\lambda(\vec{r'})}{\gr ^2} \vu{\gr} \dd{l'}
@@ -904,7 +942,7 @@ and for a volume charge,
 <div class="admonition question">
 <p class="admonition-title">Find the electric field a distance z above the midpoint of a straight line segment of length <script type="math/tex"> 2L </script> that carries a uniform line charge <script type="math/tex"> \lambda </script> (Fig. 2.6).</p>
 <p>TODO!</p>
-<p><img alt="Figure 2.6" src="../img/2.6.png" /></p>
+<p><p align="center"> <img alt="Figure 2.6" src="../img/2.6.png" /> </p></p>
 </div>
                 
                   

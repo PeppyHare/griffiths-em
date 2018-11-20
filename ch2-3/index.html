@@ -682,6 +682,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -764,7 +800,8 @@
                 <h1 id="23-electric-potential">2.3: Electric Potential</h1>
 <h2 id="231-introduction-to-potential">2.3.1: Introduction to Potential</h2>
 <p>The electric field <strong>E</strong> is not just <em>any</em> old vector function. It is a very special <em>kind</em> of vector function: one whose curl id zero. <script type="math/tex"> \vec{E} = y \vu{x} </script> , for example, could not possibly be an electrostatic field; <em>no</em> set of charges, regardless of their sizes and positions, could ever produce such a field. We're going to exploit this special property of electric fields to reduce a <em>vector</em> problem (finding <strong>E</strong>) to a much simpler <em>scalar</em> problem. The first theorem in Sect 1.6.2 asserts that any vector whose curl is zero is equal to the gradient of some scalar. What I'm going to do now amounts to a proof of that claim, in the context of electrostatics.</p>
-<p><img alt="Figure 2.30" src="../img/2.30.png" /></p>
+<p align="center"> <img alt="Figure 2.30" src="../img/2.30.png" /> </p>
+
 <p>Because <script type="math/tex"> \nabla \cross \vec{E} = 0</script> , the line integral of <strong>E</strong> around any closed loop is zero (that follows from Stokes' theorem). Because <script type="math/tex"> \oint \vec{E} \cdot \dd{\vec{l}} = 0 </script>, the line integral of <strong>E</strong> from point <strong>a</strong> to point <strong>b</strong> is the same for all paths (otherwise you could go <em>out</em> along path (i) and return along path (ii) - Fig 2.30 - and obtain <script type="math/tex"> \oint \vec{E} \cdot \dd{\vec{l}} \neq 0 </script> ). Because the line integral is independent of path, we can define a function
 <script type="math/tex; mode=display">
 V(\vec{r}) \equiv - \int _{O} ^{\vec{r}} \vec{E} \cdot \dd{\vec{l}} \label{2.21} \tag{2.21}
@@ -875,7 +912,8 @@ V(r) = - \int_{\mathscr{O}} ^r \vec{E} \cdot \dd{\vec{l}} \\
 </script>
 </p>
 <p>(You see here the advantage of using infinity for the reference point: it kills the lower limit on the integral.) Notice the sign of V; presumably the conventional minus sign in the definition was chosen in order to make the potential of a positive charge come out positive. It is useful to remember that regions of positive charge are potential "hills," and electric field points "downhill" from plus toward minus.</p>
-<p><img alt="Figure 2.32" src="../img/2.32.png" /></p>
+<p align="center"> <img alt="Figure 2.32" src="../img/2.32.png" /> </p>
+
 <p>In general, the potential of a point charge q is
 <script type="math/tex; mode=display">
 V(\vec{r}) = \frac{1}{4 \pi \epsilon_0} \frac{q}{\gr} 
@@ -903,14 +941,16 @@ V = \frac{1}{4 \pi \epsilon_0} \int \frac{\lambda(\vec{r'})}{\gr} \dd{l'} \qquad
 <p>I should warn you that everything in this section is predicated on the assumption that the reference point is at infinity. This is hardly apparent in <script type="math/tex"> \eqref{2.29} </script>, but remember that we <em>got</em> the equation from the potential of a point charge at the origin, <script type="math/tex"> (1/4 \pi \epsilon_0) (q / r) </script>, which is valid only when <script type="math/tex"> \mathscr{O} = \infty </script>. If you try to apply these formulas to one of those artificial problems in which the charge itself extends to infinity, the integral will diverge.</p>
 <h2 id="235-boundary-conditions">2.3.5: Boundary Conditions</h2>
 <p>In the typical electrostatic problem you are given a source charge distribution <script type="math/tex"> \rho </script>, and you want to find the electric field <script type="math/tex"> \vec{E} </script> it produces. Unless the symmetry of the problem allows a solution by Gauss's law, it is generally to your advantage to calculate the potential first, as an intermediate step. These are the three fundamental quantities of electrostatics: <script type="math/tex"> \rho </script>, <script type="math/tex"> \vec{E} </script>, and <script type="math/tex"> V </script>. We have, in the course of our discussion, derived all six formulas interrelating them. These equations are neatly summarized in Fig. 2.35. We began with just two experimental observations: (1) the principle of superposition - a broad general rule applying to all electromagnetic forces, and (2) Coulomb's law - the fundamental law of electrostatics. From these, all else followed.</p>
-<p><img alt="Figure 2.35" src="../img/2.35.png" /></p>
+<p align="center"> <img alt="Figure 2.35" src="../img/2.35.png" /> </p>
+
 <p>You may have noticed, in studying the exercises in this chapter, that the electric field always undergoes a discontinuity when you cross a surface charge <script type="math/tex"> \sigma </script>. In fact, it is a simple matter to find the <em>amount</em> by which E changes at such a boundary. Suppose we draw a wafer-thin Gaussian pillbox, extending just barely over the edge in each direction (Fig. 2.36). Gauss's law says that
 <script type="math/tex; mode=display">
 \oint _{S} \vec{E} \cdot \dd{\vec{a}} = \frac{1}{\epsilon_0} Q_{enc} = \frac{1}{\epsilon_0} \sigma A
 </script>
 </p>
-<p><img alt="Figure 2.36" src="../img/2.36.png" />
-where A is the area of the pillbox lid. If <script type="math/tex"> \sigma </script>  varies from point to point or the surface is curved, we can simply pick A to be extremely small. Now, the sides of the pillbox contribute nothing to the flux, in the limit as the thickness <script type="math/tex"> \epsilon </script>  goes to zero, so we are left with 
+<p align="center"> <img alt="Figure 2.36" src="../img/2.36.png" /> </p>
+
+<p>where A is the area of the pillbox lid. If <script type="math/tex"> \sigma </script>  varies from point to point or the surface is curved, we can simply pick A to be extremely small. Now, the sides of the pillbox contribute nothing to the flux, in the limit as the thickness <script type="math/tex"> \epsilon </script>  goes to zero, so we are left with 
 <script type="math/tex; mode=display">
 E_{above}^{\perp} - E_{below} ^{\perp} = \frac{1}{\epsilon_0} \sigma \label{2.31} \tag{2.31}
 </script>
@@ -924,14 +964,17 @@ to the thin rectangular loop of Fig 2.37, the ends give nothing (as <script type
 \vec{E}_{above} ^{\parallel} = \vec{E}_{below} ^{\parallel} \label{2.32} \tag{2.32}
 </script>
 where <script type="math/tex"> \vec{E}^{\parallel} </script> stands for the components of <script type="math/tex"> \vec{E} </script> parallel to the surface.</p>
-<p><img alt="Figure 2.36" src="../img/2.36.png" /></p>
+<p align="center"> <img alt="Figure 2.36" src="../img/2.36.png" /> </p>
+
 <p>The boundary conditions on <script type="math/tex"> \vec{E} </script> (Eqs. <script type="math/tex"> \eqref{2.31} </script> and <script type="math/tex"> \eqref{2.32} </script>) can be combined into a single formula:
 <script type="math/tex; mode=display">
 \vec{E}_{above} - \vec{E}_{below} = \frac{\sigma}{\epsilon_0} \vu{n} \label{2.33}
 </script>
 where <script type="math/tex"> \vu{n} </script> is a unit vector perpendicular to the surface, pointing from "below" to "above."</p>
-<p><img alt="Figure 2.37" src="../img/2.37.png" />
-<img alt="Figure 2.38" src="../img/2.38.png" /></p>
+<p align="center"> <img alt="Figure 2.37" src="../img/2.37.png" /> </p>
+
+<p align="center"> <img alt="Figure 2.38" src="../img/2.38.png" /> </p>
+
 <p>The potential, meanwhile, is continuous across any boundary (Fig 2.38), since
 <script type="math/tex; mode=display">
 V_{above} - V_{below} = -\int_{a}^{b} \vec{E} \cdot \dd{\vec{l}}

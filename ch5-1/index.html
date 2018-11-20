@@ -701,6 +701,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -802,10 +838,12 @@
                 <h1 id="51-the-lorentz-force-law">5.1: The Lorentz Force Law</h1>
 <h2 id="511-magnetic-fields">5.1.1: Magnetic Fields</h2>
 <p>Remember the basic problem of classical electrodynamics: We have a collection of charges <script type="math/tex"> q_1, q_2, q_3, \ldots </script> (the "source" charges), and we want to calculate the force they exert on some other charge <em>Q</em> (the "test" charge). According to the principle of superposition, it is sufficient to find the force of a single source charge - the total is then the vector sum of all the individual forces. Up to now, we have confined our attention to the simplest case, electrostatics, in which the source charge is at rest (though the test charge need not be). The time has come to consider the forces between charges in motion.</p>
-<p><img alt="Figure 5.2" src="../img/5.2.png" /></p>
+<p align="center"> <img alt="Figure 5.2" src="../img/5.2.png" /> </p>
+
 <p>To give you some sense of what is in store, imagine that I set up the following demonstration: Two wires hang from the ceiling, a few centimeters apart; when I turn on a current, so that it passes up one wire and back down the other, the wires jump apart - they evidently repel one another (Fig. 5.2(a)). How do we explain this? You might suppose that the battery (or whatever drives the current) is actually charging up the wire, and that the force is simply due to the electrical repulsion of like charges. But this is incorrect. I could hold up a test charge near these wires, and there would be no force on it, for the wires are in fact electrically neutral. (It's true that electrons are flowing down the line - that's what a current is - but there are just as many stationary plus charges as moving minus charges on any given segment.) Moreover, if I hook up my demonstration so as to make the current flow up both wires (Fig. 5.2(b)), they are found to attract! What's going on here?</p>
 <p>Whatever force accounts for the attraction of parallel currents and the repulsion of anti-parallel ones is not electrostatic in nature. It is our first encounter with a magnetic force. Whereas a stationary charge produces only an electric field E in the space around it, a moving charge generates, in addition, a magnetic field <strong>B</strong>. In fact, magnetic fields are a lot easier to detect, in practice - all you need is a Boy Scout compass. How these devices work is irrelevant at the moment; it is enough to know that the needle points in the direction of the local magnetic field. Ordinarily, this means north, in response to the earth's magnetic field, but in the laboratory, where typical fields may be hundreds of times stronger than that, the compass indicates the direction of whatever magnetic field is present.</p>
-<p><img alt="Figure 5.3" src="../img/5.3.png" /></p>
+<p align="center"> <img alt="Figure 5.3" src="../img/5.3.png" /> </p>
+
 <p>Now, if you hold up a tiny compass in the vicinity of a current-carrying wire, you quickly discover a very peculiar thing: The field does not point toward the wire, nor away from it, but rather it circles around the wire. In fact, if you grab the wire with your right hand-thumb in the direction of the current-your fingers curl around in the direction of the magnetic field (Fig. 5.3). How can such a field lead to a force of attraction on a nearby parallel current? At the second wire, the magnetic field points into the page (Fig. 5.4), the current is upward, and yet the resulting force is to the left! It's going to take a strange law to account for these directions.</p>
 <h2 id="512-magnetic-forces">5.1.2: Magnetic Forces</h2>
 <p>In fact, this contribution of directions is just right for a cross product: the magnetic force on a charge <em>Q</em>, moving with velocity <strong>v</strong> in a magnetic field <strong>B</strong> is
@@ -821,7 +859,7 @@ I do not pretend to have derived <script type="math/tex"> \eqref{5.1} </script>,
 <h4 id="example-51-cyclotron-motion">Example 5.1: Cyclotron Motion</h4>
 <div class="admonition question">
 <p class="admonition-title">We have a charged particle moving in a constant magnetic field. What is the general form of the trajectory?</p>
-<p><img alt="Figure 5.5" src="../img/5.5.png" />
+<p><p align="center"> <img alt="Figure 5.5" src="../img/5.5.png" /> </p>
 The archetypical motion of a charged particle in a magnetic field is circular, with the magnetic force providing the centripetal acceleration. In Fig 5.5, a uniform magnetic field points into the page; if the charge Q moves counterclockwise, with speed <em>v</em>, around a circle of radius <em>R</em>, the magnetic force points inward, and has a fixed magnitude <em>QvB</em> - just right to sustain uniform circular motion:
 <script type="math/tex; mode=display">
 QvB = m \frac{v^2}{R} \quad \text{ or } \quad p = Q B R \tagl{5.3}
@@ -895,7 +933,7 @@ The particle moves as though it were a spot on the rim of a wheel rolling along 
 <script type="math/tex; mode=display">
 1 \text{ A} = 1 \text{ C/s} \tagl{5.12}
 </script>
-<img alt="Figure 5.9" src="../img/5.9.png" />
+<p align="center"> <img alt="Figure 5.9" src="../img/5.9.png" /> </p>
 A line charge <script type="math/tex"> \lambda </script> traveling down a wire at speed <em>v</em> (Fig 5.9) constitutes a current
 <script type="math/tex; mode=display">
 I = \lambda v \tagl{5.13}
@@ -922,14 +960,53 @@ Typically, the current is constant (in magnitude) along the wire, and in that ca
 <h4 id="example-53">Example 5.3</h4>
 <div class="admonition question">
 <p class="admonition-title">A rectangular loop of wire, supporting mass m, hangs vertically with one end in a uniform magnetic field <strong>B</strong>, which points into the page in the shaded region of Fig 5.10. For what current I, in the loop, would the magnetic force upward exactly balance the gravitational force downward?</p>
-<p><img alt="Figure 5.10" src="../img/5.10.png" />
+<p><p align="center"> <img alt="Figure 5.10" src="../img/5.10.png" /> </p>
 <strong>Solution</strong>
 First of all, the current must circulate clockwise, in order for <script type="math/tex"> (\vec{I} \cross \vec{b}) </script> in the horizontal segment to point upward. The force is
 <script type="math/tex; mode=display">
 F_B = I B a
 </script>
-where <em>a</em> is the width of the loop. The magnetic forces on the two vertical segments cancel.</p>
+where <em>a</em> is the width of the loop. The magnetic forces on the two vertical segments cancel. For <script type="math/tex"> F_{mag} </script> to balance the weight (mg), we must therefore have
+<script type="math/tex; mode=display">
+I = \frac{mg}{Ba} \tagl{5.18}
+</script>
+The weight just hangs there, suspended in mid-air!</p>
+<p>What happens if we now increase the current? Then the upward force exceeds the downward force of gravity, and the loop rises, lifting the weight. Somebody's doing work, and it sure looks as though the magnetic force is responsible. Indeed, one is tempted to write
+<script type="math/tex; mode=display">
+W_{mag} = F_{mag} h = I B a h \tagl{5.19}
+</script>
+where <em>h</em> is the distance the loop rises. But we know that magnetic forces never do work, so what's going on here?</p>
+<p>Well, when the loop starts to rise, the charges in the wire are no longer moving horizontally - their velocity now acquires an upward component <em>u</em>, the speed of the loop (Fig 5.11), in addition to the horizontal component <em>w</em> associated with the current (<script type="math/tex"> I = \lambda w </script>). The magnetic force, which is always perpendicular to the velocity, no longer points straight up, but tilts back. It is perpendicular to the net displacement of the charge (which is in the direction of <em>v</em>), and therefore it does no work on <em>q</em>. It does have a vertical component (<script type="math/tex"> q w B </script>); indeed, the net vertical force on the charge <script type="math/tex"> (\lambda a) </script> in the upper segment of the loop is
+<script type="math/tex; mode=display">
+ F_{vert} = \lambda a w B = I B a \tagl{5.20}
+</script>
+(as before); but now it also has a horizontal component <script type="math/tex"> (q u B) </script> which opposes the flow of current. Whoever is in charge of maintaining that current, therefore, must now push those charges along, against the backward component of the magnetic force. </p>
+<p><img alt="Figure 5.11" src="../img/5.11.png" /></p>
+<p>The total horizontal force on the top segment is
+<script type="math/tex; mode=display">
+F_{horiz} = \lambda a u B \tagl{5.21}
+</script>
+In a time <script type="math/tex"> dt </script>, the charges move a (horizontal) distance <script type="math/tex"> w \dd t </script>, so the work done by this agency (presumably a battery or a generator) is
+<script type="math/tex; mode=display">
+W_{battery} = \lambda a B \int u w \dd t = I B a h
+</script>
+which is precisely what we naively attributed to the magnetic force in <script type="math/tex"> \eqref{5.19} </script>. Was work done in this process? Absolutely! Who did it? The battery! What, then, was the role of the magnetic force? Well, it redirected the horizontal force of the battery into the vertical motion of the loop and the weight.</p>
+<p><img alt="Figure 5.12" src="../img/5.12.png" /> </p>
+<p>It may help to consider a mechanical analogy. Imagine you're sliding a trunk up a frictionless ramp, by pushing on it horizontally with a mop (Fig 5.12). The normal force (N) does no work, because it is perpendicular to the displacement. But it does have a vertical component (which in fact is what lifts the trunk), and a (backward) horizontal component (which you have to overcome by pushing on the mop). Who is doing the work here? You are, obviously - and yet your force (which is purely horizontal) is not (at least, directly) what lifts the box. The normal force plays the same passive (but crucial) role as the magnetic force in Ex 5.3: while doing no work itself, it redirects the efforts of the active agent (you, or the battery, as the case may be), from horizontal to vertical.</p>
 </div>
+<p>When charge flows over a surface, we describe it by the <strong>surface current density, K</strong>, defined as follows: Consider a "ribbon" of infinitesimal width <script type="math/tex"> \dd l_{\perp} </script>, running parallel to the flow (Fig 5.13). If the current in this ribbon is <script type="math/tex"> \dd \vec{I} </script>, the surface current density is
+<script type="math/tex; mode=display">
+\vec{K} = \frac{\dd \vec{I}}{\dd l _{\perp}} \tagl{5.22} 
+</script>
+In words, K is the current per unit width. In particular, if the (mobile) surface charge density is <script type="math/tex"> sigma </script> and its velocity is <script type="math/tex"> \vec{v} </script>, then
+<script type="math/tex; mode=display">
+\vec{K} = \sigma \vec{v} \tagl{5.23}
+</script>
+In general, <script type="math/tex"> \vec{K} </script> will vary from point to point over the surface, as <script type="math/tex"> \sigma </script> and/or <script type="math/tex"> \vec{v} </script> changes. The magnetic force on the surface current is
+<script type="math/tex; mode=display">
+\vec{F}_{mag} = \int ( \vec{v} \cross \vec{B}) \sigma \dd a = \int (\vec{K} \cross \vec{B}) \dd a \tagl{5.24}
+</script>
+</p>
                 
                   
                 
@@ -964,6 +1041,20 @@ where <em>a</em> is the width of the loop. The magnetic forces on the two vertic
             </div>
           </a>
         
+        
+          <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                5.2 - The Biot-Savart Law
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>

@@ -807,6 +807,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1026,7 +1062,8 @@ where <strong>v</strong> is a vector function, <script type="math/tex"> \dd \vec
 At each point on the path, we take the dot product of <strong>v</strong> (evaluated at that point) with the displacement to the next point on the pat. To a physicist, the most familiar example of a line integral is the work done by a force <script type="math/tex"> \vec{F} </script>: <script type="math/tex"> W = \int \vec{F} \cdot \dd \vec{l} </script>
 </p>
 <p>Ordinarily, the value of a line integral depends critically on the path taken from a to b, but there is an important special class of vector functions for which the line integral is independent of path and is determined entirely by the end points. It will be our business in due course to characterize this special class of vectors. (A force that has this property is called <strong>conservative.</strong>)</p>
-<p><img alt="Figure 1.20" src="../img/1.20.png" /></p>
+<p align="center"> <img alt="Figure 1.20" src="../img/1.20.png" /> </p>
+
 <h4 id="example-16">Example 1.6</h4>
 <div class="admonition question">
 <p class="admonition-title">Calculate the line integral of the function <script type="math/tex"> \vec{v} = y^2 \vu{x} + 2x (y+1) \vu{y} </script> from the point a = (1, 1, 0) to the point b = (2, 2, 0), along the paths (1) and (2) in Fig 1.21. What is <script type="math/tex"> \oint \vec{v} \cdot \dd \vec{l} </script> for the loop that goes from a to b along (1) and returns to a along (2)?</p>
@@ -1071,7 +1108,8 @@ where <strong>v</strong> is again some vector function, and the integral is over
 </script>
 then tradition dictates that "outward" is positive, but for open surfaces it's arbitrary. If <strong>v</strong> describes the flow of a fluid (mass per unit area per unit time), then <script type="math/tex"> \int \vec{v} \cdot \dd \vec{a} </script>  represents the total mass per unit time passing through the surface - hence the alternative name, "flux."</p>
 <p>Ordinarily, the value of a surface integral depends on the particular surface chosen, but there is a special class of vector functions for which it is independent of the surface and is determined entirely by the boundary line. An important task will be to characterize this special class of functions.</p>
-<p><img alt="Figure 1.22" src="../img/1.22.png" /></p>
+<p align="center"> <img alt="Figure 1.22" src="../img/1.22.png" /> </p>
+
 <h4 id="example-17">Example 1.7</h4>
 <div class="admonition question">
 <p class="admonition-title">Calculate the surface integral of <script type="math/tex"> \vec{v} = 2xz \vu{x} + (x+2) \vu{y} + y(z^2 -3) \vu{z} </script> over five sides (excluding the bottom) of the cubical box (side 2) in Fig 1.23. Let 'upward and outward' be the positive direction, as indicated by the arrows.</p>
@@ -1120,7 +1158,7 @@ Because the unit vectors are constants, they come outside the integral.</p>
 <h4 id="example-18">Example 1.8</h4>
 <div class="admonition question">
 <p class="admonition-title">Calculate the volume integral of <script type="math/tex"> T = xyz^2 </script> over the prism in Fig 1.24.</p>
-<p><img alt="Figure 1.24" src="../img/1.24.png" />
+<p><p align="center"> <img alt="Figure 1.24" src="../img/1.24.png" /> </p>
 <strong>Solution</strong>
 <script type="math/tex; mode=display">
 \begin{align*}
@@ -1147,7 +1185,7 @@ where <script type="math/tex"> df / dx = F(x) </script>. The fundamental theorem
 <script type="math/tex; mode=display">
 \dd T = (\grad T) \cdot \dd \vec{l}_1
 </script>
-<img alt="Figure 1.25" src="../img/1.25.png" /></p>
+<p align="center"> <img alt="Figure 1.25" src="../img/1.25.png" /> </p></p>
 <p>Now we move a little further, by an additional small displacement <script type="math/tex"> \dd \vec{l}_2 </script>; the incremental change in T will be <script type="math/tex"> (\grad T) \cdot \dd \vec{l}_2 </script>. In this manner, proceeding by infinitesimal steps, we make the journey to point b. At each step we compute the gradient of T (at that point) and dot it into the displacement dl... this gives us the change in T. Evidently the total change in Tin going from a to b (along the path selected) is
 <script type="math/tex; mode=display">
 \int_{\vec{a}} ^{\vec{b}} (\grad T) \cdot \dd \vec{l} = T(\vec{b}) - T(\vec{a}) \tagl{1.55}
@@ -1173,7 +1211,7 @@ y = 0; \dd \vec{l} = \dd x \vu{x}; \grad T \cdot \dd \vec{l} = y^2 \dd x = 0 \ri
 <script type="math/tex; mode=display">
 x = 2; \dd \vec{l} = \dd y \vu{y}; \grad T \cdot \dd \vec{l} = 4y \dd y \rightarrow \int_{ii} \grad T \cdot \dd \vec{l} = \left. 2y^2 \right| _0 ^1 = 2 
 </script>
-<img alt="Figure 1.27" src="../img/1.27.png" />
+<p align="center"> <img alt="Figure 1.27" src="../img/1.27.png" /> </p>
 The total line integral is 2. So is this consistent with what we expect from the fundamental theorem? Well, <script type="math/tex"> T(b) - T(a) = 2 - 0 = 2 </script>, so yes!</p>
 </div>
 <h2 id="134-the-fundamental-theorem-for-divergences">1.3.4: The Fundamental Theorem for Divergences</h2>
@@ -1192,7 +1230,7 @@ This, in essence, is what the divergence theorem says.</p>
 <div class="admonition question">
 <p class="admonition-title">Check the divergence theorem using the function <script type="math/tex; mode=display"> \vec{v} = y^2 \vu{x} + (2xy + z^2) \vu{y} + (2yz) \vu{z} </script> using a unit cube at the origin as the surface boundary (Fig 1.29).</p>
 <p><strong>Solution</strong></p>
-<p><img alt="Figure 1.29" src="../img/1.29.png" /></p>
+<p><p align="center"> <img alt="Figure 1.29" src="../img/1.29.png" /> </p></p>
 <p>In this case</p>
 <p>
 <script type="math/tex; mode=display">
@@ -1249,7 +1287,8 @@ as we should expect.</p>
 </p>
 <p>As always, the integral of a derivative (here, the curl) over a region (here, a patch of surface, S) is equal to the value of the function at the boundary (here, the perimeter of the patch, P). As in the case of the divergence theorem, the boundary term is itself an integral-specifically, a closed line integral.</p>
 <p>Geometrical Interpretation: Recall that the curl measures the "twist" of the vectors <strong>v</strong>; a region of high curl is a whirlpool - if you put a tiny paddle wheel there, it will rotate. Now, the integral of the curl over some surface (or, more precisely, the flux of the curl through that surface) represents the "total amount of swirl," and we can determine that just as well by going around the edge and finding how much the flow is following the boundary (Fig. 1.31). Indeed, <script type="math/tex"> \oint \vec{v} \cdot \dd \vec{l} </script>  is sometimes called the <em>circulation</em> of v.</p>
-<p><img alt="Figure 1.31" src="../img/1.31.png" /></p>
+<p align="center"> <img alt="Figure 1.31" src="../img/1.31.png" /> </p>
+
 <p>You may have noticed an apparent ambiguity in Stokes' theorem: concerning the boundary line integral, which way are we supposed to go around (clockwise or counterclockwise)? If we go the "wrong" way, we'll pick up an overall sign error. The answer is that it doesn't matter which way you go as long as you are consistent, for there is a compensating sign ambiguity in the surface integral: Which way does <script type="math/tex"> \dd \vec{a} </script> point? For a closed surface (as in the divergence theorem), <script type="math/tex"> \dd \vec{a} </script> points in the direction of the outward normal; but for an open surface, which way is "out"? Consistency in Stokes' theorem (as in all such matters) is given by the right-hand rule: if your fingers point in the direction of the line integral, then your thumb fixes the direction of <script type="math/tex"> \dd \vec{a} </script> (Fig. 1.32).</p>
 <p>Now, there are plenty of surfaces (infinitely many) that share any given boundary line. Twist a paper clip into a loop, and dip it in soapy water. The soap film constitutes a surface, with the wire loop as its boundary. If you blow on it, the soap film will expand, making a larger surface, with the same boundary. Ordinarily, a flux integral depends critically on what surface you integrate over, but evidently this is not the case with curls. For Stokes' theorem says that <script type="math/tex"> \int (\curl \vec{v}) \cdot \dd \vec{a} </script>  is equal to the line integral of <script type="math/tex"> \vec{v}\ </script>  around the boundary, and the latter makes no reference to the specific surface you choose.</p>
 <div class="admonition info">
@@ -1266,7 +1305,7 @@ Here
 <script type="math/tex; mode=display">
 \curl \vec{v} = (4z^2 - 2x) \vu{x} + 2z \vu{z} \quad \text{and} \quad \dd \vec{a} = \dd y \, \dd z \, \vu{x}
 </script>
-<img alt="Figure 1.33" src="../img/1.33.png" />
+<p align="center"> <img alt="Figure 1.33" src="../img/1.33.png" /> </p>
 (In saying that <script type="math/tex"> \dd \vec{a} </script> points in the x direction, we are committing ourselves to a counterclockwise integral. We could as well write <script type="math/tex"> \dd \vec{a} </script> pointing in the other direction (<script type="math/tex"> \dd \vec{a} = - \dd y \, \dd z\, \vu{x} </script>) and perform the integral in the clockwise direction.) Since x = 0 for this surface,
 <script type="math/tex; mode=display">
 \int (\curl \vec{v}) \cdot \dd \vec{a} = \int_0 ^1 \dd y \int_0 ^1 \dd z (4z^2) = \frac{4}{3} 

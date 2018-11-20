@@ -709,6 +709,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -824,20 +860,25 @@
 </script>
 </p>
 <p>To get a "feel" for this field, I might sketch a few representative vectors, as in Fig. 2.12a. Because the field falls off like <script type="math/tex"> 1/r^2 </script>, the vectors get shorter as you go farther away from the origin; they always point radially outward. But there is a nicer way to represent this field, and that's to connect up the arrows, to form <strong>field lines</strong> (Fig. 2.12b).</p>
-<p><img alt="Figure 2.12" src="../img/2.12.png" /></p>
+<p align="center"> <img alt="Figure 2.12" src="../img/2.12.png" /> </p>
+
 <p>You might think that I have thereby thrown away information about the <em>strength</em> of the field, which was contained in the length of the arrows. But actually I have not. The magnitude of the field is indicated by the <em>density</em> of the field lines: it's strong near the center where the field lines are close together, and weak farther out, where they are relatively far apart.</p>
 <p>In truth, the field-line diagram is deceptive, when I draw it on a two-dimensional surface, for the density of lines passing through a circle of radius <em>r</em> is the total number divided by the circumference (<script type="math/tex"> n / 2 \pi r </script>), which goes like <script type="math/tex"> (1/r) </script>, not <script type="math/tex"> (1/r^2) </script>. But if you imagine the model in three dimensions (a pincushion with needles sticking out in all directions), then the density of lines is the total number divided by the area of the sphere <script type="math/tex"> (n/4 \pi r^2) </script>, which <em>does</em> go like <script type="math/tex"> (1/r^2) </script>.</p>
 <p>Such diagrams are also convenient for representing more complicated fields. Of course, the number of lines you draw depends on how lazy you are (and how sharp your pencil is), though you ought to include enough to get an accurate sense of the field, and you must be consistent: if <script type="math/tex"> q </script>  gets 8 lines, then <script type="math/tex"> 2q </script>  deserves 16. And you must space them fairly - they emanate from a point charge symmetrically in all directions. Field lines begin on positive charges and end on negative ones; they cannot simply terminate in midair, though they may extend out to infinity. Moreover, field lines can never cross - at the intersection the field would have two different directions at once! With all this in mind, it is easy to sketch the field of any simple configuration of point charges: Begin by drawing the lines in the neighborhood of each charge, and then connect them up or extend them to infinity (Figs. 2.13 and 2.14)</p>
-<p><img alt="Figure 2.13" src="../img/2.13.png" />
-<img alt="Figure 2.14" src="../img/2.14.png" /></p>
+<p align="center"> <img alt="Figure 2.13" src="../img/2.13.png" /> </p>
+
+<p align="center"> <img alt="Figure 2.14" src="../img/2.14.png" /> </p>
+
 <p>In this model, the <em>flux</em> of <strong>E</strong> through a surface S,
 <script type="math/tex; mode=display">
 \Phi_E \equiv \int _S \vec{E} \cdot \dd{\vec{a}} \label{2.11} \tag{2.11}
 </script>
 </p>
 <p>is a measure of the "number of lines" passing through S. I put this in quotes because of course we can only draw a representative <em>sample</em> of field lines - the total number would be infinite. But for a given sampling rate the flux is <em>proportional</em> to the number of lines drawn, because the field strength, remember, is proportional to the density of field lines (the number per unit area), and hence <script type="math/tex"> \vec{E} \cdot \dd{\vec{a}} </script> is proportional to the number of lines passing through the infinitesimal area <script type="math/tex"> \dd{\vec{a}} </script>. (The dot product picks out the component of <script type="math/tex"> \dd{\vec{a}} </script> along the direction of <strong>E</strong>, as indicated in Fig 2.15. It is the area in the plane perpendicular to <strong>E</strong> that we have in mind when we say that the density of field lines is the number per unit area).</p>
-<p><img alt="Figure 2.15" src="../img/2.15.png" />
-<img alt="Figure 2.16" src="../img/2.16.png" /></p>
+<p align="center"> <img alt="Figure 2.15" src="../img/2.15.png" /> </p>
+
+<p align="center"> <img alt="Figure 2.16" src="../img/2.16.png" /> </p>
+
 <p>This suggests that the flux through any <em>closed</em> surface is a measure of the total charge inside. For the field lines that originate on a positive charge must either pass out through the surface or else terminate on a negative charge inside (Fig 2.16a). On the other hand, a charge <em>outside</em> the surface will contribute nothing to the total flux, since its field lines pass in one side and out the other (Fig 2.16b). This is the <em>essence</em> of Gauss's law. Now let's make it quantitative.</p>
 <p>In the case of a point charge <em>q</em> at the origin, the flux of <strong>E</strong> through a spherical surface or radius <em>r</em> is
 <script type="math/tex; mode=display">
@@ -918,7 +959,7 @@ and in this case <script type="math/tex"> Q_{enc} = q </script>. At first glance
 \int_{\mathscr{S}} \vec{E} \cdot \dd{\vec{a}} = \int_{\mathscr{S}} | \vec{E} | da
 </script>
 </p>
-<p><img alt="Figure 2.18" src="../img/2.18.png" /></p>
+<p><p align="center"> <img alt="Figure 2.18" src="../img/2.18.png" /> </p></p>
 <p>and the magnitude of E is constant over the Gaussian surface, so it comes outside the integral:
 <script type="math/tex; mode=display">
 \int_{S} | E | da = |E| \int_{S} da = E 4 \pi r^2
@@ -946,7 +987,7 @@ or
 <h4 id="example-24">Example 2.4</h4>
 <div class="admonition question">
 <p class="admonition-title">A long cylinder (Fig 2.21) carries a charge density that is proportional to the distance from the axis: <script type="math/tex"> \rho = ks </script> for some constant <script type="math/tex"> k </script>. Find the electric field inside this cylinder.</p>
-<p><img alt="Figure 2.21" src="../img/2.21.png" /></p>
+<p><p align="center"> <img alt="Figure 2.21" src="../img/2.21.png" /> </p></p>
 <p><strong>Solution</strong>: Draw a Gaussian cylinder of length l and radius s. For this surface, Gauss's law states
 <script type="math/tex; mode=display">
 \oint_{\mathscr{S}} \vec{E} \cdot \dd{\vec{a}} = \frac{1}{\epsilon_0} Q_{enc}
@@ -987,7 +1028,7 @@ Draw a Gaussian pillbox, extending equal distances above and below the plane (Fi
 \oint \vec{E} \cdot \dd{\vec{a}} = \frac{1}{\epsilon_0} Q_{enc}
 </script>
 </p>
-<p><img alt="Figure 2.22" src="../img/2.22.png" /></p>
+<p><p align="center"> <img alt="Figure 2.22" src="../img/2.22.png" /> </p></p>
 <p>In this case, <script type="math/tex"> Q = \sigma A </script>, where A is the area of the lid of the pillbox. By symmetry, <script type="math/tex"> \vec{E} </script> points away from the plane (upward for points above, downward for points below). So the top and bottom surfaces yield
 <script type="math/tex; mode=display">
 \int \vec{E} \cdot \dd{\vec{a}} = 2 A |\vec{E}|,
@@ -1010,7 +1051,7 @@ whereas the sides contribute nothing. Thus
 <h4 id="example-26">Example 2.6</h4>
 <div class="admonition question">
 <p class="admonition-title">Two infinite parallel planes carry equal but opposite uniform charge densities <script type="math/tex"> \pm \sigma </script> (Fig 2.23). Find the field in each of the three regions: (i) to the left of both, (ii) between them, (iii) to the right of both.</p>
-<p><img alt="Figure 2.23" src="../img/2.23.png" /></p>
+<p><p align="center"> <img alt="Figure 2.23" src="../img/2.23.png" /> </p></p>
 <p><strong>Solution</strong></p>
 <p>The left plate produces a field <script type="math/tex"> (1/2 \epsilon_0)\sigma </script>, which points away from it (Fig. 2.24) to the left in region in (i) and to the right in regions (ii) and (iii). The right plate, being negatively charged, produces a field <script type="math/tex"> (1/2 \epsilon_0)\sigma </script> which points <em>toward</em> it - to the right in regions (i) and (ii) and to the left in region (iii). The two fields cancel in regions (i) and (iii); they conspire in region (ii). Conclusion: The field between the plates is <script type="math/tex"> \sigma / \epsilon_0 </script>, and points to the right; elsewhere it is zero.</p>
 </div>
@@ -1031,7 +1072,8 @@ Now, a glance at Fig 2.12 should convince you that the curl of this field has to
 \vec{E} \cdot \dd{\vec{l}} = \frac{1}{4 \pi \epsilon_0} \frac{1}{r^2} \dd{r}
 </script>
 </p>
-<p><img alt="Figure 2.29" src="../img/2.29.png" /></p>
+<p align="center"> <img alt="Figure 2.29" src="../img/2.29.png" /> </p>
+
 <p>Therefore,
 <script type="math/tex; mode=display">
 \int_{\vec{a}}^{\vec{b}} \vec{E} \cdot \dd{\vec{l}} = \frac{1}{4 \pi \epsilon_0} \int_{a}^{b} \frac{q}{r^2} \dd{r} \\ 

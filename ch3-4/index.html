@@ -688,6 +688,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -781,7 +817,7 @@
 <p class="admonition-title">A (physical) <strong>electric dipole</strong> consists of two equal and opposite charges <script type="math/tex"> (\pm q) </script> separated by a distance <em>d</em>. Find the approximate potential at points far from the dipole</p>
 <p><strong>Solution</strong>
 Let <script type="math/tex"> \gr_- </script> be the distance from <script type="math/tex"> -q </script> and <script type="math/tex"> \gr_{+} </script> be the distance from <script type="math/tex"> +q </script> (Fig. 3.26). 
-<img alt="Figure 3.26" src="../img/3.26.png" />
+<p align="center"> <img alt="Figure 3.26" src="../img/3.26.png" /> </p>
 Then
 <script type="math/tex; mode=display">
 V(r) = \frac{1}{4 \pi \epsilon_0} \left( \frac{q}{\gr_{+}} - \frac{q}{\gr_{-}} \right)
@@ -803,13 +839,13 @@ and hence
 V(r) \approx \frac{1}{4 \pi \epsilon_0} \frac{qd \cos \theta}{r^2} \tagl{3.90} 
 </script>
 The potential of a dipole goes like <script type="math/tex"> 1/r^2 </script> at large <em>r</em>; as we might have anticipated, it falls off more rapidly than the potential of a point charge. If we put together a pair of equal and opposite dipoles to make a <strong>quadrupole</strong>, the potential goes like <script type="math/tex"> 1/r^3 </script>; for back-to-back quadrupoles (an <strong>octopole</strong>), it goes like <script type="math/tex"> 1/r^4 </script>, and so on. Figure 3.27 summarizes the hierarchy; for completeness I have included the electric <strong>monopole</strong> (point charge), whose potential, of course, goes like <script type="math/tex"> 1/r </script>
-<img alt="Figure 3.27" src="../img/3.27.png" /></p>
+<p align="center"> <img alt="Figure 3.27" src="../img/3.27.png" /> </p></p>
 </div>
 <p>Example 3.10 pertains to a very special charge configuration. I propose now to develop a systematic expansion for the potential of <em>any</em> localized charge distribution, in powers of <script type="math/tex"> 1/r </script>. Figure 3.28 defines the relevant variables; the potential at <strong>r</strong> is given by
 <script type="math/tex; mode=display">
 V(r) = \frac{1}{4 \pi \epsilon_0} \int \frac{1}{\gr} \rho(\vec{r'}) \dd{\tau'} \tagl{3.91}
 </script>
-<img alt="Figure 3.28" src="../img/3.28.png" />
+<p align="center"> <img alt="Figure 3.28" src="../img/3.28.png" /> </p>
 Using the law of cosines,
 <script type="math/tex; mode=display">
 \gr ^2 = r^2 + (r')^2 - 2r r' \cos \alpha = r^2 \left[ 1 + \left( \frac{r'}{r}  \right)^2 - 2 \left( \frac{r'}{r}  \right)\cos \alpha \right]
@@ -885,10 +921,10 @@ For a <strong>physical dipole</strong> (equal and opposite charges <script type=
 \vec{p} = q\vec{r'_+} - q \vec{r_- ' } = q(\vec{r' _+} - \vec{r'_-}) = q \vec{d} \tagl{3.101}
 </script>
 where <script type="math/tex"> \vec{d} </script> is the vector from the negative charge to the positive one (Fig. 3.29).
-<img alt="Figure 3.29" src="../img/3.29.png" />
+<p align="center"> <img alt="Figure 3.29" src="../img/3.29.png" /> </p>
 Is this consistent with what we got in Example 3.10? Yes: If you put <script type="math/tex"> \eqref{3.101} </script> into <script type="math/tex"> \eqref{3.99} </script>, you recover <script type="math/tex"> \eqref{3.90} </script>. Notice, however, that this is only the <em>approximate</em> potential of the physical dipole - evidently there are higher multipole contributions. Of course, as you go farther and farther away, <script type="math/tex"> V_{dip} </script> becomes a better and better approximation, since the higher terms die off more rapidly with increasing <script type="math/tex"> r </script>. By the same token, at a fixed <script type="math/tex"> r </script> the dipole approximation improves as you shrink the separation distance <script type="math/tex"> d </script>. To construct a <strong>perfect dipole</strong> whose potential is given exactly by <script type="math/tex"> \eqref{3.99} </script>, you'd have to let <script type="math/tex"> d </script> approach zero. Unfortunately you then lose the dipole term too, unless you simultaneously arrange for q to go to infinity! A <em>physical</em> dipole becomes a <em>pure</em> dipole, then, in the rather artificial limit <script type="math/tex"> d \rightarrow 0. q \rightarrow \infty </script>, with the product <script type="math/tex"> qd = p </script> held fixed. When someone uses the word "dipole," you can't always tell whether they mean a <em>physical</em> dipole (with finite separation between the charges) or an <em>ideal</em> dipole. If in doubt, assume that <em>d</em> is small enough that you can safely apply <script type="math/tex"> \eqref{3.99} </script>.</p>
 <p>Dipole moments are <em>vectors</em>, and they add accordingly: if you have two dipoles <script type="math/tex"> \vec{p_1} </script> and <script type="math/tex"> \vec{p_2} </script>, the total dipole moment is <script type="math/tex"> \vec{p_1} + \vec{p_2} </script>. For instance, with four charges at the corners of a square, as shown in Fig. 3.30, the net dipole moment is zero. You can see this by combining the charges in pairs or by adding up the four contributions individually using <script type="math/tex"> \eqref{3.100} </script>. This is a <em>quadrupole</em>, as I indicated earlier, and its potential is dominated by the quadrupole term in the multipole expansion.
-<img alt="Figure 3.30" src="../img/3.30.png" /></p>
+<p align="center"> <img alt="Figure 3.30" src="../img/3.30.png" /> </p></p>
 <h2 id="343-origin-of-coordinates-in-multipole-expansions">3.4.3: Origin of Coordinates in Multipole Expansions</h2>
 <p>I mentioned earlier that a point charge at the origin constitutes a "pure" monopole. If it is not at the origin, it's no longer a pure monopole. For instance, the charge in Fig. 3.32 has a dipole moment <script type="math/tex"> \vec{p} = q d \vu{y} </script>, and a corresponding dipole term in its potential. The monopole potential <script type="math/tex"> (1/4 \pi \epsilon_0) q/r </script>  is not quite correct for this configuration; rather, the exact potential is <script type="math/tex"> (1/4 \pi \epsilon_0) q/\gr </script>. The multipole expansion is, remember, a series in inverse powers of r (the distance to the origin), and when we expand <script type="math/tex"> 1/\gr </script>, we get all powers, not just the first.</p>
 <p>So moving the origin (or, what amounts to the same thing, moving the charge) can radically alter a multipole expansion. The <strong>monopole moment</strong> <script type="math/tex"> Q </script>  does not change, since the total charge is obviously independent of the coordinate system. (In Fig. 3.32, the monopole term was unaffected when we moved q away from the origin - it's just that it was no longer the whole story: a dipole term - and for that matter all higher poles - appeared as well.) Ordinarily, the dipole moment does change when you shift the origin, but there is an important exception: If the total charge is zero, then the dipole moment is independent of the choice of origin. For suppose we displace the origin by an amount <script type="math/tex"> \vec{a} </script>  (Fig. 3.33). The new dipole moment is then
@@ -898,16 +934,17 @@ Is this consistent with what we got in Example 3.10? Yes: If you put <script typ
 & = \int \vec{r'} \rho(\vec{r'}) \dd{\tau'} - \vec{a} \int \rho(\vec{r'}) \dd{\tau'} = \vec{p} - Q \vec{a}
 \end{align*}
 </script>
-<img alt="Figure 3.32" src="../img/3.32.png" />
+<p align="center"> <img alt="Figure 3.32" src="../img/3.32.png" /> </p>
 In particular, if <script type="math/tex"> Q = 0 </script>, the <script type="math/tex"> \vec{p_2} = \vec{p} </script>. So if someone asks for the dipole moment in Fig 3.34(a), you can answer with confidence "<script type="math/tex"> q \vec{d} </script>," but if you're asked for the dipole moment in Fig 3.34(b), the appropriate response would be "With respect to what origin?"
-<img alt="Figure 3.34" src="../img/3.34.png" /></p>
+<p align="center"> <img alt="Figure 3.34" src="../img/3.34.png" /> </p></p>
 <h2 id="344-the-electric-field-of-a-dipole">3.4.4: The Electric Field of a Dipole</h2>
 <p>So far we have only worked with <em>potentials</em>. Now I would like to calculate the electric field of a (perfect) dipole. If we choose coordinates so that <script type="math/tex"> \vec{p} </script> is at the origin and points in the z direction (Fig. 3.36), then the potential at <script type="math/tex"> r, \theta </script> is <script type="math/tex"> \eqref{3.99} </script>:
 <script type="math/tex; mode=display">
 V_{dip} (r, \theta) = \frac{\vu{r} \cdot \vec{p}}{4 \pi \epsilon_0 r^2} = \frac{p \cos \theta}{4 \pi \epsilon_0 r^2} \tagl{3.102} 
 </script>
 </p>
-<p><img alt="Figure 3.36" src="../img/3.36.png" /></p>
+<p align="center"> <img alt="Figure 3.36" src="../img/3.36.png" /> </p>
+
 <p>To get the field, we take the negative gradient of <script type="math/tex"> V </script>:
 <script type="math/tex; mode=display">
 \begin{align*}
@@ -923,7 +960,7 @@ Thus,
 This formula makes explicit reference to a particular coordinate system (spherical) and assumes a particular orientation for <script type="math/tex"> \vec{p} </script> (along z). It can be recast in a coordinate-free form, analogous to the potential in <script type="math/tex"> \eqref{3.99} </script>  - See problem 3.36.</p>
 <p>Notice that the dipole falls off as the inverse cube of r; the monopole field <script type="math/tex"> (Q / 4 \pi \epsilon_0 r^2) \vu{r} </script> goes as the inverse square, of course. Quadrupole fields go like <script type="math/tex"> 1/r^4 </script>, octopole like <script type="math/tex"> 1/r^5 </script>, and so on. (This merely reflects how the respective potentials fall off - the gradient introduces another factor of <script type="math/tex"> 1/r </script> ).</p>
 <p>Figure 3.37(a) shows the field lines of a "pure" dipole <script type="math/tex"> \eqref{3.103} </script>. For comparison, I have also sketched the field lines for a "physical" dipole, in Fig 3.37(b). Notice how similar the two pictures become if you blot out the central region; up close, however, they are entirely different. Only for points <script type="math/tex"> r \gg d </script> does <script type="math/tex"> \eqref{3.103} </script> represent a valid approximation to the field of a physical dipole. As I mentioned earlier, this regime can be reached either by going to large <script type="math/tex"> r </script> or by squeezing the charges very close together.
-<img alt="Figure 3.37" src="../img/3.37.png" /></p>
+<p align="center"> <img alt="Figure 3.37" src="../img/3.37.png" /> </p></p>
                 
                   
                 

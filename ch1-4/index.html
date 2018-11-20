@@ -674,6 +674,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -748,7 +784,8 @@
                 <h1 id="14-curvilinear-coordinates">1.4: Curvilinear Coordinates</h1>
 <h2 id="141-spherical-coordinates">1.4.1: Spherical Coordinates</h2>
 <p>You can label a point P by its Cartesian coordinates (x, y, z), but sometimes it is more convenient to use <strong>spherical</strong> coordinates <script type="math/tex"> (r, \theta, \phi) </script>; <script type="math/tex"> r </script> is the distance from the origin (the magnitude of the position vector <strong>r</strong>), <script type="math/tex"> \theta </script> (the angle down from the z axis) is called the <strong>polar angle</strong>, and <script type="math/tex"> \phi </script> (the angle around from the x axis) is the <strong>azimuthal angle</strong>. Their relation to Cartesian coordinates can be read trigonometrically from Fig 1.36:</p>
-<p><img alt="Figure 1.36" src="../img/1.36.png" /></p>
+<p align="center"> <img alt="Figure 1.36" src="../img/1.36.png" /> </p>
+
 <p>
 <script type="math/tex; mode=display">
 x = r \sin \theta \cos \phi, \qquad y = r \sin \theta \sin \phi, \qquad z = r \cos \theta \tagl{1.62}
@@ -768,13 +805,15 @@ x = r \sin \theta \cos \phi, \qquad y = r \sin \theta \sin \phi, \qquad z = r \c
 </script>
 as you can check for yourself (Prob 1.38).</p>
 <p>There is a poisonous snake lurking here that I'd better warn you about: <script type="math/tex"> \vu{r} </script> , <script type="math/tex"> \vu{\theta} </script>, and <script type="math/tex"> \vu{\phi} </script> are associated with a particular point P, and they <em>change direction</em> as P moves around. For example, <script type="math/tex"> \vu{r} </script> always points radially outward, but "radially outward" can be in the x direction, the y direction, or any other direction, depending on where you are. In Fig. 1.37, <script type="math/tex"> \vec{A} = \vu{y} </script>  and <script type="math/tex"> \vec{B} = - \vu{y} </script>, and yet both of them would be written as <script type="math/tex"> \vu{r} </script>  in spherical coordinates. One could take account of this by explicitly indicating the point of reference: <script type="math/tex"> \vu{r}(\theta, \phi), \vu{\theta}(\theta, \phi), \vu{\phi}(\theta, \phi) </script>, but this would be cumbersome, and as long as you are alert to the problem, I don't think it will cause difficulties. In particular, do not naively combine the spherical components of vectors associated with different points (in Fig. 1.37, <script type="math/tex"> \vec{A} + \vec{B} = 0 </script>, not <script type="math/tex"> 2 \vu{r} </script>, and <script type="math/tex"> \vec{A} \cdot \vec{B} = -1 </script> , not <script type="math/tex"> +1 </script>). Beware of differentiating a vector that is expressed in spherical coordinates, since the unit vectors themselves are functions of position (<script type="math/tex"> \partial \vu{r} / \partial \theta = \vu{\theta} </script>, for example). And do not take <script type="math/tex"> \vu{r}, \vu{\theta}, \vu{\phi} </script> outside an integral, as I did with the Cartesian unit vectors. In general, if you're uncertain about the validity of an operation, rewrite the problem using Cartesian coordinates, for which this difficulty does not arise.</p>
-<p><img alt="Figure 1.37" src="../img/1.37.png" /></p>
+<p align="center"> <img alt="Figure 1.37" src="../img/1.37.png" /> </p>
+
 <p>An infinitesimal displacement in the <script type="math/tex"> \vu{r} </script>  direction is simply dr (Fig. 1.38a), just as an infinitesimal element of length in the x direction is dx:
 <script type="math/tex; mode=display">
 \dd l_r = dr \tagl{1.65}
 </script>
 </p>
-<p><img alt="Figure 1.38" src="../img/1.38.png" /></p>
+<p align="center"> <img alt="Figure 1.38" src="../img/1.38.png" /> </p>
+
 <p>On the other hand, an infinitesimal element of length in the <script type="math/tex"> \vu{\theta} </script> direction (Fig 1.38b) is <em>not</em> just <script type="math/tex"> \dd \theta </script> - that doesn't even have the right units for a length! Rather,
 <script type="math/tex; mode=display">
 \dd l_{\theta} = r \dd \theta \tagl{1.66}
@@ -805,7 +844,8 @@ On the other hand, if the surface lies in the xy plane, say, so that <script typ
 \dd \vec{a}_2 = \dd l_r \dd l_{\phi} \vu{\theta} = r \dd r \dd \phi \vu{\theta}
 </script>
 Notice, finally, that <script type="math/tex"> r </script> ranges from <script type="math/tex"> 0 </script> to <script type="math/tex"> \infty </script>, <script type="math/tex"> \phi </script> from <script type="math/tex"> 0 </script> to <script type="math/tex"> 2 \pi </script>, and <script type="math/tex"> \theta </script> from <script type="math/tex"> 0 </script> to <script type="math/tex"> \pi </script>.</p>
-<p><img alt="Figure 1.39" src="../img/1.39.png" /></p>
+<p align="center"> <img alt="Figure 1.39" src="../img/1.39.png" /> </p>
+
 <h4 id="example-113">Example 1.13</h4>
 <div class="admonition question">
 <p class="admonition-title">Find the volume of a sphere of radius R</p>
@@ -860,7 +900,8 @@ The terms in parentheses could be worked out from <script type="math/tex"> \eqre
 x = s \cos \phi, \qquad y = s \sin \phi, \qquad z = z \tagl{1.74}
 </script>
 </p>
-<p><img alt="Figure 1.42" src="../img/1.42.png" /></p>
+<p align="center"> <img alt="Figure 1.42" src="../img/1.42.png" /> </p>
+
 <p>The unit vectors (Prob 1.42) are
 <script type="math/tex; mode=display">
 \begin{align*}

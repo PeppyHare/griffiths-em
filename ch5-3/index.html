@@ -1,0 +1,1172 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>5.3 - The Divergence and Curl of B - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Noto Serif","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#53-the-divergence-and-curl-of-b" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                My Docs
+              </span>
+              <span class="md-header-nav__topic">
+                5.3 - The Divergence and Curl of B
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      1 - Vector Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        1 - Vector Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-1/" title="1.1 - Vector Algebra" class="md-nav__link">
+      1.1 - Vector Algebra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-2/" title="1.2 - Differential Calculus" class="md-nav__link">
+      1.2 - Differential Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-3/" title="1.3 - Integral Calculus" class="md-nav__link">
+      1.3 - Integral Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-4/" title="1.4 - Curvilinear Coordinates" class="md-nav__link">
+      1.4 - Curvilinear Coordinates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-5/" title="1.5 - The Dirac Delta Function" class="md-nav__link">
+      1.5 - The Dirac Delta Function
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-6/" title="1.6 - The Theory of Vector Fields" class="md-nav__link">
+      1.6 - The Theory of Vector Fields
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      2 - Electrostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        2 - Electrostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-1/" title="2.1 - The Electric Field" class="md-nav__link">
+      2.1 - The Electric Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-2/" title="2.2 - Divergence and Curl of Electrostatic Fields" class="md-nav__link">
+      2.2 - Divergence and Curl of Electrostatic Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-3/" title="2.3 - Electric Potential" class="md-nav__link">
+      2.3 - Electric Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-4/" title="2.4 - Work and Energy in Electrostatics" class="md-nav__link">
+      2.4 - Work and Energy in Electrostatics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-5/" title="2.5 - Conductors" class="md-nav__link">
+      2.5 - Conductors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      3 - Potentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        3 - Potentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-1/" title="3.1 - Laplace's Equation" class="md-nav__link">
+      3.1 - Laplace's Equation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-2/" title="3.2 - The Method of Images" class="md-nav__link">
+      3.2 - The Method of Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-3/" title="3.3 - Separation of Variables" class="md-nav__link">
+      3.3 - Separation of Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-4/" title="3.4 - Multipole Expansion" class="md-nav__link">
+      3.4 - Multipole Expansion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch3/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      4 - Electric Fields in Matter
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        4 - Electric Fields in Matter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-1/" title="4.1 - Polarization" class="md-nav__link">
+      4.1 - Polarization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-2/" title="4.2 - The Field of a Polarized Object" class="md-nav__link">
+      4.2 - The Field of a Polarized Object
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-3/" title="4.3 - The Electric Displacement" class="md-nav__link">
+      4.3 - The Electric Displacement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-4/" title="4.4 - Linear Dielectrics" class="md-nav__link">
+      4.4 - Linear Dielectrics
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+    
+    <label class="md-nav__link" for="nav-6">
+      5 - Magnetostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        5 - Magnetostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-1/" title="5.1 - The Lorentz Force Law" class="md-nav__link">
+      5.1 - The Lorentz Force Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        5.3 - The Divergence and Curl of B
+      </label>
+    
+    <a href="./" title="5.3 - The Divergence and Curl of B" class="md-nav__link md-nav__link--active">
+      5.3 - The Divergence and Curl of B
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#531-straight-line-currents" title="5.3.1: Straight-Line Currents" class="md-nav__link">
+    5.3.1: Straight-Line Currents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#532-the-divergence-and-curl-of-b" title="5.3.2: The Divergence and Curl of B" class="md-nav__link">
+    5.3.2: The Divergence and Curl of B
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#533-amperes-law" title="5.3.3: Ampere's Law" class="md-nav__link">
+    5.3.3: Ampere's Law
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-57" title="Example 5.7" class="md-nav__link">
+    Example 5.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-58" title="Example 5.8" class="md-nav__link">
+    Example 5.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-59" title="Example 5.9" class="md-nav__link">
+    Example 5.9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-510" title="Example 5.10" class="md-nav__link">
+    Example 5.10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#531-straight-line-currents" title="5.3.1: Straight-Line Currents" class="md-nav__link">
+    5.3.1: Straight-Line Currents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#532-the-divergence-and-curl-of-b" title="5.3.2: The Divergence and Curl of B" class="md-nav__link">
+    5.3.2: The Divergence and Curl of B
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#533-amperes-law" title="5.3.3: Ampere's Law" class="md-nav__link">
+    5.3.3: Ampere's Law
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-57" title="Example 5.7" class="md-nav__link">
+    Example 5.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-58" title="Example 5.8" class="md-nav__link">
+    Example 5.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-59" title="Example 5.9" class="md-nav__link">
+    Example 5.9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-510" title="Example 5.10" class="md-nav__link">
+    Example 5.10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/PeppyHare/griffiths-em/edit/master/docs/ch5-3.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="53-the-divergence-and-curl-of-b">5.3: The Divergence and Curl of B</h1>
+<h2 id="531-straight-line-currents">5.3.1: Straight-Line Currents</h2>
+<p>The magnetic field of an infinite straight wire is shown in Fig 5.27 (the current is coming out of the page). At a glance, it is clear that this field has a nonzero curl (something you'll never see in an electrostatic field); let's calculate it.</p>
+<p align="center"> <img alt="Figure 5.27" src="../img/5.27.png" /> </p>
+
+<p>According to Eq. 5.38, the integral of <strong>B</strong> around a circular path of radius <em>s</em>, centered at the wire, is
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd l = \oint \frac{\mu_0 I}{2 \pi s}  = \frac{\mu_0 I}{2 \pi s } \oint \dd l = \mu_0 I
+</script>
+Notice that the answer is independent of <em>s</em>; that's because <em>B</em> decreases at the same rate as the circumference increases. In fact, it doesn't have to be a circle; any old loop that encloses the wire would give the same answer. For if we use cylindrical coordinates <script type="math/tex"> (s, \phi, z) </script>, with the current flowing along the z axis, <script type="math/tex"> \vec{B} = (\mu_0 I / 2 \pi s) \vu{\phi} </script> and <script type="math/tex"> \dd \vec{l} = \dd s \, \vu{s} + s \dd \phi \, \vu{\phi} + \dd z \, \vu{z} </script>, so
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd  l = \frac{\mu_0 I}{2 \pi} \oint \frac{1}{s} s \dd \phi = \frac{\mu_0 I}{2 \pi } \int _0 ^{2 \pi}  \dd \phi = \mu_0 I
+</script>
+This assumes that the loop encircles the wire exactly once; if it went around twice, then <script type="math/tex"> \phi </script> would go from <script type="math/tex"> 0 </script> to <script type="math/tex"> 4 \pi </script>, and if it didn't enclose the wire at all, then <script type="math/tex"> \phi </script> would go from <script type="math/tex"> \phi_1  </script> to <script type="math/tex"> \phi_2 </script> and back again, with <script type="math/tex"> \int \dd \phi = 0 </script>  (Fig 5.28).</p>
+<p>Now suppose we have a bundle of straight wires. Each wire that passes through our loop contributes <script type="math/tex"> \mu_0 I </script>, and those outside contribute nothing (Fig 5.29). The line integral will then be
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd l = \mu_0 I_{enc} \tagl{5.44}
+</script>
+</p>
+<p>where <script type="math/tex"> I_{enc} </script> stands for the total current enclosed by the integration path. If the flow of charge is represented by a volume current density <strong>J</strong>, the enclosed current is<br />
+<script type="math/tex; mode=display">
+I_{enc} = \int \vec{J} \cdot \dd \vec{a} \tagl{5.45}
+</script>
+</p>
+<p align="center"> <img alt="Figure 5.28" src="../img/5.28.png" /> </p>
+
+<p>with the integral taken over any surface bounded by the loop. Applying Stokes' theorem to Eq 5.44, then
+<script type="math/tex; mode=display">
+\int (\curl \vec{B}) \cdot \dd \vec{a} = \mu_0 \int \vec{J} \cdot \dd \vec{a}
+</script>
+and hence
+<script type="math/tex; mode=display">
+\curl \vec{B} = \mu_0 \vec{J}
+</script>
+</p>
+<p>With minimal labor, we have actually obtained the general formula for the curl of <strong>B</strong>. But our derivation is seriously flawed by the restriction to infinite straight line currents (and combinations thereof). Most current configurations cannot be constructed out of infinite straight wires, and we have no right to assume that Eq. 5.46 applies to them. So the next section is devoted to the formal derivation of the divergence and curl of B, starting from the Biot-Savart law itself.</p>
+<h2 id="532-the-divergence-and-curl-of-b">5.3.2: The Divergence and Curl of B</h2>
+<p>The Biot-Savart law for the general case of a volume current reads
+<script type="math/tex; mode=display">
+\vec{B}(\vec{r}) = \frac{\mu_0}{4 \pi} \int \frac{\vec{J}(r') \times \vu{\gr}}{\gr ^2} \dd \tau' \tagl{5.47} 
+</script>
+This formula gives the magnetic field at a point r = (x, y, z) in terms of an integral over the current distribution <script type="math/tex"> \vec{J} (x', y', z') </script> (Fig 5.30). It is best to be absolutely explicit at this stage:</p>
+<ul>
+<li><strong>B</strong> is a function of (x, y, z)</li>
+<li><strong>J</strong> is a function of (x', y', z')</li>
+<li>
+<script type="math/tex"> \vu{\gr} = (x - x') \vu{x} + (y - y') \vu{y} + (z - z') \vu{z} </script>
+</li>
+<li>
+<script type="math/tex"> \dd \tau' = dx' dy' dz' </script>
+</li>
+</ul>
+<p>The integration is over the primed coordinates; the divergence and the curl of <strong>B</strong> are with respect to the unprimed coordinates.</p>
+<p align="center"> <img alt="Figure 5.30" src="../img/5.30.png" /> </p>
+
+<p>Applying the divergence to <script type="math/tex"> \eqref{5.47} </script> we obtain
+<script type="math/tex; mode=display">
+\div \vec{B} = \frac{\mu_0 }{4 \pi } \int \div \left( \vec{J} \times \frac{\vu{\gr}}{\gr^2} \right)\dd \tau' \tagl{5.48}
+</script>
+With one of our product rules for divergences
+<script type="math/tex; mode=display">
+\div \left( \vec{J} \times \frac{\vu{\gr}}{\gr^2} \right) = \frac{\vu{\gr}}{\gr^2} \cdot (\curl \vec{J}) - \vec{J} \cdot \left( \curl \frac{ \vu{\gr}}{\gr ^2} \right) \tagl{5.49}
+</script>
+</p>
+<p>But <script type="math/tex"> \curl \vec{J} = 0 </script> because <strong>J</strong> doesn't depend on the unprimed variables, while <script type="math/tex"> \curl ( \vu{\gr} / \gr ^2) = 0 </script> (we've already explicitly worked that in Chapter 1), so
+<script type="math/tex; mode=display">
+\div \vec{B} = 0 \tagl{5.50}
+</script>
+</p>
+<p>Evidently, the <em>divergence</em> of the magnetic field is zero.</p>
+<p>Applying the curl to Eq 5.47, we obtain
+<script type="math/tex; mode=display">
+\curl \vec{B} = \frac{\mu_0}{4 \pi} \int \curl \left( \vec{J} \times \frac{\vu{\gr}}{\gr ^2} \right) \dd \tau' \tagl{5.51}
+</script>
+Again, our strategy is to expand the integrand, using the appropriate product rule - in this case one of those for curls
+<script type="math/tex; mode=display">
+\curl \left( \vec{J} \times \frac{\vu{\gr}}{\gr^2} \right) = \vec{J} \left( \div \frac{\vu{\gr}}{\gr ^2} \right) - ( \vec{J} \cdot \grad) \frac{\vu{\gr}}{\gr^2} \tagl{5.52} 
+</script>
+(I have dropped terms involving derivatives of <strong>J</strong>, because <strong>J</strong> does not depend on x, y, z.) The second term integrates to zero, as we'll see in the next paragraph. The first term involves the divergence we were at pains to calculate in Chapter 1 (Eq. 1.100):</p>
+<p>
+<script type="math/tex; mode=display">
+\div \left( \frac{\vu{\gr}}{\gr^2} \right) = 4 \pi \delta ^2(\gr) \tagl{5.53}
+</script>
+Thus
+<script type="math/tex; mode=display">
+\curl \vec{B} = \frac{\mu_0}{4 \pi} \int \vec{J}(r') 4 \pi \delta ^3 (\vec{r} - \vec{r'} \dd \tau' = \mu_0 \vec{J} (\vec{r})
+</script>
+which confirms that Eq. 5.46 is not restricted to straight-line currents, but holds quite generally in magnetostatics.</p>
+<p>To complete the argument, however, we must check that the second term in Eq 5.52 integrates to zero. Because the derivative acts only on <script type="math/tex"> \vu{\gr} / \gr ^2 </script>, we can switch from <script type="math/tex"> \grad </script> to <script type="math/tex"> \grad' </script> at the cost of a minus sign
+<script type="math/tex; mode=display">
+-(\vec{J} \cdot \grad) \frac{\vu{\gr}}{\gr^2} = (\vec{J} \cdot \grad' ) \frac{\vu{\gr}}{\gr^2}  \tagl{5.54}
+</script>
+The x component, in particular, is
+<script type="math/tex; mode=display">
+(\vec{J} \cdot \grad') \left( \frac{x - x' }{\gr ^3}  \right) = \grad' \cdot \left( \frac{(x - x')}{\gr ^3} \vec{J} \right) - \left( x - x' \gr ^3  \right)(\grad' \cdot \vec{J})
+</script>
+Now, for steady currents the divergence of <strong>J</strong> is zero, so
+<script type="math/tex; mode=display">
+\left( - (\vec{J} \cdot \grad) \frac{\vu{\gr}}{\gr^2} \right)_{x} = \grad' \cdot \left( \frac{(x - x')}{\gr ^3} \vec{J} \right)
+</script>
+</p>
+<p>and therefore this contribution to the integral can be written
+<script type="math/tex; mode=display">
+\int_{V} \grad' \cdot \left( \frac{(x - x')}{\gr ^3} \vec{J} \right) \dd \tau' = \oint_S \frac{(x - x')}{\gr^3} \vec{J} \cdot \dd \vec{a'} \tagl{5.55}
+</script>
+(The reason for switching from <script type="math/tex"> \grad </script> to <script type="math/tex"> \grad' </script> was to allow this integration by parts).</p>
+<p>But what region are we integrating over? Well, it's the volume that appears in the Biot-Savart law (Eq. 5.47) - large enough, that is, to include all the current. You can make it bigger than that, if you like; <script type="math/tex"> \vec{J} = 0 </script> out there anyway, so it will add nothing to the integral. The essential point is that on the boundary the current is zero (all current is safely inside) and hence the surface integral (Eq. 5.55) vanishes.</p>
+<h2 id="533-amperes-law">5.3.3: Ampere's Law</h2>
+<p>The equation for the curl of <strong>B</strong>,
+<script type="math/tex; mode=display">
+\curl \vec{B} = \mu_0 \vec{J} \tagl{5.56}
+</script>
+is called <em>Ampere's Law</em> (in differential form). It can be converted to integral form by the usual device of applying one of the fundamental theorems - in this case Stokes' theorem:
+<script type="math/tex; mode=display">
+\int (\curl \vec{B}) \cdot \dd \vec{a} = \oint \vec{B} \cdot \dd \vec{l} = \mu_0 \int \vec{J} \cdot \dd \vec{a}
+</script>
+Now, <script type="math/tex"> \int \vec{J} \cdot \dd \vec{a} </script> is the total current passing through the surface (Fig. 5.31), which we call <script type="math/tex"> I_{enc} </script> (the current enclosed by the Amperian loop). Thus
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd \vec{l} = \mu_0 I_{enc} \tagl{5.57}
+</script>
+</p>
+<p align="center"> <img alt="Figure 5.31" src="../img/5.31.png" /> </p>
+
+<p>This is the integral version of Ampere's law; it generalizes Eq 5.44 to arbitrary steady currents. Notice that Eq 5.57 inherits the sign ambiguity of Stokes' theorem: which <em>way</em> around the loop am I supposed to go? And which direction through the surface corresponds to a "positive" current? The resolution, as always, is the right-hand rule: If the fingers of your right hand indicate the direction of integration around the boundary, then your thumb defines the direction of a positive current.</p>
+<p>Just as the Biot-Savart law plays a role in magnetostatics that Coulomb's law assumed in electrostatics, so Ampere's plays the part of Gauss's. In particular, for currents with appropriate symmetry, Ampere's law in integral form offers a lovely and extraordinarily efficient way of calculating the magnetic field.</p>
+<p align="center"> <img alt="Figure 5.32" src="../img/5.32.png" /> </p>
+
+<h4 id="example-57">Example 5.7</h4>
+<div class="admonition question">
+<p class="admonition-title">Find the magnetic field a distance s from a long straight wire (Fig 5.32), carrying a steady current I (the same problem from the previous section, in which we used the Biot-Savart law)</p>
+<p><strong>Solution</strong></p>
+<p>We know the direction of <strong>B</strong> is "circumferential," circling around the wire as indicated by the right-hand rule. By symmetry, the magnitude of <strong>B</strong> is constant around an Amperian loop of radius <em>s</em>, centered on the wire. So Ampere's law gives
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd \vec{l} = B \oint dl = 2 \pi s B = \mu_0 I_{enc} = \mu_0 I
+</script>
+or
+<script type="math/tex; mode=display">
+B = \frac{\mu_0 I}{2 \pi s} 
+</script>
+This is the same answer we got before (Eq. 5.38), but it was waay easier to obtain this time.</p>
+</div>
+<h4 id="example-58">Example 5.8</h4>
+<div class="admonition question">
+<p class="admonition-title">Find the magnetic field of an infinite uniform surface current <script type="math/tex"> \vec{K} = K \vu{x} </script>, flowing over the xy plane (Fig 5.33)</p>
+<p><strong>Solution</strong>
+First of all, what is the direction of B? Could it have any x component? No: A glance at the Biot-Savart law (Eq. 5.42) reveals that B is perpendicular to K. Could it have a z component? No again. You could confirm this by noting that any vertical contribution from a filament at +y is canceled by the corresponding filament at - y. But there is a nicer argument: Suppose the field pointed away from the plane. By reversing the direction of the current, I could make it point toward the plane (in the Biot-Savart law, changing the sign of the current switches the sign of the field). But the z component of B cannot possibly depend on the direction of the current in the xy plane. (Think about it!) So B can only have a y component, and a quick check with your right hand should convince you that it points to the left above the plane and to the right below it.</p>
+<p>With this in mind, we draw a rectangular Amperian loop as shown in Fig. 5.33, parallel to the yz plane and extending an equal distance above and below the surface. Applying Ampere's law,
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd \vec{l} = 2 B l = \mu_0 I_{enc} = \mu_0 K l
+</script>
+(One Bl comes from the top segment and the other from the bottom), so <script type="math/tex"> B = (\mu_0 / 2) K </script>, or, more precisely
+<script type="math/tex; mode=display">
+\vec{B} = \begin{cases}
++(\mu_0 / 2) K \vu{y} \quad & \text{ for } z < 0 \\
+- (\mu_0 / 2) K \vu{y} \quad & \text{ for } z > 0
+\end{cases} \tagl{5.58}
+</script>
+Notice that the field is independent of the distance from the plane, just like the electric field of a uniform surface charge.</p>
+</div>
+<h4 id="example-59">Example 5.9</h4>
+<p align="center"> <img alt="Figure 5.34" src="../img/5.34.png" /> </p>
+
+<div class="admonition question">
+<p class="admonition-title">Find the magnetic field of a very long solenoid, consisting of n closely wound turns per unit length on a cylinder of radius R, each carrying a steady current I (Fig 5.34). [The point of making the windings so close is that one can then pretend each turn is circular. If this troubles you (after all, there is a net current I in the direction of the solenoid's axis, no matter how tight the winding), picture instead a sheet of aluminum foil wrapped around the cylinder, carrying the equivalent of a uniform surface current K = nI (Fig 5.35). Or make a double winding, going up to one end and then - always in the same sense - going back down again, thereby eliminating the net longitudinal current. But, in truth, this is all unnecessary fastidiousness, for the field inside a solenoid is huge (relatively speaking), and the field of the longitudinal current is at most a tiny refinement.]</p>
+<p><strong>Solution</strong>
+First of all, what is the direction of <strong>B</strong>? Could it have a radial component? No. For suppose <script type="math/tex"> B_s </script> were positive; if we reversed the direction of the current, <script type="math/tex"> B_s </script> would then be negative. But switching I is physically equivalent to turning the solenoid upside down, and that certainly should not alter the radial field. How about a "circumferential" component? No. For <script type="math/tex"> B_{\phi} </script>  would be constant around an Amperian loop concentric with the solenoid (Fig. 5.36), and hence
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd \vec{l} = B_{\phi} (2 \pi s) = \mu_0 I_{enc} = 0
+</script>
+since the loop encloses no current.</p>
+<p><p align="center"> <img alt="Figure 5.36" src="../img/5.36.png" /> </p>
+So, the magnetic field of an infinite, closely wound solenoid runs parallel to the axis. From the right-hand rule, we expect that it points inside the solenoid and downward outside. Moreover, it certainly approaches zero as you go very far away. With this in mind, let's apply Ampere's law to the two rectangular loops in Fig 5.37. Loop 1 lies entirely outside the solenoid, with its sides at distances a and b from the axis:
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd \vec{l} = [ B(a) - B(b)] L = \mu_0 I_{enc} = 0
+</script>
+so
+<script type="math/tex; mode=display">
+B(a) = B(b)
+</script>
+Evidently the field outside does not depend on the distance from the axis. But we agreed that it goes to zero for large s. It must therefore be zero everywhere! (This astonishing result can also be derived from the Biot-Savart law, of course, but it's much more difficult. See Prob. 5.46.)</p>
+<p>As for loop 2, which is half inside and half outside, Ampere's law gives
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd \vec{l} = B L = \mu_0 I_{enc} = \mu_0 n I L
+</script>
+where B is the field inside the solenoid. (The right side of the loop contributes nothing, since B = 0 out there.) Conclusion:
+<script type="math/tex; mode=display">
+\vec{B} = 
+\begin{cases}
+\mu_0 n I \vu{z} & \quad \text{ inside the solenoid } \\
+0 & \quad \text{ outside the solenoid }
+\end{cases}
+\tagl{5.59}
+</script>
+Notice that the field inside is uniform - it doesn't depend on the distance from the axis. In this sense the solenoid is to magnetostatics what the parallel-plate capacitor is to electrostatics: a simple device for producing strong uniform fields.</p>
+</div>
+<p>Like Gauss's law, Ampere's law is always true (for steady currents), but it is not always useful. Only when the symmetry of the problem enables you to pull <strong>B</strong> outside the integral <script type="math/tex"> \oint \vec{B} \cdot \dd \vec{l} </script>  can you calculate the magnetic field from Ampere's law. When it does work, it's by far the fastest method; when it doesn't, you have to fall back on the Biot-Savart law. The current configurations that can be handled by Ampere's law are</p>
+<ol>
+<li>Infinite straight lines (Ex 5.7)</li>
+<li>Infinite planes (Ex 5.8)</li>
+<li>Infinite solenoids (Ex 5.9)</li>
+<li>Toroids (Ex 5.10)</li>
+</ol>
+<p>The last of these is a surprising and elegant application of Ampere's law. As in Exs. 5.8 and 5.9, the hard part is figuring out the direction of the field (which we will now have done, once and for all, for each of the four geometries); the actual application of Ampere's law takes only one line.</p>
+<h4 id="example-510">Example 5.10</h4>
+<div class="admonition question">
+<p class="admonition-title">A toroidal coil consists of a circular ring, or 'donut,' around which a long wire is wrapped (Fig 5.38). The winding is uniform and tight enough so that each turn can be considered a plane closed loop. The cross-sectional shape of the coil is immaterial; I made it rectangular in Fig 5.38 for the sake of simplicity, but it could just as well be circular or even some weird asymmetrical form, as in Fig 5.39, as long as the shape remains the same all the way around the ring. In that case, it follows that the magnetic field of the toroid is circumferential at all points, both inside and outside the coil.</p>
+<p><p align="center"> <img alt="Figure 5.38" src="../img/5.38.png" /> </p>
+<strong>Proof</strong>
+According to the Biot-Savart law, the field at <strong>r</strong> due to the current element at <strong>r'</strong> is
+<script type="math/tex; mode=display">
+\dd \vec{B} = \frac{\mu_0 }{4 \pi} \frac{\vec{I} \cross \vu{\gr}}{\gr ^3} \dd l'
+</script>
+We may as well put <strong>r</strong> in the xz plane (Fig 5.39), so its Cartesian components are (x, 0, z), while the source coordinates are
+<script type="math/tex; mode=display">
+\vec{r'} = (s' \cos \phi', s' \sin \phi', z')
+</script>
+<p align="center"> <img alt="Figure 5.39" src="../img/5.39.png" /> </p>
+Then
+<script type="math/tex; mode=display">
+\gr = (x - s' \cos \phi', -s' \sin \phi', z - z')
+</script>
+Since the current has no <script type="math/tex"> \phi </script>  component, <script type="math/tex"> \vec{I} = I_s \vu{x} + I_z \vu{z} </script>, or (in Cartesian coordinates)
+<script type="math/tex; mode=display">
+\vec{I} = (I_s \cos \phi', I_s \sin ' , I_z)
+</script>
+Accordingly,
+<script type="math/tex; mode=display">
+\vec{I} \cross \vec{\gr} = \begin{bmatrix}
+\vu{x} & \vu{y} & \vu{z} \\
+I_s \cos \phi' & I_s \sin \phi' & I_z \\
+(x - s' \cos \phi') & (- s' \sin \phi') & (z - z')
+\end{bmatrix} \\
+= [ \sin \phi' (I_s (z - z') + s' I_z)] \vu{x} + [I_z (x - s' \cos \phi') - I_s \cos \phi' (z - z')] \vu{y} + [-I_s x \sin \phi']\vu{z}
+</script>
+But there is a symmetrically situated current element at <strong>r''</strong>, with the same <script type="math/tex"> s' </script> , the same <script type="math/tex"> \gr </script>, the same <script type="math/tex"> dl' </script>, the same <script type="math/tex"> I_s </script>, and the same <script type="math/tex"> I_z </script>, but <em>negative</em> <script type="math/tex"> \phi' </script> (Fig 5.39). Because <script type="math/tex"> \sin \phi' </script> changes sign, the <script type="math/tex"> \vu{x} </script> and <script type="math/tex"> \vu{z} </script> contributions from <script type="math/tex"> \vu{r'} </script> and <script type="math/tex"> \vu{r''} </script> cancel each other, leaving only a <script type="math/tex"> \vu{y} </script> term. Thus the field at <script type="math/tex"> \vu{r} </script> is in the <script type="math/tex"> \vu{y} </script> direction, and in general the field points in the <script type="math/tex"> \vu{\phi} </script> direction. </p>
+<p>Now that we know the field is circumferential, determining its magnitude is simple: just apply Ampere's law to a circle of radius s about the axis of the toroid
+<script type="math/tex; mode=display">
+B 2 \pi s = \mu_0 I_{enc}
+</script>
+and hence
+<script type="math/tex; mode=display">
+\vec{B}(\vec{r}) = \begin{cases}
+\frac{\mu_0 N I}{2 \pi s} \vu{\phi} \quad & \text{ for points inside the coil} \\
+0 \quad & \text{ for points outside the coil}
+\end{cases} \tagl{5.60}
+</script>
+where N is the total number of turns.</p>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                5.2 - The Biot-Savart Law
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../problems-ch5/" title="Problems" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Problems
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../extra.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
