@@ -184,7 +184,7 @@
 
 !!! question "Three point charges are located as shown in Fig 3.38, each a distance _a_ from the origin. Find the approximate electric field at points far from the origin. Express your answer in spherical coordinates, and include the two lowest orders in the multipole expansion."
     
-    ![Figure 3.38](img/3.38.png)
+    <p align="center"> <img alt="Figure 3.38" src="../img/3.38.png" /> </p>
     We'll get to the electric field by writing down the multipole expansion of the potential, and then using the approximate potential to get the electric field. The total charge is -q, so the monopole term will be
     $$
     V_{mon} = \frac{1}{4 \pi \epsilon_0} \frac{1}{r} (-q)
