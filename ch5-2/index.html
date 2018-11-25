@@ -711,6 +711,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../ch5-4/" title="5.4 - Magnetic Vector Potential" class="md-nav__link">
+      5.4 - Magnetic Vector Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../problems-ch5/" title="Problems" class="md-nav__link">
       Problems
     </a>
@@ -796,23 +808,6 @@
                 
                 
                 <h1 id="52-the-biot-savart-law">5.2: The Biot-Savart Law</h1>
-<p>5.1.2 Continued...</p>
-<div class="admonition question">
-<p class="admonition-title">Example: Mass Spectrometer</p>
-<p>Suppose we have particles of several isotopes of a known element, and we wish to know exactly which mass isotopes are present (and separate them out) A mass spectrometer is an instrument which can measure the masses and relative concentrations of atoms and molecules. It makes use of the basic magnetic force on a moving charged particle. First, we ionize the particle, giving it a known net charge. We accelerate the particles through a known voltage into a constant magnetic field perpendicular to the velocity of the particle. The charged particles now undergo cyclotron motion (as we just described) of radius given by
-<script type="math/tex; mode=display">
-m v = q B R \rightarrow v^2 = \frac{q^2 B^2 R^2}{m^2} 
-</script>
-We know that the energy per unit charge imparted by our known voltage difference is
-<script type="math/tex; mode=display">
-q | \Delta V| = \frac{1}{2} m v^2 \rightarrow v^2 = \frac{2 q | \Delta V|}{m} 
-</script>
-We can measure the radius of the cyclotron motion by simply putting a detector wall 1/2 of the way around the circular motion, such that the ions will strike the detector a distance <script type="math/tex"> 2R </script> from the output nozzle of the accelerating voltage. Putting our known quantities (<script type="math/tex"> \Delta V, B )</script> together with the measured radius of the cyclotron motion, we get
-<script type="math/tex; mode=display">
-\frac{m}{q} = \frac{B^2 R^2}{2 | \Delta V|} 
-</script>
-</p>
-</div>
 <h2 id="521-steady-currents">5.2.1: Steady Currents</h2>
 <p>Stationary charges produce electric fields that are constant in time; hence the term <strong>electrostatics</strong>. Steady currents produce magnetic fields that are constant in time; the theory of steady currents is called <strong>magnetostatics</strong>.</p>
 <p>By "<strong>steady current</strong>" I mean a continuous flow that has been going on forever, without change and without piling up anywhere (some people call them "stationary currents"; to my ear, that's a contradiction in terms). Formally, electro/magnetostatics is the regime
@@ -906,6 +901,20 @@ B(z) = \frac{\mu_0 I}{4 \pi} \left( \frac{\cos \theta}{\gr ^2} \right) 2 \pi R =
 </script>
 </p>
 </div>
+<p>For surface and volume currents, the Biot-Savart law becomes
+<script type="math/tex; mode=display">
+\vec{B}(r) = \frac{\mu_0}{4 \pi } \int \frac{\vec{K}(r') \times \vu{\gr}}{\gr ^2} \dd a'
+</script>
+and
+<script type="math/tex; mode=display">
+\vec{B}(r) = \frac{\mu_0}{4 \pi} \int \frac{\vec{J}(r') \times \vu{\gr}}{\gr ^2} \dd \tau' \tagl{5.42}
+</script>
+respectively. You might be tempted to write down the corresponding formula for a moving point charge, using the "dictionary"
+<script type="math/tex; mode=display">
+\vec{B}(r) = \frac{\mu_0}{4 \pi} \frac{q \vec{v} \times \vu{\gr}}{\gr ^2} 
+</script>
+but this is simply <em>wrong</em>. As I mentioned earlier, a point charge does not constitute a steady current, and the Biot-Savart law, which only holds for steady currents, does <em>not</em> correctly determine its field.</p>
+<p>The superposition principle applies to magnetic fields just as it does to electric firlds: if you have a <em>collection</em> of source currents, the net field is the (vector) sum of the fields due to each of them taken separately.</p>
                 
                   
                 

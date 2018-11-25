@@ -665,6 +665,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#example-52b-mass-spectrometer" title="Example 5.2b: Mass Spectrometer" class="md-nav__link">
+    Example 5.2b: Mass Spectrometer
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -681,6 +688,13 @@
           <li class="md-nav__item">
   <a href="#example-53" title="Example 5.3" class="md-nav__link">
     Example 5.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-54" title="Example 5.4" class="md-nav__link">
+    Example 5.4
   </a>
   
 </li>
@@ -721,6 +735,18 @@
   <li class="md-nav__item">
     <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
       5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-4/" title="5.4 - Magnetic Vector Potential" class="md-nav__link">
+      5.4 - Magnetic Vector Potential
     </a>
   </li>
 
@@ -791,6 +817,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#example-52b-mass-spectrometer" title="Example 5.2b: Mass Spectrometer" class="md-nav__link">
+    Example 5.2b: Mass Spectrometer
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -807,6 +840,13 @@
           <li class="md-nav__item">
   <a href="#example-53" title="Example 5.3" class="md-nav__link">
     Example 5.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-54" title="Example 5.4" class="md-nav__link">
+    Example 5.4
   </a>
   
 </li>
@@ -925,6 +965,23 @@ u = \omega R = \frac{E}{B} \tagl{5.10}
 </script>
 The particle moves as though it were a spot on the rim of a wheel rolling along the y-axis. The curve generated in this way is called a <strong>cycloid</strong>. Notice that the overall motion is not in the direction of <strong>E</strong>, as you might suppose, but perpendicular to it.</p>
 </div>
+<h4 id="example-52b-mass-spectrometer">Example 5.2b: Mass Spectrometer</h4>
+<div class="admonition question">
+<p class="admonition-title">Example: Mass Spectrometer</p>
+<p>Suppose we have particles of several isotopes of a known element, and we wish to know exactly which mass isotopes are present (and separate them out) A mass spectrometer is an instrument which can measure the masses and relative concentrations of atoms and molecules. It makes use of the basic magnetic force on a moving charged particle. First, we ionize the particle, giving it a known net charge. We accelerate the particles through a known voltage into a constant magnetic field perpendicular to the velocity of the particle. The charged particles now undergo cyclotron motion (as we just described) of radius given by
+<script type="math/tex; mode=display">
+m v = q B R \rightarrow v^2 = \frac{q^2 B^2 R^2}{m^2} 
+</script>
+We know that the energy per unit charge imparted by our known voltage difference is
+<script type="math/tex; mode=display">
+q | \Delta V| = \frac{1}{2} m v^2 \rightarrow v^2 = \frac{2 q | \Delta V|}{m} 
+</script>
+We can measure the radius of the cyclotron motion by simply putting a detector wall 1/2 of the way around the circular motion, such that the ions will strike the detector a distance <script type="math/tex"> 2R </script> from the output nozzle of the accelerating voltage. Putting our known quantities (<script type="math/tex"> \Delta V, B )</script> together with the measured radius of the cyclotron motion, we get
+<script type="math/tex; mode=display">
+\frac{m}{q} = \frac{B^2 R^2}{2 | \Delta V|} 
+</script>
+</p>
+</div>
 <p>One implication of the Lorentz force law deserves special attention:</p>
 <p><strong>Magnetic forces do no work</strong></p>
 <p>For the magnetic force is, by definition, always perpendicular to the path of motion. Magnetic forces may alter the direction in which a particle moves, but they cannot speed it up or slow it down. The fact that magnetic forces do no work is an elementary and direct consequence of the Lorentz force law, but there are many situations where it appears so manifestly false that one's confidence is bound to waver. When a magnetic crane lifts the carcass of a junked car, for instance, <em>something</em> is obviously doing work, and it seems perverse to deny that the magnetic force is responsible. Well, perverse or not, deny it we must, and it can be a very subtle matter to figure out who does deserve the credit in such circumstances. We'll see a cute example in the next section, but the full story will have to wait until we hit the key conservation laws much later.</p>
@@ -980,8 +1037,8 @@ where <em>h</em> is the distance the loop rises. But we know that magnetic force
 <script type="math/tex; mode=display">
  F_{vert} = \lambda a w B = I B a \tagl{5.20}
 </script>
-(as before); but now it also has a horizontal component <script type="math/tex"> (q u B) </script> which opposes the flow of current. Whoever is in charge of maintaining that current, therefore, must now push those charges along, against the backward component of the magnetic force. </p>
-<p><img alt="Figure 5.11" src="../img/5.11.png" /></p>
+(as before); but now it also has a horizontal component <script type="math/tex"> (q u B) </script> which opposes the flow of current. Whoever is in charge of maintaining that current, therefore, must now push those charges along, against the backward component of the magnetic force. 
+<p align="center"> <img alt="Figure 5.11" src="../img/5.11.png" /> </p></p>
 <p>The total horizontal force on the top segment is
 <script type="math/tex; mode=display">
 F_{horiz} = \lambda a u B \tagl{5.21}
@@ -990,10 +1047,12 @@ In a time <script type="math/tex"> dt </script>, the charges move a (horizontal)
 <script type="math/tex; mode=display">
 W_{battery} = \lambda a B \int u w \dd t = I B a h
 </script>
-which is precisely what we naively attributed to the magnetic force in <script type="math/tex"> \eqref{5.19} </script>. Was work done in this process? Absolutely! Who did it? The battery! What, then, was the role of the magnetic force? Well, it redirected the horizontal force of the battery into the vertical motion of the loop and the weight.</p>
-<p><img alt="Figure 5.12" src="../img/5.12.png" /> </p>
+which is precisely what we naively attributed to the magnetic force in <script type="math/tex"> \eqref{5.19} </script>. Was work done in this process? Absolutely! Who did it? The battery! What, then, was the role of the magnetic force? Well, it redirected the horizontal force of the battery into the vertical motion of the loop and the weight.
+<p align="center"> <img alt="Figure 5.12" src="../img/5.12.png" /> </p></p>
 <p>It may help to consider a mechanical analogy. Imagine you're sliding a trunk up a frictionless ramp, by pushing on it horizontally with a mop (Fig 5.12). The normal force (N) does no work, because it is perpendicular to the displacement. But it does have a vertical component (which in fact is what lifts the trunk), and a (backward) horizontal component (which you have to overcome by pushing on the mop). Who is doing the work here? You are, obviously - and yet your force (which is purely horizontal) is not (at least, directly) what lifts the box. The normal force plays the same passive (but crucial) role as the magnetic force in Ex 5.3: while doing no work itself, it redirects the efforts of the active agent (you, or the battery, as the case may be), from horizontal to vertical.</p>
 </div>
+<p align="center"> <img alt="Figure 5.13" src="../img/5.13.png" /> </p>
+
 <p>When charge flows over a surface, we describe it by the <strong>surface current density, K</strong>, defined as follows: Consider a "ribbon" of infinitesimal width <script type="math/tex"> \dd l_{\perp} </script>, running parallel to the flow (Fig 5.13). If the current in this ribbon is <script type="math/tex"> \dd \vec{I} </script>, the surface current density is
 <script type="math/tex; mode=display">
 \vec{K} = \frac{\dd \vec{I}}{\dd l _{\perp}} \tagl{5.22} 
@@ -1006,7 +1065,65 @@ In general, <script type="math/tex"> \vec{K} </script> will vary from point to p
 <script type="math/tex; mode=display">
 \vec{F}_{mag} = \int ( \vec{v} \cross \vec{B}) \sigma \dd a = \int (\vec{K} \cross \vec{B}) \dd a \tagl{5.24}
 </script>
+Caveat: Just as <strong>E</strong> suffers a discontinuity at a surface charge, so <strong>B</strong> is discontinuous at a surface <em>current</em>. In <script type="math/tex"> \eqref{5.24} </script>, you must be careful to use the average field, just as we did in Sect 2.5.3.</p>
+<p>When the flow of charge is distributed throughout a three-dimensional region, we describe it by the volume current density, <strong>J</strong>, defined as follows: consider a "tube" of infinitesimal cross section <script type="math/tex"> \dd a_{\perp} </script>, running parallel to the flow (Fig 5.14). If the current in this tube is <script type="math/tex"> \dd \vec{I} </script>, the volume current density is
+<script type="math/tex; mode=display">
+\vec{J} \equiv \dv{\vec{I}}{a_{\perp}} \tagl{5.25}
+</script>
+In words, <strong>J</strong> is the current per unit area. If the (mobile) volume charge density is <script type="math/tex"> \rho </script>  and the velocity is <script type="math/tex"> \vec{v} </script>, then
+<script type="math/tex; mode=display">
+\vec{J} = \rho \vec{v} \tagl{5.26}
+</script>
+<p align="center"> <img alt="Figure 5.14" src="../img/5.14.png" /> </p></p>
+<p>The magnetic force on a volume current is therefore
+<script type="math/tex; mode=display">
+\vec{F}_{mag} = \int (\vec{v} \times \vec{B}) \rho \dd \tau = \int (\vec{J} \times \vec{B} ) \dd \tau \tagl{5.27}
+</script>
 </p>
+<h4 id="example-54">Example 5.4</h4>
+<div class="admonition question">
+<p class="admonition-title">A current <em>I</em> is uniformly distributed over a wire of circular cross section, with radius a (Fig 5.15). Find the volume current density <em>J</em>.</p>
+<p><strong>Solution</strong>
+The area perpendicular to the flow is <script type="math/tex"> \pi a^2 </script>, so
+<script type="math/tex; mode=display">
+J = \frac{I}{\pi a^2}
+</script>
+This was trivial because the current density was uniform</p>
+<p>Suppose the current density in the wire is proportional to the distance from the axis,
+<script type="math/tex; mode=display">
+J = k s
+</script>
+for some constant <em>k</em>. Find the total current in the wire.</p>
+<p>Because <strong>J</strong> varies with <em>s</em>, we must integrate <script type="math/tex"> \eqref{5.25} </script>. The current through the shaded patch (Fig 5.16) is <script type="math/tex"> J \dd a_{\perp} </script>, and <script type="math/tex"> \dd a_{\perp} = s \dd s \dd \phi </script> so
+<p align="center"> <img alt="Figure 5.15" src="../img/5.15.png" /> </p>
+<script type="math/tex; mode=display">
+I = \int (ks) (s \dd s \dd \phi) = 2 \pi k \int _0 ^a s^2 \dd s = \frac{2 \pi k a^3}{3} 
+</script>
+</p>
+</div>
+<p>According to Eq. 5.25, the total current crossing a surface <em>S</em> can be written as
+<script type="math/tex; mode=display">
+I = \int_S J \dd a_{\perp} = \int_S \vec{J} \cdot \dd \vec{a} \tagl{5.28}
+</script>
+(The dot product serves to pick out the appropriate component of <script type="math/tex"> \dd \vec{a} </script>). In particular, the charge per unit time leaving a volume <em>V</em> is
+<script type="math/tex; mode=display">
+\oint _S \vec{J} \cdot \dd \vec{a} = \int_V ( \div \vec{J}) \dd \tau
+</script>
+<em>Because charge is conserved</em>, whatever flows out through the surface must come at the expense of what remains inside:
+<script type="math/tex; mode=display">
+\int_V (\div \vec{J} ) \dd \tau = - \dv{}{t} \int_V \rho \dd \tau = - \int _V \left( \pdv{\rho}{t} \right)\dd \tau
+</script>
+(The minus sign reflects the fact that an outward flow decreases the charge left in <em>V</em>). Since this applies to any volume, we conclude that
+<script type="math/tex; mode=display">
+\div \vec{J} = - \pdv{\rho}{t} \tagl{5.29}
+</script>
+This is the precise mathematical statement of local charge conservation; it is called the <strong>continuity equation</strong>.</p>
+<p>For future reference, let us summarize the "dictionary" we have implicitly developed for translating equations into the forms appropriate to point, line, surface, and volume currents</p>
+<p>
+<script type="math/tex; mode=display">
+\sum_{i = 1} ^n ( ) q_i \vec{v}_i \sim \int_{line} () \vec{I} \dd l \sim \int_{surf} ( ) \vec{K} \dd a \sim \int_{vol} ( ) \vec{J} \dd \tau \tagl{5.30}
+</script>
+This correspondence, which is analogous to <script type="math/tex"> q \sim \lambda \dd l \sim \sigma \dd a \sim \rho \dd \tau </script> for the various charge distributions, generates Eqs. 5.15, 5.24, and 5.27 from the original Lorentz force law (5.1).</p>
                 
                   
                 
