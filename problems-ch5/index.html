@@ -701,6 +701,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#problem-526" title="Problem 5.26" class="md-nav__link">
+    Problem 5.26
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-537" title="Problem 5.37" class="md-nav__link">
+    Problem 5.37
+  </a>
+  
+</li>
+      
       
       
       
@@ -709,6 +723,54 @@
   
 </nav>
     
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      6 - Magnetic Fields in Matter
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        6 - Magnetic Fields in Matter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch6-1/" title="6.1 - Magnetization" class="md-nav__link">
+      6.1 - Magnetization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch6-2/" title="6.2 - The Field of a Magnetized Object" class="md-nav__link">
+      6.2 - The Field of a Magnetized Object
+    </a>
   </li>
 
         
@@ -752,6 +814,20 @@
         <li class="md-nav__item">
   <a href="#problem-523" title="Problem 5.23" class="md-nav__link">
     Problem 5.23
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-526" title="Problem 5.26" class="md-nav__link">
+    Problem 5.26
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-537" title="Problem 5.37" class="md-nav__link">
+    Problem 5.37
   </a>
   
 </li>
@@ -883,6 +959,98 @@ We will get our vector potential using Eq 5.66, as suggested
 </script>
 which is just what we got back in Eq. 5.37.</p>
 </div>
+<h4 id="problem-526">Problem 5.26</h4>
+<div class="admonition question">
+<p class="admonition-title">(a) By whatever means you can think of (short of looking it up), find the vector potential a distance <em>s</em> from an infinite straight wire carrying a current <em>I</em>. Check that <script type="math/tex"> \div \vec{A} = 0 </script> and <script type="math/tex"> \curl \vec{A} = \vec{B} </script>. (b) Find the magnetic potential inside the wire, if it has radius R and the current is uniformly distributed.</p>
+<p>(a)
+As we said, because the current distribution is infinite, we cannot use Eq. 5.65 to get <strong>A</strong>. So let's use some symmetry. <strong>A</strong> must be parallel (or antiparallel) to <strong>I</strong>, and is a function of only <em>s</em> (the distance from the wire). In cylindrical coordinates, then, <script type="math/tex"> \vec{A} = A(s) \vu{z} </script>. We already calculated the magnetic field of an infinite straight wire via Biot-Savart:
+<script type="math/tex; mode=display">
+\vec{B} = \frac{\mu_0 I}{2 \pi s} \vu{\phi}
+</script>
+We can work backwards to get <strong>A</strong> from <strong>B</strong> in this case.
+<script type="math/tex; mode=display">
+\vec{B} = \curl \vec{A} = - \pdv{A}{s} \vu{\phi} = \frac{\mu_0 I}{2 \pi s} \vu{\phi}
+</script>
+Therefore
+<script type="math/tex; mode=display">
+\pdv{A}{s} = -\frac{\mu_0 I}{2 \pi s} \quad \rightarrow \quad \vec{A}(r) = - \frac{\mu_0 I}{2 \pi} \ln (s / a) \vu{z}
+</script>
+There is an arbitrary constant <em>a</em> here which doesn't actually affect our gauge at all:
+<script type="math/tex; mode=display">
+\div \vec{A} = \pdv{A_z}{z} = 0
+</script>
+<script type="math/tex; mode=display">
+\curl \vec{A} = - \pdv{A_z}{s} \vu{\phi} = \frac{\mu_0 I}{2 \pi s} \vu{\phi} = \vec{B}
+</script>
+</p>
+<p>(b)
+Ampere's law in this case says
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd \vec{l} = B 2 \pi s = \mu_0 I_{enc} = \mu_0 J \pi s^2 = \mu_0 \frac{I}{\pi R^2} \pi s^2 = \frac{\mu_0 I s^2}{R^2} 
+</script>
+so, inside the wire,
+<script type="math/tex; mode=display">
+\vec{B} = \frac{\mu_0 I s}{2\pi R^2} \vu{\phi}
+</script>
+From the definition of <strong>A</strong>,
+<script type="math/tex; mode=display">
+\pdv{A}{s} = - \frac{\mu_0 I}{2 \pi} \frac{s}{R^2} \rightarrow \vec{A} = -\frac{\mu_0 I}{2 \pi R^2} \int_{b} ^s s \, \dd s =  - \frac{\mu_0 I}{4 \pi R^2} (s^2 - b^2) \vu{z}
+</script>
+Here, again, <em>b</em> is arbitrary, except that <strong>A</strong> must be continuous at R (we know that <strong>A</strong> is continuous!)
+<script type="math/tex; mode=display">
+- \frac{\mu_0 I}{2 \pi } \ln (R / a) = - \frac{\mu_0 I}{4 \pi R^2} (R^2 - b^2)
+</script>
+which means that we have to pick <em>a</em> and <em>b</em> such that
+<script type="math/tex; mode=display">
+2 \ln (R / b) = 1 - (b / R)^2
+</script>
+One such combination of <em>a</em> and <em>b</em> is <script type="math/tex"> a = b = R </script>. Then
+<script type="math/tex; mode=display">
+\vec{A} = \begin{cases}
+- \frac{\mu_0 I}{4 \pi R^2} (s^2 - R^2) \vu{z} & \quad \text{ for } s \leq R \\
+- \frac{\mu_0 I}{2 \pi}  \ln(s / R) \vu{z}& \quad \text{ for } s \geq R
+\end{cases}
+</script>
+</p>
+</div>
+<h4 id="problem-537">Problem 5.37</h4>
+<div class="admonition question">
+<p class="admonition-title">(a) A phonograph record of radius R, carrying a uniform surface charge <script type="math/tex"> sigma </script> is rotating at constant angular velocity <script type="math/tex"> \omega </script>. Find its magnetic dipole moment. (b) Find the magnetic dipole moment of the spinning spherical shell in Example 5.11. Show that for points <script type="math/tex"> r > R </script> the potential is that of a perfect dipole.</p>
+<p>(a)
+We get the monopole moment by integrating over the disk of the record. For a ring at radius <em>r</em>, <script type="math/tex"> m = I \pi r^2 </script>. In this case,
+<script type="math/tex; mode=display">
+I \rightarrow \sigma v \dd r = \sigma \omega r \dd r
+</script>
+so
+<script type="math/tex; mode=display">
+m = \int _0 ^R \pi r^2 \sigma \omega r \dd \r = \pi \sigma \omega R^4 / 4
+</script>
+</p>
+<p>(b)
+To get the magnetic dipole moment of our sphere, we need to integrate over the surface of the sphere:
+<p align="center"> <img alt="Figure 5.37a" src="../img/5.37a.png" /> </p>
+The total charge on the shaded ring is <script type="math/tex"> \dd q = \sigma (2 \pi R \sin \theta) R \dd \theta </script>. The time to make one revolution is <script type="math/tex"> \dd t = 2 \pi \omega </script>, so the current in the ring is
+<script type="math/tex; mode=display">
+I = \frac{dq}{dt} = \sigma \omega R^2 \sin \theta \dd \theta
+</script>
+The area of the ring is <script type="math/tex"> \pi (R \sin \theta)^2 </script>, so the magnetic moment of the ring is
+<script type="math/tex; mode=display">
+\dd m = (\sigma \omega R^2 \sin \theta \dd \theta) \pi R^2 \sin ^2 \theta
+</script>
+and the total dipole moment is
+<script type="math/tex; mode=display">
+m = \sigma \omega \pi R^4 \int_0 ^\pi \sin ^3 \theta \dd \theta = (4 / 3) \sigma \omega \pi R^4
+</script>
+and we know that <strong>m</strong> points in the <script type="math/tex"> \vu{z} </script> direction (right-hand-rule), so
+<script type="math/tex; mode=display">
+\vec{m} = \frac{4 \pi}{3} \sigma \omega R^4 \vu{z}
+</script>
+The dipole term in the multipole expansion for <strong>A</strong> is therefore
+<script type="math/tex; mode=display">
+\vec{A}_{dip} = \frac{\mu_0}{4 \pi} \frac{4 \pi}{3} \sigma \omega R^4 \frac{\sin \theta}{r^2} \vu{\phi} = \frac{\mu_0 \sigma \omega R^4}{3} \frac{\sin \theta}{r^2} \vu{\phi}
+</script>
+This is actually the exact vector potential we calculated (Eq. 5.69); evidently a spinning sphere produces a perfect dipole field, with no higher multipole contributions.</p>
+</div>
                 
                   
                 
@@ -917,6 +1085,20 @@ which is just what we got back in Eq. 5.37.</p>
             </div>
           </a>
         
+        
+          <a href="../ch6-1/" title="6.1 - Magnetization" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                6.1 - Magnetization
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
