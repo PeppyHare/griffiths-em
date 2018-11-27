@@ -35,6 +35,9 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
     - [5.2 - The Biot-Savart Law](ch5-2.md)
     - [5.3 - The Divergence and Curl of B](ch5-3.md)
     - [5.4 - Magnetic Vector Potential](ch5-4.md)
+- 6 - Magnetic Fields in Matter
+    - [6.1 - Magnetization](ch6-1.md)
+    - [6.2 - The Field of a Magnetized Object](ch6-2.md)
 
 
 ### Internals

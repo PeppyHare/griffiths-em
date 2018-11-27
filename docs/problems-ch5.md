@@ -102,3 +102,98 @@
     \vec{B} = \frac{\mu_0 I}{4 \pi s} (\sin \theta_2 - \sin \theta_1) \vu{\phi} 
     $$
     which is just what we got back in Eq. 5.37.
+
+#### Problem 5.26
+
+!!! question "(a) By whatever means you can think of (short of looking it up), find the vector potential a distance _s_ from an infinite straight wire carrying a current _I_. Check that \( \div \vec{A} = 0 \) and \( \curl \vec{A} = \vec{B} \). (b) Find the magnetic potential inside the wire, if it has radius R and the current is uniformly distributed."
+
+    (a)
+    As we said, because the current distribution is infinite, we cannot use Eq. 5.65 to get __A__. So let's use some symmetry. __A__ must be parallel (or antiparallel) to __I__, and is a function of only _s_ (the distance from the wire). In cylindrical coordinates, then, \( \vec{A} = A(s) \vu{z} \). We already calculated the magnetic field of an infinite straight wire via Biot-Savart:
+    $$
+    \vec{B} = \frac{\mu_0 I}{2 \pi s} \vu{\phi}
+    $$
+    We can work backwards to get __A__ from __B__ in this case.
+    $$
+    \vec{B} = \curl \vec{A} = - \pdv{A}{s} \vu{\phi} = \frac{\mu_0 I}{2 \pi s} \vu{\phi}
+    $$
+    Therefore
+    $$
+    \pdv{A}{s} = -\frac{\mu_0 I}{2 \pi s} \quad \rightarrow \quad \vec{A}(r) = - \frac{\mu_0 I}{2 \pi} \ln (s / a) \vu{z}
+    $$
+    There is an arbitrary constant _a_ here which doesn't actually affect our gauge at all:
+    $$
+    \div \vec{A} = \pdv{A_z}{z} = 0
+    $$
+    $$
+    \curl \vec{A} = - \pdv{A_z}{s} \vu{\phi} = \frac{\mu_0 I}{2 \pi s} \vu{\phi} = \vec{B}
+    $$
+
+    (b)
+    Ampere's law in this case says
+    $$
+    \oint \vec{B} \cdot \dd \vec{l} = B 2 \pi s = \mu_0 I_{enc} = \mu_0 J \pi s^2 = \mu_0 \frac{I}{\pi R^2} \pi s^2 = \frac{\mu_0 I s^2}{R^2} 
+    $$
+    so, inside the wire,
+    $$
+    \vec{B} = \frac{\mu_0 I s}{2\pi R^2} \vu{\phi}
+    $$
+    From the definition of __A__,
+    $$
+    \pdv{A}{s} = - \frac{\mu_0 I}{2 \pi} \frac{s}{R^2} \rightarrow \vec{A} = -\frac{\mu_0 I}{2 \pi R^2} \int_{b} ^s s \, \dd s =  - \frac{\mu_0 I}{4 \pi R^2} (s^2 - b^2) \vu{z}
+    $$
+    Here, again, _b_ is arbitrary, except that __A__ must be continuous at R (we know that __A__ is continuous!)
+    $$
+    - \frac{\mu_0 I}{2 \pi } \ln (R / a) = - \frac{\mu_0 I}{4 \pi R^2} (R^2 - b^2)
+    $$
+    which means that we have to pick _a_ and _b_ such that
+    $$
+    2 \ln (R / b) = 1 - (b / R)^2
+    $$
+    One such combination of _a_ and _b_ is \( a = b = R \). Then
+    $$
+    \vec{A} = \begin{cases}
+    - \frac{\mu_0 I}{4 \pi R^2} (s^2 - R^2) \vu{z} & \quad \text{ for } s \leq R \\
+    - \frac{\mu_0 I}{2 \pi}  \ln(s / R) \vu{z}& \quad \text{ for } s \geq R
+    \end{cases}
+    $$
+
+#### Problem 5.37
+
+!!! question "(a) A phonograph record of radius R, carrying a uniform surface charge \( sigma \) is rotating at constant angular velocity \( \omega \). Find its magnetic dipole moment. (b) Find the magnetic dipole moment of the spinning spherical shell in Example 5.11. Show that for points \( r > R \) the potential is that of a perfect dipole."
+    
+    (a)
+    We get the monopole moment by integrating over the disk of the record. For a ring at radius _r_, \( m = I \pi r^2 \). In this case,
+    $$
+    I \rightarrow \sigma v \dd r = \sigma \omega r \dd r
+    $$
+    so
+    $$
+    m = \int _0 ^R \pi r^2 \sigma \omega r \dd \r = \pi \sigma \omega R^4 / 4
+    $$
+
+    (b)
+    To get the magnetic dipole moment of our sphere, we need to integrate over the surface of the sphere:
+    <p align="center"> <img alt="Figure 5.37a" src="../img/5.37a.png" /> </p>
+    The total charge on the shaded ring is \( \dd q = \sigma (2 \pi R \sin \theta) R \dd \theta \). The time to make one revolution is \( \dd t = 2 \pi \omega \), so the current in the ring is
+    $$
+    I = \frac{dq}{dt} = \sigma \omega R^2 \sin \theta \dd \theta
+    $$
+    The area of the ring is \( \pi (R \sin \theta)^2 \), so the magnetic moment of the ring is
+    $$
+    \dd m = (\sigma \omega R^2 \sin \theta \dd \theta) \pi R^2 \sin ^2 \theta
+    $$
+    and the total dipole moment is
+    $$
+    m = \sigma \omega \pi R^4 \int_0 ^\pi \sin ^3 \theta \dd \theta = (4 / 3) \sigma \omega \pi R^4
+    $$
+    and we know that __m__ points in the \( \vu{z} \) direction (right-hand-rule), so
+    $$
+    \vec{m} = \frac{4 \pi}{3} \sigma \omega R^4 \vu{z}
+    $$
+    The dipole term in the multipole expansion for __A__ is therefore
+    $$
+    \vec{A}_{dip} = \frac{\mu_0}{4 \pi} \frac{4 \pi}{3} \sigma \omega R^4 \frac{\sin \theta}{r^2} \vu{\phi} = \frac{\mu_0 \sigma \omega R^4}{3} \frac{\sin \theta}{r^2} \vu{\phi}
+    $$
+    This is actually the exact vector potential we calculated (Eq. 5.69); evidently a spinning sphere produces a perfect dipole field, with no higher multipole contributions.
+
+
