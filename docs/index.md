@@ -40,7 +40,9 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
     - [6.2 - The Field of a Magnetized Object](ch6-2.md)
     - [6.3 - The Auxiliary Field](ch6-3.md)
     - [6.4 - Linear and Nonlinear Media](ch6-4.md)
-
+- 7 - Electrodynamics
+    - [7.1 - Electromotive Force](ch7-1.md)
+    - [7.2 - Electromagnetic Induction](ch7-2.md)
 
 ### Internals
 
