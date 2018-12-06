@@ -1,0 +1,1337 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>7.3 - Maxwell's Equations - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Noto Serif","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#73-maxwells-equations" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                My Docs
+              </span>
+              <span class="md-header-nav__topic">
+                7.3 - Maxwell's Equations
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      PeppyHare/griffiths-em
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      1 - Vector Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        1 - Vector Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-1/" title="1.1 - Vector Algebra" class="md-nav__link">
+      1.1 - Vector Algebra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-2/" title="1.2 - Differential Calculus" class="md-nav__link">
+      1.2 - Differential Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-3/" title="1.3 - Integral Calculus" class="md-nav__link">
+      1.3 - Integral Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-4/" title="1.4 - Curvilinear Coordinates" class="md-nav__link">
+      1.4 - Curvilinear Coordinates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-5/" title="1.5 - The Dirac Delta Function" class="md-nav__link">
+      1.5 - The Dirac Delta Function
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-6/" title="1.6 - The Theory of Vector Fields" class="md-nav__link">
+      1.6 - The Theory of Vector Fields
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      2 - Electrostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        2 - Electrostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-1/" title="2.1 - The Electric Field" class="md-nav__link">
+      2.1 - The Electric Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-2/" title="2.2 - Divergence and Curl of Electrostatic Fields" class="md-nav__link">
+      2.2 - Divergence and Curl of Electrostatic Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-3/" title="2.3 - Electric Potential" class="md-nav__link">
+      2.3 - Electric Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-4/" title="2.4 - Work and Energy in Electrostatics" class="md-nav__link">
+      2.4 - Work and Energy in Electrostatics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-5/" title="2.5 - Conductors" class="md-nav__link">
+      2.5 - Conductors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      3 - Potentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        3 - Potentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-1/" title="3.1 - Laplace's Equation" class="md-nav__link">
+      3.1 - Laplace's Equation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-2/" title="3.2 - The Method of Images" class="md-nav__link">
+      3.2 - The Method of Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-3/" title="3.3 - Separation of Variables" class="md-nav__link">
+      3.3 - Separation of Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-4/" title="3.4 - Multipole Expansion" class="md-nav__link">
+      3.4 - Multipole Expansion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch3/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      4 - Electric Fields in Matter
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        4 - Electric Fields in Matter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-1/" title="4.1 - Polarization" class="md-nav__link">
+      4.1 - Polarization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-2/" title="4.2 - The Field of a Polarized Object" class="md-nav__link">
+      4.2 - The Field of a Polarized Object
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-3/" title="4.3 - The Electric Displacement" class="md-nav__link">
+      4.3 - The Electric Displacement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-4/" title="4.4 - Linear Dielectrics" class="md-nav__link">
+      4.4 - Linear Dielectrics
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      5 - Magnetostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        5 - Magnetostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-1/" title="5.1 - The Lorentz Force Law" class="md-nav__link">
+      5.1 - The Lorentz Force Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-4/" title="5.4 - Magnetic Vector Potential" class="md-nav__link">
+      5.4 - Magnetic Vector Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      6 - Magnetic Fields in Matter
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        6 - Magnetic Fields in Matter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch6-1/" title="6.1 - Magnetization" class="md-nav__link">
+      6.1 - Magnetization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch6-2/" title="6.2 - The Field of a Magnetized Object" class="md-nav__link">
+      6.2 - The Field of a Magnetized Object
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch6-3/" title="6.3 - The Auxiliary Field" class="md-nav__link">
+      6.3 - The Auxiliary Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch6-4/" title="6.4 - Linear and Nonlinear Media" class="md-nav__link">
+      6.4 - Linear and Nonlinear Media
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
+    
+    <label class="md-nav__link" for="nav-8">
+      7 - Electrodynamics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        7 - Electrodynamics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch7-1/" title="7.1 - Electromotive Force" class="md-nav__link">
+      7.1 - Electromotive Force
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch7-2/" title="7.2 - Electromagnetic Induction" class="md-nav__link">
+      7.2 - Electromagnetic Induction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        7.3 - Maxwell's Equations
+      </label>
+    
+    <a href="./" title="7.3 - Maxwell's Equations" class="md-nav__link md-nav__link--active">
+      7.3 - Maxwell's Equations
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#731-electrodynamics-before-maxwell" title="7.3.1: Electrodynamics Before Maxwell" class="md-nav__link">
+    7.3.1: Electrodynamics Before Maxwell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#732-how-maxwell-fixed-amperes-law" title="7.3.2: How Maxwell Fixed Ampere's Law" class="md-nav__link">
+    7.3.2: How Maxwell Fixed Ampere's Law
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-714" title="Example 7.14" class="md-nav__link">
+    Example 7.14
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#733-maxwells-equations" title="7.3.3 Maxwell's Equations" class="md-nav__link">
+    7.3.3 Maxwell's Equations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#734-magnetic-charge" title="7.3.4: Magnetic Charge" class="md-nav__link">
+    7.3.4: Magnetic Charge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#735-maxwells-equations-in-matter" title="7.3.5: Maxwell's Equations in Matter" class="md-nav__link">
+    7.3.5: Maxwell's Equations in Matter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#736-boundary-conditions" title="7.3.6: Boundary Conditions" class="md-nav__link">
+    7.3.6: Boundary Conditions
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#731-electrodynamics-before-maxwell" title="7.3.1: Electrodynamics Before Maxwell" class="md-nav__link">
+    7.3.1: Electrodynamics Before Maxwell
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#732-how-maxwell-fixed-amperes-law" title="7.3.2: How Maxwell Fixed Ampere's Law" class="md-nav__link">
+    7.3.2: How Maxwell Fixed Ampere's Law
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-714" title="Example 7.14" class="md-nav__link">
+    Example 7.14
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#733-maxwells-equations" title="7.3.3 Maxwell's Equations" class="md-nav__link">
+    7.3.3 Maxwell's Equations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#734-magnetic-charge" title="7.3.4: Magnetic Charge" class="md-nav__link">
+    7.3.4: Magnetic Charge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#735-maxwells-equations-in-matter" title="7.3.5: Maxwell's Equations in Matter" class="md-nav__link">
+    7.3.5: Maxwell's Equations in Matter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#736-boundary-conditions" title="7.3.6: Boundary Conditions" class="md-nav__link">
+    7.3.6: Boundary Conditions
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/PeppyHare/griffiths-em/edit/master/docs/ch7-3.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="73-maxwells-equations">7.3: Maxwell's Equations</h1>
+<hr />
+<h2 id="731-electrodynamics-before-maxwell">7.3.1: Electrodynamics Before Maxwell</h2>
+<p>So far, we have encountered the following laws, specifying the divergence and curl of electric and magnetic fields</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{align*}
+(\text{i}) & \quad \div \vec{E} = \frac{1}{\epsilon_0 } \rho \quad \text{(Gauss's law)} \\
+(\text{ii}) & \quad \div \vec{B} = 0 \quad \text{(Ng's Law)} \\
+(\text{iii}) & \quad \curl \vec{E} = - \pdv{\vec{B}}{t} \quad \text{(Faraday's Law}) \\
+(\text{iv}) & \quad \curl \vec{B} = \mu_0 \vec{J} \quad \text{(Ampere's Law)}
+\end{align*}
+</script>
+These equations represent the state of electromagnetic theory in the mid-nineteenth century, when Maxwell began his work. They were not written in so compact a form, in those days, but their physical content was familiar. Now, it happens that there is a fatal inconsistency in these formulas. It has to do with the old rule that divergence of curl is always zero. If you apply the divergence to number (iii), everything works out:
+<script type="math/tex; mode=display">
+\div (\curl \vec{E}) = \div \left( - \pdv{\vec{B}}{t} \right) = - \pdv{}{t} (\div \vec{B})
+</script>
+The left side is zero because divergence of curl is zero; the right side is zero by virtue of equation (ii). But when you do the same thing to number (iv), you get into trouble:
+<script type="math/tex; mode=display">
+\div (\curl \vec{B}) = \mu_0 (\div \vec{J}) \tagl{7.36}
+</script>
+the left side must be zero, but the right side, in general, is not. For steady currents, the divergence of J is zero, but when we go beyond magnetostatics Ampere's law cannot be right.</p>
+<p align="center"> <img alt="Figure 7.43" src="../img/7.43.png" /> </p>
+
+<p>There's another way to see that Ampere's law is bound to fail for non-steady currents. Suppose we're in the process of charging up a capacitor (Fig. 7.43). In integral form, Ampere's law reads
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd \vec{l} = \mu_0 I_{enc}
+</script>
+I want to apply it to the Amperian loop shown in the diagram. How do I deter- mine <script type="math/tex"> I_{enc} </script> ? Well, it's the total current passing through the loop, or, more precisely, the current piercing a surface that has the loop for its boundary. In this case, the simplest surface lies in the plane of the loop - the wire punctures this surface, so <script type="math/tex"> I_{enc} = I </script> . Fine - but what if I draw instead the balloon-shaped surface in Fig. 7.43? No current passes through this surface, and I conclude that <script type="math/tex"> I_{enc} = 0 </script> ! We never had this problem in magnetostatics because the conflict arises only when charge is piling up somewhere (in this case, on the capacitor plates). But for nonsteady currents (such as this one) "the current enclosed by the loop" is an ill-defined notion; it depends entirely on what surface you use. (If this seems pedantic to you - "obviously one should use the plane surface" - remember that the Amperian loop could be some contorted shape that doesn't even lie in a plane.)</p>
+<p>Of course, we had no right to expect Ampere's law to hold outside of magnetostatics; after all, we derived it from the Biot-Savart law. However, in Maxwell's time there was no experimental reason to doubt that Ampere's law was of wider validity. The flaw was a purely theoretical one, and Maxwell fixed it by purely theoretical arguments.</p>
+<h2 id="732-how-maxwell-fixed-amperes-law">7.3.2: How Maxwell Fixed Ampere's Law</h2>
+<p>The problem is on the right side of Eq. 7.36, which should be zero, but isn't. Applying the continuity equation (5.29) and Gauss's law, the offending term can be rewritten:
+<script type="math/tex; mode=display">
+\div \vec{J} = - \pdv{\rho}{t} = - \pdv{}{t} ( \epsilon_0 \div \vec{E}) = - \div \left( \epsilon_0 \pdv{\vec{E}}{t} \right)
+</script>
+If we were to combine <script type="math/tex"> \epsilon_0 (\partial \vec{E} / \partial t) </script> with <script type="math/tex"> \vec{J} </script>, in Ampere's law, it would be just right to kill off the extra divergence:
+<script type="math/tex; mode=display">
+\curl \vec{B} = \mu_0 \vec{J} + \mu_0 \epsilon_0 \pdv{\vec{E}}{t} \tagl{7.37}
+</script>
+</p>
+<p>(Maxwell himself had other reasons for wanting to add this quantity to Ampere's law. To him, the rescue of the continuity equation was a happy dividend rather than a primary motive. But today we recognize this argument as a far more compelling one than Maxwell's, which was based on a now-discredited model of the ether.)</p>
+<p>Such a modification changes nothing, as far as magnetostatics is concerned: when <script type="math/tex"> \vec{E} </script>  is constant, we still have <script type="math/tex"> \curl \vec{B} = \mu_0 \vec{J} </script> . In fact, Maxwell's term is hard to detect in ordinary electromagnetic experiments, where it must compete for attention with <script type="math/tex"> \vec{J} </script> - that's why Faraday and the others never discovered it in the laboratory. However, it plays a crucial role in the propagation of electromagnetic waves, as we'll see in Chapter 9.</p>
+<p>Apart from curing the defect in Ampere's law, Maxwell's term has a certain aesthetic appeal: Just as a changing magnetic field induces an electric field (Faraday's law), so
+<script type="math/tex; mode=display">
+\textbf{A changing electric field induces a magnetic field}
+</script>
+Of course, theoretical convenience and aesthetic consistency are only suggestive - there might, after all, be other ways to doctor up Ampere's law. The real confirmation of Maxwell's theory came in 1888 with Hertz's experiments on electromagnetic waves.</p>
+<p>Maxwell called his extra term the <strong>displacement current</strong>:
+<script type="math/tex; mode=display">
+\vec{J}_d = \epsilon_0 \pdv{\vec{E}}{t} \tagl{7.38}
+</script>
+</p>
+<p>(It's a misleading name; <script type="math/tex"> \epsilon_0 (\partial \vec{E} / \partial t) </script>  has nothing to do with current, except that it adds to <script type="math/tex"> \vec{J} </script>  in Ampere's law.) Let's see now how displacement current resolves the paradox of the charging capacitor (Fig. 7.43). If the capacitor plates are very close together (I didn't draw them that way, but the calculation is simpler if you assume this), then the electric field between them is</p>
+<p>
+<script type="math/tex; mode=display">
+E = \frac{1}{\epsilon_0} \sigma = \frac{1}{\epsilon_0 } \frac{Q}{A} 
+</script>
+where Q is the charge on the plate and <script type="math/tex"> A </script> is its area. Thus, between the plates
+<script type="math/tex; mode=display">
+\pdv{E}{t} = \frac{1}{\epsilon_0 A} \dv{Q}{t} = \frac{1}{\epsilon_0 A} I
+</script>
+Now, Eq. 7.37 reads, in integral form
+<script type="math/tex; mode=display">
+\oint \vec{B} \cdot \dd \vec{l} = \mu_0 I_{enc} + \mu_0 \epsilon_0 \int \left( \pdv{\vec{E}}{t} \right) \cdot \dd \vec{a} \tagl{7.39}
+</script>
+</p>
+<p>If we choose the flat surface, then <script type="math/tex"> E = 0 </script>  and <script type="math/tex"> I_{enc} = I </script> . If, on the other hand, we use the balloon-shaped surface, then <script type="math/tex"> I_{enc} = 0 </script> , but <script type="math/tex"> \int (\partial \vec{E} / \partial t) \cdot \dd \vec{a} = I / \epsilon_0 </script> . So we get the same answer for either surface, though in the first case it comes from the conduction current, and in the second from the displacement current.</p>
+<h4 id="example-714">Example 7.14</h4>
+<div class="admonition question">
+<p class="admonition-title">Imagine two concentric metal spherical shells (Fig. 7.44). The inner one (radius <script type="math/tex"> a </script> ) carries a charge <script type="math/tex"> Q(t) </script> , and the outer one (radius <script type="math/tex"> b </script> ) an opposite charge <script type="math/tex"> -Q(t) </script> . The space between them is filled with Ohmic material of conductivity <script type="math/tex"> \sigma </script> , so a radial current flows <script type="math/tex; mode=display"> \vec J = \sigma \vec E = \sigma \frac{1}{4 \pi \epsilon_0} \frac{Q}{r^2} \vu{r}; \quad I = - \dot{Q} = \int \vec J \cdot \dd \vec a = \frac{\sigma Q}{\epsilon_0}  </script> This configuration is spherically symmetrical, so the magnetic field has to be zero (the only direction it could possibly point is radial, and <script type="math/tex"> \div \vec B = 0 \rightarrow \oint \vec B \cdot \dd \vec a = B(4 \pi r^2) = 0 </script>, so <script type="math/tex"> B = 0 </script>). What? I thought currents produce magnetic fields! Isn't that what Biot-Savart and Ampere taught us? How can there be a <script type="math/tex"> \vec J </script> with no accompanying <script type="math/tex"> \vec B </script>?</p>
+<p><strong>Solution</strong>
+This is not a static configuration! <script type="math/tex"> Q, \vec E, \vec J </script> are all functions of time; Ampere and Biot-Savart do not apply. The displacement current
+<script type="math/tex; mode=display">
+J_d = \epsilon_0 \pdv{\vec E}{t} = \frac{1}{4 \pi} \frac{\dot{Q}}{r^2} \vu{r} = - \sigma \frac{Q}{4 \pi \epsilon_0 r^2} \vu{r}
+</script>
+exactly cancels the conduction current (in Eq. 7.37), and the magnetic field (determined by <script type="math/tex"> \div \vec{B} = 0 </script> and <script type="math/tex"> \curl \vec{B} = 0 </script> is indeed zero.</p>
+</div>
+<h2 id="733-maxwells-equations">7.3.3 Maxwell's Equations</h2>
+<p>In the last section we put the finishing touches on Maxwell's equations:</p>
+<div class="admonition info">
+<p class="admonition-title">Maxwell's Equations: <script type="math/tex; mode=display"> \begin{align*} (\text{i}) & \quad \div \vec{E} = \frac{1}{\epsilon_0 } \rho \quad \text{(Gauss's law)} \\ (\text{ii}) & \quad \div \vec{B} = 0 \quad \text{(Ng's Law)} \\ (\text{iii}) & \quad \curl \vec{E} = - \pdv{\vec{B}}{t} \quad \text{(Faraday's Law}) \\ (\text{iv}) & \quad \curl \vec{B} = \mu_0 \vec{J} + \mu_0 \epsilon_0 \pdv{\vec{E}}{t} \quad \text{(Ampere's Law)} \end{align*} \tagl{7.40} </script>
+</p>
+</div>
+<p>Together, with the force law,
+<script type="math/tex; mode=display">
+\vec{F} q (\vec{E} + \vec{v} \cross \vec{B}) \tagl{7.41}
+</script>
+they summarize the entire theoretical content of classical electrodynamics (save for some special properties of matter, which we encountered in Chapters 4 and 6). Even the continuity equation,
+<script type="math/tex; mode=display">
+\div \vec{J} = - \pdv{\rho}{t} \tagl{7.42}
+</script>
+which is the mathematical expression of conservation of charge, can be derived from Maxwell's equations by applying the divergence to number (iv).</p>
+<p>I have written Maxwell's equations in the traditional way, which emphasizes that they specify the divergence and curl of <script type="math/tex"> \vec{E} </script>  and <script type="math/tex"> \vec{B} </script> . In this form, they reinforce the notion that electric fields can be produced either by charges (<script type="math/tex"> \rho </script> ) or by changing magnetic fields (<script type="math/tex"> \partial \vec{B} / \partial t </script> ), and magnetic fields can be produced either by currents (<script type="math/tex"> \vec{J} </script> ) or by changing electric fields (<script type="math/tex"> \partial \vec{E} / \partial t </script> ). Actually, this is misleading, because <script type="math/tex"> \partial \vec{B} / \partial t </script>  and <script type="math/tex"> \partial \vec{E} / \partial t </script>  are themselves due to charges and currents. I think it is logically preferable to write</p>
+<p>
+<script type="math/tex; mode=display">
+\div \vec{E} = \frac{1}{\epsilon_0} \rho
+</script>
+<script type="math/tex; mode=display">
+\div \vec{B} = 0
+</script>
+<script type="math/tex; mode=display">
+\curl \vec{E} + \pdv{\vec{B}}{t} = 0
+</script>
+<script type="math/tex; mode=display">
+\curl \vec{B} - \mu_0 \epsilon_0 \pdv{\vec{E}}{t} = \mu_0 \vec{J}
+</script>
+</p>
+<p>with the fields (<script type="math/tex"> \vec{E} </script>  and <script type="math/tex"> \vec{B} </script> ) on the left and the sources (<script type="math/tex"> \rho </script>  and <script type="math/tex"> \vec{J} </script> ) on the right. This notation emphasizes that all electromagnetic fields are ultimately attributable to charges and currents. Maxwell's equations tell you how charges produce fields; reciprocally, the force law tells you how fields affect charges.</p>
+<h2 id="734-magnetic-charge">7.3.4: Magnetic Charge</h2>
+<p>There is a pleasing symmetry to Maxwell's equations; it is particularly striking in free space, where <script type="math/tex"> \rho </script> and <script type="math/tex"> \vec J </script> vanish
+<script type="math/tex; mode=display">
+\div \vec E = 0 \qquad \curl \vec E = - \pdv{\vec B}{t} \\
+\div \vec B = 0 \qquad \curl \vec B = - \mu_0 \epsilon_0 \pdv{\vec E}{t}
+</script>
+</p>
+<p>If you replace <script type="math/tex"> \vec E </script> by <script type="math/tex"> \vec B </script> and <script type="math/tex"> \vec B </script> by <script type="math/tex"> - \mu_0 \epsilon_0 \vec E </script>, the first pair of equations turns into the second, and vice versa. This symmetry between <script type="math/tex"> \vec E </script> and <script type="math/tex"> \vec B </script> is spoiled, though, by the charge term in Gauss's law and the current term in Ampere's law. You can't help wondering why the corresponding quantities are "missing" from <script type="math/tex"> \div \vec B = 0 </script> and <script type="math/tex"> \curl \vec E = - \partial \vec B / \partial t </script> . What if we had</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{align*}
+(\text{i}) & \quad \div \vec{E} = \frac{1}{\epsilon_0 } \rho_e \\
+(\text{ii}) & \quad \div \vec{B} = \mu_0 \rho_m \\
+(\text{iii}) & \quad \curl \vec{E} = - \mu_0 \vec{J}_m  - \pdv{\vec{B}}{t} \\
+(\text{iv}) & \quad \curl \vec{B} = \mu_0 \vec{J} + \mu_0 \epsilon_0 \pdv{\vec{E}}{t}
+\end{align*} \tagl{7.44}
+</script>
+</p>
+<p>Then <script type="math/tex"> \rho_m </script> would represent the density of magnetic "charge", and <script type="math/tex"> \rho_e </script> the density of electric charge; <script type="math/tex"> \vec J_m </script> would be the current of magnetic charge, and <script type="math/tex"> \vec J_e </script> the current of electric charge. Both charges would be conserved:
+<script type="math/tex; mode=display">
+\div \vec{J}_m = - \pdv{\rho_m}{t} \quad \div \vec{J}_e = - \pdv{\rho_e}{t} \tagl{7.45}
+</script>
+The former follows by application of the divergence to (iii), the latter by taking the divergence of (iv).</p>
+<p>In a sense, Maxwell's equations beg for magnetic charge to exist - it would fit in so nicely. And yet, in spite of a diligent search, no one has ever found any. As far as we know, <script type="math/tex"> \rho_m </script>  is zero everywhere, and so is <script type="math/tex"> \vec J_m </script> ; <script type="math/tex"> \vec B </script>  is not on equal footing with <script type="math/tex"> \vec E </script> : there exist stationary sources for <script type="math/tex"> \vec E </script>  (electric charges) but none for <script type="math/tex"> \vec B </script> . (This is reflected in the fact that magnetic multipole expansions have no monopole term, and magnetic dipoles consist of current loops, not separated north and south "poles.") In quantum electrodynamics, by the way, it's a more than merely aesthetic shame that magnetic charge does not seem to exist: Dirac showed that the existence of magnetic charge would explain why electric charge is quantized. </p>
+<h2 id="735-maxwells-equations-in-matter">7.3.5: Maxwell's Equations in Matter</h2>
+<p>Maxwell's equations in the form 7.40 are complete and correct as they stand. However, when you are working with materials that are subject to electric and magnetic polarization there is a more convenient way to write them. For inside polarized matter there will be accumulations of "bound" charge and current, over which you exert no direct control. It would be nice to reformulate Maxwell's equations so as to make explicit reference only to the "free" charges and currents.</p>
+<p>We have already learned, from the static case, that an electric polarization <script type="math/tex"> \vec{P} </script>  produces a bound charge density</p>
+<p>
+<script type="math/tex; mode=display">
+\rho_b = - \div \vec{P} \tagl{7.47}
+</script>
+(Eq. 4.12). Likewise, a magnetic polarization (or "magnetization") <script type="math/tex"> \vec{M} </script> results in a bound current
+<script type="math/tex; mode=display">
+\vec{J}_b = \curl \vec{M} \tagl{7.48}
+</script>
+(Eq. 6.13). There's just one new feature to consider in the nonstatic case: Any change in the electric polarization involves a flow of (bound) charge (call it <script type="math/tex"> \vec{J}_p </script> ), which must be included in the total current. For suppose we examine a tiny chunk of polarized material (Fig. 7.47). The polarization introduces a charge density <script type="math/tex"> \sigma_b = P </script> at one end and <script type="math/tex"> - \sigma_b </script> at the other (Eq. 4.11). If <script type="math/tex"> P </script>  now increases a bit, the charge on each end increases accordingly, giving a net current</p>
+<p>
+<script type="math/tex; mode=display">
+\dd I = \pdv{\sigma_b}{t} \dd a_{\perp} = \pdv{P}{t} \dd a_{\perp}
+</script>
+The current density, therefore, is
+<script type="math/tex; mode=display">
+\vec{J}_p = \pdv{\vec{P}}{t} \tagl{7.49}
+</script>
+</p>
+<p>This <strong>polarization current</strong> has nothing to do with the bound current <script type="math/tex"> \vec{J}_b </script> . The latter is associated with magnetization of the material and involves the spin and orbital motion of electrons; <script type="math/tex"> \vec{J}_p </script>  by contrast, is the result of the linear motion of charge when the electric polarization changes. If <script type="math/tex"> P </script>  points to the right, and is increasing, then each plus charge moves a bit to the right and each minus charge to the left; the cumulative effect is the polarization current <script type="math/tex"> \vec{J}_p </script>  . We ought to check that Eq. 7.49 is consistent with the continuity equation:
+<script type="math/tex; mode=display">
+\div \vec{J}_p = \div \pdv{\vec{P}}{t} = \pdv{}{t} ( \div \vec{P}) = - \pdv{\rho_b}{t}
+</script>
+<p align="center"> <img alt="Figure 7.47" src="../img/7.47.png" /> </p>
+Yes: the continuity equation is satisfied: in fact <script type="math/tex"> \vec{J}_p </script> is essential to ensure the conservation of bound charge. (Incidentally, a changing magnetization does not lead to any analogous accumulation of charge or current. The bound current <script type="math/tex"> \vec{J}_b = \curl \vec{M} </script> varies in response to <script type="math/tex"> \vec{M} </script> , to be sure, but that's about it.)</p>
+<p>In view of all this, the total charge density can be separated into two parts:
+<script type="math/tex; mode=display">
+\rho = \rho_f + \rho_b = \rho_f - \div \vec{P} \tagl{7.50}
+</script>
+and the current density into three parts
+<script type="math/tex; mode=display">
+\vec{J} = \vec{J}_f + \vec{J}_b + \vec{J}_p = \vec{J}_f + \curl \vec{M} + \pdv{\vec{P}}{t} \tagl{7.51}
+</script>
+Gauss's law can now be written as
+<script type="math/tex; mode=display">
+\div \vec{E} = \frac{1}{\epsilon_0} (\rho _f - \div \vec{P})
+</script>
+or
+<script type="math/tex; mode=display">
+\div \vec{D} = \rho_f \tagl{7.52}
+</script>
+where, as in the static case
+<script type="math/tex; mode=display">
+\vec{D} = \epsilon_0 \vec{E} + \vec{P} \tagl{7.53}
+</script>
+</p>
+<p>Meanwhile, Ampere's law (with Maxwell's term) becomes
+<script type="math/tex; mode=display">
+\curl \vec{B} = \mu_0 \left( \vec{J}_f + \curl \vec{M} + \pdv{\vec{P}}{t} \right) + \mu_0 \epsilon_0 \pdv{\vec{E}}{t}
+</script>
+or
+<script type="math/tex; mode=display">
+\curl \vec{H} = \vec{J}_f + \pdv{\vec{D}}{t} \tagl{7.54}
+</script>
+where, as before
+<script type="math/tex; mode=display">
+\vec{H} \equiv \frac{1}{\mu_0} \vec{B} - \vec{M} \tagl{7.55}
+</script>
+Faraday's law and <script type="math/tex"> \div \vec{B} = 0 </script> are not affected by our separation of charge and current into free and bound parts, since they do not involve <script type="math/tex"> \rho </script> or <script type="math/tex"> \vec{J} </script> . </p>
+<p>In terms of free charges and currents, then, Maxwell's equations read</p>
+<div class="admonition info">
+<p class="admonition-title">Maxwell's Equations in Matter: <script type="math/tex; mode=display"> \begin{align*} (\text{i}) & \quad \div \vec{D} = \rho_f \quad \text{(Gauss's law)} \\ (\text{ii}) & \quad \div \vec{B} = 0 \quad \text{(Ng's Law)} \\ (\text{iii}) & \quad \curl \vec{E} = - \pdv{\vec{B}}{t} \quad \text{(Faraday's Law}) \\ (\text{iv}) & \quad \curl \vec{H} = \vec{J}_f + \pdv{\vec{D}}{t} \quad \text{(Ampere's Law)} \end{align*}  \tagl{7.56} </script>
+</p>
+</div>
+<p>Some people regard these as the "true" Maxwell's equations, but please understand that they are in no way more "general" than Eq. 7.40; they simply reflect a convenient division of charge and current into free and nonfree parts. And they have the disadvantage of hybrid notation, since they contain both <script type="math/tex"> \vec{E} </script>  and <script type="math/tex"> \vec{D} </script> , both <script type="math/tex"> \vec{B} </script>  and <script type="math/tex"> \vec{H} </script> . They must be supplemented, therefore, by appropriate <strong>constitutive relations</strong>, giving <script type="math/tex"> \vec{D} </script>  and <script type="math/tex"> \vec{H} </script>  in terms of <script type="math/tex"> \vec{E} </script>  and <script type="math/tex"> \vec{B} </script> . These depend on the nature of the material; for linear media
+<script type="math/tex; mode=display">
+\vec{P} = \epsilon_0 \chi_e \vec{E} \qquad \text{ and } \qquad \vec{M} = \chi_m \vec{H} \tagl{7.57}
+</script>
+so
+<script type="math/tex; mode=display">
+\vec{D} = \epsilon \vec{E} \qquad \text{ and } \qquad \vec{H} = \frac{1}{\mu} \vec{B} \tagl{7.58}
+</script>
+where <script type="math/tex"> \epsilon = \epsilon_0 (1 + \chi_e) </script> and <script type="math/tex"> \mu = \mu_0 (1 + \chi_m) </script>. Incidentally, you'll remember that <script type="math/tex"> \vec{D} </script> is called the electric "displacement"; that's why the second term in the Ampere/Maxwell equation came to be called the <strong>displacement current</strong>. In this context
+<script type="math/tex; mode=display">
+\vec{J}_d \equiv \pdv{\vec{D}}{t} \tagl{7.59}
+</script>
+</p>
+<h2 id="736-boundary-conditions">7.3.6: Boundary Conditions</h2>
+<p>In general, the fields <script type="math/tex"> \vec{E}, \vec{B}, \vec{D}, </script> and <script type="math/tex"> \vec{H} </script> will be discontinuous at a boundary between two different media, or at a surface that carries a surface charge density <script type="math/tex"> \sigma </script> or a current density <script type="math/tex"> \vec{K} </script>. The explicity form of these discontinuities can be deduced from Maxwell's equations in their integral form</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{align*}
+(1) \quad & \oint_S \vec{D} \cdot \dd \vec{a} = Q_{f, enc} \\
+(2) \quad & \oint _S \vec{B} \cdot \dd \vec{a} = 0 \\
+(3) \quad & \oint _P \vec{E} \cdot \dd \vec{l} = - \dv{}{t} \int _S \vec{B} \cdot \dd \vec{a} \\
+(4) \quad & \oint _P \vec{H} \cdot \dd \vec{l} = I_{f, enc} + \dv{}{t} \int_S \vec{D} \cdot \dd \vec a
+\end{align*}
+</script>
+</p>
+<p align="center"> <img alt="Figure 7.48" src="../img/7.48.png" /> </p>
+
+<p>Applying (1) to a tiny, wafer-thin Gaussian pillbox extending just slightly into the material on either side of the boundary (Fig 7.48), we obtain
+<script type="math/tex; mode=display">
+\vec{D}_1 \cdot \vec{a} - \vec{D}_2 \cdot \vec a = \sigma_f a
+</script>
+(The positive direction for <script type="math/tex"> \vec a  </script> is from 2 toward 1. The edge of the wafer contributes nothing in the limit as the thickness goes to zero; nor does any volume charge density.) Thus, the component of <script type="math/tex"> \vec D </script> that is perpendicular to the interface is discontinuous in the amount
+<script type="math/tex; mode=display">
+D_1 ^\perp - D_2 ^\perp = \sigma_f \tagl{7.60}
+</script>
+Identical reasoning, applied to equation (2) yields
+<script type="math/tex; mode=display">
+B_1 ^\perp - B_2 ^\perp = 0 \tagl{7.61}
+</script>
+Turning to (3), a very thin Amperian loop straddling the surface gives
+<script type="math/tex; mode=display">
+\vec{E_1} \cdot \vec{l} - \vec{E_2} \cdot \vec{l} = - \dv{}{t} \int_S \vec{B} \cdot \dd \vec a 
+</script>
+But in the limit as the width of the loop goes to zero, the flux vanishes. (I have already dropped the contribution of the two ends to <script type="math/tex"> \oint \vec{E} \cdot \dd \vec l </script>, on the same grounds) </p>
+<p>Therefore,
+<script type="math/tex; mode=display">
+\vec{E}_1 ^\parallel - \vec{E}_2 ^\parallel = 0 \tagl{7.62}
+</script>
+</p>
+<p>That is, the components of <script type="math/tex"> \vec E </script> parallel to the interface are continuous across the boundary. By the same token, (4) implies
+<script type="math/tex; mode=display">
+\vec{H}_1 \cdot \vec l - \vec{H}_2 \cdot \vec l = I_{f, enc}
+</script>
+where <script type="math/tex"> I_{f, enc} </script> is the free current passing through the Amperian loop. No volume current density will contribute (in the limit of infinitesimal width), but a surface current can. In fact, if <script type="math/tex"> \vu{n} </script> is a unit vector perpendicular to the interface (pointing from 2 toward 1), so that <script type="math/tex"> (\vu{n} \cross \vec l ) </script> is normal to the Amperian loop (Fig 7.49), the
+<script type="math/tex; mode=display">
+I_{f, enc} = \vec{K_f} \cdot (\vu n \cdot \vec l) = (\vec{K_f} \cross \vu n) \cdot \vec l
+</script>
+<p align="center"> <img alt="Figure 7.49" src="../img/7.49.png" /> </p>
+and hence
+<script type="math/tex; mode=display">
+\vec{H}_1 ^\parallel - \vec{H}_2 ^\parallel = \vec{K}_f \cross \vu n \tagl{7.63}
+</script>
+So the parallel components of <script type="math/tex"> \vec H </script> are discontinuous by an amount proportional to the free surface current density.</p>
+<p>Equations 7.60-63 are the general boundary conditions for electrodynamics. In the case of linear media, they can be expressed in terms of <script type="math/tex"> \vec E </script> and <script type="math/tex"> \vec B </script> alone</p>
+<p>
+<script type="math/tex; mode=display">
+\begin{align*}
+(1) \quad & \epsilon_1 E_1 ^\perp - \epsilon_2 E_2 ^\perp = \sigma_f \\
+(2) \quad & \vec{B}_1 ^\perp - \vec{B}_2 ^\perp = 0 \\
+(3) \quad & \vec{E}_1 ^\parallel - \vec{E}_2 ^\parallel = 0 \\
+(4) \quad & \frac{1}{\mu_1} \vec{B}_1 ^\parallel - \frac{1}{\mu_2} \vec{B}_2 ^\parallel = \vec{K}_f \cross \vu{n}
+\end{align*} \tagl{7.64}
+</script>
+</p>
+<p>In particular, if there is no free charge or free current at the interface, then
+<script type="math/tex; mode=display">
+\begin{align*}
+(1) \quad & \epsilon_1 E_1 ^\perp - \epsilon_2 E_2 ^\perp = 0 \\
+(2) \quad & \vec{B}_1 ^\perp - \vec{B}_2 ^\perp = 0 \\
+(3) \quad & \vec{E}_1 ^\parallel - \vec{E}_2 ^\parallel = 0 \\
+(4) \quad & \frac{1}{\mu_1} \vec{B}_1 ^\parallel - \frac{1}{\mu_2} \vec{B}_2 ^\parallel = 0
+\end{align*} \tagl{7.65}
+</script>
+</p>
+<p>These equations provide the basis for the theory of reflection and refraction.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ch7-2/" title="7.2 - Electromagnetic Induction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                7.2 - Electromagnetic Induction
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../extra.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
