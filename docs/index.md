@@ -43,6 +43,7 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
 - 7 - Electrodynamics
     - [7.1 - Electromotive Force](ch7-1.md)
     - [7.2 - Electromagnetic Induction](ch7-2.md)
+    - [7.3 - Maxwell's Equations](ch7-3.md)
 
 ### Internals
 
