@@ -1110,9 +1110,15 @@ Checking Poynting's theorem...
 <script type="math/tex; mode=display">
 \div \vec S = \frac{1}{s} \pdv{}{s} \left( s S_s \right) = \frac{I^2 t}{\pi^2 a^4 \epsilon_0} \quad \checkmark
 </script>
-(c) The power flowing into the gap:
+(c) The power flowing into the gap: we add a negative sign, since conventionally the normal direction is outwards, and the poynting vector points inwards.
 <script type="math/tex; mode=display">
-- \frac{1}{\mu_0} \int (\vec E \cross \vec B) \cdot \dd \vec a = 
+- \frac{1}{\mu_0} \int (\vec E \cross \vec B) \cdot \dd \vec a = + \frac{1}{\epsilon_0} \frac{I^2 s t}{2 \pi^2 a^4} \cross 2 \pi a w \\
+= \frac{1}{\epsilon_0} \frac{I^2 t w}{\pi a^2}
+</script>
+The rate of increase of energy in the gap would be the time integral of the volume integral of the energy density <script type="math/tex"> u_{em} </script> in the gap. Again, the area of the cylinder is <script type="math/tex"> \pi a^2 w </script>
+<script type="math/tex; mode=display">
+\dv{}{t} \left[ \int u_{em} \dd \tau \right] = \dv{}{t} \frac{I^2}{2 \pi^2 a^4} \frac{t^2}{\epsilon_0} \cdot \pi a^2 w \\ 
+= \frac{I^2 t}{\epsilon_0 \pi a^2 } = - \oint \vec S \cdot \dd \vec a \quad \checkmark
 </script>
 </p>
 </div>
