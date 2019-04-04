@@ -35,6 +35,7 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
     - [5.2 - The Biot-Savart Law](ch5-2.md)
     - [5.3 - The Divergence and Curl of B](ch5-3.md)
     - [5.4 - Magnetic Vector Potential](ch5-4.md)
+    - [Chapter 5 Problems](problems-ch5.md)
 - 6 - Magnetic Fields in Matter
     - [6.1 - Magnetization](ch6-1.md)
     - [6.2 - The Field of a Magnetized Object](ch6-2.md)
@@ -44,6 +45,10 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
     - [7.1 - Electromotive Force](ch7-1.md)
     - [7.2 - Electromagnetic Induction](ch7-2.md)
     - [7.3 - Maxwell's Equations](ch7-3.md)
+    - [Chapter 7 Problems](problems-ch7.md)
+- 8 - Conservation Laws
+    - [8.0 - Phys 544 Introduction](ch8-0.md)
+    - [8.1 - Charge and Energy](ch8-1.md)
 
 ### Internals
 

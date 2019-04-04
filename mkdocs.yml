@@ -40,13 +40,19 @@ nav:
       - 7.1 - Electromotive Force: ch7-1.md
       - 7.2 - Electromagnetic Induction: ch7-2.md
       - 7.3 - Maxwell's Equations: ch7-3.md
+      - Problems: problems-ch7.md
+    - 8 - Conservation Laws:
+      - 8.0 - Phys544 Introduction: ch8-0.md
+      - 8.1 - Charge and Energy: ch8-1.md
 
 # Cool material theme: https://squidfunk.github.io/mkdocs-material/
 theme:
   name: 'material'
   font:
-    text: 'Noto Serif'
-    code: 'Roboto Mono'
+    # text: 'Noto Serif'
+    # code: 'Roboto Mono'
+  text: IBM Plex Sans
+  code: IBM Plex Mono
   language: 'en'
   feature:
     tabs: false
