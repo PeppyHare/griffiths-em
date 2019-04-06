@@ -1,10 +1,10 @@
-# Griffiths - Introduction to Electrodynamics
+    # Griffiths - Introduction to Electrodynamics
 
 ## [https://peppyhare.github.io/griffiths-em/](https://peppyhare.github.io/griffiths-em/)
 
-This is basically just a web-friendly version of David Griffiths' [Introduction to Electrodynamics, 4th Ed.](https://www.pearson.com/us/higher-education/program/Griffiths-Introduction-to-Electrodynamics-4th-Edition/PGM249908.html). These are my class notes for the University of Washington's PHYS 543. This is mostly an exercise for myself in learning about Mkdocs, MathJax, and physics!
+This is basically just a web-friendly version of David Griffiths' [Introduction to Electrodynamics, 4th Ed.](https://www.pearson.com/us/higher-education/program/Griffiths-Introduction-to-Electrodynamics-4th-Edition/PGM249908.html). These are my class notes for the University of Washington's PHYS 543/544 series. This is mostly an exercise for myself in learning about Mkdocs, MathJax, and physics!
 
-Click around in the sidebar to find a chapter to read, or follow the links at the bottom of the page to read in order! Don't forget to try out the interface on mobile, it's very slick ;)
+Click around in the sidebar to find a chapter to read, or follow the links at the bottom of the page to read in order.
 
 ### Internals
 

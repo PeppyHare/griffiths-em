@@ -62,7 +62,7 @@ theme:
   direction:
   favicon: assets/images/favicon.png
   logo:
-    icon: "\uE80C"
+    icon: "book"
   include_search_page: true
   search_index_only: true
   static_templates:
