@@ -49,6 +49,7 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
 - 8 - Conservation Laws
     - [8.0 - Phys 544 Introduction](ch8-0.md)
     - [8.1 - Charge and Energy](ch8-1.md)
+    - [8.2 - Momentum](ch8-2.md)
 
 ### Internals
 
