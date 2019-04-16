@@ -954,6 +954,54 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      9 - Electromagnetic Waves
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        9 - Electromagnetic Waves
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch9-1/" title="9.1 - Waves in One Dimension" class="md-nav__link">
+      9.1 - Waves in One Dimension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch9-2/" title="9.2 - Electromagnetic Waves" class="md-nav__link">
+      9.2 - Electromagnetic Waves
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -1178,8 +1226,75 @@ For that matter, we define angular momentum in the normal fashion
 where the presence of <script type="math/tex"> \vec r </script> means it's defined about some point or axis.</p>
 <h4 id="example-84">Example 8.4</h4>
 <div class="admonition question">
-<p class="admonition-title">Imagine a very long solenoid with radius <script type="math/tex"> R </script>, <script type="math/tex"> n </script> turns per unit length, and current <script type="math/tex"> I </script>. Coaxial with the solenoid are two long cylindrical (non-conducting) shells of length <script type="math/tex"> l </script> - one inside the solenoid at radius <script type="math/tex"> a </script> carries a charge <script type="math/tex"> +Q </script> distributed uniformly over its surface; the other outside the solenoid at radius <script type="math/tex"> b </script> carries charge <script type="math/tex"> -Q </script> . When the current in the solenoid is gradually reduced, the cylinders begin to rotate. Question: where does the angular momentum come from?</p>
-<p><p align="center"> <img alt="Figure 8.7" src="../img/8.7.png" /> </p></p>
+<p class="admonition-title">Imagine a very long solenoid with radius <script type="math/tex"> R </script>, <script type="math/tex"> n </script> turns per unit length, and current <script type="math/tex"> I </script>. Coaxial with the solenoid are two long cylindrical (non-conducting) shells of length <script type="math/tex"> l </script> - one inside the solenoid at radius <script type="math/tex"> a </script> carries a charge <script type="math/tex"> +Q </script> distributed uniformly over its surface; the other outside the solenoid at radius <script type="math/tex"> b </script> carries charge <script type="math/tex"> -Q </script> . When the current in the solenoid is gradually reduced to nothing, the cylinders begin to rotate. Question: where does the angular momentum come from?</p>
+<p><p align="center"> <img alt="Figure 8.7" src="../img/8.7.png" /> </p>
+We'll start by writing down the initial angular momentum of the system, then see what happens when we start to change the current. It is assumed that the solenoid is very long compared with the charged cylinders, and that the length of each charged cylinder is much much greater than its radius.</p>
+<p>The initial <script type="math/tex"> \vec E </script> is given by looking at a Gaussian cylinder between the two charged cylinders
+<script type="math/tex; mode=display">
+E 2 \pi s l = \frac{Q}{\epsilon_0}
+</script>
+<script type="math/tex; mode=display">
+ \rightarrow \vec E = \frac{Q}{2 \pi \epsilon_0 l} \frac{1}{s} \vu s \qquad a < s < b
+</script>
+The initial <script type="math/tex"> \vec B </script> is just that of the solenoid, namely
+<script type="math/tex; mode=display">
+\vec B = \begin{cases}
+\mu_0 n I \vu z & \qquad 0 < s < R \\
+0, & \qquad s > R
+\end{cases}
+</script>
+The linear momentum density we defined earlier is
+<script type="math/tex; mode=display">
+\vec g = \epsilon_0 \mu_0 \vec S = \epsilon_0 ( \vec E \cross \vec B) = \frac{Q n I \mu_0 ^2}{2 \pi s} (- \vu \phi) 
+</script>
+And the angular momentum density with respect to the cylindrical axis is
+<script type="math/tex; mode=display">
+\vec l = \vec s \cross \vec g
+</script>
+And it will point in the <script type="math/tex"> - \vu z </script> direction
+<script type="math/tex; mode=display">
+\vec L = \int _V \vec l \dd \tau = \int_V \vec s \cross \epsilon_0 \frac{Q}{2 \pi \epsilon_0 l} \frac{1}{s} \vu s \cross \mu_0 I n \vu z \dd \tau
+</script>
+<script type="math/tex; mode=display">
+= - \frac{\mu_0 n I Q }{2 \pi l} \int _V \vu s \cross \vu \phi \dd \tau = - \frac{\mu_0 n I Q}{2 \pi l} \vu z \pi (R^2 - a^2 ) l = - \frac{\mu_n n I Q}{2} (R^2 - a^2) \vu z
+</script>
+So that's the initial angular momentum. Of course, nothing is moving, so this is just the momentum stored in the EM fields. Assuming nothing like friction complicates the situation, any angular momentum lost by the EM fields will be transferred to the cylinders as rotation.</p>
+<p>As we crank down the current, we know that a time variation in the magnetic field implies an induced EMF <script type="math/tex"> \mathcal{E} = - \dv{\Phi}{t} </script>. <script type="math/tex"> \vec E </script> experienced at radii <script type="math/tex"> a </script> and <script type="math/tex"> b </script> are now different. Use Faraday
+<script type="math/tex; mode=display">
+E_a 2 \pi a = - \mu_0 n \dv{I}{t} \pi a^2 \rightarrow \vec E_a = - \frac{\mu_0 n a}{2} \dv{I}{t} \vu \phi
+</script>
+This field is in the direction to torque cylinder <script type="math/tex"> +Q </script>
+<script type="math/tex; mode=display">
+\vec{\Gamma_a} = \vec s \cross (Q \vec{E_a}) = - \frac{\mu_0 n a}{2} \dv{I}{t} Q a \vu \phi
+</script>
+<script type="math/tex; mode=display">
+= - \frac{\mu_0 n a^2}{2} Q \dv{I}{t} \vu z
+</script>
+Integrating torque over time, we get the changed angular momentum of the cylinder
+<script type="math/tex; mode=display">
+\vec{L_a} = \int_0 ^t \tau \dd t = - \frac{\mu_0 n a^2}{2} Q \int_0 ^\infty \dv{I}{t} \dd t \vu z = - \frac{\mu_0 n a^2}{2} Q \vu z \int_0 ^\infty \dd I
+</script>
+<script type="math/tex; mode=display">
+= \frac{\mu_0 n I}{2} a^2 \vu z
+</script>
+What happens to the outer cylinder? Something very similar, but when we calculated from Faraday's law our loop radius is <script type="math/tex"> b </script>, and the area of flux is <script type="math/tex"> \pi R^2 </script>
+<script type="math/tex; mode=display">
+\vec E_b = - \frac{\mu_0 n R^2}{2a} \dv{I}{t} \vu \phi
+</script>
+<script type="math/tex; mode=display">
+\vec{F_b} = - Q \vec{E}_b
+</script>
+<script type="math/tex; mode=display">
+\vec {\Gamma _b} = b \vu s \cross \vec{F_b}
+</script>
+<script type="math/tex; mode=display">
+\rightarrow \vec{L}_b = \frac{\mu_0 n R^2 Q}{2} \int_0 ^\infty \dv{I}{t} \dd t \vu z = - \frac{\mu_0 n R^2 Q I}{2} \vu z
+</script>
+So the total angular momentum once the current is finally turned down is
+<script type="math/tex; mode=display">
+\vec{L_a} + \vec{L_b} = - \frac{\mu_0 n I Q}{2} (R^2 - a^2) \vu z
+</script>
+which is exactly the angular momentum that was stored in the fields, so we've successfully conserved angular momentum :)</p>
 </div>
                 
                   
@@ -1215,6 +1330,20 @@ where the presence of <script type="math/tex"> \vec r </script> means it's defin
             </div>
           </a>
         
+        
+          <a href="../ch9-1/" title="9.1 - Waves in One Dimension" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                9.1 - Waves in One Dimension
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
