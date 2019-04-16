@@ -50,6 +50,9 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
     - [8.0 - Phys 544 Introduction](ch8-0.md)
     - [8.1 - Charge and Energy](ch8-1.md)
     - [8.2 - Momentum](ch8-2.md)
+- 9 - Electromagnetic Waves
+    - [9.1 - Waves in One Dimension](ch9-1.md)
+    - [9.2 - Electromagnetic Waves](ch9-2.md)
 
 ### Internals
 
