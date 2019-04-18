@@ -84,9 +84,9 @@ repo_url: 'https://github.com/PeppyHare/griffiths-em'
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
   - extra.js
-# extra_css:
-#   - stylesheets/dark_theme.css
-#   - stylesheets/codehilite.css
+extra_css:
+  - stylesheets/dark_theme.css
+  - stylesheets/codehilite.css
 markdown_extensions:
   - mdx_math
   - admonition
