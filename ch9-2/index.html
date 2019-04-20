@@ -63,6 +63,10 @@
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
+      <link rel="stylesheet" href="../stylesheets/dark_theme.css">
+    
+      <link rel="stylesheet" href="../stylesheets/codehilite.css">
+    
     
       
     
@@ -933,6 +937,39 @@
     9.2 Electromagnetic Waves in Vacuum
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#921-monochromatic-plane-waves" title="9.2.1: Monochromatic Plane Waves" class="md-nav__link">
+    9.2.1: Monochromatic Plane Waves
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#923-energy-and-momentum-in-electromagnetic-waves" title="9.2.3: Energy and Momentum in Electromagnetic Waves" class="md-nav__link">
+    9.2.3: Energy and Momentum in Electromagnetic Waves
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-problem-910" title="Example Problem 9.10" class="md-nav__link">
+    Example Problem 9.10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -973,6 +1010,39 @@
   <a href="#92-electromagnetic-waves-in-vacuum" title="9.2 Electromagnetic Waves in Vacuum" class="md-nav__link">
     9.2 Electromagnetic Waves in Vacuum
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#921-monochromatic-plane-waves" title="9.2.1: Monochromatic Plane Waves" class="md-nav__link">
+    9.2.1: Monochromatic Plane Waves
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#923-energy-and-momentum-in-electromagnetic-waves" title="9.2.3: Energy and Momentum in Electromagnetic Waves" class="md-nav__link">
+    9.2.3: Energy and Momentum in Electromagnetic Waves
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-problem-910" title="Example Problem 9.10" class="md-nav__link">
+    Example Problem 9.10
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1032,6 +1102,7 @@ So, in vacuum you get the exact same wave equation
 </script>
 </p>
 <p>So, both <script type="math/tex"> \vec E </script> and <script type="math/tex"> \vec B </script> must satisfy these wave equations. We know that the wave equations admit certain sets of solutions, but that's not the entire story. We'll see additional constraints on solutions to <script type="math/tex"> \vec E </script> and <script type="math/tex"> \vec B </script> due to the fact that the waves need to satisfy all of the Maxwell equations, so <script type="math/tex"> \vec E </script> and <script type="math/tex"> \vec B </script> are very intimately linked.</p>
+<h3 id="921-monochromatic-plane-waves">9.2.1: Monochromatic Plane Waves</h3>
 <p>Consider monochromatic sine waves (plane waves) in a single direction, so that all variation happens in the z-direction. Again, using the superposition principle we'll be able to build up more complicated solutions.</p>
 <p>
 <script type="math/tex; mode=display">
@@ -1084,7 +1155,86 @@ Matching up components and canceling the sine functions,
 <script type="math/tex; mode=display">
 \rightarrow k E_{0, y} = - \omega B_{0, x} \qquad k E_{0, x} = \omega B_{0, y}
 </script>
-So every time you have an <script type="math/tex"> \vec E </script> field, you will have a <script type="math/tex"> \vec B </script> field in an orthogonal direction - they are mutually orthogonal - and they have the same phase since the proportionality factors are <em>real</em>.</p>
+So every time you have an <script type="math/tex"> \vec E </script> field, you will have a <script type="math/tex"> \vec B </script> field in an orthogonal direction - they are mutually orthogonal - and they are in phase, since the proportionality factors are <em>real</em>.</p>
+<h3 id="923-energy-and-momentum-in-electromagnetic-waves">9.2.3: Energy and Momentum in Electromagnetic Waves</h3>
+<p>To repeat, for monochromatic plane waves propagating in the z-direction,
+<script type="math/tex; mode=display">
+\vec E = \vec{E_0} \cos ( k z - \omega t + \delta) = E_0 \cos (k z - \omega t + \delta) \vu x
+</script>
+<script type="math/tex; mode=display">
+\vec B = B_0 \cos (kz - \omega t + \delta) \vu y
+</script>
+and
+<script type="math/tex; mode=display">
+E_0 / B_0 = c
+</script>
+</p>
+<p>What does the energy density due to these fields look like?
+<script type="math/tex; mode=display">
+u = \frac{1}{2} \epsilon_0 E^2 + \frac{1}{2\mu_0} B^2 = \epsilon_0 E^2 = \epsilon_0 E_0 \cos ^2 (kz - \omega t + \delta)
+</script>
+The electric and magnetic contributions are equal. The resulting Poynting vector is
+<script type="math/tex; mode=display">
+\vec S = \frac{1}{\mu_0} \vec E \cross \vec B = \frac{E_0 B_0 }{\mu_0} \cos ^2 (kz - \omega t + \delta ) \vu z
+</script>
+<script type="math/tex; mode=display">
+= \frac{E_0 ^2}{\mu_0 c} \cos ^2 (kz - \omega t + \delta) \vu z = c \epsilon_0 E_0 ^2 \cos ^2 (kz - \omega t + \delta) \vu z
+</script>
+<script type="math/tex; mode=display">
+\vec S = c u \vu z
+</script>
+So the Poynting vector points in the direction of propagation, and it has amplitude <script type="math/tex"> c u </script>. What about the momentum density?
+<script type="math/tex; mode=display">
+\vec g = \mu_0 \epsilon_0 \vec S = \epsilon_0 (\vec E \cross \vec B) = \frac{1}{c^2} cu \vu z = \frac{u}{c} \vu z
+</script>
+</p>
+<p>The rate of oscillation of these waves is typically very high, so we are mostly interested in the average of the oscillatory behavior over a period. Recall that the time-average of <script type="math/tex"> \cos ^2 </script> over a cycle is <script type="math/tex"> \frac{1}{2} </script>, so </p>
+<p>
+<script type="math/tex; mode=display">
+\langle u \rangle = \frac{1}{2} \epsilon_0 E_0 ^2
+</script>
+<script type="math/tex; mode=display">
+\langle \vec S \rangle = \frac{1}{2} c \epsilon_0 E_0 ^2 \vu z
+</script>
+<script type="math/tex; mode=display">
+\langle \vec g \rangle = \frac{1}{2c} \epsilon_0 E_0 ^2 \vu z
+</script>
+</p>
+<p>Another useful quantity we usually throw around is the Root Mean Square (RMS) value of the field
+<script type="math/tex; mode=display">
+\sqrt{\langle E_0 ^2 \cos ^2 (kz - \omega t + \delta) \rangle } = \sqrt{\frac{E_0^2}{2}} = \frac{E_0}{\sqrt{2}} \approx 0.7 E_0
+</script>
+</p>
+<p>The "intensity" of the electromagnetic wave is defined as its power per unit area, or energy per unit area per unit time
+<script type="math/tex; mode=display">
+I = \frac{\text{power}}{\text{area}} = \frac{\text{energy}}{\text{area}\cdot\text{time}} 
+</script>
+<script type="math/tex; mode=display">
+= \langle | \vec S | \rangle = \langle | cu \vu z | \rangle = c \langle u \rangle = \frac{1}{2} c \epsilon_0 E_0 ^2
+</script>
+If the light hits the surface of a perfect absorber, it will transfer its momentum to the surface. In a time <script type="math/tex"> \Delta t </script> the momentum transfer will be
+<script type="math/tex; mode=display">
+\Delta \vec p = \langle \vec g \rangle A c \Delta t
+</script>
+so the <strong>radiation pressure</strong> (average force per unit area) is
+<script type="math/tex; mode=display">
+P = \frac{1}{A} \frac{\Delta p}{\Delta t} = \frac{1}{2} \epsilon_0 E_0 ^2 = \frac{I}{c}
+</script>
+Of course, when falling on a perfect <em>reflector</em>, the radiation pressure is twice as big, since the resulting momentum of the reflected light switches direction instead of being absorbed.</p>
+<h4 id="example-problem-910">Example Problem 9.10</h4>
+<div class="admonition question">
+<p class="admonition-title">The intensity of sunlight hitting the earth is about 1300 <script type="math/tex"> W/m^2 </script>. If sunlight strikes a perfect absorber, what pressure does it exert? How about a perfect reflector? What fraction of atmospheric pressure does this amount to?</p>
+<p>The radiation pressure for a perfect absorber is
+<script type="math/tex; mode=display">
+P = \frac{I}{c} = \frac{1300}{3 \cdot 10^8} \approx 4.3 \cdot 10^{-6} N/m^2
+</script>
+The atmospheric pressure on earth's surface is about <script type="math/tex"> 10^5 N </script>, so
+<script type="math/tex; mode=display">
+\frac{\text{Radiation pressure}}{\text{Atmos pressure}} \approx 10^{-11}
+</script>
+</p>
+<p>The resulting radiation pressure is tiny compared with the normal pressures we're used to, but in space where atmospheric pressure is absent the result can be significant, and laser beams on individual atoms with tiny masses can slow and trap individual particles via radiation pressure.</p>
+</div>
                 
                   
                 
