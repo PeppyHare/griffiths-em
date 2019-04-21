@@ -47,7 +47,8 @@ nav:
       - 8.2 - Momentum: ch8-2.md
     - 9 - Electromagnetic Waves:
       - 9.1 - Waves in One Dimension: ch9-1.md
-      - 9.2 - Electromagnetic Waves: ch9-2.md
+      - 9.2 - Electromagnetic Waves in Vacuum: ch9-2.md
+      - 9.3 - Electromagnetic Waves in Matter: ch9-3.md
 
 # Cool material theme: https://squidfunk.github.io/mkdocs-material/
 theme:

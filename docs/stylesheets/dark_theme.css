@@ -32,6 +32,13 @@ tbody {
 }
 
 /*
+Images
+*/
+img {
+  filter: invert(87.5%);
+}
+
+/*
 ////////////////////
 // Navigation bar //
 ////////////////////

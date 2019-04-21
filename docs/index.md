@@ -53,6 +53,7 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
 - 9 - Electromagnetic Waves
     - [9.1 - Waves in One Dimension](ch9-1.md)
     - [9.2 - Electromagnetic Waves](ch9-2.md)
+    - [9.3 - Electromagnetic Waves in Matter](ch9-3.md)
 
 ### Internals
 
