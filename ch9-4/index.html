@@ -968,6 +968,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#942-reflection-at-a-conducting-surface" title="9.4.2: Reflection at a Conducting Surface" class="md-nav__link">
+    9.4.2: Reflection at a Conducting Surface
+  </a>
+  
+</li>
+      
       
       
       
@@ -1009,6 +1016,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#942-reflection-at-a-conducting-surface" title="9.4.2: Reflection at a Conducting Surface" class="md-nav__link">
+    9.4.2: Reflection at a Conducting Surface
+  </a>
+  
+</li>
+      
       
       
       
@@ -1031,6 +1045,149 @@
                   <h1>9.4 - Absorption and Dispersion</h1>
                 
                 <h2 id="941-electromagnetic-waves-in-conductors">9.4.1 Electromagnetic Waves in Conductors</h2>
+<p>When we formulated our description of how electromagnetic waves move through linear media, we relied on the stipulation that the free charge density <script type="math/tex"> \rho_f </script>  and free current density <script type="math/tex"> \vec J _f </script> were zero. In the case of conductors, we're going to need to re-visit that assumption.</p>
+<p>As a refresher, when we last took a good look at conductors we had just moved beyond the electrostatic picture. In statics, we could assume that the field within a conductor is always zero, because any field would eventually (quickly) cause the free changes to arrange in such a way as to cancel the field. Now, we want to see how the conductor responds when we have a varying electric field.</p>
+<p>So, what do we already know about electric fields in matter?
+<script type="math/tex; mode=display">
+\div \vec E = \frac{\rho_f}{\epsilon} \qquad \text{(Gauss' Law in media)}
+</script>
+<script type="math/tex; mode=display">
+\div \vec J _f + \pdv{\rho_f}{t} = 0 \qquad \text{(Continuity)}
+</script>
+<script type="math/tex; mode=display">
+\vec J_f = \sigma \vec E \qquad \text{(Ohm's Law)}
+</script>
+</p>
+<p>
+<script type="math/tex; mode=display">
+\rightarrow \div \left( \frac{\vec J _f}{\sigma} \right) = \frac{\rho_f}{\epsilon}
+</script>
+<script type="math/tex; mode=display">
+\rightarrow \frac{1}{\sigma} \left( - \pdv{\rho_f}{t} \right) = \frac{\rho_f}{\epsilon}
+</script>
+<script type="math/tex; mode=display">
+\rightarrow \pdv{\rho_f}{t} = - \frac{\sigma}{\epsilon} \rho_f
+</script>
+</p>
+<p>We see differential equations like this all the time - it's the equation for an exponential decay. The decay timescale of the free charge density is
+<script type="math/tex; mode=display">
+ \tau_{1/e} = \frac{\epsilon}{\sigma}
+ </script>
+</p>
+<p>Applying to the situation of a very good conductor where <script type="math/tex"> \sigma </script> is very large, e.g. copper, the time constant is around <script type="math/tex"> 10^{-19} </script> seconds. This means that if a little bit of free charge has accumulated at any time, then from that point charge will flow to suppress that field on the timescale of <script type="math/tex"> 10^{-19} </script> seconds. So, for the vast majority of radiation (wave period up to <script type="math/tex"> \approx 10^{-18} </script>), the time constant is fast enough that the conductor is effectively impermeable, and all our previous descriptions of conductors are still sound. Namely, the Maxwell equations look like</p>
+<p>
+<script type="math/tex; mode=display">
+\div \vec E = 0
+</script>
+<script type="math/tex; mode=display">
+\div \vec B = 0
+</script>
+<script type="math/tex; mode=display">
+\curl \vec E = - \pdv{\vec B}{t}
+</script>
+<script type="math/tex; mode=display">
+\curl \vec B = \mu \epsilon \pdv{\vec E}{t} + \mu \sigma \vec E \qquad (\sigma \vec E = \vec J)
+</script>
+</p>
+<p>As before, to get our wave equations, apply <script type="math/tex"> \curl (\curl \vec E) </script> and <script type="math/tex"> \curl (\curl \vec B) </script>
+<script type="math/tex; mode=display">
+\grad (\div \vec E) - \laplacian \vec E = - \curl (\pdv{\vec B}{t}) = - \pdv{}{t} (\curl \vec B)
+</script>
+<script type="math/tex; mode=display">
+\rightarrow - \laplacian \vec E = - \mu \epsilon \frac{\partial^2 \vec E}{\partial t^2} - \mu \sigma \pdv{\vec E}{t}
+</script>
+<script type="math/tex; mode=display">
+\rightarrow \laplacian \vec E = \mu \epsilon \frac{\partial ^2 \vec E}{\partial t^2} + \mu \sigma \pdv{\vec E}{t}
+</script>
+</p>
+<p>As <script type="math/tex"> \sigma \rightarrow 0 </script>, we recover the wave equation for linear media as we'd expect. We now have a "lossy" wave equation, since there is attenuation of the wave over time.</p>
+<p>From <script type="math/tex"> \curl ( \curl \vec B) </script> we get
+<script type="math/tex; mode=display">
+\laplacian \vec B = \mu \epsilon \frac{\partial^2 \vec B}{\partial t^2} + \mu \sigma \pdv{\vec B}{t}
+</script>
+</p>
+<p>Recall that for <script type="math/tex"> \sigma = 0 </script> the wave equation supports waves of the form <script type="math/tex"> e ^{i(\vec k \cdot \vec r - \omega t)} </script>. For propagation along the z-axis, <script type="math/tex"> e^{i(kz - \omega t)} </script>. To solve the lossy version, we'll look for solutions by introducing an imaginary component to <script type="math/tex"> k </script> in order to satisfy the damping term.</p>
+<p>
+<script type="math/tex; mode=display">
+\rightarrow \tilde{k} = k + i\kappa
+</script>
+</p>
+<p>For the one-dimensional case, let's plug our new wave solution in</p>
+<p>
+<script type="math/tex; mode=display">
+\laplacian \vec E = \mu \epsilon \frac{\partial ^2 \vec E}{\partial t^2} + \mu \sigma \pdv{\vec E}{t}
+</script>
+<script type="math/tex; mode=display">
+\rightarrow - \tilde{k}^2 = \mu \epsilon (- \omega^2) + \mu \sigma (-i \omega)
+</script>
+<script type="math/tex; mode=display">
+\rightarrow k^2 - \kappa ^2 + 2 i k \kappa = \mu \epsilon \omega^2 + i \mu \sigma \omega
+</script>
+<script type="math/tex; mode=display">
+\rightarrow k^2 - \kappa ^2 = \mu \epsilon \omega \qquad 2 k \kappa = \mu \sigma \omega
+</script>
+<script type="math/tex; mode=display">
+\rightarrow k = \frac{ \mu \sigma \omega}{2 \kappa} \qquad \left( \frac{\mu \sigma \omega}{2 \kappa} \right)^2 - \kappa ^2 = \mu \epsilon \omega^2
+</script>
+<script type="math/tex; mode=display">
+\rightarrow \kappa ^4 + \mu \epsilon \omega^2 \kappa^2 - \left( \frac{\mu \sigma \omega}{2} \right)^2 = 0
+</script>
+We just write down the solution to the quadratic equation in <script type="math/tex"> \kappa </script>
+</p>
+<p>
+<script type="math/tex; mode=display">
+\kappa = \sqrt{\frac{- \mu \epsilon \omega^2 \pm \sqrt{(\mu \epsilon \omega^2)^2 + (\mu \sigma \omega)^2}}{2}}
+</script>
+</p>
+<p>Because we enforce that <script type="math/tex"> \kappa </script> is real, and all of the parameters within the square root are positive, we need to choose the <script type="math/tex"> + </script> sign
+<script type="math/tex; mode=display">
+\kappa = \sqrt{\frac{\sqrt{(\mu \epsilon \omega^2)^2 + (\mu \sigma \omega)^2} - \mu \epsilon \omega^2 }{2}}
+</script>
+<script type="math/tex; mode=display">
+\rightarrow \kappa = \sqrt{\frac{\mu \epsilon \omega^2}{2}} \sqrt{ \sqrt{ 1 + \left( \frac{\sigma}{\epsilon \omega} \right)^2 } - 1 }
+</script>
+<script type="math/tex; mode=display">
+\rightarrow \kappa = \omega \sqrt{ \frac{\epsilon \mu}{2} } \left[ \sqrt{ 1 + \left( \frac{\sigma}{\epsilon \omega} \right)^2 } - 1 \right] ^{1/2}
+</script>
+</p>
+<p>Plugging <script type="math/tex"> \kappa </script> back in to our expression for <script type="math/tex"> k </script> and doing some algebraic manipulation,
+<script type="math/tex; mode=display">
+k = \omega \sqrt{ \frac{\epsilon \mu}{2}} \left[ \sqrt{1 + \left( \frac{\sigma}{\epsilon \omega} \right) ^2 } + 1 \right]^{1/2}
+</script>
+</p>
+<p>So the fields look like</p>
+<p>
+<script type="math/tex; mode=display">
+\vec E ( z, t) = \vec{E_0} e^{- \kappa z} e^{i(kz - \omega t)}
+</script>
+<script type="math/tex; mode=display">
+\vec B ( z, t) = \vec{B_0} e^{- \kappa z} e^{i(kz - \omega t)}
+</script>
+</p>
+<p>As a check, if <script type="math/tex"> \sigma \rightarrow 0 </script>, <script type="math/tex"> \kappa \rightarrow 0 </script>, <script type="math/tex"> k \rightarrow \omega \sqrt{ \frac{\epsilon \mu}{2}} \sqrt{2} = \omega \sqrt{ \epsilon \mu} = \omega / v </script>  and we are back to the linear medium we started with. In the case of a really good conductor (where <script type="math/tex">1 / \omega \gg \epsilon / \sigma </script>), both <script type="math/tex"> k </script> and <script type="math/tex"> \kappa </script> will converge</p>
+<p>
+<script type="math/tex; mode=display">
+k \approx \kappa \rightarrow \omega \sqrt{\frac{\epsilon \mu}{2}} \left[ \frac{\sigma}{\epsilon \omega} \right] ^{1/2} \\
+= \sqrt{ \omega \frac{\epsilon \mu}{2} \frac{\sigma}{\epsilon}} \\
+= \sqrt{ \frac{ \omega \mu \sigma}{2}}
+</script>
+</p>
+<p>For a good conductor, both <script type="math/tex"> \vec E </script> and <script type="math/tex"> \vec B </script> get damped over a distance scale given by <script type="math/tex"> 1/\kappa </script>, which can be quite short. Since <script type="math/tex"> k ~ \kappa </script> we can relate this "skin depth" to the wavelength
+<script type="math/tex; mode=display">
+\lambda = \frac{2\pi}{k} \rightarrow d = \frac{1}{\kappa} = \frac{\lambda}{2 \pi}
+</script>
+</p>
+<p>Before, we had a real proportionality factor between <script type="math/tex"> \vec{E_0} </script> and <script type="math/tex"> \vec{B_0} </script>. If we go through the same motions here with our new lossy solution,
+<script type="math/tex; mode=display">
+\curl \vec E = - \pdv{\vec B}{t} \rightarrow \vec B _0 = \frac{\tilde{k}}{\omega} \vec E _0 
+</script>
+</p>
+<p>Because <script type="math/tex"> \tilde{k} </script> is a complex number, this ratio will also be a complex number. For our phasor expressions for the fields, this amounts to a phase shift between the two.</p>
+<div class="admonition info">
+<p class="admonition-title">In conductors, there is a phase difference between the <script type="math/tex"> \vec E </script> and <script type="math/tex"> \vec B </script> fields. For a good conductor, the phase shift is <script type="math/tex"> 45 ^\circ </script>
+</p>
+</div>
+<h2 id="942-reflection-at-a-conducting-surface">9.4.2: Reflection at a Conducting Surface</h2>
                 
                   
                 
