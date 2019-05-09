@@ -50,7 +50,10 @@ nav:
       - 9.2 - Electromagnetic Waves in Vacuum: ch9-2.md
       - 9.3 - Electromagnetic Waves in Matter: ch9-3.md
       - 9.4 - Absorption and Dispersion: ch9-4.md
+      - 9.5 - Guided Waves: ch9-5.md
       - Problems: problems-ch9.md
+    - 10 - Potentials and Fields:
+      - 10.1 - The Potential Formulation: ch10-1.md
 
 # Cool material theme: https://squidfunk.github.io/mkdocs-material/
 theme:
