@@ -1,0 +1,1262 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.0">
+    
+    
+      
+        <title>9.5 - Guided Waves - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=:300,400,400i,700|">
+        <style>body,input{font-family:"","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../stylesheets/dark_theme.css">
+    
+      <link rel="stylesheet" href="../stylesheets/codehilite.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#951-guided-waves" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="My Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">book</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              My Docs
+            </span>
+            <span class="md-header-nav__topic">
+              9.5 - Guided Waves
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    PeppyHare/griffiths-em
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="My Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon">book</i>
+      
+    </a>
+    My Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/PeppyHare/griffiths-em/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    PeppyHare/griffiths-em
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      1 - Vector Analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        1 - Vector Analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-1/" title="1.1 - Vector Algebra" class="md-nav__link">
+      1.1 - Vector Algebra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-2/" title="1.2 - Differential Calculus" class="md-nav__link">
+      1.2 - Differential Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-3/" title="1.3 - Integral Calculus" class="md-nav__link">
+      1.3 - Integral Calculus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-4/" title="1.4 - Curvilinear Coordinates" class="md-nav__link">
+      1.4 - Curvilinear Coordinates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-5/" title="1.5 - The Dirac Delta Function" class="md-nav__link">
+      1.5 - The Dirac Delta Function
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch1-6/" title="1.6 - The Theory of Vector Fields" class="md-nav__link">
+      1.6 - The Theory of Vector Fields
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      2 - Electrostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        2 - Electrostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-1/" title="2.1 - The Electric Field" class="md-nav__link">
+      2.1 - The Electric Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-2/" title="2.2 - Divergence and Curl of Electrostatic Fields" class="md-nav__link">
+      2.2 - Divergence and Curl of Electrostatic Fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-3/" title="2.3 - Electric Potential" class="md-nav__link">
+      2.3 - Electric Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-4/" title="2.4 - Work and Energy in Electrostatics" class="md-nav__link">
+      2.4 - Work and Energy in Electrostatics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch2-5/" title="2.5 - Conductors" class="md-nav__link">
+      2.5 - Conductors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      3 - Potentials
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        3 - Potentials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-1/" title="3.1 - Laplace's Equation" class="md-nav__link">
+      3.1 - Laplace's Equation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-2/" title="3.2 - The Method of Images" class="md-nav__link">
+      3.2 - The Method of Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-3/" title="3.3 - Separation of Variables" class="md-nav__link">
+      3.3 - Separation of Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch3-4/" title="3.4 - Multipole Expansion" class="md-nav__link">
+      3.4 - Multipole Expansion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch3/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      4 - Electric Fields in Matter
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        4 - Electric Fields in Matter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-1/" title="4.1 - Polarization" class="md-nav__link">
+      4.1 - Polarization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-2/" title="4.2 - The Field of a Polarized Object" class="md-nav__link">
+      4.2 - The Field of a Polarized Object
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-3/" title="4.3 - The Electric Displacement" class="md-nav__link">
+      4.3 - The Electric Displacement
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch4-4/" title="4.4 - Linear Dielectrics" class="md-nav__link">
+      4.4 - Linear Dielectrics
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      5 - Magnetostatics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        5 - Magnetostatics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-1/" title="5.1 - The Lorentz Force Law" class="md-nav__link">
+      5.1 - The Lorentz Force Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-2/" title="5.2 - The Biot-Savart Law" class="md-nav__link">
+      5.2 - The Biot-Savart Law
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-3/" title="5.3 - The Divergence and Curl of B" class="md-nav__link">
+      5.3 - The Divergence and Curl of B
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch5-4/" title="5.4 - Magnetic Vector Potential" class="md-nav__link">
+      5.4 - Magnetic Vector Potential
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch5/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      6 - Magnetic Fields in Matter
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        6 - Magnetic Fields in Matter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch6-1/" title="6.1 - Magnetization" class="md-nav__link">
+      6.1 - Magnetization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch6-2/" title="6.2 - The Field of a Magnetized Object" class="md-nav__link">
+      6.2 - The Field of a Magnetized Object
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch6-3/" title="6.3 - The Auxiliary Field" class="md-nav__link">
+      6.3 - The Auxiliary Field
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch6-4/" title="6.4 - Linear and Nonlinear Media" class="md-nav__link">
+      6.4 - Linear and Nonlinear Media
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      7 - Electrodynamics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        7 - Electrodynamics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch7-1/" title="7.1 - Electromotive Force" class="md-nav__link">
+      7.1 - Electromotive Force
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch7-2/" title="7.2 - Electromagnetic Induction" class="md-nav__link">
+      7.2 - Electromagnetic Induction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch7-3/" title="7.3 - Maxwell's Equations" class="md-nav__link">
+      7.3 - Maxwell's Equations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch7/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      8 - Conservation Laws
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        8 - Conservation Laws
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch8-0/" title="8.0 - Phys544 Introduction" class="md-nav__link">
+      8.0 - Phys544 Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch8-1/" title="8.1 - Charge and Energy" class="md-nav__link">
+      8.1 - Charge and Energy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch8-2/" title="8.2 - Momentum" class="md-nav__link">
+      8.2 - Momentum
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
+    
+    <label class="md-nav__link" for="nav-10">
+      9 - Electromagnetic Waves
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        9 - Electromagnetic Waves
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch9-1/" title="9.1 - Waves in One Dimension" class="md-nav__link">
+      9.1 - Waves in One Dimension
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch9-2/" title="9.2 - Electromagnetic Waves in Vacuum" class="md-nav__link">
+      9.2 - Electromagnetic Waves in Vacuum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch9-3/" title="9.3 - Electromagnetic Waves in Matter" class="md-nav__link">
+      9.3 - Electromagnetic Waves in Matter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch9-4/" title="9.4 - Absorption and Dispersion" class="md-nav__link">
+      9.4 - Absorption and Dispersion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        9.5 - Guided Waves
+      </label>
+    
+    <a href="./" title="9.5 - Guided Waves" class="md-nav__link md-nav__link--active">
+      9.5 - Guided Waves
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#951-guided-waves" title="9.5.1 Guided Waves" class="md-nav__link">
+    9.5.1 Guided Waves
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#952-rectangular-wave-guide" title="9.5.2 Rectangular Wave Guide" class="md-nav__link">
+    9.5.2 Rectangular Wave Guide
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../problems-ch9/" title="Problems" class="md-nav__link">
+      Problems
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      10 - Potentials and Fields
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        10 - Potentials and Fields
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch10-1/" title="10.1 - The Potential Formulation" class="md-nav__link">
+      10.1 - The Potential Formulation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#951-guided-waves" title="9.5.1 Guided Waves" class="md-nav__link">
+    9.5.1 Guided Waves
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#952-rectangular-wave-guide" title="9.5.2 Rectangular Wave Guide" class="md-nav__link">
+    9.5.2 Rectangular Wave Guide
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/PeppyHare/griffiths-em/edit/master/docs/ch9-5.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>9.5 - Guided Waves</h1>
+                
+                <h2 id="951-guided-waves">9.5.1 Guided Waves</h2>
+<p>Moving beyond plane waves with infinite extent, now we consider waves confined to the interior to some sort of pipe, or wave guide. To make things simple, the overall geometry of the pipe should be large compared with the wavelength, and we'll assume it's made of a perfect conductor so there's no loss (perfect reflection).</p>
+<p align="center"> <img alt="Figure 9.23" src="../img/9.23.png" /> </p>
+
+<p>Monochromatic plane wave solutions will look like</p>
+<p>
+<script type="math/tex; mode=display">
+\vec E(x, y, z, t) = \vec{E_0} (x, y) e^{i(kz - \omega t)}
+</script>
+<script type="math/tex; mode=display">
+\vec B(x, y, z, t) = \vec{B_0} (x, y) e^{i(kz - \omega t)}
+</script>
+</p>
+<p>The (source-free) boundary conditions within the waveguide are
+<script type="math/tex; mode=display">
+\begin{eqnarray*}
+E^\parallel & = & 0 \\
+B_\perp & = & 0 \\
+\div \vec E & = & 0 \\
+\curl \vec E & = & - \pdv{\vec{B}}{t} \\
+\div \vec B & = & 0 \\
+\curl \vec B & = & \frac{1}{c^2} \pdv{\vec E}{t}
+\end{eqnarray*}
+</script>
+</p>
+<p>So it turns out that within a waveguide we aren't necessarily limited to transverse solutions only. We include the longitudinal components of the fields when plugging in the coordinates into our boundary conditions and generic solutions:</p>
+<p>
+<script type="math/tex; mode=display">
+\vec E_0 = E_x \vu x + E_y \vu y + E_z \vu z
+</script>
+<script type="math/tex; mode=display">
+\vec B_0 = B_x \vu x + B_y \vu y + B_z \vu z
+</script>
+</p>
+<p>Using the Maxwell equations and boundary conditions, eventually we can get independent expressions for the fields 
+<script type="math/tex; mode=display">
+\left[ \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \left( \frac{\omega}{c} \right) ^2 - k^2 \right] E_z = 0
+</script>
+<script type="math/tex; mode=display">
+\left[ \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \left( \frac{\omega}{c} \right) ^2 - k^2 \right] B_z = 0
+</script>
+</p>
+<p>For trivial solutions, we can come up with separate classes of solutions: If <script type="math/tex"> E_z = 0 </script>, we call the solutions <strong>transverse electric (TE)</strong> waves. If <script type="math/tex"> B_z = 0 </script> they are called <strong>transverse magnetic (TM)</strong> waves. And if both are zero, we call them <strong>TEM</strong> waves, but it turns out that TEM waves can't occur in a hollow wave guide, since
+<script type="math/tex; mode=display">
+E_z = 0 \rightarrow \pdv{E_x}{x} + \pdv{E_y}{y} = 0
+</script>
+and
+<script type="math/tex; mode=display">
+B_z = 0 \rightarrow \pdv{E_y}{x} - \pdv{E_x}{y} = 0
+</script>
+imply that <script type="math/tex"> \vec E_0 </script> can be written as the gradient of a scalar potential that satisfies Laplace's equation. But the boundary condition on <script type="math/tex"> \vec E </script> requires that hte surface is an equipotential, so the only available potential is a constant and the field is zero everywhere, so no wave exists at all.</p>
+<h2 id="952-rectangular-wave-guide">9.5.2 Rectangular Wave Guide</h2>
+<p>Let's look at a rectangular wave guide with height <script type="math/tex"> a </script> and width <script type="math/tex"> b </script>.</p>
+<p>TM solutions:
+<script type="math/tex; mode=display">
+B_z = 0 \text{ everywhere }
+</script>
+<script type="math/tex; mode=display">
+\left[ \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \left( \frac{\omega}{c} \right) ^2 - k^2 \right] E_z = 0
+</script>
+</p>
+<p>We've got a relatively simple situation here (really just a 2D Laplacian and constants), so start with the method of separation of variables.
+<script type="math/tex; mode=display">
+E_z(x, y) = X(x) Y(y)
+</script>
+So plugging in:
+<script type="math/tex; mode=display">
+Y \dv{^2 X}{x^2} + X \dv{^2 Y}{y^2} + \left[(\omega / x)^2 - k^2 \right]XY = 0
+</script>
+Separate out the X and Y terms
+<script type="math/tex; mode=display">
+\frac{1}{X} \dv{^2X}{x^2} = -k_x ^2
+</script>
+<script type="math/tex; mode=display">
+\frac{1}{Y} \dv{^2Y}{y^2} = -k_y ^2
+</script>
+where
+<script type="math/tex; mode=display">
+-k_x ^2 -k_y ^2 + (\omega / c)^2 - k^2 = 0
+</script>
+</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ch9-4/" title="9.4 - Absorption and Dispersion" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                9.4 - Absorption and Dispersion
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../problems-ch9/" title="Problems" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Problems
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.2ba8dec4.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="../extra.js"></script>
+      
+    
+  </body>
+</html>
