@@ -59,6 +59,7 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
     - [Chapter 9 Problems](problems-ch9.md)
 - 10 - Potentials and Fields
     - [10.1 - The Potential Fomulation](ch10-1.md)
+    - [10.2 - Retarded Potentials](ch10-2.md)
 
 ### Internals
 

@@ -54,6 +54,7 @@ nav:
       - Problems: problems-ch9.md
     - 10 - Potentials and Fields:
       - 10.1 - The Potential Formulation: ch10-1.md
+      - 10.2 - Retarded Potentials: ch10-2.md
 
 # Cool material theme: https://squidfunk.github.io/mkdocs-material/
 theme:
