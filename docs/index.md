@@ -60,6 +60,9 @@ Click around in the sidebar to find a chapter to read, or follow the links at th
 - 10 - Potentials and Fields
     - [10.1 - The Potential Fomulation](ch10-1.md)
     - [10.2 - Retarded Potentials](ch10-2.md)
+    - [10.3 - Point Charges](ch10-3.md)
+- 11 - Radiation
+    - [11.1 - Dipole Radiation](ch11-1.md)
 
 ### Internals
 

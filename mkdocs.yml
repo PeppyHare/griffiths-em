@@ -55,6 +55,9 @@ nav:
     - 10 - Potentials and Fields:
       - 10.1 - The Potential Formulation: ch10-1.md
       - 10.2 - Retarded Potentials: ch10-2.md
+      - 10.3 - Point Charges: ch10-3.md
+    - 11 - Radiation:
+      - 11.1 - Dipole Radiation: ch11-1.md
 
 # Cool material theme: https://squidfunk.github.io/mkdocs-material/
 theme:
