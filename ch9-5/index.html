@@ -980,6 +980,19 @@
     9.5.2 Rectangular Wave Guide
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-91" title="Example 9.1" class="md-nav__link">
+    Example 9.1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -1041,6 +1054,66 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch10-2/" title="10.2 - Retarded Potentials" class="md-nav__link">
+      10.2 - Retarded Potentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch10-3/" title="10.3 - Point Charges" class="md-nav__link">
+      10.3 - Point Charges
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      11 - Radiation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        11 - Radiation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch11-1/" title="11.1 - Dipole Radiation" class="md-nav__link">
+      11.1 - Dipole Radiation
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1075,6 +1148,19 @@
   <a href="#952-rectangular-wave-guide" title="9.5.2 Rectangular Wave Guide" class="md-nav__link">
     9.5.2 Rectangular Wave Guide
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-91" title="Example 9.1" class="md-nav__link">
+    Example 9.1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1151,7 +1237,7 @@ B_z = 0 \rightarrow \pdv{E_y}{x} - \pdv{E_x}{y} = 0
 </script>
 imply that <script type="math/tex"> \vec E_0 </script> can be written as the gradient of a scalar potential that satisfies Laplace's equation. But the boundary condition on <script type="math/tex"> \vec E </script> requires that hte surface is an equipotential, so the only available potential is a constant and the field is zero everywhere, so no wave exists at all.</p>
 <h2 id="952-rectangular-wave-guide">9.5.2 Rectangular Wave Guide</h2>
-<p>Let's look at a rectangular wave guide with height <script type="math/tex"> a </script> and width <script type="math/tex"> b </script>.</p>
+<p>Let's look at a rectangular wave guide with height <script type="math/tex"> a </script> and width <script type="math/tex"> b </script>. As we saw, there are two chief classes of solutions, TE (<script type="math/tex"> E_z = 0 </script>) and TM (<script type="math/tex"> B_z = 0 </script>). Let's specifically take a look at the TM solutions (the process is very similar for TE waves, except that the boundary conditions are flipped).</p>
 <p>TM solutions:
 <script type="math/tex; mode=display">
 B_z = 0 \text{ everywhere }
@@ -1180,6 +1266,125 @@ where
 -k_x ^2 -k_y ^2 + (\omega / c)^2 - k^2 = 0
 </script>
 </p>
+<p>We already know the general solutions</p>
+<p>
+<script type="math/tex; mode=display">
+X(x) = A \sin (k_x x) + B \cos (k_x x)
+</script>
+</p>
+<p>The boundary conditions require that <script type="math/tex"> E_z = 0 </script> at <script type="math/tex"> x = 0 </script> and at <script type="math/tex"> x = a </script>, so
+<script type="math/tex; mode=display">
+X(0) = B \cos k_x (0) = B = 0 \\
+\rightarrow X(a) = A \sin k_x a = 0 \\
+\rightarrow k_x a = m \pi \\
+\rightarrow k_x = \frac{m \pi}{a}
+</script>
+</p>
+<p>Similarly,
+<script type="math/tex; mode=display">
+k_y = \frac{n \pi}{b} \\
+Y(y) = A \sin k_y y
+</script>
+</p>
+<p>So the TM modes are
+<script type="math/tex; mode=display">
+TM_{mn}: \quad  E_z (x, y) = E_0 \sin \left( \frac{m \pi x}{a} \right) \sin \left( \frac{n \pi y}{b} \right)
+</script>
+</p>
+<p>Note that if <script type="math/tex"> m = 0 </script> or <script type="math/tex"> n = 0 </script>, then <script type="math/tex"> E_z </script> becomes zero immediately, so the "bottom-most" term is <script type="math/tex"> m = n = 1 </script>. How do <script type="math/tex"> m </script> and <script type="math/tex"> n </script> relate to the wavenumber and frequency of the modes? We got our separable wavenumbers from
+<script type="math/tex; mode=display">
+k_x ^2 + k_y ^2 + k^2 = \left( \frac{\omega}{c} \right) ^2 \\
+\rightarrow \left( \frac{m \pi}{a} \right) ^2 + \left( \frac{n \pi}{b} \right) ^2 + k^2 = \left( \frac{\omega}{c} \right) ^2 \\
+\rightarrow \omega = c \sqrt{ \left( \frac{m \pi}{a} \right) ^2 + \left( \frac{n \pi}{b} \right) ^2 + k^2 }
+</script>
+This is a sort of weird dispersion relation. We get a minimum <script type="math/tex"> \omega </script> as <script type="math/tex"> k \rightarrow 0 </script>, since <script type="math/tex"> k^2 < 0 </script> would give an attenuated wave which we don't care about, so there is a <strong>cutoff frequency</strong> 
+<script type="math/tex; mode=display">
+\omega_{cutoff} = \omega_{k \rightarrow 0} \rightarrow c \sqrt{ \pi^2 (\frac{1}{a^2} + \frac{1}{b^2})}
+</script>
+This means that TM modes can not propagate with frequencies below <script type="math/tex"> c \sqrt{ \pi^2 (\frac{1}{a^2} + \frac{1}{b^2})} </script>.</p>
+<p>On the flip-side, what do the group and phase velocities look like?
+<script type="math/tex; mode=display">
+k = \sqrt{ \left( \frac{\omega}{c} \right) ^2 - \left( \frac{m \pi}{a} \right) ^2 - \left( \frac{n \pi}{b} \right) ^2 } \\
+= \sqrt{  \left( \frac{\omega}{c} \right) ^2 - \left( \frac{\omega_{mn}}{c} \right) ^2} \\
+\omega_{mn} = c\sqrt{\left( \frac{m \pi}{a} \right) ^2 + \left( \frac{n \pi}{b} \right) ^2 } \\
+\rightarrow k = \frac{\sqrt{\omega^2 - \omega_{mn}^2}}{c} \\
+\rightarrow k = \frac{\omega \sqrt{1 - \omega_{mn}^2 / \omega^2}}{c} \\
+\rightarrow \frac{\omega}{k} = v_p = \frac{c}{\sqrt{1 - \omega_{mn}^2 / \omega^2}}
+</script>
+<script type="math/tex; mode=display">
+v_g = \dv{\omega}{k} \\
+ = \frac{1}{\dv{k}{\omega}}
+ = \frac{1}{\frac{1}{c} \frac{2 \omega}{2 \sqrt{\omega^2 - \omega_{mn}^2}}} \\
+ = \frac{c \sqrt{\omega^2 - \omega_{mn}^2}}{\omega} \\
+ v_g = c \sqrt{1 - \frac{\omega_{mn}^2}{\omega^2}}
+</script>
+</p>
+<p>What about the <script type="math/tex"> TE_{mn} </script> modes? </p>
+<p>
+<script type="math/tex; mode=display">
+B_z(x, y) = X(x) Y(y)
+</script>
+<script type="math/tex; mode=display">
+\frac{1}{x} \dv{^2 X}{x^2} = - k_x ^2 \\
+\rightarrow X(x) = A \sin k_x x + B \cos k_x x
+</script>
+Now, the boundary conditions say that
+<script type="math/tex; mode=display">
+B^ \perp = 0
+</script>
+<script type="math/tex; mode=display">
+\pdv{B_x}{x} = 0 \text{ at } x = 0 \text{ and } x = a
+</script>
+<script type="math/tex; mode=display">
+\rightarrow A k_x \cos k_x x - B k_x \sin k_x x = 0 \\
+\rightarrow A = 0
+</script>
+Plugging in <script type="math/tex"> x = a </script>,
+<script type="math/tex; mode=display">
+Bk_x \sin k_x a = 0 \\
+\rightarrow k_x a = m \pi
+</script>
+<script type="math/tex; mode=display">
+\rightarrow B_z(x, y) = B_0 \cos \left( \frac{m \pi x}{a} \right) \cos \left( \frac{n \pi y}{b} \right)
+</script>
+<script type="math/tex; mode=display">
+k = \sqrt{(\omega / c)^2 - \pi ^2[(m / a)^2 + (n / b)^2] }
+</script>
+If
+<script type="math/tex; mode=display">
+\omega < c \pi \sqrt{(m / a)^2 + (n / b)^2} \equiv \omega_{c, mn}
+</script>
+then the wave number is imaginary, and instead of a traveling wave we have exponentially attenuated fields, so this is our <strong>cutoff frequency for TE waves</strong>. Given the convention of always associating the first index with the larger dimension (assume <script type="math/tex"> a \geq b </script>), the lowest frequency for a given wave guide is
+<script type="math/tex; mode=display">
+\omega_{1,0} = c \pi / a
+</script>
+</p>
+<h4 id="example-91">Example 9.1</h4>
+<div class="admonition question">
+<p class="admonition-title">We have a rectangular waveguide of dimensions 1cm by 2cm. (a) What is the lowest mode? Find the cutoff frequency. (b) If the waveguide were filled with lossless plastic with <script type="math/tex"> \epsilon_r = 2</script>, how would the cutoff frequency change?</p>
+<p>What is the lowest allowed mode? We should check the lowest TE and TM modes to find out!</p>
+<p>The lowest TM mode is
+<script type="math/tex; mode=display">
+\omega_{c, TM} = c \sqrt{\pi^2 \left( \frac{1}{a^2} + \frac{1}{b^2} \right) }
+</script>
+</p>
+<p>and the lowest TE mode is
+<script type="math/tex; mode=display">
+\omega_{1, 0} = c \frac{\pi}{2 \text{cm}} \\
+\rightarrow f_{co} = \frac{c}{4 \text{cm}} = \frac{3 \times 10^{10} \text{cm/s}}{4} = 7.5 \text{GHz}
+</script>
+It's worth noting that the lowest TM mode will always be higher, since it requires both <script type="math/tex"> m \geq 1 </script> and <script type="math/tex"> n \geq 1 </script>, so the lowest frequency will be the TE mode.</p>
+<p>(b) For vacuum,
+<script type="math/tex; mode=display">
+\frac{1}{c^2} = \mu_0 \epsilon_0
+</script>
+In plastic,
+<script type="math/tex; mode=display">
+v = \frac{c}{\sqrt{\epsilon / \epsilon_0}} = \frac{c}{\sqrt{2}}\\
+\rightarrow f_{co} = \frac{7.5 \text{GHz}}{\sqrt{2}} \approx 5.4\text{GHz}
+</script>
+</p>
+</div>
                 
                   
                 

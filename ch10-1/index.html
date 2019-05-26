@@ -1041,6 +1041,66 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch10-2/" title="10.2 - Retarded Potentials" class="md-nav__link">
+      10.2 - Retarded Potentials
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch10-3/" title="10.3 - Point Charges" class="md-nav__link">
+      10.3 - Point Charges
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      11 - Radiation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        11 - Radiation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ch11-1/" title="11.1 - Dipole Radiation" class="md-nav__link">
+      11.1 - Dipole Radiation
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1131,6 +1191,64 @@
 <li>Microcavities, Photonic crystal cavities</li>
 </ul>
 <h2 id="1011-scalar-and-vector-potentials">10.1.1 Scalar and Vector Potentials</h2>
+<p>Ultimately the question of electromagnetism is given some sources <script type="math/tex"> \rho(\vec r, t) </script> and <script type="math/tex"> \vec J ( \vec r, t) </script>, what are the resulting fields <script type="math/tex"> \vec E( \vec r, t) </script> and <script type="math/tex"> \vec B ( \vec r, t) </script>? In the static case, Coulomb's law and the Biot-Savart law provide deterministic answers, so how do we then generalize to time-dependent configurations?</p>
+<p>It turns out that once again, it will pay to represent the fields in terms of potentials. Just like in electrostatics, <script type="math/tex"> \curl \vec E = 0 </script> allowed us to write <script type="math/tex"> \vec E </script> as the gradient of a scalar potential. We can't do that any more, but we do still have a divergenceless <script type="math/tex"> \vec B </script>, so 
+<script type="math/tex; mode=display">
+\vec B = \curl \vec A
+</script>
+is still valid, as in magnetostatics. Plugging into Faraday's law gives us
+<script type="math/tex; mode=display">
+\curl \vec E = - \pdv{\vec B}{t} \\
+= - \pdv{}{t} \left( \curl \vec A \right) \\
+= - \curl \left( \pdv{\vec{A}}{t} \right) \\
+\rightarrow \curl ( \vec E + \pdv{\vec{A}}{t} ) = 0 \\
+\rightarrow \vec E + \pdv{\vec{A}}{t} = - \grad V
+</script>
+</p>
+<p>In terms of a scalar and a vector potential, then, we can write <script type="math/tex"> \vec E </script> as
+<script type="math/tex; mode=display">
+\vec E = - \grad V - \pdv{\vec{A}}{t}
+</script>
+</p>
+<p>What happens with Gauss' law and the Ampere-Maxwell law?
+<script type="math/tex; mode=display">
+\div \vec E = \rho / \epsilon _0 \\
+\rightarrow \div ( - \grad V - \pdv{\vec A}{t}) = \rho / \epsilon_0 \\
+\rightarrow \laplacian V + \pdv{}{t} \left( \div \vec A \right) = - \rho / \epsilon_0
+</script>
+</p>
+<p>
+<script type="math/tex; mode=display">
+\curl \vec B = \mu_0 \vec J + \mu_0 \epsilon_0 \pdv{\vec E}{t} \\
+\curl ( \curl \vec A) = \mu_0 \vec J + \mu_0 \epsilon_0 \pdv{}{t} \left(- \grad V - \pdv{\vec A}{t} \right) \\
+\laplacian \vec A - \mu_0 \epsilon_0 \pdv{^2 \vec A}{t^2} - \grad ( \div \vec A + \mu_0 \epsilon_0 \pdv{V}{t} )= - \mu_0 \vec J
+</script>
+</p>
+<p>Well now what! We've got a fairly complicated differential equation on our hands... how can we make it simpler? The fields actually only care about the <em>curl</em> of the vector potential, and that allows us some freedom in the gauge of <script type="math/tex"> \vec A </script>. We can add any curl-less function to modify the divergence <script type="math/tex">\div \vec A</script> and nothing at all about the real fields will change. In particular, wouldn't it be nice if
+<script type="math/tex; mode=display">
+\div \vec A = 0 \quad \text{(Coulomb gauge)}
+</script>
+</p>
+<p>so that solving for <script type="math/tex"> V </script> just amounts to the Poisson equation:</p>
+<p>
+<script type="math/tex; mode=display">
+\laplacian V + \pdv{}{t} (\div \vec A) = - \rho / \epsilon_0 \\
+\rightarrow \laplacian V = - \rho / \epsilon_0 \quad \text{(Coulomb Gauge)}
+</script>
+</p>
+<p>But the Coulomb gauge still makes it very difficult to solve for <script type="math/tex"> \vec A </script>. If we want to solve for the vector potential more easily, it's pretty obvious that we should set</p>
+<p>
+<script type="math/tex; mode=display">
+\div \vec A = - \mu_0 \epsilon_0 \pdv{V}{t} \quad \text{(Lorenz gauge)}
+</script>
+</p>
+<p>so that
+<script type="math/tex; mode=display">
+\laplacian \vec A - \mu_0 \epsilon_0 \pdv{^2 \vec A}{t^2} - \grad ( \div \vec A + \mu_0 \epsilon_0 \pdv{V}{t} )= - \mu_0 \vec J \\
+\rightarrow \laplacian \vec A - \mu_0 \epsilon_0 \pdv{^2 \vec A}{t^2} = - \mu_0 \vec J \quad \text{(Lorenz gauge)}
+</script>
+</p>
+<p>The result is an inhomogeneous wave equation with a "source" term on the right. It's quite similar to the wave equations we've been solving for the past couple of chapters, but the sources have been re-introduced, and it's important to remember that now the sources <script type="math/tex"> \rho </script> and <script type="math/tex"> \vec J </script> are allowed to vary in both space and time.</p>
                 
                   
                 
@@ -1165,6 +1283,20 @@
             </div>
           </a>
         
+        
+          <a href="../ch10-2/" title="10.2 - Retarded Potentials" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                10.2 - Retarded Potentials
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
