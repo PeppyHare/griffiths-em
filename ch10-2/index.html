@@ -1165,13 +1165,18 @@
 V(\vec r) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec r')}{\gr} \dd \tau' 
 </script>
 </p>
+<p>
+<script type="math/tex; mode=display">
+\vec A(r) = \frac{\mu_0}{4 \pi} \int \frac{\vec J (\vec r')}{\gr} \dd \tau' 
+</script>
+</p>
 <p>We know that electromagnetic disturbances travel at the speed of light (at least in vacuum). So for general distributions of sources that may be changing in time, it's not what the source is doing <em>right now</em> that matters - it's what was happening at some earlier time (called the <strong>retarded time</strong>) when the "message" left. The information has traveled a distance <script type="math/tex"> \gr </script>, so the delay is <script type="math/tex"> \gr / c </script>, so the retarded time is
 <script type="math/tex; mode=display">
 t_r \equiv t - \frac{\gr }{c}
 </script>
 So we can immediately generalize our solutions for the potentials of static sources to the <strong>retarded potentials</strong>
 <script type="math/tex; mode=display">
-V(\vec r) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec r', t_r)}{\gr} \dd \tau'
+V(\vec r, t) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho(\vec r', t_r)}{\gr} \dd \tau'
 </script>
 <script type="math/tex; mode=display">
 \vec A(\vec r, t) = \frac{\mu_0}{4 \pi} \int \frac{\vec J(\vec r ', t_r)}{\gr} \dd \tau '
