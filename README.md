@@ -1,4 +1,6 @@
-    # Griffiths - Introduction to Electrodynamics
+# Griffiths - Introduction to Electrodynamics
+
+# MOVED TO [https://peppyhare.github.io/pf-notes/](https://peppyhare.github.io/pf-notes/)
 
 ## [https://peppyhare.github.io/griffiths-em/](https://peppyhare.github.io/griffiths-em/)
 
